@@ -1,22 +1,27 @@
-// // require('dotenv').config();
-// const express = require('express');
-// const { client } = require('./client.js');
-// const app = express();
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
 
-// app.use(require('cors'));
-// app.use(express.json());
-// app.use(require('morgan')('dev'));
-// app.listen(5432, () => {
-//   console.log('server is running on port 5432')
-// });
+import client from './client.js';
+import { createTables } from "./db/seed.js";
+
+const express = require('express');
+const morgan = require('morgan');
+const app = express();
+const path = require('path');
+
+app.use(morgan('dev'));
+app.use(express.json());
+
 // app.use('/api', require('./api/index.js'));
 
-// const init = async () => {
-//   await client.connect()
-//   console.log('connected to database')
-//   // const port = 5432 
-//   // app.listen(port, () => console.log(`listening on ${port}`))
-// };
+const init = async () => {
+  const port = process.env.PORT || 3000
+  app.listen(port, () => console.log(`listening on ${port}`));
+  console.log('connecting to db');
+  await client.connect();
+  console.log('connected to database');
+  await createTables();
+  console.log('tables made')
+};
 
-// init();
-console.log('howdy')
+init();
