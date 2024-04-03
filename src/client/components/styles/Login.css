@@ -1,0 +1,56 @@
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: hsl(55, 79%, 66%);
+    border-style: groove;
+}
+
+.container {
+    background: hsl(55, 79%, 66%);
+    font-size: 20px;
+    width: 1208px;
+    height: 632.28px;
+    top: 295px;
+    left: 152px;
+    border-radius: 20px;
+    opacity: 92%;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-radius: 20px;
+
+}
+
+.form {
+    display: flex;
+   flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.welcome {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.cooking {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.user {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.button {
+    border: 2px;
+    border-style: groove;
+    background-color: red;
+}
