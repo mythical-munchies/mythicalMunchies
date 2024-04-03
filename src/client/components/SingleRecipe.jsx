@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom"
 import "./styles/SingleRecipe.css";
-import Rating from './styles/rating'
+import Rating from './mui-components/rating'
 
 
 
