@@ -1,9 +1,3 @@
-/* body {
-  background-image: url("../icons/munchiesbackground.jpeg");
-  background-size: auto;
-  background-position: center;
-} */
-
 .main-container {
   display: flex;
   flex-wrap: wrap;
@@ -100,6 +94,7 @@ textarea {
   left: 960px;
   border: 1px;
   border-radius: 5px;
+  font-family: "Almendra", serif;
 }
 
 textarea {
@@ -115,6 +110,7 @@ textarea {
   border: 1px solid #ccc;
   box-sizing: border-box;
   margin-top: 5px;
+  font-family: "Almendra", serif;
 }
 
 textarea {
