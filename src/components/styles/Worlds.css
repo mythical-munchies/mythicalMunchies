@@ -1,0 +1,174 @@
+.gold-background {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #e2d5b0;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.arrow {
+  margin-left: 5px;
+}
+
+/* Styles for the dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Styles for the dropdown button */
+.dropbtn {
+  /* display: flex; */
+  align-items: center;
+  background-color: lightgrey;
+  color: grey;
+  font-family: "Almendra", serif;
+  width: 1391px;
+  height: 80px;
+  top: 340px;
+  left: 60px;
+  gap: 0px;
+  opacity: 0px;
+  padding: 10px 300px;
+  font-size: 30px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Styles for the dropdown content */
+.dropdown-content {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  background-color: #f9f9f9;
+  font-family: "Almendra", serif;
+  min-width: 160px;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  z-index: 99;
+}
+
+/* Styles for the dropdown items */
+.dropdown-content a {
+  color: black;
+  font-size: 27px;
+  padding: 10px 300px;
+  font-family: "Almendra", serif;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  border-radius: 10px;
+  /* white-space:nowrap keeps the longer titles all on one line */
+  white-space: nowrap;
+  order: 0;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  background: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(222, 168, 248, 1) 0%,
+    rgba(168, 222, 258, 1) 21.9%,
+    rgba(189, 250, 205, 1) 35.6%,
+    rgba(243, 250, 189, 1) 53.9%,
+    rgba(250, 227, 189, 1) 66.8%,
+    rgba(248, 172, 171, 1) 95%,
+    rgba(254, 170, 212, 1) 99.9%
+  );
+
+  /*The original gradient is below. I copy pasted the rainbow I used in the Contact Us page so that there was some matching.  */
+  /* background: #663dff;
+  background-image: linear-gradient(
+    319deg,
+    #663dff 0%,
+    #aa00ff 37%,
+    #cc4499 100%
+  ); */
+}
+
+/* This is a fix so the worlds appear in order shown */
+.dropdown-content a:nth-of-type(1) {
+  order: 1;
+}
+.dropdown-content a:nth-of-type(2) {
+  order: 2;
+}
+.dropdown-content a:nth-of-type(3) {
+  order: 3;
+}
+.dropdown-content a:nth-of-type(4) {
+  order: 4;
+}
+.dropdown-content a:nth-of-type(5) {
+  order: 5;
+}
+.dropdown-content a:nth-of-type(6) {
+  order: 6;
+}
+.dropdown-content a:nth-of-type(7) {
+  order: 7;
+}
+.dropdown-content a:nth-of-type(8) {
+  order: 8;
+}
+.dropdown-content a:nth-of-type(9) {
+  order: 9;
+}
+.dropdown-content a:nth-of-type(10) {
+  order: 10;
+}
+.dropdown-content a:nth-of-type(11) {
+  order: 11;
+}
+.dropdown-content a:nth-of-type(12) {
+  order: 12;
+}
+
+.each-world {
+  width: 289px;
+  height: 397px;
+  z-index: 1;
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  margin-bottom: 50px;
+}
+
+.world-image {
+  width: 289px;
+  height: 331px;
+  top: 511px;
+  left: 216px;
+  gap: 0px;
+  border-radius: 10px;
+  opacity: 0px;
+}
+
+.world-title {
+  font-family: "Almendra", serif;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 45.22px;
+  align-self: center;
+  text-decoration: none;
+  color: #4a0260;
+  top: 100px;
+  margin-top: 10px;
+}
+
+/* to complete with design after we sync everything up*/
+/* .world-title:hover {
+} */

@@ -1,0 +1,165 @@
+/* body {
+  background-image: url("../icons/munchiesbackground.jpeg");
+  background-size: auto;
+  background-position: center;
+} */
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container {
+  /* position: absolute; */
+  background: #4a0260bf;
+  font-size: 20px;
+  width: 1208px;
+  height: 632.28px;
+  top: 295px;
+  left: 152px;
+  border-radius: 20px;
+  opacity: 95%;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-radius: 20px;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.text {
+  margin-bottom: 20px;
+}
+
+.textbox {
+  width: 550px;
+  height: 273px;
+  top: 462px;
+  left: 242px;
+  margin-left: 30px;
+  margin-top: 100px;
+  gap: 0px;
+  opacity: 0px;
+  text-align: center;
+}
+
+h1 {
+  color: #ffffff;
+  font-family: "Almendra", serif;
+  font-weight: normal;
+  size: 42px;
+  text-align: center;
+}
+
+p {
+  color: #ffffff;
+  font-family: "Almendra", serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 38.88px;
+  letter-spacing: 0.1em;
+  text-align: left;
+}
+
+.form {
+  /* position: relative; */
+  /* left: 750px; */
+
+  /* width: 300px; */
+  border-radius: 10px;
+  border: 1px;
+  margin-top: 75px;
+}
+
+.name,
+.email,
+.message {
+  font-family: "Almendra", serif;
+  color: #ffffff;
+  margin-top: 15px;
+  font-size: 25px;
+  width: 401px;
+}
+
+label {
+  display: block;
+  align-items: left;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 401px;
+  height: 38px;
+  top: 459px;
+  left: 960px;
+  border: 1px;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical; /* Allow vertical resizing for textarea */
+}
+
+input[type="message"],
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.field {
+  width: 310px;
+  height: 38px;
+  top: 459px;
+  left: 960px;
+  gap: 0px;
+  border-radius: 10px 0px 0px 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+}
+
+.send {
+  color: #004268;
+  padding: 10px 20px;
+  font-family: "Almendra", serif;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 399px;
+  height: 40px;
+  top: 787px;
+  left: 871px;
+  padding: 4px 0px 4px 0px;
+  gap: 0px;
+  opacity: 0px;
+  margin-top: 20px;
+}
+
+.send:hover {
+  background: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(222, 168, 248, 1) 0%,
+    rgba(168, 222, 258, 1) 21.9%,
+    rgba(189, 250, 205, 1) 35.6%,
+    rgba(243, 250, 189, 1) 53.9%,
+    rgba(250, 227, 189, 1) 66.8%,
+    rgba(248, 172, 171, 1) 95%,
+    rgba(254, 170, 212, 1) 99.9%
+  );
+}

@@ -1,0 +1,58 @@
+.searchInputs {
+  display: flex;
+  justify-content: right;
+  margin-right: 100px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+.search input {
+  background-color: whitesmoke;
+  border: 2px solid orange;
+  border-radius: 10px;
+  font-family: "Almendra", sans-serif;
+  font-size: 20px;
+  padding-left: 10px;
+  width: 300px;
+}
+
+/* IMPORT MAGNIFYING GLASS FROM MUI LATER */
+.searchIcon {
+  height: 60px;
+  width: 55px;
+  background-color: whitesmoke;
+  display: grid;
+  place-items: center;
+}
+
+.data {
+  display: flex;
+  justify-content: right;
+  margin-right: 100px;
+}
+
+.dataResults {
+  margin-top: 0px;
+  width: 300px;
+  height: 200px;
+  background-color: whitesmoke;
+  font-family: "Almendra", sans-serif;
+  overflow: hidden;
+  overflow-y: auto;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 1;
+}
+
+.dataResults::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* TARGET THESE AS LINKS LATER */
+.text {
+  font-size: 22px;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 10px;
+}
