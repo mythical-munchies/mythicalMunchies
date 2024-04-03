@@ -1,0 +1,142 @@
+/* .whole-page {
+  margin-top: 30px;
+  background-color: #E2D5B0;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+} */
+
+.goldy-background {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #e2d5b0;
+  border-radius: 20px;
+ 
+}
+
+.back-button-recipe {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  font-family: "Almendra", serif;
+  font-size: 20px;
+  padding: 10px 60px;
+  background-color: #fff1a2;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #000000;
+}
+
+
+.recipe-world-title {
+  font-size: 55px;
+  color: #4a0260;
+}
+
+.button-container {
+  margin-top: 10px;
+}
+
+.bookmark {
+  padding: 5px;
+  font-size: 10px;
+  justify-content: left;
+}
+
+
+.title-container {
+  margin-top: 20px;
+}
+
+.recipe-image-container {
+  margin-top: 10px;
+}
+
+.recipe-test-image {
+  height: 45px;
+  width: 45px;
+  margin-top: 10px;
+}
+
+.ratings {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+}
+
+.review-button {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.ingredients-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.ingredients-post {
+  background-image: url(https://media.istockphoto.com/id/1330219242/vector/empty-blank-golden-white-coloured-grunge-crumpled-crushed-paper-horizontal-vector.jpg?s=612x612&w=0&k=20&c=E7-fWvRx9pILGOScceur2WV8F8yKyFprVq3YiMFQHsw=);
+  border-radius: 20px;
+  width: 300px;
+  box-shadow: 1px 1px 2px black;
+  text-align: left;
+}
+.ingredients-title {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.ingredient-list {
+  margin-left: 30px;
+  padding-bottom: 20px;
+}
+
+.instructions-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.instructions {
+  width: 500px;
+}
+
+.review-title {
+  display: flex;
+  justify-content: center;
+}
+
+.reviews-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.review-box {
+  background-color: whitesmoke;
+  box-shadow: 1px 1px 2px black;
+  border-radius: 10px;
+  width: 800px;
+  height: 150px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.review {
+  color: purple;
+  font-size: 25px;
+  margin-left: 20px;
+ margin-top: 10px;
+
+}
+
+.rating-review {
+  margin-top: 300px;
+}

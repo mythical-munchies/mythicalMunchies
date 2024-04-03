@@ -1,68 +1,92 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+/* THIS STYLE SHEET CONTAINS PERSISTENT ELEMENTS */
+/* BACKGROUND */
+/* HEADER */
+/* NAV BAR including wizard-account icon */
+/* FOOTER */
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+* {
+  margin: -4px;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  background-image: url("client/components/images/background1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.persistent-header {
+  background-image: url("client/components/images/plant.png");
+  background-size: 350px;
+  background-color: #bcc6d1e5;
+  box-shadow: 2px 2px 25px yellow;
+  border-radius: 10px;
+  /* position: fixed;
+  width: 100%;
+  z-index: 1; */
+}
+
+#logo-image {
+  height: 80px;
+  width: 80px;
+  padding-top: 45px;
+  padding-left: 20px;
+}
+
+.logo-title {
+  font-family: "Almendra", sans-serif;
+  color: darkred;
+  text-shadow: 3px 4px #FFE449, 5px 5px orange;
+  font-size: 40px;
+  letter-spacing: 1px;
+  text-align: left;
+  height: 100px;
+}
+
+.navs {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.wizard-icon-nav {
+  display: flex;
+  justify-content: right;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-top: 4px;
+}
+
+.navbar-link {
+  color:#FFE449;
+  text-shadow: 3px 3px 3px black;
+  position: relative;
+  font-size: 50px;
+  font-family: "Almendra", sans-serif;
+  text-decoration: inherit;
+}
+
+.navbar-link:hover {
+  color: yellow;
+  text-decoration: underline;
+}
+
+
+footer {
+  background-color: whitesmoke;
+  border-radius: 6px;
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  padding: 40px;
+  font-size: 20px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.testings {
+  background-color: brown;
+}
+
+.account-buttons {
+ display: block; 
 }

@@ -1,0 +1,172 @@
+
+/* CONTAINER CSS */
+.top-slide {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+.middle-slide {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 80px;
+}
+
+.middle2-slide {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 80px;
+}
+
+.bottom-slide {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 80px;
+}
+
+
+/* SLIDE CSS */
+/* HOW TO: LOWERE BACKGROUND OPACITY -- KEEP CONTENT OPAQUE */
+.favorite-slide {
+  background-color: #85A499;
+  border-radius: 10px;
+  width: 700px;
+  height: 480px;
+  /* opacity: 80%; */
+}
+
+.dessert-spotlight {
+  background-color: #04976C;
+  border-radius: 10px;
+  width: 350px;
+  height: 420px;
+}
+
+.book-spotlight {
+  background-color: orange;
+  border-radius: 10px;
+  width: 350px;
+  height: 420px;
+}
+
+.doggy-spotlight {
+  background-color: #004C78;
+  border-radius: 10px;
+  width: 350px;
+  height: 420px;
+}
+
+.veggie-spotlight {
+  background-color: green;
+  border-radius: 10px;
+  width: 450px;
+  height: 420px;
+}
+
+.brews-spotlight {
+  background-color: brown;
+  border-radius: 10px;
+  width: 450px;
+  height: 420px;
+}
+
+
+
+/* TEXT & DETAIL CSS */
+.main-texts {
+  font-size: 32px;
+  font-family: "Almendra", sans-serif;
+  font-weight: 100;
+  font-style: oblique;
+  color: darkblue;
+  letter-spacing: 1px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.details-text {
+  color: #FFC300;
+  padding-bottom: 15px;
+  font-size: 22px;
+  font-family: "Almendra", sans-serif;
+  font-weight: normal;
+}
+
+
+.image-test {
+  width: 300px;
+  border-radius: 20px;
+  height: 300px;
+  margin-bottom: 10px;
+
+  
+}
+
+.main-image-test {
+  width: 620px;
+  height: 400px;
+  border-radius: 20px;  
+  margin-bottom: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bottom-container {
+  background-color: #4A0260;
+  border-radius: 10px;
+  width: 900px;
+  height: 420px;
+}
+
+.our-story {
+  font-size: 30px;
+  padding-top: 20px;
+  font-family: "Almendra", sans-serif;
+  text-decoration: underline;
+  color: antiquewhite;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+.bottom-text {
+  color: antiquewhite;
+  font-size: 25px;
+  font-family: "Almendra", sans-serif;
+  letter-spacing: 1px;
+  font-weight: normal;
+  padding-left: 60px;
+  padding-right: 60px;
+  overflow: hidden;
+  overflow-y: auto;
+  text-align: left;
+
+}
+
+.special-bottom-text {
+  color: #FFC300;
+  font-size: 40px;
+  padding: 10px;
+  padding-top: 30px;
+  letter-spacing: 5px;
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 50px;
+  font-weight: normal;
+  font-family: "Almendra", sans-serif;
+}
