@@ -1,4 +1,4 @@
-const pg = require('pg');
-const client = new pg.Client(process.env.DATABASE_URL || 'postgres://localhost/mythical_munchies');
+import pg from 'pg';
+const client = new pg.Client(process.env.DATABASE_URL || 'postgres://localhost/mythical_munchies_db');
 
-module.exports = { client }
+export default client;
