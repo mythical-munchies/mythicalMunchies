@@ -1,15 +1,15 @@
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
-import AccountTab from './components/AccountTab'
-import Nav from './components/Nav'
-import ContactTab from './components/ContactTab'
+import AccountTab from './client/components/AccountTab'
+import Nav from './client/components/Nav'
+import ContactTab from './client/components/ContactTab'
 // import RecipesTab from './components/RecipesTab'
-import HomeTab from './components/HomeTab'
-import SearchBar from './components/SearchBar'
+import HomeTab from './client/components/HomeTab'
+import SearchBar from './client/components/SearchBar'
 import CategoryData from "./Data.json"
-import Worlds from "./components/Worlds"
-import SingleWorld from "./components/SingleWorld"
-import SingleRecipe from './components/SingleRecipe'
+import Worlds from "./client/components/Worlds"
+import SingleWorld from "./client/components/SingleWorld"
+import SingleRecipe from './client/components/SingleRecipe'
 // import Login from './components/Login'
 
 
