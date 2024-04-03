@@ -1,5 +1,11 @@
 import { Link } from "react-router-dom";
 import "./styles/HomeTab.css"
+import Fav from "./images/butterbeer.jpg"
+import PeachBun from "./images/peachBuns.png"
+import BFG from "./images/bfg.png"
+import HarryDog from "./images/harryDog.png"
+import Veggies from "./images/veggies.jpg"
+import Drinks from "./images/drinks.jpg"
 
 function HomeTab(){
   return(
@@ -7,7 +13,7 @@ function HomeTab(){
     <div className="top-slide">
       <div className="favorite-slide">
         <h4 className="main-texts">Favorites of the Month!</h4>
-        <img className="main-image-test" src="../images/butterbeer.jpg" alt="" />
+        <img className="main-image-test" src={Fav} alt="hermoine" />
       </div>
     </div>
 
@@ -16,7 +22,7 @@ function HomeTab(){
         <div>
           <h4 className="main-texts">Dessert Spotlight 🍰 </h4>
           <h5 className="details-text">link to recipe.name here</h5>
-          <Link to="/desserts"><img className='image-test' src="../images/peachBuns.png" alt="peach-buns" title="Click here for Desserts!" /></Link>
+          <Link to="/desserts"><img className='image-test' src={PeachBun} alt="peach-buns" title="Click here for Desserts!" /></Link>
         </div>
       </div>
 
@@ -24,7 +30,7 @@ function HomeTab(){
         <div>
           <h4 className="main-texts"> Featured Literature 📚 </h4>
           <h5 className="details-text">link to book.name here</h5>
-          <Link to="/featured-literature"><img className= 'image-test' src="../images/bfg.png" alt="literature" /></Link>
+          <Link to="/featured-literature"><img className= 'image-test' src={BFG} alt="literature" /></Link>
         </div>
       </div>
 
@@ -32,7 +38,7 @@ function HomeTab(){
         <div>
           <h4 className="main-texts">Dogwarts 🐾 </h4>
           <h5 className="details-text">DIY treats for your pup!</h5>
-          <Link to="/dogwarts"><img className= 'image-test' src="../images/harryDog.png" alt="literature" /></Link>
+          <Link to="/dogwarts"><img className= 'image-test' src={HarryDog} alt="literature" /></Link>
         </div>
       </div>
     </div>
@@ -42,7 +48,7 @@ function HomeTab(){
         <div>
           <h4 className="main-texts">Veggie Gardens 🥬🥔 </h4>
           <h5 className="details-text">Vegetarian and Vegan friendly!</h5>
-          <Link to="/veggie-gardens"><img className='image-test' src="../images/veggies.jpg" alt="peach-buns" title="Click here for vegetarian and vegan recipes!" /></Link>
+          <Link to="/veggie-gardens"><img className='image-test' src={Veggies} alt="peach-buns" title="Click here for vegetarian and vegan recipes!" /></Link>
         </div>
       </div>
 
@@ -50,7 +56,7 @@ function HomeTab(){
         <div>
           <h4 className="main-texts">Bottoms Up 🍻 </h4>
           <h5 className="details-text">Try these tasty potions at your next party</h5>
-          <Link to="/bottoms-up"><img className= 'image-test' src="../images/drinks.jpg" alt="literature" /></Link>
+          <Link to="/bottoms-up"><img className= 'image-test' src={Drinks} alt="literature" /></Link>
         </div>
       </div>
     </div>

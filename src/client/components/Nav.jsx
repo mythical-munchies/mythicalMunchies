@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import WizHat from './icons/witchHat.png'
 
 function Nav() {
   return (
@@ -10,7 +11,7 @@ function Nav() {
 
         <Link className="navbar-link" to="/contact">Contact</Link>
 
-        <Link to="/account" className='wizard-icon-nav'><img src="./icons/witchHat.png" alt="witch-hat icon"/></Link>
+        <Link to="/account" className='wizard-icon-nav'><img src={WizHat} alt="witch-hat icon"/></Link>
       </div>
     </>
   );

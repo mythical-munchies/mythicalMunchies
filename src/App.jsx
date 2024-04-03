@@ -11,6 +11,9 @@ import Worlds from "./client/components/Worlds"
 import SingleWorld from "./client/components/SingleWorld"
 import SingleRecipe from './client/components/SingleRecipe'
 // import Login from './components/Login'
+import Logo from './client/components/icons/cauldronyellow.png'
+
+
 
 
 
@@ -19,7 +22,7 @@ function App() {
     <>
     <div className='persistent-header'>
       <div className='logo-title'>
-      <h2><img id='logo-image' src='./icons/cauldron yellow.png'></img>  Mythical Munchies</h2>
+      <h2><img id='logo-image' src={Logo}></img>Mythical Munchies</h2>
       </div>
       <SearchBar placeholder="Explore Worlds..." data={CategoryData}/>
       {/* <Login /> */}

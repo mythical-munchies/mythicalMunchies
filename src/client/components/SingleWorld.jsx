@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./styles/SingleWorld.css";
-// import ghibliBanner from "/images/banner_studioghibli.png";
+import ghibliBanner from "./images/banner_studioghibli.png";
 
 function SingleWorld() {
   return (
