@@ -1,9 +1,9 @@
-import client from "../client.js";
-import { createRequire } from "module";
-const require = createRequire(import.meta.url);
+const client =require('./client')
+// import { createRequire } from "module";
+// const require = createRequire(import.meta.url);
 const uuid = require('uuid');
 
-export const dropChildrenTables = async() => {
+const dropChildrenTables = async() => {
   const SQL = `
   DROP TABLE IF EXISTS user_recipe;
   DROP TABLE IF EXISTS recipe_ingredient;
@@ -14,7 +14,7 @@ export const dropChildrenTables = async() => {
   `;
   await client.query(SQL);
 };
-export const dropParentTables = async() => {
+const dropParentTables = async() => {
   const SQL = `
   DROP TABLE IF EXISTS users CASCADE;
   DROP TABLE IF EXISTS worlds CASCADE;
@@ -22,7 +22,7 @@ export const dropParentTables = async() => {
   `;
   await client.query(SQL);
 };
-export const createTables = async() => {
+const createTables = async() => {
   const SQL = `
     CREATE TABLE worlds(
       id UUID PRIMARY KEY,
@@ -77,3 +77,20 @@ export const createTables = async() => {
   `;
   await client.query(SQL);
 }
+
+async function rebuild() {
+  try {
+      await client.connect()
+      await dropChildrenTables()
+      await dropParentTables()
+      await createTables()
+      // await createInitialData()
+  } catch (error) {
+      console.log("oh nose! failed rebuilding database")
+  }
+}
+
+rebuild().finally(() => client.end())
+module.exports = {
+  rebuild
+};
