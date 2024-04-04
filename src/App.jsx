@@ -1,33 +1,33 @@
-import "./App.css";
-import { Route, Routes } from "react-router-dom";
-import AccountTab from "./client/components/AccountTab";
-import Nav from "./client/components/Nav";
-import ContactTab from "./client/components/ContactTab";
-
-import HomeTab from "./client/components/HomeTab";
-import SearchBar from "./client/components/SearchBar";
-import CategoryData from "./Data.json";
-import Worlds from "./client/components/Worlds";
-import SingleWorld from "./client/components/SingleWorld";
-import SingleRecipe from "./client/components/SingleRecipe";
+import './App.css'
+import { Route, Routes } from 'react-router-dom'
+import AccountTab from './client/components/AccountTab'
+import Nav from './client/components/Nav'
+import ContactTab from './client/components/ContactTab'
+// import RecipesTab from './components/RecipesTab'
+import HomeTab from './client/components/HomeTab'
+import SearchBar from './client/components/SearchBar'
+import CategoryData from "./Data.json"
+import Worlds from "./client/components/Worlds"
+import SingleWorld from "./client/components/SingleWorld"
+import SingleRecipe from './client/components/SingleRecipe'
+// import Login from './components/Login'
 import Logo from './client/components/icons/cauldronyellow.png'
+// import Test from './client/components/Test'
+import DogWarts from './client/components/DogWarts'
+
+
 
 
 
 function App() {
   return (
     <>
-      <div className="persistent-header">
-        <div className="logo-title">
-          <h2>
-            <img id="logo-image" src={Logo}></img>Mythical Munchies
-          </h2>
-        </div>
-        <SearchBar placeholder="Explore Worlds..." data={CategoryData} />
- 
+    <div className='persistent-header'>
+      <div className='logo-title'>
+      <h2><img id='logo-image' src={Logo}></img>Mythical Munchies</h2>
       </div>
-
       <SearchBar placeholder="Explore Worlds..." data={CategoryData}/>
+      {/* <Login /> */}
     </div>
    
     <Nav/>
@@ -39,9 +39,10 @@ function App() {
       <Route path="/account" element={<AccountTab/>}/>
       <Route path="/single-world" element={<SingleWorld/>}/>
       <Route path="/single-recipe" element={<SingleRecipe/>}/>
-   
+      <Route path="/dogwarts" element={<DogWarts/>}/>
+      {/* <Route path="/test" element={<Test/>}/> */}
+      {/* <Route path="/my-reviews" element={<MyReviews/>}/> */}
     </Routes>
-
     </>
   );
 }

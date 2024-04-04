@@ -2,8 +2,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: hsl(55, 79%, 66%);
-    border-style: groove;
+    /* background-color: hsl(55, 79%, 66%); */
+    /* border-style: groove; */
 }
 
 .small-container {

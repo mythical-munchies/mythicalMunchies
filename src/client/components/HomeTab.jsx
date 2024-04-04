@@ -10,14 +10,14 @@ import Drinks from "./images/drinks.jpg"
 function HomeTab(){
   return(
     <>
-    <div className="top-slide">
+    {/* <div className="top-slide">
       <div className="favorite-slide">
         <h4 className="main-texts">Favorites of the Month!</h4>
         <img className="main-image-test" src={Fav} alt="hermoine" />
       </div>
-    </div>
+    </div> */}
 
-    <div className="middle-slide">
+    <div className="top-slide">
       <div className="dessert-spotlight">
         <div>
           <h4 className="main-texts">Dessert Spotlight 🍰 </h4>
@@ -40,6 +40,13 @@ function HomeTab(){
           <h5 className="details-text">DIY treats for your pup!</h5>
           <Link to="/dogwarts"><img className= 'image-test' src={HarryDog} alt="literature" /></Link>
         </div>
+      </div>
+    </div>
+
+    <div className="middle-slide">
+      <div className="favorite-slide">
+        <h4 className="main-texts">Favorites of the Month!</h4>
+        <img className="main-image-test" src={Fav} alt="hermoine" />
       </div>
     </div>
 

@@ -3,7 +3,7 @@
 .top-slide {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   margin-top: 30px;
   margin-bottom: 80px;
 }
@@ -35,7 +35,7 @@
 .favorite-slide {
   background-color: #85A499;
   border-radius: 10px;
-  width: 600px;
+  width: 1000px;
   height: 480px;
   /* opacity: 80%; */
 }
@@ -43,21 +43,21 @@
 .dessert-spotlight {
   background-color: #04976C;
   border-radius: 10px;
-  width: 350px;
+  width: 375px;
   height: 420px;
 }
 
 .book-spotlight {
   background-color: orange;
   border-radius: 10px;
-  width: 350px;
+  width: 375px;
   height: 420px;
 }
 
 .doggy-spotlight {
   background-color: #004C78;
   border-radius: 10px;
-  width: 350px;
+  width: 375px;
   height: 420px;
 }
 
