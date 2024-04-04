@@ -27,7 +27,12 @@ return (
 
 <>
 <div className='container'>
-    
+
+{/* link to recipes with backend      */}
+
+    <div className='buttons'>
+        <button onClick={() => removeFavoriteHandler(favorites)}/>
+    </div>
 </div>
 </>
 
