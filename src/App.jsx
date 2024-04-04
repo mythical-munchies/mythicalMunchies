@@ -12,6 +12,7 @@ import SingleWorld from "./client/components/SingleWorld"
 import SingleRecipe from './client/components/SingleRecipe'
 // import Login from './components/Login'
 import Logo from './client/components/icons/cauldronyellow.png'
+// import Test from './client/components/Test'
 
 
 
@@ -37,6 +38,7 @@ function App() {
       <Route path="/account" element={<AccountTab/>}/>
       <Route path="/single-world" element={<SingleWorld/>}/>
       <Route path="/single-recipe" element={<SingleRecipe/>}/>
+      {/* <Route path="/test" element={<Test/>}/> */}
       {/* <Route path="/my-reviews" element={<MyReviews/>}/> */}
     </Routes>
     </>
