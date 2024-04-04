@@ -34,13 +34,14 @@ function ContactTab() {
           <div className="content">
             {/* Text to the left of the form. Final language TBD */}
             <div className="textbox">
-              <p>Thanks so much for checking out our page!</p>
+              <p>Hey there, seeker of splendid surprises on our page!</p>
               <br></br>
               <br></br>
               <p>
-                Have any questions or concerns? We are happy to help. Please
-                fill out the form below and we will get back to you as quickly
-                as we can.
+                🍬 Got a query bubbling in your brain? A curiosity creeping in?
+                Fear not! We're here to sprinkle some magic and answer all your
+                musings. Simply shimmy down the form-filling trail, and we'll
+                whisk you away with our prompt replies! 👉
               </p>
             </div>
 
