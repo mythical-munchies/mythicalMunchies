@@ -8,7 +8,7 @@ app.use(express.json());
 const client = require('./db/client')
 client.connect()
 
-app.use('/api', require('./api'));
+app.use('/mythicalMunchies', require('./api'));
 
 app.use((err, req, res, next)=> {
   console.log(err)

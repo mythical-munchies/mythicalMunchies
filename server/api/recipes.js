@@ -1,13 +1,23 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/:id/recipes', async(req, res, next)=> {
+// const {fetchRecipes, fetchRecipe, createRecipe} = require('./db')
+
+router.get('/', async(req, res, next)=> {
   try {
     res.send(await fetchRecipes(req.params.id));
-  }
-  catch(ex){
-    next(ex);
+  } catch (ex) {
+    next (ex)
   }
 });
+
+router.get('/:id', async(req, res, next)=> {
+  try {
+    res.send(await fetchRecipe(req.params.id));
+  } catch (ex) {
+    next (ex)
+  }
+});
+
 
 module.exports = router
