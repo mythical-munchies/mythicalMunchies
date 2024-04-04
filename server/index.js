@@ -12,7 +12,12 @@ const path = require('path');
 app.use(morgan('dev'));
 app.use(express.json());
 
-// app.use('/api', require('./api/index.js'));
+app.use('/api', require('./api'));
+
+app.use((err, req, res, next)=> {
+  console.log(err)
+  res.status(err.status || 500).send({error: err.message ?  err.message : err})
+})
 
 const init = async () => {
   const port = process.env.PORT || 3000
@@ -21,7 +26,7 @@ const init = async () => {
   await client.connect();
   console.log('connected to database');
   await dropChildrenTables();
-  console.log('yeet baby');
+  console.log('yeetus fetus');
   await dropParentTables();
   console.log('yeet parent');
   await createTables();
