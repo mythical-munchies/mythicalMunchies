@@ -34,7 +34,7 @@ function ContactTab() {
           <div className="content">
             {/* Text to the left of the form. Final language TBD */}
             <div className="textbox">
-              <p>Hey there, seeker of splendid surprises on our page!</p>
+              <p>💫 Hey there, seeker of splendid surprises on our page! 🦄 </p>
               <br></br>
               <br></br>
               <p>
