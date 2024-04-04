@@ -1,12 +1,12 @@
-/* .main-container {
+.main-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     background-color: hsl(55, 79%, 66%);
     border-style: groove;
-} */
+}
 
-.container {
+.small-container {
     background: hsl(55, 79%, 66%);
     font-size: 20px;
     width: 1208px;
@@ -23,8 +23,9 @@
 
 .form {
     display: flex;
-   flex-wrap: wrap;
+   /* flex-wrap: wrap; */
     justify-content: center;
+    flex-direction: column;
     
 }
 
@@ -52,5 +53,5 @@
 .button {
     border: 2px;
     border-style: groove;
-    background-color: red;
+    background-color: #ce4848;
 }
