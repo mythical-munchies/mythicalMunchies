@@ -2,7 +2,7 @@ import { createRequire } from "module";
 const require = createRequire(import.meta.url);
 
 import client from './client.js';
-import { createTables } from "./db/seed.js";
+import { dropParentTables, dropChildrenTables, createTables } from "./db/seed.js";
 
 const express = require('express');
 const morgan = require('morgan');
@@ -20,6 +20,10 @@ const init = async () => {
   console.log('connecting to db');
   await client.connect();
   console.log('connected to database');
+  await dropChildrenTables();
+  console.log('yeet baby');
+  await dropParentTables();
+  console.log('yeet parent');
   await createTables();
   console.log('tables made')
 };
