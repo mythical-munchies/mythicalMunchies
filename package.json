@@ -1,7 +1,7 @@
 {
 	"scripts": {
-		"start-dev": "nodemon index.js",
-		"start": "node index.js",
+		"start-dev": "nodemon server/index.js",
+		"start": "node server/index.js",
 		"seed-dev": "nodemon ./db/seed.js",
 		"seed": "node ./db/seed.js"
 	},

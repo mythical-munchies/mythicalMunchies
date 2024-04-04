@@ -1,6 +1,4 @@
-const client =require('./client')
-// import { createRequire } from "module";
-// const require = createRequire(import.meta.url);
+const client = require('./client')
 const uuid = require('uuid');
 
 const dropChildrenTables = async() => {
