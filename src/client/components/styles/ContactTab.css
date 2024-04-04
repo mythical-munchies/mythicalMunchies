@@ -75,9 +75,12 @@ p {
 .message {
   font-family: "Almendra", serif;
   color: #ffffff;
-  margin-top: 15px;
+
+  margin-bottom: 10px;
   font-size: 25px;
   width: 401px;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
 label {
@@ -103,7 +106,7 @@ textarea {
 
 input[type="message"],
 textarea {
-  width: 100%;
+  width: 80%;
   height: 150px;
   padding: 10px;
   border-radius: 5px;
@@ -132,7 +135,7 @@ textarea {
   color: #004268;
   padding: 10px 20px;
   font-family: "Almendra", serif;
-  font-size: 18px;
+  font-size: 25px;
   border: none;
   border-radius: 5px;
   cursor: pointer;

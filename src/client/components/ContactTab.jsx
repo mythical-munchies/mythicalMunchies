@@ -1,45 +1,28 @@
-import React, { useState } from "react";
+import React, { useRef } from "react";
 import "./styles/ContactTab.css";
+import emailjs from "emailjs-com";
 
 function ContactTab() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const form = useRef();
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = async (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-
-    try {
-      const response = await fetch("/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+    // the below are the service_id, template_id and public_id from emailJS
+    emailjs
+      .sendForm(
+        "service_789sgt7",
+        "template_wwxgva9",
+        form.current,
+        "fSn0aZCFGG6PquwLd"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
         },
-        body: JSON.stringify(formData),
-      });
-
-      if (!response.ok) {
-        throw new Error("Failed to send email");
-      }
-
-      // Reset the form after successful submission
-      setFormData({
-        name: "",
-        email: "",
-        message: "",
-      });
-      alert("Email sent successfully!");
-    } catch (error) {
-      console.error(error);
-      alert("Error sending email. Please try again later.");
-    }
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   return (
@@ -62,45 +45,20 @@ function ContactTab() {
             </div>
 
             {/* Div is for everything related to the form */}
-            <div className="form">
-              <form onSubmit={handleSubmit}>
-                <div className="name">
-                  <label htmlFor="name">Name:</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleInputChange}
-                    required
-                  />
-                </div>
-                <div className="email">
-                  <label htmlFor="email">Email:</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    required
-                  />
-                </div>
-                <div className="message">
-                  <label htmlFor="message">Message:</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    required
-                  ></textarea>
-                </div>
-                <button className="send" type="submit">
-                  Send
-                </button>
-              </form>
-            </div>
+            <form ref={form} onSubmit={sendEmail}>
+              <label className="name"> Name:</label>
+              <input type="text" name="name" />
+
+              <label className="email">Email:</label>
+              <input type="email" name="email" />
+
+              <label className="message"> Message:</label>
+              <textarea name="message" />
+
+              <button className="send" type="submit">
+                Send
+              </button>
+            </form>
           </div>
         </div>
       </div>
