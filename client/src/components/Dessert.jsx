@@ -59,44 +59,6 @@ function Dessert() {
     </div>
 
     <hr className="recipe-hr-dessert"/>
-
-    <div className="recipe">
-      <div>
-        {/* this should link the recipe later */}
-        <img className="dessert-img" src={PinkCakee} alt="Stardew Valley Pink Cake" />
-      </div>
-
-      <div className="dessert-info">
-        <h2 className="dessert-title">Recipe Title Link</h2>
-        <p className="dessert-world">World Link</p>
-
-        <p className="dessert-text"> Recipe Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum autem cum perferendis, deleniti, obcaecati sunt iure quia neque consectetur quisquam reiciendis velit iusto accusantium, est quod delectus dignissimos quasi dolorem!</p>
-
-        {/* add onclick to add to bookmarks IF logged in */}
-        <button className="dessert-button">Add to favorites 📕</button>
-      </div>
-    </div>
-
-    <hr className="recipe-hr-dessert"/>
-
-    <div className="recipe">
-      <div>
-        {/* this should link the recipe later */}
-        <img className="dessert-img" src={PinkCakee} alt="Stardew Valley Pink Cake" />
-      </div>
-
-      <div className="dessert-info">
-        <h2 className="dessert-title">Recipe Title Link</h2>
-        <p className="dessert-world">World Link</p>
-
-        <p className="dessert-text"> Recipe Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum autem cum perferendis, deleniti, obcaecati sunt iure quia neque consectetur quisquam reiciendis velit iusto accusantium, est quod delectus dignissimos quasi dolorem!</p>
-
-        {/* add onclick to add to bookmarks IF logged in */}
-        <button className="dessert-button">Add to favorites 📕</button>
-      </div>
-    </div>
-
-    <hr className="recipe-hr-dessert"/>
     </div>
     </>
   )
