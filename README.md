@@ -72,5 +72,18 @@ Design
 Font: Almendra
 
 
+## Technologies
+- React => JS Web Framework
+- Redux => State management tool for React
+- SQL => Data Management and Retrieval
+- Express => Server
+- Vite => Build Tool
+- ViteExpress => Combined the two above
+- Fetch => Offers native browser support for making API calls without additional dependencies
+- JWT => Issues login tokens
+- BCrypt => Encrypts sensitive passwords
+- EmailJS => Utilized for seamless form submission functionality.
 
- -[EmailJS ](https://www.emailjs.com/) used for form submission.
+
+
+
