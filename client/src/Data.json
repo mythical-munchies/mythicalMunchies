@@ -1,0 +1,42 @@
+[
+	{
+		"category": "Studio Ghibli",
+		"title": "BeetleJuice",
+		"food": "Ham Ramen",
+		"description": "Enjoy this cozy, rainy day meal thatll get you ready for a big afternoon nap. Double the recipe and enjoy with a mermaid friend!",
+		"ingredients": "1 pack ramen of your choice, 1 egg, green onion, 2 slices of thick ham or pork belly",
+		"time": "10-15 minutes"
+	},
+	{
+		"category": "Studio Ghibli",
+		"title": "Game of Thrones",
+		"food": "Hot Honey Milk",
+		"description": "Warm and comforting. Perfect for a rainy day!",
+		"ingredients": "1 cup milk, 1 BIG tbsp honey, cinnamon to sprinkle on top",
+		"time": "5 minutes"
+	},
+	{
+		"category": "Studio Ghibli",
+		"title": "Howls Moving Castle",
+		"food": "Bacon and Eggs (Family Breakfast)",
+		"description": "Yummy big breakfast",
+		"ingredients": "Bacon, Eggs, Bread, Cheese",
+		"time": "20 minutes"
+	},
+	{
+		"category": "Studio Ghibli",
+		"title": "Harry Potter",
+		"food": "Sophie's Tea",
+		"description": "For the flower loving hat shop proprietess with a big heart to steal-- piping hot hibiscus tea. If you need to loosen up as much as Sophie does, let your hair down and add a little Japanese whiskey.",
+		"ingredients": "1 cup water, 1 hibiscus tea bag, 1 piece ginger root, 2 tsp honey, japanese whiskey",
+		"time": "10 minutes"
+	},
+	{
+		"category": "James & the Giant Peach",
+		"title": "James & the Giant Peach",
+		"food": "Peach",
+		"description": "For a hot day",
+		"ingredients": "1 single peach",
+		"time": "1 minute"
+	}
+]

@@ -1,6 +1,7 @@
 const client = require('./client');
 const uuid = require('uuid');
 const {recipes} = require('data.js');
+const data = require('data.json')
 
 //drop all tables if any exist 
 const dropTables = async() => {

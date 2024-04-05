@@ -1,8 +1,8 @@
 {
 	"scripts": {
-		"start-dev": "nodemon server/index.js",
+		"start-dev": "NODE_ENV=development nodemon server/index.js",
 		"start": "node server/index.js",
-		"seed-dev": "nodemon ./db/seed.js",
+		"seed-dev": "NODE_ENV=development nodemon ./db/seed.js",
 		"seed": "node ./db/seed.js"
 	},
 	"dependencies": {
@@ -15,9 +15,6 @@
 		"morgan": "^1.10.0",
 		"nodemon": "^3.1.0",
 		"pg": "^8.11.5",
-		"react": "^18.2.0",
-		"react-dom": "^18.2.0",
-		"react-router-dom": "^6.22.3",
 		"uuid": "^9.0.1"
 	}
 }
