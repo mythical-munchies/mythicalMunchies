@@ -1,4 +1,5 @@
 import React from "react";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Link } from "react-router-dom";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
@@ -9,77 +10,80 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import "./styles/Footer.css";
 
+// Easy workaround from MUI's default color scheme
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#4A0260",
+    },
+  },
+});
+
 const Footer = () => {
   return (
-    <AppBar position="static" className="footer">
-      <Container maxWidth="md">
-        <Toolbar className="footer-content">
-          <div className="column">
-            <Typography className="heading">Customer Care</Typography>
-            <Typography className="link">
-              <Link to="/contact">Contact Us</Link>
-            </Typography>
-            <Typography className="link">
-              <Link to="#">FAQs</Link>
-            </Typography>
-            <Typography className="link">
-              <Link to="#">Privacy Policy</Link>
-            </Typography>
-          </div>
-          <div className="column">
-            <Typography className="heading">My Account</Typography>
-            <Typography className="link">
-              <Link to="#">Login/Register</Link>
-            </Typography>
-            <Typography className="link">
-              <Link to="#">Favorites</Link>
-            </Typography>
-            <Typography className="link">
-              <Link to="#">Contribute</Link>
-            </Typography>
-          </div>
-          <div className="column">
-            <Typography className="heading">Top Searches</Typography>
-            <Typography className="link">
-              <Link to="#">Potter World</Link>
-            </Typography>
-            <Typography className="link">
-              <Link to="#">Stardew</Link>
-            </Typography>
-            <Typography className="link">
-              <Link to="#">Zelda </Link>
-            </Typography>
-            <Typography className="link">
-              <Link to="#">Dune</Link>
-            </Typography>
-          </div>
-        </Toolbar>
+    <ThemeProvider theme={theme}>
+      <AppBar position="static" className="footer">
+        <Container>
+          <Toolbar className="footer-content">
+            <div className="column">
+              <h1>Customer Care</h1>
+              <Typography className="link">
+                <Link to="/contact">Contact Us</Link>
+              </Typography>
+              <Typography className="link">
+                <Link to="#">FAQs</Link>
+              </Typography>
+              <Typography className="link">
+                <Link to="#">Privacy Policy</Link>
+              </Typography>
+            </div>
+            <div className="column">
+              <h1>My Account</h1>
+              <Typography className="link">
+                <Link to="#">Login/Register</Link>
+              </Typography>
+              <Typography className="link">
+                <Link to="#">Favorites</Link>
+              </Typography>
+              <Typography className="link">
+                <Link to="#">Add a Recipe</Link>
+              </Typography>
+            </div>
+            <div className="column">
+              <h1>Top Searches</h1>
+              <Typography className="link">
+                <Link to="#">Potter World</Link>
+              </Typography>
+              <Typography className="link">
+                <Link to="#">Stardew</Link>
+              </Typography>
+              <Typography className="link">
+                <Link to="#">Zelda </Link>
+              </Typography>
+            </div>
+          </Toolbar>
+          <br></br>
+          <br></br>
+          <hr></hr>
+          <br></br>
 
-        <Typography
-          variant="body2"
-          color="inherit"
-          align="center"
-          className="company-link"
-        >
-          <Link to="/">Mythical Munchies</Link>
-        </Typography>
-        <div className="social">
-          <IconButton color="inherit">
-            <FacebookIcon />
-          </IconButton>
-          <IconButton color="inherit">
-            <TwitterIcon />
-          </IconButton>
-          <IconButton color="inherit">
-            <InstagramIcon />
-          </IconButton>
-        </div>
-        <hr></hr>
-        <Typography align="center" className="footer-copyright">
-          &#169; 2024 Mythical Munchies. All rights reserved.
-        </Typography>
-      </Container>
-    </AppBar>
+          <Typography align="center" className="footer-copyright">
+            &#169; 2024 Mythical Munchies. All rights reserved.
+          </Typography>
+          <div className="social">
+            <IconButton color="inherit">
+              <FacebookIcon />
+            </IconButton>
+            <IconButton color="inherit">
+              <TwitterIcon />
+            </IconButton>
+            <IconButton color="inherit">
+              <InstagramIcon />
+            </IconButton>
+          </div>
+        </Container>
+      </AppBar>
+    </ThemeProvider>
   );
 };
 
