@@ -9,7 +9,7 @@
 }
 
 body {
-  background-image: url("client/components/images/background1.jpg");
+  background-image: url("src/components/images/background1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -17,7 +17,7 @@ body {
 }
 
 .persistent-header {
-  background-image: url("client/components/images/plant.png");
+  background-image: url("src/components/images/plant.png");
   background-size: 350px;
   background-color: #bcc6d1e5;
   box-shadow: 2px 2px 25px yellow;
