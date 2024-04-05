@@ -68,8 +68,7 @@ Our objective for Mythical Munchies is to have a fully developed fullstack appli
     -EX: Comment: ‘Frothy and golden appearance with a creamy head. Mildly intoxicating and warming sensation. Aroma of butterscotch and warm spices. Sweet and buttery flavor with hints of vanilla and caramel.’
 
 
-Design 
-Font: Almendra
+
 
 
 ## Technologies
@@ -84,6 +83,9 @@ Font: Almendra
 - BCrypt => Encrypts sensitive passwords
 - EmailJS => Utilized for seamless form submission functionality.
 
+## Design 
+Font: Almendra
 
 
+## May the Phoenix of Infinite Gratitude swoop down upon you, sprinkling its golden feathers of appreciation and filling your mythical munchies vault with an abundance of ambrosial delights! Thank you for journeying through the enchanted realms of literature with us. 📚🔮✨
 
