@@ -10,7 +10,8 @@ function Dessert() {
     </h1>
 
     <p className="dessert-p">🎂Craving something sweet? Try out these tasty pastries for a boost of mystical powers🦄 </p>
-
+    
+    <p>🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂</p>
     <hr className="dessert-hr"/>
 
     {/* map over all recipes with dessert tag and display like all other recipes */}
