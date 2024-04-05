@@ -6,10 +6,10 @@ Prepare to embark on a fantastical culinary adventure through the realms of fict
 
 ## Developed by
 
-- Eleni Papadatos
-- Lucas Barrs
-- Samantha Lugtu
-- Simone LaPray
+- Eleni Papadatos (EleniP94 https://github.com/orgs/mythical-munchies/people/EleniP94)
+- Lucas Barrs (Lucas-Barrs https://github.com/Lucas-Barrs)
+- Samantha Lugtu (SammyLug https://github.com/SammyLug)
+- Simone LaPray (Simkaleo https://github.com/orgs/mythical-munchies/people/Simkaleo)
 
 ## Objective
 
@@ -74,7 +74,7 @@ Elevate your culinary adventures with star-studded ratings and optional comments
 
 Get ready to sprinkle some magic into your kitchen and unleash the culinary wizard within! Welcome to Mythical Munchies, where every recipe is a journey into the realms of imagination and flavor. 🌟🍴📚
 
-## Technologies
+## Technologies 🛠️
 
 - React => JS Web Framework
 - Redux => State management tool for React
@@ -87,7 +87,7 @@ Get ready to sprinkle some magic into your kitchen and unleash the culinary wiza
 - BCrypt => Encrypts sensitive passwords
 - EmailJS => Utilized for seamless form submission functionality.
 
-## Design
+## Design 🎨
 
 Font: Almendra
 
