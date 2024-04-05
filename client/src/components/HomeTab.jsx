@@ -96,12 +96,14 @@ function HomeTab() {
             <h5 className="our-story">Our Story</h5>
             <h6 className="special-bottom-text">Once Upon A Time...</h6>
             <h5 className="bottom-text">
-              Mythical Munchies came to life .... Lorem ipsum dolor, sit amet
-              consectetur adipisicing elit. Atque ullam iusto doloribus hic ea
-              reprehenderit minima nesciunt doloremque consectetur non amet,
-              nihil distinctio quibusdillo? Eveniet adipisci optio dolorem autem
-              error voluptate velit fuga, pariatur quo saepe id aspernatur
-              cumque consequatur repudiandae quam hic. <br />
+              Once upon a time, where marshmallow clouds floated amidst rivers
+              of chocolate and mountains of cheese stood tall, Mythical Munchies
+              came to life. Legend has it that it all began when a group of
+              food-loving computer wizards gathered around a bubbling Zoom meeting link. And thus, with a
+              sprinkle of imagination and a dash of culinary prowess, Mythical
+              Munchies was born. So grab your fork and join us on this
+              epic adventure, where every bite is a chapter in the
+              story of deliciousness! 🍔🧙‍♂️✨ <br />
             </h5>
           </div>
         </div>
