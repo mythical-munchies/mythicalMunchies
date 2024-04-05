@@ -89,4 +89,5 @@ Get ready to sprinkle some magic into your kitchen and unleash the culinary wiza
 
 Font: Almendra
 
-### May the Gryphon of Infinite Gratitude swoop down upon you, sprinkling its golden feathers of appreciation and filling your mythical munchies vault with an abundance of ambrosial delights! Thank you for journeying through the enchanted realms of literature and film with us. 📚🔮✨
+## Thanks 🙏
+May the Gryphon of Infinite Gratitude swoop down upon you, sprinkling its golden feathers of appreciation and filling your mythical munchies vault with an abundance of ambrosial delights! Thank you for journeying through the enchanted realms of literature and film with us. 📚🔮✨
