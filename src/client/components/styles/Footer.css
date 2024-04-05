@@ -1,5 +1,5 @@
 .footer {
-  background-color: #4a0260bf;
+  background: #4a0260bf;
 }
 
 .links {
@@ -10,7 +10,7 @@
 .footer-link {
   margin-bottom: 10px;
   color: white;
-  font-family: Almendra;
+  font-family: "Almendra", serif;
 }
 
 .footer-link a {
@@ -22,10 +22,10 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  align-items: right;
+  align-items: flex-end;
   flex-grow: 1;
 }
 
-.social-icons button
+.social-icons button {
   margin-left: 10px;
 }
