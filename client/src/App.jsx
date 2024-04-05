@@ -1,35 +1,44 @@
-import './App.css';
-import { Route, Routes } from 'react-router-dom';
-import AccountTab from './components/AccountTab'
-import Nav from './components/Nav';
-import ContactTab from './components/ContactTab';
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import AccountTab from "./components/AccountTab";
+import Nav from "./components/Nav";
+import ContactTab from "./components/ContactTab";
 // import RecipesTab from './components/RecipesTab'
-import HomeTab from './components/HomeTab';
-import SearchBar from './components/SearchBar';
-import CategoryData from './Data.json';
-import Worlds from './components/Worlds';
-import SingleWorld from './components/SingleWorld';
-import SingleRecipe from './components/SingleRecipe';
-// import Login from './components/Login'
-import Logo from './components/icons/cauldronyellow.png';
+import HomeTab from "./components/HomeTab";
+import SearchBar from "./components/SearchBar";
+import CategoryData from "./Data.json";
+import Worlds from "./components/Worlds";
+import SingleWorld from "./components/SingleWorld";
+import SingleRecipe from "./components/SingleRecipe";
+import Login from './components/Login'
+import Logo from "./components/icons/cauldronyellow.png";
 // import Test from './client/components/Test'
+// <<<<<<< cake
 import DogWarts from './components/DogWarts';
 import BottomsUp from './components/BottomsUp';
 import Dessert from './components/Dessert';
 import Vegetables from './components/Vegetables';
+// =======
+// import DogWarts from "./components/DogWarts";
+// import BottomsUp from './components/BottomsUp';
+// import Dessert from "./components/Dessert";
+// import Vegetables from './components/Vegetables';
+import Footer from "./components/Footer";
+// >>>>>>> main
 
 function App() {
-	return (
-		<>
-			<div className='persistent-header'>
-				<div className='logo-title'>
-					<h2>
-						<img id='logo-image' src={Logo}></img>Mythical Munchies
-					</h2>
-				</div>
-				<SearchBar placeholder='Explore Worlds...' data={CategoryData} />
-				{/* <Login /> */}
-			</div>
+  return (
+    <>
+      <div className="persistent-header">
+        <div className="logo-title">
+          <h2>
+            <img id="logo-image" src={Logo}></img>Mythical Munchies
+          </h2>
+        </div>
+        <SearchBar placeholder="Explore Worlds..." data={CategoryData} />
+        {/* <Login /> */}
+      </div>
+
 
 			<Nav />
 			<Routes>
@@ -45,11 +54,13 @@ function App() {
 				<Route path='/desserts' element={<Dessert />} />
 				<Route path='/veggie-gardens' element={<Vegetables />} />
 
-				{/* <Route path="/test" element={<Test/>}/> */}
-				{/* <Route path="/my-reviews" element={<MyReviews/>}/> */}
-			</Routes>
-		</>
-	);
+
+        {/* <Route path="/test" element={<Test/>}/> */}
+        {/* <Route path="/my-reviews" element={<MyReviews/>}/> */}
+      </Routes>
+      <Footer />
+    </>
+  );
 }
 
 export default App;
