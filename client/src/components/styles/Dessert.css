@@ -12,9 +12,12 @@
   padding-top: 50px;
   text-align: left;
   margin-left: 50px;
+  color: antiquewhite;
+  font-family: "Almendra", sans-serif;
 }
 
 .dessert-p {
+  font-family: "Almendra", sans-serif;
   font-size: 25px;
   text-align: center;
   margin-top: 30px;
@@ -51,6 +54,7 @@
   text-align: left;
   margin-left: 0px;
   font-size: 50px;
+  font-family: "Almendra", sans-serif;
 }
 
 .dessert-world {
@@ -59,6 +63,7 @@
   text-decoration: underline;
   text-decoration-thickness:1px;
   margin-left: 5px;
+  font-family: "Almendra", sans-serif;
 }
 
 .dessert-text {
@@ -66,6 +71,7 @@
   margin-left: 20px;
   line-height: 25px;
   margin-top: 100px;
+  font-family: "Almendra", sans-serif;
 }
 
 .dessert-button {
@@ -86,5 +92,6 @@
   width: 1500px;
   margin: auto;
   margin-top: 60px;
-  border: 1px solid purple;
+  border: 8px dashed lightseagreen;
+ 
 }
