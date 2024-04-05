@@ -28,7 +28,7 @@ router.post('/login', async (req, res, next) => {
   }
 });
 
-router.post('/register', async (req, res, next) => {
+router.post('/signup', async (req, res, next) => {
   try {
     await createUser(req.body)
     const token = await authenticate(req.body)

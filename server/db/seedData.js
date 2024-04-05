@@ -1,5 +1,6 @@
-const client = require('./client')
+const client = require('./client');
 const uuid = require('uuid');
+const {recipes} = require('data.js');
 
 //drop all tables if any exist 
 const dropTables = async() => {
@@ -22,7 +23,8 @@ const createTables = async() => {
   const SQL = `
     CREATE TABLE worlds(
       id UUID PRIMARY KEY,
-      name VARCHAR(100) NOT NULL UNIQUE
+      name VARCHAR(100) NOT NULL UNIQUE,
+      img_url VARCHAR(500)
     );
     CREATE TABLE users(
       id UUID PRIMARY KEY,
@@ -30,31 +32,18 @@ const createTables = async() => {
       password VARCHAR(50) NOT NULL,
       email VARCHAR(255) NOT NULL UNIQUE
     );
-    CREATE TABLE allergens(
-      id UUID PRIMARY KEY,
-      name VARCHAR(255) NOT NULL UNIQUE
-    );
     CREATE TABLE ingredients(
       id UUID PRIMARY KEY,
       name VARCHAR(255) NOT NULL UNIQUE,
       description TEXT
-    );
-    CREATE TABLE ingredient_allergen(
-      id UUID PRIMARY KEY,
-      ingredient_id UUID REFERENCES ingredients(id) NOT NULL,
-      allergen_is UUID REFERENCES allergens(id)
     );
     CREATE TABLE recipes(
       id UUID PRIMARY KEY,
       name VARCHAR(255) NOT NULL UNIQUE,
       description TEXT,
       world_id UUID REFERENCES worlds(id) NOT NULL,
-      user_id UUID REFERENCES users(id) 
-    );
-    CREATE TABLE image_url(
-      id UUID PRIMARY KEY,
-      url TEXT,
-      recipe_id UUID REFERENCES recipes(id) NOT NULL
+      user_id UUID REFERENCES users(id),
+      img_url VARCHAR(500)
     );
     CREATE TABLE recipe_ingredient(
       id UUID PRIMARY KEY,
@@ -74,12 +63,21 @@ const createTables = async() => {
   await client.query(SQL);
 }
 
+const seedUsers = async () => {
+  // let SQL = ``
+  // let userCount = 0
+  for (let i =0; i < users.length; i++){
+    createUser(users[i])
+  }
+}
+
 async function rebuild() {
   try {
       await client.connect()
       await dropTables()
       await createTables()
       // await createInitialData()
+      //await seedUsers
   } catch (error) {
       console.log(error.message)
   }
