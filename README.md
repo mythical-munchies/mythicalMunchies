@@ -1,8 +1,22 @@
 # Mythical Munchies
 
+## Capstone Project 
+
+## Developed by 
+  - Eleni Papadatos
+  - Lucas Barrs
+  - Samantha Lugtu
+  - Simone LaPray
+
+
 ## Objective
 
 Our objective for Mythical Munchies is to have a fully developed fullstack application where all users can view recipes from various fictional worlds. As an account holder, you have the benefit of saving your favorite recipes to your profile, as well as leaving reviews for recipes which all users can see. Each recipe card includes ingredients, special properties, and cooking instructions to achieve your desired mythical munchie.
+
+
+
+
+
 
 ### Main Functionality
 
@@ -57,6 +71,6 @@ Our objective for Mythical Munchies is to have a fully developed fullstack appli
 Design 
 Font: Almendra
 
-Tech Stack
+
 
  -[EmailJS ](https://www.emailjs.com/) used for form submission.
