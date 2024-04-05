@@ -1,20 +1,13 @@
-/* .whole-page {
-  margin-top: 30px;
-  background-color: #E2D5B0;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  border-radius: 20px;
-} */
-
 .goldy-background {
   position: relative;
   width: 100%;
   height: auto;
   background-color: #e2d5b0;
   border-radius: 20px;
- 
+  margin-top: 20px;
 }
+
+
 
 .back-button-recipe {
   position: absolute;
@@ -29,114 +22,176 @@
   color: #000000;
 }
 
-
-.recipe-world-title {
-  font-size: 55px;
-  color: #4a0260;
+.testingtons {
+  background-color: #e2d5b0;
+  border-radius: 20px;
+  height: auto;
 }
 
-.button-container {
-  margin-top: 10px;
+.title {
+  padding-top: 50px;
+  color: #4a0260;
+  text-shadow: 1px 1px 1px orange;
 }
 
 .bookmark {
-  padding: 5px;
-  font-size: 10px;
-  justify-content: left;
-}
-
-
-.title-container {
-  margin-top: 20px;
-}
-
-.recipe-image-container {
-  margin-top: 10px;
-}
-
-.recipe-test-image {
-  height: 45px;
-  width: 45px;
-  margin-top: 10px;
-}
-
-.ratings {
+  padding: 2px;
+  background-color: #e2d5b0;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: "Almendra", sans-serif;
+  width: 220px;
+  /* why is the buttont two different colors */
+  border-color: darkred;
+  margin-top: 100px;
+  letter-spacing: 2px;
   display: flex;
-  justify-content: center;
-  height: 30px;
+  justify-content: left;
+  text-align: center;
+  padding-left: 10px;
+}
+
+.bookmark-button {
+text-decoration: none;
+padding-left: 10px;
+width: 220px;
+}
+
+
+.intro {
+  margin-top: -50px;
+  margin-left: 200px;
+}
+
+.recipe-name {
+  margin-top: 10px;
+  font-size: 40px;
+  font-family: "Almendra", sans-serif;
+  font-weight: normal;
+  color: yellow;
+  text-shadow: 2px 2px 1px darkblue;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.pic {
+  margin-top: 20px;
+  border-radius: 20px;
+  height: 400px;
+  width: 550px;
+  display: flex;
+  image-resolution: from-image 300dpi;
+  justify-content: left;
+  box-shadow: 1px 1px 2px gray;
 }
 
 .review-button {
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
-
-.ingredients-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-}
-
-.ingredients-post {
-  background-image: url(https://media.istockphoto.com/id/1330219242/vector/empty-blank-golden-white-coloured-grunge-crumpled-crushed-paper-horizontal-vector.jpg?s=612x612&w=0&k=20&c=E7-fWvRx9pILGOScceur2WV8F8yKyFprVq3YiMFQHsw=);
-  border-radius: 20px;
-  width: 300px;
-  box-shadow: 1px 1px 2px black;
-  text-align: left;
-}
-.ingredients-title {
-  text-align: center;
+  color: darkblue;
+  font-family: "Almendra", sans-serif;
+  text-decoration: none;
+  word-spacing: 5px;
+  font-size: 25px;
   margin-top: 10px;
-  margin-bottom: 5px;
-}
-
-.ingredient-list {
-  margin-left: 30px;
-  padding-bottom: 20px;
-}
-
-.instructions-container {
-  margin-top: 20px;
+  margin-left: 0px;
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  letter-spacing: 1px;
+}
+
+.review-button:hover {
+  color: darkblue;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+.cooking-title {
+  margin-top: 80px;
+  color: orange;
+  text-shadow: 1px 1px 1px red;
+  margin-bottom: 30px;
+  font-weight: 100;
+
 }
 
 .instructions {
-  width: 500px;
+  margin-left: 200px;
+  margin-top: 50px;
+  font-family: "Almendra", sans-serif;
+  font-size: 22px;
+  width: 1200px;
+  text-align: left;
 }
 
-.review-title {
-  display: flex;
-  justify-content: center;
-}
-
-.reviews-container {
+.ingredients-title {
+  text-align: center;
   margin-top: 40px;
-  display: flex;
-  justify-content: center;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
 }
 
+.recipe-hr {
+  width: 1200px;
+  margin: auto;
+  margin-top: 50px;
+  border: 1px solid gray;
+  
+}
 
-.review-box {
-  background-color: whitesmoke;
-  box-shadow: 1px 1px 2px black;
-  border-radius: 10px;
-  width: 800px;
-  height: 150px;
-  margin-top: 40px;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 100px;
+/* LOOK INTO HIDING OVERFLOW EVENTUALLY */
+.ingredients-post {
+  background-image: url(https://media.istockphoto.com/id/1330219242/vector/empty-blank-golden-white-coloured-grunge-crumpled-crushed-paper-horizontal-vector.jpg?s=612x612&w=0&k=20&c=E7-fWvRx9pILGOScceur2WV8F8yKyFprVq3YiMFQHsw=);
+  border-radius: 20px;
+  width: 550px;
+  box-shadow: 1px 1px 2px gray;
+  text-align: left;
+  margin-top: 60px;
+  margin-left: 20px;
+  font-family: "Almendra", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.ingredients-title {
+  font-weight: 100;
+  font-size: 25px;
+}
+
+.ingredient-list {
+  list-style-type: circle;
+  margin-left: 20px;
 }
 
 .review {
   color: purple;
   font-size: 25px;
   margin-left: 20px;
- margin-top: 10px;
-
+  margin-top: 10px;
 }
 
-.rating-review {
-  margin-top: 300px;
+.review-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 300px;
+}
+
+/* later change height to auto with margins   */
+.review-box {
+  background-color: whitesmoke;
+  box-shadow: 1px 1px 2px black;
+  border-radius: 10px;
+  width: 1000px;
+  height: 150px;
+  margin-top: 40px;
+
+  margin-bottom: 100px;
+}
+
+.review-title {
+  margin-top: 30px;
+  letter-spacing: 2px;
+  font-family: "Almendra", sans-serif;
+  font-weight: 100;
+  font-size: 30px;
 }

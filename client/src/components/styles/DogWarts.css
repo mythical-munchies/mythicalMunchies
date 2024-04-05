@@ -1,0 +1,140 @@
+
+
+.background-color {
+  background-image: url(https://images8.alphacoders.com/760/760721.png);
+  background-size: cover;
+  background-attachment: fixed;
+  height: auto;
+  border-radius: 20px;
+  margin-top: 30px; 
+  padding-bottom: 100px;
+}
+
+.harry-title {
+  padding-top: 80px;
+  color: goldenrod;
+  text-shadow: 1px 1px 1px yellow;
+  font-size: 65px;
+  text-align: left;
+  margin-left: 50px;
+  letter-spacing: 5px;
+  font-weight: normal;
+  
+}
+
+.tiny-text {
+  font-size: 25px;
+  margin-left: 50px;
+  margin-top: 50px;
+  color: antiquewhite;
+  text-align: left;
+}
+
+.linkys {
+  margin-top: 50px;
+  font-size: 30px;
+  margin-left: 50px;
+  color: antiquewhite;
+  text-align: left;
+}
+
+.doggyPics-top {
+  height: 800px;
+  width: 750px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: left;
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
+.doggyPics { 
+  height: 500px;
+  width: 600px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: left;
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
+.doggyPics-scarf {
+  height: 630px;
+  width: 600px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: left;
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
+.credit-link {
+  color: green;
+}
+
+.dog-hr {
+  width: 1500px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.credits {
+  font-size: 15px;
+  margin-left: 50px;
+  margin-top: 50px;
+  color: gray;
+  text-align: left;
+  width: 800px;
+}
+
+.diy-name {
+  font-size: 45px;
+  color: tan;
+  margin-top: 80px;
+  text-align: left;
+  margin-left: 50px;
+  
+}
+
+.link {
+  color: yellow;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #004268;
+  
+}
+
+.disclaimer {
+  font-size: 18px;
+  color: red;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.dog-ingredients {
+  margin-top: 50px;
+  font-size: 40px;
+  margin-left: 50px;
+  color: green;
+  text-align: left;
+}
+
+.ingredient {
+  letter-spacing: 2px;
+  margin-right: 50px;
+}
+.dog-instructions {
+  font-size: 25px;
+  color: antiquewhite;
+  margin-top: 50px;
+  text-align: left;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.recipe-hr {
+  margin: auto;
+  margin-top: 80px;
+}
