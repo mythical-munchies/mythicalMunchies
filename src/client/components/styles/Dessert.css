@@ -1,0 +1,90 @@
+.dessert-background {
+  background-color: pink;
+  margin-top: 30px;
+  border-radius: 20px;
+  height: auto;
+  padding-bottom: 100px;
+  opacity: 95%;
+}
+
+.page-title {
+  font-size: 60px;
+  padding-top: 50px;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.dessert-p {
+  font-size: 25px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.dessert-hr {
+  width: 1400px;
+  margin: auto;
+  border: 2px solid yellow;
+  margin-top: 50px;
+}
+
+.recipe {
+  display: flex;
+  justify-content: left;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+.dessert-img {
+  height: 500px;
+  width: 500px;
+  border-radius: 20px;
+}
+
+
+.dessert-info {
+  /* background-color: aquamarine; */
+  width: 600px;
+  margin-left: 50px;
+}
+
+.dessert-title {
+  text-align: left;
+  margin-left: 0px;
+  font-size: 50px;
+}
+
+.dessert-world {
+  margin-top: 10px;
+  color: darkcyan;
+  text-decoration: underline;
+  text-decoration-thickness:1px;
+  margin-left: 5px;
+}
+
+.dessert-text {
+  font-size: 25px;
+  margin-left: 20px;
+  line-height: 25px;
+  margin-top: 100px;
+}
+
+.dessert-button {
+  display: flex;
+  font-family: "Almendra", sans-serif;
+  background-color: antiquewhite;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-left: 25px;
+  width: 220px;
+  font-size: 18px;
+  padding: 5px;
+  
+}
+
+.recipe-hr-dessert {
+ 
+  width: 1500px;
+  margin: auto;
+  margin-top: 60px;
+  border: 1px solid purple;
+}

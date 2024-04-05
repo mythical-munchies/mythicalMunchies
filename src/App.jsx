@@ -14,8 +14,9 @@ import SingleRecipe from './client/components/SingleRecipe'
 import Logo from './client/components/icons/cauldronyellow.png'
 // import Test from './client/components/Test'
 import DogWarts from './client/components/DogWarts'
-
-
+import BottomsUp from './client/components/BottomsUp'
+import Dessert from './client/components/Dessert'
+import Vegetables from './client/components/Vegetables'
 
 
 
@@ -40,6 +41,10 @@ function App() {
       <Route path="/single-world" element={<SingleWorld/>}/>
       <Route path="/single-recipe" element={<SingleRecipe/>}/>
       <Route path="/dogwarts" element={<DogWarts/>}/>
+      <Route path="/bottoms-up" element={<BottomsUp/>}/>
+      <Route path="/desserts" element={<Dessert/>}/>
+      <Route path="/veggie-gardens" element={<Vegetables/>}/>
+    
       {/* <Route path="/test" element={<Test/>}/> */}
       {/* <Route path="/my-reviews" element={<MyReviews/>}/> */}
     </Routes>
