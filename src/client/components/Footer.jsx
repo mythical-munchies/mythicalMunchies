@@ -6,65 +6,35 @@ import { Container, IconButton } from "@mui/material";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import "./styles/Footer.css";
 
 const Footer = () => {
   return (
-    <AppBar position="static" style={{ backgroundColor: "#4A0260BF" }}>
+    <AppBar position="static" className="footer">
       <Container maxWidth="md">
         <Toolbar>
-          <Typography variant="body1" color="inherit">
-            <div style={{ display: "flex", flexDirection: "column" }}>
-              <Typography
-                variant="body1"
-                color="inherit"
-                style={{
-                  marginBottom: "10px",
-                  color: "white",
-                  fontFamily: "Almendra",
-                }}
-              >
-                <a href="#" style={{ color: "white", textDecoration: "none" }}>
-                  Login/Register
-                </a>
-              </Typography>
-              <Typography
-                variant="body1"
-                color="inherit"
-                style={{
-                  marginBottom: "10px",
-                  color: "white",
-                  fontFamily: "Almendra",
-                }}
-              >
-                <a href="#" style={{ color: "white", textDecoration: "none" }}>
-                  Worlds
-                </a>
-              </Typography>
-              <Typography
-                variant="body1"
-                color="inherit"
-                style={{
-                  marginBottom: "10px",
-                  color: "white",
-                  fontFamily: "Almendra",
-                }}
-              >
-                <a href="#" style={{ color: "white", textDecoration: "none" }}>
-                  Contact
-                </a>
-              </Typography>
-            </div>
-          </Typography>
-
-          <IconButton color="inherit">
-            <FacebookIcon />
-          </IconButton>
-          <IconButton color="inherit">
-            <TwitterIcon />
-          </IconButton>
-          <IconButton color="inherit">
-            <InstagramIcon />
-          </IconButton>
+          <div className="links">
+            <Typography variant="body1" color="inherit" className="footer-link">
+              <a href="#">Login/Register</a>
+            </Typography>
+            <Typography variant="body1" color="inherit" className="footer-link">
+              <a href="#">Worlds</a>
+            </Typography>
+            <Typography variant="body1" color="inherit" className="footer-link">
+              <a href="#">Contact</a>
+            </Typography>
+          </div>
+          <div className="social-icons">
+            <IconButton color="inherit">
+              <FacebookIcon />
+            </IconButton>
+            <IconButton color="inherit">
+              <TwitterIcon />
+            </IconButton>
+            <IconButton color="inherit">
+              <InstagramIcon />
+            </IconButton>
+          </div>
         </Toolbar>
       </Container>
     </AppBar>
