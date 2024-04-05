@@ -70,6 +70,7 @@ function HomeTab() {
               <img
                 className="image-test"
                 src={Veggies}
+                // src="https://s41230.pcdn.co/wp-content/uploads/2020/04/vegan-plant-based-news-paul-mccartney-simpsons-livekindly.png"
                 alt="peach-buns"
                 title="Click here for vegetarian and vegan recipes!"
               />
