@@ -1,6 +1,6 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import AccountTab from './components/AccountTab';
+import AccountTab from './components/AccountTab'
 import Nav from './components/Nav';
 import ContactTab from './components/ContactTab';
 // import RecipesTab from './components/RecipesTab'
@@ -12,6 +12,11 @@ import SingleWorld from './components/SingleWorld';
 import SingleRecipe from './components/SingleRecipe';
 // import Login from './components/Login'
 import Logo from './components/icons/cauldronyellow.png';
+// import Test from './client/components/Test'
+import DogWarts from './components/DogWarts';
+// import BottomsUp from './components/BottomsUp';
+import Dessert from './components/Dessert';
+// import Vegetables from './components/Vegetables';
 
 function App() {
 	return (
@@ -35,6 +40,12 @@ function App() {
 				<Route path='/account' element={<AccountTab />} />
 				<Route path='/single-world' element={<SingleWorld />} />
 				<Route path='/single-recipe' element={<SingleRecipe />} />
+				<Route path='/dogwarts' element={<DogWarts />} />
+				{/* <Route path='/bottoms-up' element={<BottomsUp />} /> */}
+				<Route path='/desserts' element={<Dessert />} />
+				{/* <Route path='/veggie-gardens' element={<Vegetables />} /> */}
+
+				{/* <Route path="/test" element={<Test/>}/> */}
 				{/* <Route path="/my-reviews" element={<MyReviews/>}/> */}
 			</Routes>
 		</>

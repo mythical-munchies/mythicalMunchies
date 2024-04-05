@@ -4,7 +4,7 @@ import "./styles/AccountTab.css"
 import Login from "./Login";
 
 // STRETCH GOAL TO CREATE ROUTE PATH TO MODAL
-const Account = ({ authenticate })=> {
+const AccountTab = ({ authenticate })=> {
   const [accountData, setAccountData] = useState({
     first: "",
     last: "",
@@ -42,4 +42,4 @@ const Account = ({ authenticate })=> {
     );
 };
 
-export default Account
+export default AccountTab
