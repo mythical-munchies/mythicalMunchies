@@ -2,9 +2,7 @@
 
 Prepare to embark on a fantastical culinary adventure through the realms of fiction and fantasy! With our enchanted app, you'll journey through a myriad of fictional worlds, indulging in delectable recipes straight from the pages of your favorite tales.
 
-## Capstone Project
-
-## Developed by
+## Capstone Project Developed By
 
 - Eleni Papadatos (EleniP94 https://github.com/orgs/mythical-munchies/people/EleniP94)
 - Lucas Barrs (Lucas-Barrs https://github.com/Lucas-Barrs)
