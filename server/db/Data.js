@@ -1,4 +1,4 @@
-[
+const recipes =[
   {
     "category": "Studio Ghibli",
     "title":"BeetleJuice", 
@@ -40,3 +40,5 @@
     "time":"1 minute"
   }
 ]
+
+module.exports = {recipes, users, worlds}
