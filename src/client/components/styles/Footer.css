@@ -1,13 +1,38 @@
 .footer {
-  background: #4a0260bf;
+  color: #4a0260bf;
 }
 
-.links {
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.column {
   display: flex;
   flex-direction: column;
 }
 
-.footer-link {
+.column:not(:last-child) {
+  margin-right: 20px;
+}
+
+.social {
+  flex: 1;
+}
+
+.heading {
+  margin-bottom: 10px;
+
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  font-family: "Almendra", serif;
+}
+
+.link {
+  font-size: 16px;
   margin-bottom: 10px;
   color: white;
   font-family: "Almendra", serif;
@@ -18,14 +43,12 @@
   text-decoration: none;
 }
 
-.social-icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-end;
-  flex-grow: 1;
+.company {
+  font-size: 40px;
+  text-decoration: none;
 }
 
-.social-icons button {
-  margin-left: 10px;
+.footer-copyright {
+  margin-top: 20px;
+  color: white;
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
@@ -6,46 +7,76 @@ import { Container, IconButton } from "@mui/material";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import { YouTube } from "@mui/icons-material";
 import "./styles/Footer.css";
 
 const Footer = () => {
   return (
     <AppBar position="static" className="footer">
       <Container maxWidth="md">
-        <Toolbar>
-          <div className="links">
-            <Typography variant="body1" color="inherit" className="footer-link">
-              <h1>Mythical Munchies</h1>
-              <a href="account">Login/Register</a>
+        <Toolbar className="footer-content">
+          <div className="column">
+            <Typography className="heading">Customer Care</Typography>
+            <Typography className="link">
+              <Link to="/contact">Contact Us</Link>
             </Typography>
-            <Typography variant="body1" color="inherit" className="footer-link">
-              <a href="/worlds">Worlds</a>
+            <Typography className="link">
+              <Link to="#">FAQs</Link>
             </Typography>
-            <Typography variant="body1" color="inherit" className="footer-link">
-              <a href="/contact">Contact</a>
+            <Typography className="link">
+              <Link to="#">Privacy Policy</Link>
             </Typography>
           </div>
-          <div className="social-icons">
-            <IconButton color="inherit">
-              <FacebookIcon />
-            </IconButton>
-            <IconButton color="inherit">
-              <TwitterIcon />
-            </IconButton>
-            <IconButton color="inherit">
-              <InstagramIcon />
-            </IconButton>
+          <div className="column">
+            <Typography className="heading">My Account</Typography>
+            <Typography className="link">
+              <Link to="#">Login/Register</Link>
+            </Typography>
+            <Typography className="link">
+              <Link to="#">Favorites</Link>
+            </Typography>
+            <Typography className="link">
+              <Link to="#">Contribute</Link>
+            </Typography>
           </div>
-          <div></div>
+          <div className="column">
+            <Typography className="heading">Top Searches</Typography>
+            <Typography className="link">
+              <Link to="#">Potter World</Link>
+            </Typography>
+            <Typography className="link">
+              <Link to="#">Stardew</Link>
+            </Typography>
+            <Typography className="link">
+              <Link to="#">Zelda </Link>
+            </Typography>
+            <Typography className="link">
+              <Link to="#">Dune</Link>
+            </Typography>
+          </div>
         </Toolbar>
+
         <Typography
           variant="body2"
           color="inherit"
           align="center"
-          style={{ marginTop: "20px", color: "white" }}
+          className="company-link"
         >
-          <span>&#169; 2024 Mythical Munchies. All Rights Reserved.</span>
+          <Link to="/">Mythical Munchies</Link>
+        </Typography>
+        <div className="social">
+          <IconButton color="inherit">
+            <FacebookIcon />
+          </IconButton>
+          <IconButton color="inherit">
+            <TwitterIcon />
+          </IconButton>
+          <IconButton color="inherit">
+            <InstagramIcon />
+          </IconButton>
+        </div>
+        <hr></hr>
+        <Typography align="center" className="footer-copyright">
+          &#169; 2024 Mythical Munchies. All rights reserved.
         </Typography>
       </Container>
     </AppBar>
