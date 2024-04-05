@@ -1,5 +1,5 @@
 .dessert-background {
-  background-color: pink;
+  background-color: #e2d5b0;
   margin-top: 30px;
   border-radius: 20px;
   height: auto;
@@ -7,14 +7,6 @@
   opacity: 95%;
 }
 
-.page-title {
-  font-size: 60px;
-  padding-top: 50px;
-  text-align: left;
-  margin-left: 50px;
-  color: antiquewhite;
-  font-family: "Almendra", sans-serif;
-}
 
 .dessert-p {
   font-family: "Almendra", sans-serif;
@@ -23,10 +15,12 @@
   margin-top: 30px;
 }
 
+
+
 .dessert-hr {
   width: 1400px;
   margin: auto;
-  border: 2px solid yellow;
+  border: 2px solid purple;
   margin-top: 50px;
 }
 

@@ -1,0 +1,143 @@
+.veggie-background {
+  background-color: #e2d5b0;
+  /* background-color: rgb(88, 155, 94); */
+  /* background-image: url(https://s41230.pcdn.co/wp-content/uploads/2020/04/vegan-plant-based-news-paul-mccartney-simpsons-livekindly.png); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-top: 30px;
+  border-radius: 20px;
+  height: auto;
+  padding-bottom: 100px;
+}
+
+.lisa-quote {
+  font-size: 18px;
+  text-align: left;
+  margin-left: 50px;
+  margin-top: 5px;
+  font-family: "Almendra", sans-serif;
+  font-style: italic;
+  color: antiquewhite;
+  text-shadow: 1px 1px 1px gray;
+
+}
+
+.veggie-banner {
+  height: auto;
+  width: 800px;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: left;
+  margin-left: 50px;
+
+}
+
+.page-title {
+  font-size: 65px;
+  padding-top: 50px;
+  text-align: left;
+  margin-left: 50px;
+  color: orange;
+  text-shadow: 1px 1px 1px red;
+  
+}
+
+.veggie-p {
+  font-size: 20px;
+  text-align: left;
+  margin-top: 30px;
+  margin-left: 50px;
+  width: 1400px;
+  color: tomato;
+}
+
+.dessert-hr {
+  width: 1400px;
+  margin: auto;
+  border: 2px solid yellowgreen;
+  margin-top: 50px;
+}
+
+.recipe {
+  display: flex;
+  justify-content: left;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+.dessert-img {
+  height: 400px;
+  width: 400px;
+  border-radius: 20px;
+}
+
+
+.dessert-info {
+  /* background-color: aquamarine; */
+  width: 600px;
+  margin-left: 50px;
+}
+
+.dessert-title {
+  display: flex;
+  text-decoration: none;
+  text-decoration-thickness: 2px;
+  margin-left: 0px;
+  font-size: 45px;
+  font-family: "Almendra", sans-serif;
+  font-weight: normal;
+  color: green;
+}
+
+.dessert-title:hover {
+  color: yellow;
+}
+
+.dessert-world {
+  margin-top: 10px;
+  color: tomato;
+  /* text-decoration: underline; */
+  /* text-decoration-thickness:1px; */
+  margin-left: 5px;
+  font-family: "Almendra", sans-serif;
+  display: flex;
+  text-align: left;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.dessert-world:hover {
+  color: yellow;
+}
+
+.dessert-text {
+  font-size: 20px;
+  margin-left: 50px;
+  line-height: 25px;
+  margin-top: 50px;
+  color: black;
+}
+
+.dessert-button {
+  display: flex;
+  font-family: "Almendra", sans-serif;
+  background-color: antiquewhite;
+  border-radius: 5px;
+  margin-top: 40px;
+  margin-left: 50px;
+  width: 220px;
+  font-size: 18px;
+  padding: 5px;
+  
+}
+
+.recipe-hr-dessert {
+ 
+  width: 1300px;
+  margin: auto;
+  margin-top: 60px;
+  border: 1px solid black;
+}
