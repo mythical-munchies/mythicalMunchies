@@ -12,12 +12,50 @@ const Footer = () => {
     <AppBar position="static" style={{ backgroundColor: "#4A0260BF" }}>
       <Container maxWidth="md">
         <Toolbar>
-    
-
-
           <Typography variant="body1" color="inherit">
-            Your footer content goes here.
+            <div style={{ display: "flex", flexDirection: "column" }}>
+              <Typography
+                variant="body1"
+                color="inherit"
+                style={{
+                  marginBottom: "10px",
+                  color: "white",
+                  fontFamily: "Almendra",
+                }}
+              >
+                <a href="#" style={{ color: "white", textDecoration: "none" }}>
+                  Login/Register
+                </a>
+              </Typography>
+              <Typography
+                variant="body1"
+                color="inherit"
+                style={{
+                  marginBottom: "10px",
+                  color: "white",
+                  fontFamily: "Almendra",
+                }}
+              >
+                <a href="#" style={{ color: "white", textDecoration: "none" }}>
+                  Worlds
+                </a>
+              </Typography>
+              <Typography
+                variant="body1"
+                color="inherit"
+                style={{
+                  marginBottom: "10px",
+                  color: "white",
+                  fontFamily: "Almendra",
+                }}
+              >
+                <a href="#" style={{ color: "white", textDecoration: "none" }}>
+                  Contact
+                </a>
+              </Typography>
+            </div>
           </Typography>
+
           <IconButton color="inherit">
             <FacebookIcon />
           </IconButton>
