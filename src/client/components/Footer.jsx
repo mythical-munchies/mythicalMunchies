@@ -9,9 +9,12 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 
 const Footer = () => {
   return (
-    <AppBar position="static" color="primary">
+    <AppBar position="static" style={{ backgroundColor: "#4A0260BF" }}>
       <Container maxWidth="md">
         <Toolbar>
+    
+
+
           <Typography variant="body1" color="inherit">
             Your footer content goes here.
           </Typography>
