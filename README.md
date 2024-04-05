@@ -49,7 +49,7 @@ Unleash the power of the search bar and filter categories to uncover recipes fro
 - PotterWorld ⚡
 - Star Wars 🌌
 - Dune 🐛
-- Make Room! 🛏️
+- Make Room! 🍵
 - James & the Giant Peach 🍑
 
 ### User Interaction 🌟
