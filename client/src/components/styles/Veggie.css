@@ -18,8 +18,8 @@
   margin-top: 5px;
   font-family: "Almendra", sans-serif;
   font-style: italic;
-  color: antiquewhite;
-  text-shadow: 1px 1px 1px gray;
+  color: black;
+  text-shadow: 1px 1px 1px white;
 
 }
 
@@ -57,7 +57,7 @@
 .dessert-hr {
   width: 1400px;
   margin: auto;
-  border: 2px solid yellowgreen;
+  border: 2px solid darkred;
   margin-top: 50px;
 }
 
@@ -89,7 +89,7 @@
   font-size: 45px;
   font-family: "Almendra", sans-serif;
   font-weight: normal;
-  color: green;
+  color: #004C78;
 }
 
 .dessert-title:hover {
@@ -134,10 +134,24 @@
   
 }
 
+.warning {
+  font-size: 25px;
+}
+
 .recipe-hr-dessert {
  
   width: 1300px;
   margin: auto;
   margin-top: 60px;
-  border: 1px solid black;
+  border: 1px solid antiquewhite;
+}
+
+.drank-disclaimer {
+  text-align: left;
+  font-size: 15px;
+  color: rgb(145, 120, 87);
+  text-shadow: 1px 0px 1px yellow;
+  margin-left: 50px;
+  margin-top: 0px;
+  margin-bottom: 50px;
 }

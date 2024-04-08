@@ -59,7 +59,7 @@
 }
 
 .doggyPics-scarf {
-  height: 630px;
+  height: auto;
   width: 600px;
   border-radius: 10px;
   display: flex;
@@ -115,7 +115,7 @@
 
 .dog-ingredients {
   margin-top: 50px;
-  font-size: 40px;
+  font-size: 35px;
   margin-left: 50px;
   color: green;
   text-align: left;
@@ -124,6 +124,8 @@
 .ingredient {
   letter-spacing: 2px;
   margin-right: 50px;
+  font-size: 25px;
+  font-family: "Almendra", sans-serif;
 }
 .dog-instructions {
   font-size: 25px;
@@ -132,6 +134,7 @@
   text-align: left;
   margin-left: 50px;
   margin-right: 50px;
+  font-family: "Almendra", sans-serif;
 }
 
 .recipe-hr {
