@@ -1,0 +1,46 @@
+.background-gold {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #e2d5b0;
+  border-radius: 20px;
+}
+.back-button {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  font-family: "Almendra", serif;
+  font-size: 20px;
+  padding: 10px 60px;
+  background-color: #fff1a2;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.title {
+  margin-top: 30px;
+  align-items: center;
+}
+
+.policy {
+  text-align: left;
+  color: purple;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  text-align: left;
+  font-size: 14px;
+}
+
+h4 {
+  text-align: left;
+}

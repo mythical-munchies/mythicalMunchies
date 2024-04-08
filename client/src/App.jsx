@@ -17,6 +17,7 @@ import Dessert from "./components/Dessert";
 import Vegetables from "./components/Vegetables";
 import Footer from "./components/Footer";
 import PrivacyPolicy from "./components/PrivacyPolicy";
+import MythicalMunchiesFAQ from "./components/FAQ";
 // >>>>>>> main
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
         <Route path="/bottoms-up" element={<BottomsUp />} />
         <Route path="/desserts" element={<Dessert />} />
         <Route path="/veggie-gardens" element={<Vegetables />} />
+        <Route path="/FAQ" element={<MythicalMunchiesFAQ />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
 
         {/* <Route path="/test" element={<Test/>}/> */}
