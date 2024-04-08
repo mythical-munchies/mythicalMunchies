@@ -72,16 +72,34 @@ const Footer = () => {
           <Typography align="center" className="footer-copyright">
             &#169; 2024 Mythical Munchies. All rights reserved.
           </Typography>
-          <div className="social">
-            <IconButton color="inherit">
-              <FacebookIcon />
-            </IconButton>
-            <IconButton color="inherit">
-              <TwitterIcon />
-            </IconButton>
-            <IconButton color="inherit">
-              <InstagramIcon />
-            </IconButton>
+         <div className="social">
+            <a
+              href="https://www.youtube.com/watch?v=xvFZjo5PgG0&t=3s"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <IconButton color="inherit">
+                <FacebookIcon />
+              </IconButton>
+            </a>
+            <a
+              href="https://www.youtube.com/watch?v=xvFZjo5PgG0&t=3s"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <IconButton color="inherit">
+                <TwitterIcon />
+              </IconButton>
+            </a>
+            <a
+              href="https://www.youtube.com/watch?v=xvFZjo5PgG0&t=3s"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <IconButton color="inherit">
+                <InstagramIcon />
+              </IconButton>
+            </a>
           </div>
         </Container>
       </AppBar>
