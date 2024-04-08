@@ -30,8 +30,8 @@ const createTables = async() => {
     CREATE TABLE users(
       id UUID PRIMARY KEY,
       username VARCHAR(255) NOT NULL UNIQUE,
-      password VARCHAR(50) NOT NULL,
       email VARCHAR(255) NOT NULL UNIQUE
+      password VARCHAR(50) NOT NULL,
     );
     CREATE TABLE ingredients(
       id UUID PRIMARY KEY,
