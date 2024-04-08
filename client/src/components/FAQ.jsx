@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   Accordion,
   AccordionSummary,
@@ -10,14 +11,22 @@ import "./styles/FAQ.css";
 
 const MythicalMunchiesFAQ = () => {
   return (
-    <div>
-      <h2>Mythical Munchies FAQ </h2>
-      <h4>
-        Welcome to Mythical Munchies, where we bring legendary flavors to your
-        plate! Below are some frequently asked questions about our mythical
-        recipes, reviews, and e-commerce adventures. Don't worry, no dragons
-        were harmed in the making of these answers.
-      </h4>
+    <div className="gold-background">
+      <Link to="/" className="back-button">
+        Back
+      </Link>
+
+      <div className="title">
+        <h2>Mythical Munchies FAQ </h2>
+      </div>
+      <div className="sub-text">
+        <h4>
+          Welcome to Mythical Munchies, where we bring legendary flavors to your
+          plate! Below are some frequently asked questions about our mythical
+          recipes, reviews, and e-commerce adventures. Don't worry, no dragons
+          were harmed in the making of these answers.
+        </h4>
+      </div>
       <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -177,13 +186,15 @@ const MythicalMunchiesFAQ = () => {
         </AccordionDetails>
       </Accordion>
       <div>
-        <h4>
-          We hope this FAQ has answered all of your burning questions about
-          Mythical Munchies. If you have any further inquiries, feel free to
-          summon us using the enchanted contact form on our website. Happy
-          munching, and may your meals be as legendary as the creatures that
-          inspire them!
-        </h4>
+        <div>
+          <h4 className="sub-text">
+            We hope this FAQ has answered all of your burning questions about
+            Mythical Munchies. If you have any further inquiries, feel free to
+            summon us using the enchanted contact form on our website. Happy
+            munching, and may your meals be as legendary as the creatures that
+            inspire them!
+          </h4>
+        </div>
       </div>
     </div>
   );
