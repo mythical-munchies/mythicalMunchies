@@ -17,9 +17,8 @@ import Dessert from './components/Dessert';
 import Vegetables from './components/Vegetables';
 import Literature from "./components/Literature";
 import Footer from "./components/Footer";
-
-
-
+import PrivacyPolicy from "./components/PrivacyPolicy";
+import MythicalMunchiesFAQ from "./components/FAQ";
 
 
 function App() {
@@ -34,8 +33,6 @@ function App() {
         <SearchBar placeholder="Explore Worlds..." data={CategoryData} />
         {/* <Login /> */}
       </div>
-
-
 			<Nav />
 			<Routes>
 				<Route path='/' element={<HomeTab />} />
@@ -50,7 +47,8 @@ function App() {
 				<Route path='/desserts' element={<Dessert />} />
 				<Route path='/veggie-gardens' element={<Vegetables />} />
         <Route path='/literature' element={<Literature />} />
-
+        <Route path="/FAQ" element={<MythicalMunchiesFAQ />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
 
 
 

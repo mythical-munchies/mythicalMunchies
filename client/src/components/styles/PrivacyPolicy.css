@@ -1,0 +1,77 @@
+.background-gold {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #e2d5b0;
+  border-radius: 20px;
+}
+.back-button {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  font-family: "Almendra", serif;
+  font-size: 20px;
+  padding: 10px 60px;
+  background-color: #fff1a2;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.title {
+  font-family: "Almendra", serif;
+  font-size: 40px;
+  align-self: center;
+  text-align: center;
+  color: #4a0260;
+  top: 50px;
+  margin-bottom: 10px;
+}
+
+.sub-text {
+  font-family: "Almendra", serif;
+  font-size: 14px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.policy {
+  text-align: left;
+  color: purple;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: "Almendra", serif;
+}
+
+h1 {
+  font-size: 30px;
+  font-family: "Almendra", serif;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: "Almendra", serif;
+}
+
+h3 {
+  text-align: left;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: "Almendra", serif;
+}
+
+h4 {
+  text-align: left;
+  font-family: "Almendra", serif;
+}
+
+li {
+  font-size: 18px;
+  font-family: "Almendra", serif;
+}
