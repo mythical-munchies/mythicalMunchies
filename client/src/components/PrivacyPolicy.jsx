@@ -11,11 +11,11 @@ const PrivacyPolicy = () => {
       <div className="policy">
         <div className="title"> Privacy Policy</div>
         <h2>
-          Welcome to Mythical Munchies, where magic meets mouth-watering meals!
-          At Mythical Munchies, we value your privacy as much as we value our
-          secret recipe for phoenix feather pie. This Privacy Policy outlines
-          how we collect, use, and protect your information while you embark on
-          your culinary adventures with us.
+          Welcome to Mythical Munchies, where magic meets mouth-watering
+          recipes! At Mythical Munchies, we value your privacy as much as we
+          value our secret recipe for "Phoenix Feather Pie." This Privacy Policy
+          outlines how we collect, use, and protect your information while you
+          embark on your culinary adventures with us.
         </h2>
 
         <h3>1. What We Collect</h3>
