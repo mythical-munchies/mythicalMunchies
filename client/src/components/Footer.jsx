@@ -9,6 +9,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import "./styles/Footer.css";
+import MythicalMunchiesFAQ from "./MythicalMunchiesFAQ";
 
 // Easy workaround from MUI's default color scheme
 const theme = createTheme({
@@ -31,7 +32,7 @@ const Footer = () => {
                 <Link to="/contact">Contact Us</Link>
               </Typography>
               <Typography className="link">
-                <Link to="#">FAQs</Link>
+                <Link to="/FAQ">FAQs</Link>
               </Typography>
               <Typography className="link">
                 <Link to="#">Privacy Policy</Link>
