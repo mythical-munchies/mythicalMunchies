@@ -15,8 +15,12 @@ import DogWarts from './components/DogWarts';
 import BottomsUp from './components/BottomsUp';
 import Dessert from './components/Dessert';
 import Vegetables from './components/Vegetables';
+import Literature from "./components/Literature";
 import Footer from "./components/Footer";
-// >>>>>>> main
+
+
+
+
 
 function App() {
   return (
@@ -45,6 +49,9 @@ function App() {
 				<Route path='/bottoms-up' element={<BottomsUp />} />
 				<Route path='/desserts' element={<Dessert />} />
 				<Route path='/veggie-gardens' element={<Vegetables />} />
+        <Route path='/literature' element={<Literature />} />
+
+
 
 
         {/* <Route path="/test" element={<Test/>}/> */}
