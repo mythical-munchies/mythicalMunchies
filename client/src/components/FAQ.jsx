@@ -12,10 +12,9 @@ import "./styles/FAQ.css";
 const MythicalMunchiesFAQ = () => {
   return (
     <div className="gold-background">
-      <Link to="/" className="back-button">
-        Back
-      </Link>
-
+      <div className="back-button">
+        <Link to="/">Back</Link>
+      </div>
       <div className="title">
         <h2>Mythical Munchies FAQ </h2>
       </div>
@@ -27,18 +26,19 @@ const MythicalMunchiesFAQ = () => {
           were harmed in the making of these answers.
         </h4>
       </div>
+
       <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography variant="h6">
-            Q: Are your recipes really inspired by mythical literature and film?
+          <Typography variant="h6" className="h6">
+            Are your recipes really inspired by mythical literature and film?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography variant="h7">
+          <Typography variant="h7" className="h7">
             Absolutely! We take inspiration from creatures of legend to craft
             recipes that are as magical as they are delicious. From unicorn
             cupcakes to dragon-fire chili, our culinary creations are sure to
@@ -59,7 +59,11 @@ const MythicalMunchiesFAQ = () => {
         </AccordionSummary>
         <AccordionDetails>
           <Typography variant="h7">
-            Are the ingredients difficult to find?
+            Not at all! While some of our recipes may call for exotic
+            ingredients like phoenix feathers or mermaid scales, we understand
+            that not everyone has a dragon's hoard of treasures at their
+            disposal. That's why we provide easy-to-follow substitutions for
+            those hard-to-find items.
           </Typography>
         </AccordionDetails>
       </Accordion>
