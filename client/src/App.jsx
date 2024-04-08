@@ -25,8 +25,8 @@ function App() {
   return (
     <>
       <div className="persistent-header">
-        <div className="logo-title">
-          <h2>
+        <div>
+          <h2 className="logo-title">
             <img id="logo-image" src={Logo}></img>Mythical Munchies
           </h2>
         </div>

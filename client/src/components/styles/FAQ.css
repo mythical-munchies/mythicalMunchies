@@ -27,17 +27,19 @@
   align-items: flex-start;
 }
 
-.title {
+.faq-title {
   font-family: "Almendra", serif;
   font-size: 40px;
   align-self: center;
   color: #4a0260;
   top: 50px;
+  padding-top: 30px;
 }
 
 .sub-text {
   font-family: "Almendra", serif;
   font-size: 14px;
+  text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
   margin-left: 10px;

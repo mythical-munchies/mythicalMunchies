@@ -16,16 +16,6 @@ justify-content: center;
     margin-top: 30px;
   }
 
-  .book-page-title {
-    font-size: 65px;
-    padding-top: 50px;
-    text-align: center;
-    margin-left: 50px;
-    color: orange;
-    text-shadow: 1px 1px 1px red;
-  }
-
-
 .book-img {
   height: 350px;
   width: 275px;
@@ -45,10 +35,13 @@ justify-content: center;
   letter-spacing: 1px;
   color: darkred;
   margin-top: 5px;
+  text-align: left;
+  margin-bottom: 0px;
 }
 
 .book-author {
   font-size: 18px;
   font-weight: 100;
   letter-spacing: 1px;
+  margin-top: 0px;
 }

@@ -15,11 +15,11 @@ const MythicalMunchiesFAQ = () => {
       <div className="back-button">
         <Link to="/">Back</Link>
       </div>
-      <div className="title">
-        <h2>Mythical Munchies FAQ </h2>
+      <div >
+        <h2 className="faq-title">Mythical Munchies FAQ </h2>
       </div>
-      <div className="sub-text">
-        <h4>
+      <div>
+        <h4 className="sub-text">
           Welcome to Mythical Munchies, where we bring legendary flavors to your
           plate!<br></br>
           Below are some frequently asked questions about our mythical recipes,

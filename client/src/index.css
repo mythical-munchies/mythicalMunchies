@@ -38,10 +38,12 @@ body {
   font-family: "Almendra", sans-serif;
   color: darkred;
   text-shadow: 3px 4px #FFE449, 5px 5px orange;
-  font-size: 40px;
-  letter-spacing: 1px;
+  font-size: 50px;
+  letter-spacing: 3px;
   text-align: left;
   height: 100px;
+  margin-bottom: -10px;
+  font-weight: bold;
 }
 
 .navs {
