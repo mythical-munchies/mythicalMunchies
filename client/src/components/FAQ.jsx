@@ -11,7 +11,7 @@ import "./styles/FAQ.css";
 
 const MythicalMunchiesFAQ = () => {
   return (
-    <div className="gold-background">
+    <div className="background">
       <div className="back-button">
         <Link to="/">Back</Link>
       </div>
