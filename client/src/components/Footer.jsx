@@ -42,7 +42,7 @@ const Footer = () => {
             <div className="column">
               <h1>My Account</h1>
               <Typography className="link">
-                <Link to="#">Login/Register</Link>
+                <Link to="/account">Login/Register</Link>
               </Typography>
               <Typography className="link">
                 <Link to="#">Favorites</Link>
