@@ -1,9 +1,29 @@
-function Literature() {
+import { mockBooks } from "../BookData";
+import "./styles/Books.css"
+
+
+const Literature = () => {
   return(
     <>
-    <h1>These are all of our books!</h1>
+   
+    <div className="books">
+      {/* <div className="title-box">
+      <h2 className="book-page-title">The BookShelf</h2>
+      </div> */}
+    {mockBooks.map((book) => {
+      return (
+        <div className="books-container">
+          <div key={book.id} className="book-card">
+            <img  className="book-img" src={book.img_url} alt={`${book.img_url}'s image`} />
+            <h2 className="book-title">{book.title}</h2>
+            <h3 className="book-author">By: {book.author}</h3>
+          </div>
+        </div>
+      );
+    })}
+    </div>
     </>
   )
 }
 
-export default Literature
+export default Literature;

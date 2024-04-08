@@ -35,7 +35,7 @@ function HomeTab() {
 
         <div className="book-spotlight">
           <div>
-            <h4 className="main-texts"> Featured Literature 📚 </h4>
+            <h4 className="main-texts"> The Bookshelf 📚 </h4>
             <h5 className="details-text">link to book.name here</h5>
             <Link to="/literature">
               <img className="image-test" src={BFG} alt="literature" />
