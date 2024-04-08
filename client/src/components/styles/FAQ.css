@@ -28,7 +28,6 @@
 }
 
 .title {
-  /* position: absolute; */
   font-family: "Almendra", serif;
   font-size: 40px;
   align-self: center;
@@ -45,6 +44,6 @@
   margin-right: 10px;
 }
 
-h7 {
+.MuiAccordion-root .MuiTypography-root {
   font-family: "Almendra", serif;
 }

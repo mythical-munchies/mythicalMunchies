@@ -21,8 +21,9 @@ const MythicalMunchiesFAQ = () => {
       <div className="sub-text">
         <h4>
           Welcome to Mythical Munchies, where we bring legendary flavors to your
-          plate! Below are some frequently asked questions about our mythical
-          recipes, reviews, and e-commerce adventures. Don't worry, no dragons
+          plate!<br></br>
+          Below are some frequently asked questions about our mythical recipes,
+          reviews, and e-commerce adventures. <br></br>Don't worry, no dragons
           were harmed in the making of these answers.
         </h4>
       </div>
@@ -33,12 +34,12 @@ const MythicalMunchiesFAQ = () => {
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
-            <Typography variant="h6" className="h6">
+            <Typography variant="h6">
               Are your recipes really inspired by mythical literature and film?
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography variant="h7" className="h7">
+            <Typography variant="h7">
               Absolutely! We take inspiration from creatures of legend to craft
               recipes that are as magical as they are delicious. From unicorn
               cupcakes to dragon-fire chili, our culinary creations are sure to
@@ -134,7 +135,6 @@ const MythicalMunchiesFAQ = () => {
             id="panel6a-header"
           >
             <Typography variant="h6">
-              {" "}
               Do you offer discounts for wizards, witches, and other magical
               beings?
             </Typography>
@@ -199,6 +199,7 @@ const MythicalMunchiesFAQ = () => {
               munching, and may your meals be as legendary as the creatures that
               inspire them!
             </h4>
+            <br></br>
           </div>
         </div>
       </div>
