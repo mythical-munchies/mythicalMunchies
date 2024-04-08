@@ -3,6 +3,11 @@ import { Link } from "react-router-dom";
 import "./styles/SingleWorld.css";
 import ghibliBanner from "./images/banner_studioghibli.png";
 
+// Tried to fix the scrolling issue but will come back to it later
+// const scrolltoTop = () => {
+//   document.getElementById("toTOP").scroll(0,0)
+// }
+
 function SingleWorld() {
   return (
     <>
@@ -32,7 +37,7 @@ function SingleWorld() {
             alt="Ham Ramen"
           />
           {/* <div className="movie-title">Ponyos</div> */}
-          <Link to ="/single-recipe">Ponyo</Link>
+          <Link to="/single-recipe" >Ponyo</Link>
           <div className="recipe-title">Ham Ramen</div>
         </div>
         <div className="recipe-tile">

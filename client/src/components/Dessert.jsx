@@ -11,6 +11,10 @@ function Dessert() {
 
       <p className="veggie-p"> Recipe Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum autem cum perferendis, deleniti, obcaecati sunt </p>
 
+      <img className="veggie-banner" src="https://images.ladbible.com/resize?type=webp&quality=70&width=3840&fit=contain&gravity=auto&url=https://s3-images.ladbible.com/s3/content/65bc859660cc6ca4d3ac57a9b6294e2f.png" alt="chocolate-cake boy from Matilda" />
+
+      <p className="lisa-quote">"You can do it Bruce! - Matilda"</p>
+
 
     <hr className="dessert-hr"/>
 

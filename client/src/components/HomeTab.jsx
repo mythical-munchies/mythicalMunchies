@@ -37,7 +37,7 @@ function HomeTab() {
           <div>
             <h4 className="main-texts"> Featured Literature 📚 </h4>
             <h5 className="details-text">link to book.name here</h5>
-            <Link to="/featured-literature">
+            <Link to="/literature">
               <img className="image-test" src={BFG} alt="literature" />
             </Link>
           </div>
