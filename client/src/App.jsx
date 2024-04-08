@@ -16,7 +16,7 @@ import BottomsUp from "./components/BottomsUp";
 import Dessert from "./components/Dessert";
 import Vegetables from "./components/Vegetables";
 import Footer from "./components/Footer";
-import MythicalMunchiesFAQ from "./components/MythicalMunchiesFAQ";
+import MythicalMunchiesFAQ from "./components/FAQ";
 // >>>>>>> main
 
 function App() {

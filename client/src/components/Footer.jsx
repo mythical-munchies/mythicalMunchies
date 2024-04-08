@@ -9,7 +9,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import "./styles/Footer.css";
-import MythicalMunchiesFAQ from "./MythicalMunchiesFAQ";
+import MythicalMunchiesFAQ from "./FAQ";
 
 // Easy workaround from MUI's default color scheme
 const theme = createTheme({
