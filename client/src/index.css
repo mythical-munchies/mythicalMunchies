@@ -3,6 +3,10 @@
 /* HEADER */
 /* NAV BAR including wizard-account icon */
 /* FOOTER */
+/* 
+@tailwind base;
+@tailwind components;
+@tailwind utilities; */
 
 * {
   margin: -4px;
@@ -28,22 +32,28 @@ body {
 }
 
 #logo-image {
-  height: 100px;
+  height: 80px;
   width: 80px;
-  padding-top: 45px;
-  padding-left: 20px;
   margin-right: 10px;
+  margin-left: 30px;
+  /* padding-top: 45px; */
+  /* padding-left: 20px; */
+  /* margin-top: 20px; */
 }
 
-.logo-title {
+.logo-title-main {
   font-family: "Almendra", sans-serif;
   color: darkred;
   text-shadow: 3px 4px #FFE449, 5px 5px orange;
   font-size: 50px;
   letter-spacing: 3px;
   text-align: left;
- 
-  height: 100px;
+  padding-top: 20px;
+  margin-left: 20px;
+  padding-bottom: 0px;
+
+
+  /* height: 100px; */
   margin-bottom: -30px;
   font-weight: bold;
 }
@@ -75,22 +85,3 @@ body {
   color: yellow;
   text-decoration: underline;
 }
-
-
-footer {
-  background-color: whitesmoke;
-  border-radius: 6px;
-}
-
-button {
-  padding: 40px;
-  font-size: 20px;
-}
-
-/* .testings {
-  background-color: brown;
-}
-
-.account-buttons {
- display: block; 
-} */

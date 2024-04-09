@@ -5,10 +5,10 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import "./styles/SingleRecipe.css"
 import { Link } from 'react-router-dom'
-// import Rating from './mui-components/rating'
 import Ramen from './images/ponyo-ramen.jpg'
-// <<<<<<< modal-testhehe
 import LeaveReview from './MyReviews'
+// import Profile from './icons/profile.png'
+import CustomerReviews from './CustomerReviews';
 
 // =======
 // import LeaveReview from './MyReviews';
@@ -29,7 +29,7 @@ export default function SingleRecipe() {
     <div className="single-container">
       <div className="goldy-background">
         <Link to="/single-world" className="back-button-recipe">Back</Link>
-        <div className="title"> Studio Ghibli </div>
+        <div className="title"> Studio Ghibli</div>
     {/* <div className='testingtons'> */}
         <Box className="boxes" sx={{ flexGrow: 1 }}>
           <Grid container spacing={2}>
@@ -96,27 +96,15 @@ export default function SingleRecipe() {
             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum hic id veniam neque ea voluptatem ullam reprehenderit quibusdam eveniet dicta asperiores, quasi optio odio repudiandae porro necessitatibus soluta vitae.</li>
             <br />
             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum hic id veniam neque ea voluptatem ullam reprehenderit quibusdam eveniet dicta asperiores, quasi optio odio repudiandae porro necessitatibus soluta vitae.</li>
-           
-
           </ol>
         </div>
         </Grid>
 
 
-
-      
-
         <Grid id="reviewz"item xs={12} >
-          {/* <Item>4</Item> */}
-          {/* style the HR later??? */}
-          {/* THIS SHOULD BE ANOTHER COMPONENT???? */}
           <hr className='recipe-hr'/>
-          <h2 className='review-title'>⭐️⭐️ Reviews ⭐️⭐️</h2>
-          <div className="review-box">
-          {/* <p>Username:</p> */}
-          <p className="review">love this recipe! So good!!!!!</p>
-          {/* <Rating className="rating-review" /> */}
-        </div>
+          <h2 className='review-title'> Reviews </h2>
+          <CustomerReviews />
         </Grid>
       </Grid>
     </Box>

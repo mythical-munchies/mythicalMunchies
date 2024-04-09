@@ -54,12 +54,12 @@ function HomeTab() {
         </div>
       </div>
 
-      <div className="middle-slide">
+      {/* <div className="middle-slide">
         <div className="favorite-slide">
           <h4 className="main-texts">Favorites of the Month!</h4>
           <img className="main-image-test" src={Fav} alt="hermoine" />
         </div>
-      </div>
+      </div> */}
 
       <div className="middle2-slide">
         <div className="veggie-spotlight">
