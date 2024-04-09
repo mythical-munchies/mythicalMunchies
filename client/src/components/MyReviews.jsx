@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function LeaveReview() {
   const [show, setShow] = useState(false);
@@ -10,9 +12,17 @@ function LeaveReview() {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+
+
+      <button onClick={handleShow} className="review-button">Leave a Review :)</button>
+      {/* <Button variant="primary" onClick={handleShow}>
         Launch static backdrop modal
-      </Button>
+      </Button> */}
+
+//       <Button variant="primary" onClick={handleShow}>
+//         Launch static backdrop modal
+//       </Button>
+
 
       <Modal
         show={show}
@@ -25,7 +35,7 @@ function LeaveReview() {
         </Modal.Header>
         <Modal.Body>
           I will not close if you click outside me. Do not even try to press
-          escape key.
+          escape keys
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>

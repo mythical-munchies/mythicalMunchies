@@ -18,7 +18,7 @@ body {
 
 .persistent-header {
   background-image: url("src/components/images/plant.png");
-  background-size: 350px;
+  background-size: 300px;
   background-color: #bcc6d1e5;
   box-shadow: 2px 2px 25px yellow;
   border-radius: 10px;
@@ -28,10 +28,11 @@ body {
 }
 
 #logo-image {
-  height: 80px;
+  height: 100px;
   width: 80px;
   padding-top: 45px;
   padding-left: 20px;
+  margin-right: 10px;
 }
 
 .logo-title {
@@ -41,8 +42,9 @@ body {
   font-size: 50px;
   letter-spacing: 3px;
   text-align: left;
+ 
   height: 100px;
-  margin-bottom: -10px;
+  margin-bottom: -30px;
   font-weight: bold;
 }
 

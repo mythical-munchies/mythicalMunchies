@@ -30,18 +30,25 @@ justify-content: center;
   font-family: "Almendra", sans-serif;
 }
 
-.book-title {
+.book-title-books {
   font-weight: 100;
   letter-spacing: 1px;
   color: darkred;
   margin-top: 5px;
   text-align: left;
   margin-bottom: 0px;
+  width: auto;
+  height: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  
+ 
 }
 
 .book-author {
   font-size: 18px;
   font-weight: 100;
   letter-spacing: 1px;
-  margin-top: 0px;
+  margin-top: 30px;
 }
