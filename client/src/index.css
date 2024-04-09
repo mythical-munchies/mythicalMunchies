@@ -85,3 +85,22 @@ body {
   color: yellow;
   text-decoration: underline;
 }
+
+/* 
+footer {
+  background-color: whitesmoke;
+  border-radius: 6px;
+} */
+
+button {
+  padding: 40px;
+  font-size: 20px;
+}
+
+/* .testings {
+  background-color: brown;
+}
+
+.account-buttons {
+ display: block; 
+} */
