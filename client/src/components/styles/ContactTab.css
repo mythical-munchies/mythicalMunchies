@@ -42,13 +42,13 @@
   text-align: center;
 }
 
-h1 {
+/* h1 {
   color: #ffffff;
   font-family: "Almendra", serif;
   font-weight: normal;
   size: 42px;
   text-align: center;
-}
+} */
 
 p {
   color: #ffffff;
@@ -105,7 +105,7 @@ textarea {
 
 input[type="message"],
 textarea {
-  width: 80%;
+  width: 400px;
   height: 150px;
   padding: 10px;
   border-radius: 5px;
