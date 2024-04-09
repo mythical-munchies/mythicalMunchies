@@ -65,7 +65,11 @@ function ContactTab() {
               <input type="email" name="email" />
 
               <label className="message"> Message:</label>
-              <textarea name="message" />
+              <textarea
+                name="message"
+                style={{ fontFamily: "Almendra, serif" }}
+              />
+              {/* The above is a workaround to get the message field to be in Almendra font as the CSS file wasn't working. */}
 
               <button className="send" type="submit">
                 Send

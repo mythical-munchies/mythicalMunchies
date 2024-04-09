@@ -40,6 +40,7 @@
   gap: 0px;
   opacity: 0px;
   text-align: center;
+  font-family: "Almendra", serif;
 }
 
 /* h1 {
@@ -68,6 +69,7 @@ p {
   border-radius: 10px;
   border: 1px;
   margin-top: 75px;
+  font-family: "Almendra", serif;
 }
 
 .name,
@@ -85,6 +87,7 @@ p {
 label {
   display: block;
   align-items: left;
+  font-family: "Almendra", serif;
 }
 
 input[type="text"],
@@ -100,11 +103,6 @@ textarea {
 }
 
 textarea {
-  resize: vertical;
-}
-
-input[type="message"],
-textarea {
   width: 400px;
   height: 150px;
   padding: 10px;
@@ -112,10 +110,6 @@ textarea {
   border: 1px solid #ccc;
   box-sizing: border-box;
   font-family: "Almendra", serif;
-}
-
-textarea {
-  resize: vertical;
 }
 
 .field {
@@ -127,6 +121,7 @@ textarea {
   border-radius: 10px 0px 0px 0px;
   border: 1px 0px 0px 0px;
   opacity: 0px;
+  font-family: "Almendra", serif;
 }
 
 .send {
