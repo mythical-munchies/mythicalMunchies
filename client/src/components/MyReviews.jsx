@@ -19,9 +19,9 @@ function LeaveReview() {
         Launch static backdrop modal
       </Button> */}
 
-//       <Button variant="primary" onClick={handleShow}>
+{/* //       <Button variant="primary" onClick={handleShow}>
 //         Launch static backdrop modal
-//       </Button>
+//       </Button> */}
 
 
       <Modal
