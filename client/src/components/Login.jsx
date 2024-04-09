@@ -27,7 +27,7 @@ const Login = () => {
    }, [usernameOrEmail, password])
 
   
-    const submit = async(ev)=> {
+    const loginHandler = async(ev)=> {
         ev.preventDefault();
 
         try {
@@ -72,28 +72,50 @@ const Login = () => {
 
     return ( 
         <>
-        <div className="main-container">
+        {success ? (
+            <section>
+                <h2 className="welcome" style={{color: "red", font: "Almendra"}}>Welcome to Mythical Munchies</h2>
+                <br/>
+                <p>
+                    <a href="#">Go to Home</a>
+                </p>
+            </section>
+        ) : (
+            <div className="main-container">
             <div className="small-container">
+                <p ref={errRef} className={error ? "error" : "offscreen"} aria-live="assertive">{error}</p>
+                <h3 className="cooking" style={{color: "blue", font: "Almendra"}}>Lets get to Cooking</h3>
+                <h1>Sign In</h1>
                 <form onSubmit={loginHandler} className="loginForm">
                     <div className="form">
-                        <h2 className="welcome" style={{color: "red", font: "Almendra"}}>Welcome to Mythical Munchies</h2>
+                     x <label htmlFor="username">Username:</label>
                         <br/>
-                        <h3 className="cooking" style={{color: "blue", font: "Almendra"}}>Lets get to Cooking</h3>
-                        <br/>
-                        <img className="user" src="../icons/user.jpg" alt="user"/>
+                        
+                      
+                        <img className="user" src="./icons/user.jpg" alt="user"/>
                         {/* <label htmlFor="Email or Username">Email or Username</label> */}
                         <input
                         type= "text"
+                        id="email or username"
                         placeholder= 'email or username'
+                        ref={userRef}
+                        autocomplete="off"
                         value= {usernameOrEmail}
                         onChange= {ev => setUsernameOrEmail(ev.target.value)}
+                        required
                         />
-                    
+
+
+                        <label htmlFor="password">Password:</label>
                         <input 
+                        type="password"
+                        id="password"
                         placeholder= 'password'
                         value= {password}
                         onChange= {ev=> setPassword(ev.target.value)}
+                        required
                         />
+
                         <br/><br/>
                         <button className="button" type="submit">Login</button>
                     </div>
@@ -102,8 +124,19 @@ const Login = () => {
             
 
                 </form>
+                <p>
+                    Create Account
+                    <br />
+                    <span className="line">
+                        {/* put router link here  */}
+                        <a href="#">Sign Up</a>
+                    </span>
+                </p>
             </div>
-        </div>    
+        </div>   
+
+        )}
+         
         </>
 
     );
