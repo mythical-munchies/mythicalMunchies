@@ -89,5 +89,39 @@ Get ready to sprinkle some magic into your kitchen and unleash the culinary wiza
 
 Font: Almendra
 
+## Install Instructions 
+If you wish to run this application locally, here are the install notes.
+
+1. First you will need to clone this repository.
+    git@github.com:mythical-munchies/mythicalMunchies.git
+
+2. Next you will need to navigate to the backend directory, then install Node.
+    npm install
+
+3. You will also want to copy .env.example as a .env file, but with your key values. cp .env.example .env
+
+4. Within this terminal and run either of these command groups: (TO REVIEW)
+  - Individual commands (must run in order):
+          ---TBD 
+You can also elect to run npm run rebuild as that is a custom script within package.json to run all of the above commands in order. This is found at line 14 in in backend/package.json.
+ -- npm run rebuild
+
+5. While in the backend directory, you will start the application.
+    npm run start
+
+6. Open a new terminal in the frontend directory so that the backend is live and install dependencies there.
+    npm i
+
+7. In this frontend directory, then start the React frontend server.
+    npm run dev
+
+8. In a new frontend directory, run npm run build which will trigger vite to build. The original command for this is vite build --watch. The --watch flag will trigger a rebuild when changes are made to vite.config.js as well as any bundled files. This is found at line 8 in frontend/package.json.
+    npm run build
+
+9. If Vite does not automatically open a tab in your browser, navigate to http://localhost:5173/.
+
+10. You are all set to run Mythical Munchies on your local machine!
+
+
 ## Thanks 🙏
 May the Gryphon of Infinite Gratitude swoop down upon you, sprinkling its golden feathers of appreciation and filling your mythical munchies vault with an abundance of ambrosial delights! Thank you for journeying through the enchanted realms of literature and film with us. 📚🔮✨
