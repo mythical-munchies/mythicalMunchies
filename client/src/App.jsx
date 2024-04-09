@@ -26,11 +26,11 @@ function App() {
   return (
     <>
       <div className="persistent-header">
-        <div>
-          <h2 className="logo-title">
-            <img id="logo-image" src={Logo}></img>Mythical Munchies
+        {/* <div> */}
+          <h2 className="logo-title-main">
+          <img id="logo-image" src={Logo}/>Mythical Munchies
           </h2>
-        </div>
+        {/* </div> */}
         <SearchBar placeholder="Explore Worlds..." data={CategoryData} />
         {/* <Login /> */}
       </div>

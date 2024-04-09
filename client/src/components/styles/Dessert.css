@@ -22,6 +22,7 @@
   margin: auto;
   border: 2px solid darkred;
   margin-top: 50px;
+  opacity: 100%;
 }
 
 .recipe {
@@ -87,4 +88,5 @@
   margin: auto;
   margin-top: 60px;
   border: 1px solid antiquewhite;
+  opacity: 100%;
 }

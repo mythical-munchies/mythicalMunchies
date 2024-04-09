@@ -36,12 +36,12 @@ function DogWarts() {
         <p className="linkys">Here you'll find :</p>
 
         <ul className="linkys">
-          <li> <a  className="link" href="#Beer">Dog-Friendly Butter Beer Recipe</a></li>
-          <li> <a className="link" href="#Frog">Not-Chocolate Frog Dog Treat Recipe</a></li>
-          <li> <a className="link" href="#Banner">Dogwarts Banner</a></li>
-          <li> <a className="link" href="#Scarf">Gryffindor Scarf for Dogs</a></li>
-          <li> <a className="link" href="#Cloak">Harry Potter Cloak for Dogs</a></li>
-          <li> <a className="link" href="#Booth">Prisoner of Azkaban Photo Booth</a></li>
+          <li className="page-link"> <a  className="page-link" href="#Beer">Dog-Friendly Butter Beer Recipe</a></li>
+          <li className="page-link"> <a className="page-link" href="#Frog">Not-Chocolate Frog Dog Treat Recipe</a></li>
+          <li className="page-link"> <a className="page-link" href="#Banner">Dogwarts Banner</a></li>
+          <li className="page-link"> <a className="page-link" href="#Scarf">Gryffindor Scarf for Dogs</a></li>
+          <li className="page-link"> <a className="page-link" href="#Cloak">Harry Potter Cloak for Dogs</a></li>
+          <li className="page-link"> <a className="page-link" href="#Booth">Prisoner of Azkaban Photo Booth</a></li>
         </ul>
 
         <p className="disclaimer">Disclaimer: Please check your dogs food allergies.</p>
@@ -65,7 +65,7 @@ function DogWarts() {
           <p className="dog-instructions">Blend ingredients immediately. Serve in your dogs bowls or mini tavern glasses</p>
         </div>
 
-        <hr className="recipe-hr"/>
+        <hr className="dog-recipe-hr"/>
 
         <div className="dog-recipe">
           <h4 id="Frog"className="diy-name">Not-Chocolate Frog Dog Treat Recipe</h4>
@@ -82,7 +82,7 @@ function DogWarts() {
           <p className="dog-instructions">Place carob chips and olive oil in microwave safe bowl. Heat for 30 seconds then stir. Repeat until chips have fully melted. Pour mixture into tray molds and scrape away any excess with a knife. Place tray in freezer for one hour to allow frogs to harden. Keep in refrigerator.</p>
         </div>
 
-           <hr className="recipe-hr"/>
+           <hr className="dog-recipe-hr"/>
 
         <div className="dog-recipe">
           <h4 id="Banner"className="diy-name">Dogwarts Banner</h4>
@@ -103,7 +103,7 @@ function DogWarts() {
           <p className="dog-instructions">Cut a segment of an eight-inch white paper roll and soak in black tea for 20 minutes. Gently remove and hang the paper to dry. Generate your Harry Potter message using a free font generator like this one. Outline message on banner in pencil, then fill in with permanent marker.</p>
         </div>
 
-           <hr className="recipe-hr"/>
+           <hr className="dog-recipe-hr"/>
 
         <div className="dog-recipe">
           <h4 id="Scarf" className="diy-name">Gryffindor Scarf for Dogs</h4>
@@ -128,7 +128,7 @@ function DogWarts() {
           For a Slytherin variation,add a narrow stripe between the larger stripes to match the Slytherin pattern.</p>
         </div>
 
-           <hr className="recipe-hr"/>
+           <hr className="dog-recipe-hr"/>
 
         <div className="dog-recipe">
           <h4 id="Cloak" className="diy-name">Harry Potter Cloak for Dogs</h4>
@@ -151,7 +151,7 @@ function DogWarts() {
           <p className="dog-instructions">To create a corgi-size cloak, use a piece of black felt that is 17” x 20.” Fold back the top edge of the cloak to create a hood effect and then iron it down to make it stay. Since all dogs vary in size, try your cloak on your dog to measure the exact placement of the button. The cloak should button on your dog’s chest directly under their chin. Sew the button onto the front chest of the cloak and create a matching button-hole. </p>
         </div>
 
-           <hr className="recipe-hr"/>
+           <hr className="dog-recipe-hr"/>
 
         <div className="dog-recipe">
           <h4 id="Booth" className="diy-name">Prisoner of Azkaban Photo Booth</h4>

@@ -155,6 +155,9 @@
   gap: 0px;
   border-radius: 10px;
   opacity: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .world-title {

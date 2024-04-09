@@ -22,6 +22,16 @@
   
 }
 
+.page-link {
+  color: yellow;
+  text-decoration: none;
+  list-style: none;
+}
+
+.page-link:hover {
+  color: #004268;
+}
+
 .tiny-text {
   font-size: 25px;
   margin-left: 50px;
@@ -73,9 +83,12 @@
 }
 
 .dog-hr {
-  width: 1500px;
+  width: 1400px;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 50px;
+  opacity: 100%;
+  color: whitesmoke;
+
 }
 
 .credits {
@@ -96,15 +109,7 @@
   
 }
 
-.link {
-  color: yellow;
-  text-decoration: none;
-}
 
-.link:hover {
-  color: #004268;
-  
-}
 
 .disclaimer {
   font-size: 18px;
@@ -119,12 +124,13 @@
   margin-left: 50px;
   color: green;
   text-align: left;
+  line-height: 2px;
 }
 
 .ingredient {
   letter-spacing: 2px;
   margin-right: 50px;
-  font-size: 25px;
+  font-size: 22px;
   font-family: "Almendra", sans-serif;
 }
 .dog-instructions {
@@ -137,7 +143,10 @@
   font-family: "Almendra", sans-serif;
 }
 
-.recipe-hr {
+.dog-recipe-hr {
   margin: auto;
   margin-top: 80px;
+  opacity: 100%;
+  width: 1500px;
+  color: yellow;
 }
