@@ -1,17 +1,49 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./styles/Login.css"
+// import axios from "axios";
+
 // import Account from "./Account"
 
 const Login = () => {
     const [usernameOrEmail, setUsernameOrEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [error, setError] = useState();
    
-    const user = {
-        email: "test@test.com",
-        username: "mythicalMunchiesFan",
-        password: "42069"
+    // const history = useHistory();
+
+        useEffect(() => {
+            if (localStorage.getItem("authToken")) {
+                history.goBack(); 
+                // use history.push if there are errors
+            }
+        }, [history]);
+
+    const loginHandler = async (e) => {
+        e.preventDefault();
+
+        const config = {
+            header: {
+                "Content-Type": "application/json",
+            },
+        };
+        try {
+            const { data } = await axios.post(
+                "/api/auth/login",
+                { email, password },
+                config
+            );
+            localStorage.setItem("authToken", data.token);
+
+            //after login redirect to route that was there before login route
+            history.goBack();
+        } catch(error) {
+            setError(error.response.data.error);
+            setTimeout(() => {
+                setError("");
+            }, 5000);
+        }
     };
 
     const submit = async(ev)=> {
@@ -32,7 +64,7 @@ const Login = () => {
         <>
         <div className="main-container">
             <div className="small-container">
-                <form onSubmit={submit}>
+                <form onSubmit={loginHandler} className="loginForm">
                     <div className="form">
                         <h2 className="welcome" style={{color: "red", font: "Almendra"}}>Welcome to Mythical Munchies</h2>
                         <br/>
