@@ -7,8 +7,12 @@ import "./styles/SingleRecipe.css"
 import { Link } from 'react-router-dom'
 // import Rating from './mui-components/rating'
 import Ramen from './images/ponyo-ramen.jpg'
+// <<<<<<< modal-testhehe
 import LeaveReview from './MyReviews'
 
+// =======
+// import LeaveReview from './MyReviews';
+// >>>>>>> main
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
