@@ -31,7 +31,7 @@
 }
 
 .textbox {
-  width: 550px;
+  width: px;
   height: 273px;
   top: 462px;
   left: 242px;
@@ -40,15 +40,16 @@
   gap: 0px;
   opacity: 0px;
   text-align: center;
+  font-family: "Almendra", serif;
 }
 
-h1 {
+/* h1 {
   color: #ffffff;
   font-family: "Almendra", serif;
   font-weight: normal;
   size: 42px;
   text-align: center;
-}
+} */
 
 p {
   color: #ffffff;
@@ -68,6 +69,7 @@ p {
   border-radius: 10px;
   border: 1px;
   margin-top: 75px;
+  font-family: "Almendra", serif;
 }
 
 .name,
@@ -85,6 +87,7 @@ p {
 label {
   display: block;
   align-items: left;
+  font-family: "Almendra", serif;
 }
 
 input[type="text"],
@@ -100,22 +103,13 @@ textarea {
 }
 
 textarea {
-  resize: vertical; /* Allow vertical resizing for textarea */
-}
-
-input[type="message"],
-textarea {
-  width: 80%;
+  width: 400px;
   height: 150px;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
   box-sizing: border-box;
   font-family: "Almendra", serif;
-}
-
-textarea {
-  resize: vertical;
 }
 
 .field {
@@ -127,6 +121,7 @@ textarea {
   border-radius: 10px 0px 0px 0px;
   border: 1px 0px 0px 0px;
   opacity: 0px;
+  font-family: "Almendra", serif;
 }
 
 .send {

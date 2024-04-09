@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import "./styles/ContactTab.css";
-// import emailjs from "emailjs-com";
+import emailjs from "emailjs-com";
 
 function ContactTab() {
   const form = useRef();
@@ -25,11 +25,22 @@ function ContactTab() {
       );
   };
 
+  // Something weird was happening with h1 where it wasn't accepting the h1 in the ContactTab.css so I'm adding a workaround here.
+  const styles = {
+    h1: {
+      color: "#ffffff",
+      fontFamily: "Almendra, serif",
+      fontWeight: "normal",
+      fontSize: "42px",
+      textAlign: "center",
+    },
+  };
+
   return (
     <>
       <div className="main-container">
         <div className="container">
-          <h1>Contact Us</h1>
+          <h1 style={styles.h1}>Contact Us</h1>
           <hr></hr>
           <div className="content">
             {/* Text to the left of the form. Final language TBD */}
@@ -54,7 +65,11 @@ function ContactTab() {
               <input type="email" name="email" />
 
               <label className="message"> Message:</label>
-              <textarea name="message" />
+              <textarea
+                name="message"
+                style={{ fontFamily: "Almendra, serif" }}
+              />
+              {/* The above is a workaround to get the message field to be in Almendra font as the CSS file wasn't working. */}
 
               <button className="send" type="submit">
                 Send
