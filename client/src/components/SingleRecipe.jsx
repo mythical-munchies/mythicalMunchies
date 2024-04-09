@@ -7,6 +7,8 @@ import "./styles/SingleRecipe.css"
 import { Link } from 'react-router-dom'
 // import Rating from './mui-components/rating'
 import Ramen from './images/ponyo-ramen.jpg'
+import LeaveReview from './MyReviews'
+
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -35,7 +37,11 @@ export default function SingleRecipe() {
                 <img  className='pic' src={Ramen} alt="pic" />
             
               <div className="ratings">
-                <Link to ="/my-reviews" className="review-button">Leave a Review :)</Link>
+                
+                {/* <Link to ="/my-reviews" className="review-button">Leave a Review :)</Link> */}
+                {/* <button className="review-button">Leave a Review :)</button> */}
+                {/* TRYING MODAL HERE  */}
+                <LeaveReview />
               </div>
               </div>
             </Grid>
@@ -58,6 +64,7 @@ export default function SingleRecipe() {
             <li>test</li>
             <li>test</li>
             <li>test</li>
+            <li>THIS IS A TEST</li>
           </ul>
         </div>
         </Grid>

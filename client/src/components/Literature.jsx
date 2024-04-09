@@ -15,7 +15,7 @@ const Literature = () => {
         <div className="books-container">
           <div key={book.id} className="book-card">
             <img  className="book-img" src={book.img_url} alt={`${book.img_url}'s image`} />
-            <h2 className="book-title">{book.title}</h2>
+            <a href="somesite.com" className="book-title-books">{book.title}</a>
             <h3 className="book-author">By: {book.author}</h3>
           </div>
         </div>

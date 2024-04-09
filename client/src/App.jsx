@@ -19,6 +19,7 @@ import Literature from "./components/Literature";
 import Footer from "./components/Footer";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import MythicalMunchiesFAQ from "./components/FAQ";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {

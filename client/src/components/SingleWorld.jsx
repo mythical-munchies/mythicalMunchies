@@ -37,7 +37,7 @@ function SingleWorld() {
             alt="Ham Ramen"
           />
           {/* <div className="movie-title">Ponyos</div> */}
-          <Link to="/single-recipe" >Ponyo</Link>
+          <Link target="blank" to="/single-recipe" >Ponyo</Link>
           <div className="recipe-title">Ham Ramen</div>
         </div>
         <div className="recipe-tile">

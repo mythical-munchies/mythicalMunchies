@@ -86,6 +86,10 @@ width: 220px;
   box-shadow: 1px 1px 2px gray;
 }
 
+.recipe-link {
+height: 20px;
+}
+
 .review-button {
   color: darkblue;
   font-family: "Almendra", sans-serif;
@@ -97,6 +101,9 @@ width: 220px;
   display: flex;
   justify-content: left;
   letter-spacing: 1px;
+  padding: 5px;
+  background-color: #e2d5b0;
+  border-style: none;
 }
 
 .review-button:hover {
