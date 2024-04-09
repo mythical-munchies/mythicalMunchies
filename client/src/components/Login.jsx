@@ -6,58 +6,68 @@ import "./styles/Login.css"
 
 // import Account from "./Account"
 
+const LOGIN_URL = '/auth';
+
 const Login = () => {
+    const { setAuth } = useContext(AuthContext);
+    const userRef = useRef();
+    const errRef = useRef();
+
     const [usernameOrEmail, setUsernameOrEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [error, setError] = useState();
+    const [error, setError] = useState('');
+    const [success, setSuccess] = useState(false);
    
-    // const history = useHistory();
+   useEffect(() => {
+    userRef.current.focus();
+   }, [])
 
-        useEffect(() => {
-            if (localStorage.getItem("authToken")) {
-                history.goBack(); 
-                // use history.push if there are errors
-            }
-        }, [history]);
+   useEffect(() => {
+    setError('');
+   }, [usernameOrEmail, password])
 
-    const loginHandler = async (e) => {
-        e.preventDefault();
-
-        const config = {
-            header: {
-                "Content-Type": "application/json",
-            },
-        };
-        try {
-            const { data } = await axios.post(
-                "/api/auth/login",
-                { email, password },
-                config
-            );
-            localStorage.setItem("authToken", data.token);
-
-            //after login redirect to route that was there before login route
-            history.goBack();
-        } catch(error) {
-            setError(error.response.data.error);
-            setTimeout(() => {
-                setError("");
-            }, 5000);
-        }
-    };
-
+  
     const submit = async(ev)=> {
         ev.preventDefault();
-        
-       if (usernameOrEmail === user.email || usernameOrEmail === user.username) {
-        if (password === user.password) {
-            console.log("Welcome Back!");
-        } else {
-            console.log("Wrong Password");
+
+        try {
+            const response = await axios.post(LOGIN_URL,
+                JSON.stringify({usernameOrEmail, password}),
+                {
+                    headers: {'Content-Type': 'application/json' },
+                    withCredentials: true
+                }
+                );
+                console.log(JSON.stringify(response?.data));
+
+                const accessToken = response?.data?.accessToken;
+                const roles = response?.data?.roles;
+                setAuth({ usernameOrEmail, password, roles, accessToken });
+                setUsernameOrEmail('');
+                setPassword('');
+                setSuccess(true);
+
+        } catch (error) {
+            if (!error?.response) {
+                setError('You Shall Not Pass');
+            } else if (error.response?.status === 400) {
+                setError('Missing Username or Password');
+            } else if (error.response?.status === 401) {
+                setError('You Shall Not Pass');
+            } else {
+                setError('Login Failed');
+            }
         }
-       } else {
-        console.log("Wrong Username or Email");
-       }
+        
+    //    if (usernameOrEmail === user.email || usernameOrEmail === user.username) {
+    //     if (password === user.password) {
+    //         console.log("Welcome Back!");
+    //     } else {
+    //         console.log("Wrong Password");
+    //     }
+    //    } else {
+    //     console.log("Wrong Username or Email");
+    //    }
     };
 
     return ( 
