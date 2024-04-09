@@ -31,7 +31,7 @@
 }
 
 .textbox {
-  width: 550px;
+  width: px;
   height: 273px;
   top: 462px;
   left: 242px;
@@ -100,7 +100,7 @@ textarea {
 }
 
 textarea {
-  resize: vertical; /* Allow vertical resizing for textarea */
+  resize: vertical;
 }
 
 input[type="message"],
