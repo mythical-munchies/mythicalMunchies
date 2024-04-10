@@ -1,11 +1,12 @@
 const express = require('express');
 const router = express.Router();
+import { fetchUsers } from '../db/users';
 
 // const {authenticate, findUserWithToken, getRecipes} = require('./db')
 
 router.get('/', async(req, res, next)=> {
   try {
-    const users = await fetchAllUsers()
+    const users = await fetchUsers()
     res.send({users});
   } catch (ex) {
     next (ex)
@@ -13,37 +14,11 @@ router.get('/', async(req, res, next)=> {
 });
 
 router.post('/login', async (req, res, next) => {
-  try {
-    const token = await authenticate(req.body)
-    const user = await findUserWithToken(token)
-    const recipes = await getRecipes(user.id)
-    const returnObj = {
-      token,
-      user,
-      recipes
-    }
-    res.send(returnObj)
-  } catch (ex) {
-    next (ex)
-  }
+  
 });
 
 router.post('/signup', async (req, res, next) => {
-  try {
-    await createUser(req.body)
-    const token = await authenticate(req.body)
-    const user = await findUserWithToken(token)
-    const recipes = await getRecipes(user.id)
-    const returnObj = {
-      token,
-      user,
-      recipes
-    }
-    res.send(returnObj)
-  }
-  catch (ex) {
-    next (ex)
-  }
+  
 });
 
 module.exports = router

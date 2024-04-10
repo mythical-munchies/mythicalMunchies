@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
-
-// const {fetchWorlds, fetchWorld} = require('./db')
+import { fetchWorlds, fetchWorld } from '../db/worlds';
 
 router.get('/', async(req, res, next)=> {
   try {

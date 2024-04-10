@@ -1,44 +1,64 @@
+const worlds = [
+  {
+    "name":"Beetlejuice",
+    "img_url":"https://images.app.goo.gl/me7aDeU7EM3yoLqq6"
+  },
+  {
+    "name":"Bikini Bottom",
+    "img_url":"https://images.app.goo.gl/UMBkhtZRWNP8XzqK7"
+  },
+  {
+    "name":"Dune",
+    "img_url":"https://assets-prd.ignimgs.com/2024/01/24/dune2-insta-vert-montage-1638x2048-intl-1706086846940.jpg"
+  },
+  {
+    "name":"Forgotten Realms",
+    "img_url":"https://images.app.goo.gl/zbyGZ7Vw3Hj5RCdo6"
+  },
+  {
+    "name":"Game of Thrones",
+    "img_url":"https://e1.pxfuel.com/desktop-wallpaper/616/158/desktop-wallpaper-game-of-thrones-seasons-1-eddard-stark-thumbnail.jpg"
+  },
+  {
+    "name":"Lord of the Rings",
+    "img_url":"https://images.app.goo.gl/12hRZWUBMwUguioD7"
+  },
+  {
+    "name":"Make Room!",
+    "img_url":""
+  },
+  {
+    "name":"Roald Dahl",
+    "img_url":"https://i.pinimg.com/550x/2c/9b/fe/2c9bfe3794a190c481bdaaff1bcf9126.jpg"
+  },
+  {
+    "name":"Star Wars",
+    "img_url":"https://images.app.goo.gl/hf19o3RnQmPuPdoc8"
+  },
+  {
+    "name":"Stardew Valley",
+    "img_url":"https://images.app.goo.gl/vN1ZG2efB5wbnvz69"
+  },
+  {
+    "name":"Wizarding World",
+    "img_url":"https://images.app.goo.gl/Nn7wGq6kJB2GQ2DK9"
+  },
+  {
+    "name":"The Legend of Zelda",
+    "img_url":"https://cdn11.bigcommerce.com/s-b72t4x/images/stencil/1280x1280/products/24571/33924/PAS0578__15763.1624831033.jpg?c=2"
+  },
+]
+
 const recipes =[
   {
-    "category": "Studio Ghibli",
-    "title":"BeetleJuice", 
-    "food":"Ham Ramen",
-    "description":"Enjoy this cozy, rainy day meal thatll get you ready for a big afternoon nap. Double the recipe and enjoy with a mermaid friend!",
-    "ingredients":"1 pack ramen of your choice, 1 egg, green onion, 2 slices of thick ham or pork belly",
-    "time":"10-15 minutes"
+    "name": "Pink Cake",
+    "description":"Pink Cake may sound basic, but this dainty dessert hides a secret ingredient: melon! In STARDEW VALLEY, Pink Cake is a favorite of several villagers. The in-game thumbnail shows a cute pink tube cake topped with red heart sprinkles. The ingredients are listed as flour, sugar, egg, and pink melon (a fruit unique to the game, which looks like a pink cantaloupe).", 
+    "cook_time":"1 hour 30 min",
+    "world_id": `${"Stardew Valley".id}`,
+    "user_id":"",
+    "img_url":"https://images.app.goo.gl/VL92W4BGeApxVZZ39"
   },
-  {
-    "category": "Studio Ghibli",
-    "title":"Game of Thrones", 
-    "food":"Hot Honey Milk",
-    "description":"Warm and comforting. Perfect for a rainy day!",
-    "ingredients":"1 cup milk, 1 BIG tbsp honey, cinnamon to sprinkle on top",
-    "time":"5 minutes"
-  },
-  {
-    "category": "Studio Ghibli",
-    "title":"Howls Moving Castle", 
-    "food":"Bacon and Eggs (Family Breakfast)",
-    "description":"Yummy big breakfast",
-    "ingredients":"Bacon, Eggs, Bread, Cheese",
-    "time":"20 minutes"
-  },
-  {
-    "category": "Studio Ghibli",
-    "title":"Harry Potter", 
-    "food":"Sophie's Tea",
-    "description":"For the flower loving hat shop proprietess with a big heart to steal-- piping hot hibiscus tea. If you need to loosen up as much as Sophie does, let your hair down and add a little Japanese whiskey.",
-    "ingredients":"1 cup water, 1 hibiscus tea bag, 1 piece ginger root, 2 tsp honey, japanese whiskey",
-    "time":"10 minutes"
-  },
-  {
-    "category": "James & the Giant Peach",
-    "title":"James & the Giant Peach", 
-    "food":"Peach",
-    "description":"For a hot day",
-    "ingredients":"1 single peach",
-    "time":"1 minute"
-  }
+  
 ]
 
 module.exports = {recipes, users, worlds}
