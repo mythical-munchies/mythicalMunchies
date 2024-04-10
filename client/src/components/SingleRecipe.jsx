@@ -29,30 +29,32 @@ export default function SingleRecipe() {
     <div className="single-container">
       <div className="goldy-background">
         <Link to="/single-world" className="back-button-recipe">Back</Link>
-        <div className="title"> Studio Ghibli</div>
+        <h2 className="title"> World.name</h2>
     {/* <div className='testingtons'> */}
         <Box className="boxes" sx={{ flexGrow: 1 }}>
           <Grid container spacing={2}>
             <Grid className='box-1'item xs={6} >
               <div className='intro'>
               
-                <Link className="bookmark-button" to="/my-bookmarks"><button className="bookmark">Add to Bookmarks 📕</button></Link>
-                <h4 className='recipe-name'>Ponyos Ham Ramen </h4>
+              {/* this acts like an add to favorites like in the cat -api */}
+                <button className="bookmark">Add to Bookmarks 📕</button>
+                <h4 className='recipe-name'>Recipe.name </h4>
                 <img  className='pic' src={Ramen} alt="pic" />
             
               <div className="ratings">
                 
                 {/* <Link to ="/my-reviews" className="review-button">Leave a Review :)</Link> */}
                 {/* <button className="review-button">Leave a Review :)</button> */}
+
                 {/* TRYING MODAL HERE  */}
+
+                <div className='cooking-time'>
+                  <h5>Cooking time : recipe.cooktime</h5>
+                </div>
                 <LeaveReview />
               </div>
               </div>
             </Grid>
-
-
-
-
 
         <Grid id="ingredients-list" item xs={6} >
           {/* <Item>2</Item> */}
@@ -60,28 +62,32 @@ export default function SingleRecipe() {
           <h4 className="ingredients-title">Ingredients:</h4>
         {/* this will eventually be an array.map to display the ingredients */}
           <ul className="ingredient-list">
-            <li>1 lb. Rice</li>
-            <li>2 cups Peas</li>
-            <li>chicken noodles and soup with soda</li>
-            <li>test</li>
-            <li>test</li>
-            <li>test</li>
-            <li>test</li>
-            <li>test</li>
-            <li>THIS IS A TEST</li>
+            <li className='ingredient-item'>map over ingredients array</li>
           </ul>
         </div>
         </Grid>
+
         <Grid id="intstructions" item xs={12} >
           {/* <Item>3</Item> */}
           <div className="instructions">
 
             <h2 className='cooking-title'>Cooking Instructions:</h2>
           <ol>
+            <li>recipe.instructions</li>
+            <br />
             <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum explicabo aliquid similique. Rem dolorum autem nesciunt eum facilis eveniet quia nostrum tenetur, ducimus sunt delectus accusantium a nobis iste impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur eaque autem dignissimos iusto. Veniam magni, optio officiis, hic possimus soluta, eius dolores rerum quam repudiandae odit. Consequatur, quasi accusamus!Lorem</li>
             <br />
             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum hic id veniam neque ea voluptatem ullam reprehenderit quibusdam eveniet dicta asperiores, quasi optio odio repudiandae porro necessitatibus soluta vitae.</li>
             <br />
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum hic id veniam neque ea voluptatem ullam reprehenderit quibusdam eveniet dicta asperiores, quasi optio odio repudiandae porro necessitatibus soluta vitae.</li>
+            <br />
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum explicabo aliquid similique. Rem dolorum autem nesciunt eum facilis eveniet quia nostrum tenetur, ducimus sunt delectus accusantium a nobis iste impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur eaque autem dignissimos iusto. Veniam magni, optio officiis, hic possimus soluta, eius dolores rerum quam repudiandae odit. Consequatur, quasi accusamus!Lorem</li>
+            <br />
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum hic id veniam neque ea voluptatem ullam reprehenderit quibusdam eveniet dicta asperiores, quasi optio odio repudiandae porro necessitatibus soluta vitae.</li>
+            <br />
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum hic id veniam neque ea voluptatem ullam reprehenderit quibusdam eveniet dicta asperiores, quasi optio odio repudiandae porro necessitatibus soluta vitae.</li>
+            <br />
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum hic id veniam neque ea voluptatem ullam reprehenderit quibusdam eveniet dicta asperiores, quasi optio odio repudiandae porro necessitatibus soluta vitae.</li>
             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum hic id veniam neque ea voluptatem ullam reprehenderit quibusdam eveniet dicta asperiores, quasi optio odio repudiandae porro necessitatibus soluta vitae.</li>
             <br />
             <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum explicabo aliquid similique. Rem dolorum autem nesciunt eum facilis eveniet quia nostrum tenetur, ducimus sunt delectus accusantium a nobis iste impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur eaque autem dignissimos iusto. Veniam magni, optio officiis, hic possimus soluta, eius dolores rerum quam repudiandae odit. Consequatur, quasi accusamus!Lorem</li>
@@ -94,11 +100,14 @@ export default function SingleRecipe() {
           </ol>
         </div>
         </Grid>
+
+
         <Grid id="reviewz"item xs={12} >
           <hr className='recipe-hr'/>
           <h2 className='review-title'> Reviews </h2>
           <CustomerReviews />
         </Grid>
+
       </Grid>
     </Box>
     </div>

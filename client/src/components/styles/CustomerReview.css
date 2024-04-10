@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.review-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 300px;
+}
+
+/* later change height to auto with margins   */
+.review-box {
+  background-color: whitesmoke;
+  box-shadow: 1px 1px 2px black;
+  border-radius: 10px;
+  width: 1000px;
+  height: auto;
+  margin-top: 40px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.review-title {
+  margin-top: 30px;
+  letter-spacing: 2px;
+  font-family: "Almendra", sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+}
