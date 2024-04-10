@@ -1,7 +1,9 @@
 import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import "./styles/AccountTab.css"
-import Login from "./Login";
+// import Login from "./Login";
+// import Register from "./Register"
+
 
 // STRETCH GOAL TO CREATE ROUTE PATH TO MODAL
 const AccountTab = ({ authenticate })=> {
@@ -26,10 +28,12 @@ const AccountTab = ({ authenticate })=> {
 
     return (
       <>
-        <Login />
+        {/* <Login /> */}
+        {/* <Register /> */}
       <div className="main-container">
         <div className="account-container">
             <div className="account-info">
+
               {/* <div className="buttons">
                 <button className="account-buttons">Settings</button>
                 <button className="account-buttons">Reviews</button>
