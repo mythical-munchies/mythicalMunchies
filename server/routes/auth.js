@@ -34,6 +34,7 @@ router.post("/signup", async (req, res) => {
     // Check if the input is an email. That crazy thing is directly from StackOverflow to test for emails.
     const isEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(usernameOrEmail);
 
+    // Note to ask Nishant if this is correct 
     if (isEmail) {
       // If it's an email, attempt to create a new user using the provided email
       newUser = await createUser({ email: usernameOrEmail, password });
