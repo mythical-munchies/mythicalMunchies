@@ -39,6 +39,16 @@ const fetchUser = async(user_id) => {
   return response.rows;
 };
 
+// added to Lucas's original code to account for the login using username or email
+const fetchUserByEmailOrUsername = async (emailOrUsername) => {
+  const SQL = `
+    SELECT *
+    FROM users
+    WHERE email = $1 OR username = $2
+  `;
+  const response = await client.query(SQL, [emailOrUsername, emailOrUsername]);
+  return response.rows;
+};
 
 
 const fetchUserRecipes = async (user_id) => {
