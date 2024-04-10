@@ -42,6 +42,7 @@ const createTables = async() => {
       id UUID PRIMARY KEY,
       name VARCHAR(255) NOT NULL UNIQUE,
       description TEXT,
+      cook_time VARCHAR(255)
       world_id UUID REFERENCES worlds(id) NOT NULL,
       user_id UUID REFERENCES users(id),
       img_url VARCHAR(500)
@@ -58,19 +59,20 @@ const createTables = async() => {
       user_id UUID REFERENCES users(id) NOT NULL,
       recipe_id UUID REFERENCES recipes(id) NOT NULL,
       rating INT,
-      review TEXT
+      review TEXT,
+      bookmarked boolean DEFAULT false
     );
   `;
   await client.query(SQL);
 }
 
-const seedUsers = async () => {
-  // let SQL = ``
-  // let userCount = 0
-  for (let i =0; i < users.length; i++){
-    createUser(users[i])
-  }
-}
+// const seedUsers = async () => {
+//   let SQL = ``
+//   let userCount = 0
+//   for (let i =0; i < users.length; i++){
+//     createUser(users[i])
+//   }
+// }
 
 async function rebuild() {
   try {
