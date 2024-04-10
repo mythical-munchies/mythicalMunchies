@@ -72,11 +72,6 @@ export default function SingleRecipe() {
           </ul>
         </div>
         </Grid>
-
-
-
-
-
         <Grid id="intstructions" item xs={12} >
           {/* <Item>3</Item> */}
           <div className="instructions">
@@ -99,8 +94,6 @@ export default function SingleRecipe() {
           </ol>
         </div>
         </Grid>
-
-
         <Grid id="reviewz"item xs={12} >
           <hr className='recipe-hr'/>
           <h2 className='review-title'> Reviews </h2>
