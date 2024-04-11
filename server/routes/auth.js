@@ -1,78 +1,86 @@
-const express = require("express");
-const router = express.Router();
-const {
-  loginUser,
-  createUser,
-  fetchUserByEmailOrUsername,
-  fetchUser,
-} = require("../db/users");
+// const express = require("express");
+// const router = express.Router();
 
-// Login Route
-router.post("/login", async (req, res) => {
-  const { usernameOrEmail, password } = req.body;
 
-  try {
-    const user = await loginUser({ usernameOrEmail, password });
-    res.status(200).json({
-      message: "Login successful!",
-      user,
-    });
-  } catch (error) {
-    res.status(401).json({
-      error: `Error: ${error.message}`,
-    });
-  }
-});
+
+// // Login Route
+// router.post("/login", async (req, res) => {
+//   const { usernameOrEmail, password } = req.body;
+
+//   try {
+//     const user = await loginUser({ usernameOrEmail, password });
+//     res.status(200).json({
+//       message: "Login successful!",
+//       user,
+//     });
+//   } catch (error) {
+//     res.status(401).json({
+//       error: `Error: ${error.message}`,
+//     });
+//   }
+// });
 
 // Signup Route
-router.post("/signup", async (req, res) => {
-  const { usernameOrEmail, password } = req.body;
+// router.post("/signup", async (req, res) => {
+//   const { usernameOrEmail, password } = req.body;
 
-  try {
-    let newUser;
+//   try {
+//     let newUser;
 
-    // Check if the input is an email. That crazy thing is directly from StackOverflow to test for emails.
-    const isEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(usernameOrEmail);
+//     // Check if the input is an email
+//     const isEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(usernameOrEmail);
 
-    // Note to ask Nishant if this is correct 
-    if (isEmail) {
-      // If it's an email, attempt to create a new user using the provided email
-      newUser = await createUser({ email: usernameOrEmail, password });
-    } else {
-      // If it's a username, attempt to create a new user using the provided username
-      newUser = await createUser({ username: usernameOrEmail, password });
-    }
+//     if (isEmail) {
+//       // If it's an email, attempt to create a new user using the provided email
+//       newUser = await createUser({ email: usernameOrEmail, password });
+//     } else {
+//       // If it's a username, attempt to create a new user using the provided username
+//       newUser = await createUser({ username: usernameOrEmail, password });
+//     }
 
-    // These are backend success and error messages
-    res.status(201).json({
-      message: "Signup successful!",
-      user: newUser,
-    });
-  } catch (error) {
-    res.status(400).json({
-      error: `Error: ${error.message}`,
-    });
-  }
-});
+//     res.status(201).json({
+//       message: "Signup successful!",
+//       user: newUser,
+//     });
+//   } catch (error) {
+//     res.status(400).json({
+//       error: `Error: ${error.message}`,
+//     });
+//   }
+// });
 
-// Fetch User Route
-router.get("/user/:user_id", async (req, res) => {
-  const { user_id } = req.params;
+// // Fetch User Route
+// router.get("/user/:user_id", async (req, res) => {
+//   const { user_id } = req.params;
 
-  try {
-    const user = await fetchUser(user_id);
-    res.status(200).json({
-      message: "User fetched successfully!",
-      user,
-    });
-  } catch (error) {
-    res.status(404).json({
-      error: `Error: ${error.message}`,
-    });
-  }
-});
+//   try {
+//     const user = await fetchUser(user_id);
+//     res.status(200).json({
+//       message: "User fetched successfully!",
+//       user,
+//     });
+//   } catch (error) {
+//     res.status(404).json({
+//       error: `Error: ${error.message}`,
+//     });
+//   }
+// });
 
-module.exports = router;
+// // Creating the instance of express 
+// const app = express();
+
+// // To use the router for paths starting with '/auth'
+// app.use("/auth", router);
+
+// // This will start the server and listen on a port
+// const PORT = process.env.PORT || 3000;
+// app.listen(PORT, () => {
+//   console.log(`Miracle Alert! Server is listening on port ${PORT}`);
+// });
+
+
+
+
 
 //Old Code
 
