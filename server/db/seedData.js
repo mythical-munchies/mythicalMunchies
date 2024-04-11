@@ -1,7 +1,9 @@
-const client = require("./client");
-const uuid = require("uuid");
-const { recipes } = require("./Data.js");
-// const data = require("data.json");
+const client = require('./client');
+const uuid = require('uuid');
+const {recipes} = require('data.js');
+const data = require('data.json');
+ const recipes= require('./worldSeedData');
+const createWorld= require('./worlds');
 
 //drop all tables if any exist
 const dropTables = async () => {
@@ -43,14 +45,14 @@ const createTables = async () => {
       name VARCHAR(255) NOT NULL UNIQUE,
       description TEXT,
       cook_time VARCHAR(255),
-      world_id UUID REFERENCES worlds(id) NOT NULL,
-      user_id UUID REFERENCES users(id),
+      world_name VARCHAR(500),
+      instructions TEXT,
       img_url VARCHAR(500)
     );
     CREATE TABLE recipe_ingredient(
       id UUID PRIMARY KEY,
-      recipe_id UUID REFERENCES recipes(id) NOT NULL,
-      ingredient_id UUID REFERENCES ingredients(id) NOT NULL,
+      recipe_name VARCHAR(255) NOT NULL,
+      ingredient_name VARCHAR(255) NOT NULL,
       amount INT,
       unit VARCHAR(255)
     );
@@ -61,6 +63,16 @@ const createTables = async () => {
       rating INT,
       review TEXT,
       bookmarked boolean DEFAULT false
+    );
+    CREATE TABLE tags(
+      id SERIAL PRIMARY KEY,
+      description TEXT
+    );
+    CREATE TABLE recipe_tags(
+      id UUID PRIMARY KEY,
+      recipe_name VARCHAR(255),
+      tag_id SERIAL REFERENCE tag(id)
+      description TEXT
     );
   `;
   await client.query(SQL);
@@ -76,15 +88,17 @@ const createTables = async () => {
 
 async function rebuild() {
   try {
-    await client.connect();
-    await dropTables();
-    await createTables();
-    // await createInitialData()
-    //await seedUsers
+      await client.connect()
+      await dropTables()
+      await createTables()
+      // need to map instead of forEach
+      // await promise.all(worlds.forEach((world) => createWorld(world)))
+      // await createInitialData()
+      //await seedUsers
   } catch (error) {
     console.log(error.message);
   }
-}
+};
 
 // rebuild().finally(() => client.end());
 module.exports = {
