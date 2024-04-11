@@ -1,10 +1,10 @@
-const client = require('./client');
-const uuid = require('uuid');
-const {recipes} = require('data.js');
-const data = require('data.json')
+const client = require("./client");
+const uuid = require("uuid");
+const { recipes } = require("./Data.js");
+// const data = require("data.json");
 
-//drop all tables if any exist 
-const dropTables = async() => {
+//drop all tables if any exist
+const dropTables = async () => {
   const SQL = `
   DROP TABLE IF EXISTS user_recipe;
   DROP TABLE IF EXISTS recipe_ingredient;
@@ -20,7 +20,7 @@ const dropTables = async() => {
 };
 
 //async function to create tables back
-const createTables = async() => {
+const createTables = async () => {
   const SQL = `
     CREATE TABLE worlds(
       id UUID PRIMARY KEY,
@@ -29,9 +29,9 @@ const createTables = async() => {
     );
     CREATE TABLE users(
       id UUID PRIMARY KEY,
-      username VARCHAR(255) NOT NULL UNIQUE,
-      email VARCHAR(255) NOT NULL UNIQUE
-      password VARCHAR(50) NOT NULL,
+      username VARCHAR(255) UNIQUE,
+      email VARCHAR(255) UNIQUE,
+      password VARCHAR(255) NOT NULL
     );
     CREATE TABLE ingredients(
       id UUID PRIMARY KEY,
@@ -42,7 +42,7 @@ const createTables = async() => {
       id UUID PRIMARY KEY,
       name VARCHAR(255) NOT NULL UNIQUE,
       description TEXT,
-      cook_time VARCHAR(255)
+      cook_time VARCHAR(255),
       world_id UUID REFERENCES worlds(id) NOT NULL,
       user_id UUID REFERENCES users(id),
       img_url VARCHAR(500)
@@ -64,7 +64,7 @@ const createTables = async() => {
     );
   `;
   await client.query(SQL);
-}
+};
 
 // const seedUsers = async () => {
 //   let SQL = ``
@@ -76,17 +76,17 @@ const createTables = async() => {
 
 async function rebuild() {
   try {
-      await client.connect()
-      await dropTables()
-      await createTables()
-      // await createInitialData()
-      //await seedUsers
+    await client.connect();
+    await dropTables();
+    await createTables();
+    // await createInitialData()
+    //await seedUsers
   } catch (error) {
-      console.log(error.message)
+    console.log(error.message);
   }
 }
 
-rebuild().finally(() => client.end())
+// rebuild().finally(() => client.end());
 module.exports = {
-  rebuild
+  rebuild,
 };

@@ -1,4 +1,4 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
 // import { fetchUsers } from '../db/users';
 
@@ -11,19 +11,19 @@ const {
   fetchUser,
 } = require("../db/users");
 
-router.get('/', async(req, res, next)=> {
+router.get("/", async (req, res, next) => {
   try {
-    const users = await fetchUsers()
-    res.send({users});
+    const users = await fetchUsers();
+    res.send({ users });
   } catch (ex) {
-    next (ex)
+    next(ex);
   }
 });
 
-//Login Route 
+//Login Route
 router.post("/login", async (req, res) => {
   const { usernameOrEmail, password } = req.body;
-
+  console.log(req.body);
   try {
     const user = await loginUser({ usernameOrEmail, password });
     res.status(200).json({
@@ -38,7 +38,7 @@ router.post("/login", async (req, res) => {
 });
 
 // Signup Route
-// mythicalmunchies/signup - come back to this to update
+// mythicalmunchies/users/signup - come back to this to update
 router.post("/signup", async (req, res) => {
   const { usernameOrEmail, password } = req.body;
 
@@ -66,7 +66,7 @@ router.post("/signup", async (req, res) => {
     });
   }
 });
-module.exports = router
+module.exports = router;
 
 // Fetch User Route
 router.get("/user/:user_id", async (req, res) => {
@@ -85,7 +85,7 @@ router.get("/user/:user_id", async (req, res) => {
   }
 });
 
-// Creating the instance of express 
+// Creating the instance of express
 const app = express();
 
 // To use the router for paths starting with '/auth'
@@ -97,4 +97,4 @@ app.listen(PORT, () => {
   console.log(`Miracle Alert! Server is listening on port ${PORT}`);
 });
 
-// 
+//

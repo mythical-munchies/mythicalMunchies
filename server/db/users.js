@@ -1,5 +1,6 @@
 const client = require("./client");
 const bcrypt = require("bcrypt");
+const uuid = require("uuid");
 
 const createUser = async ({ username, email, password }) => {
   const SQL = `
@@ -58,12 +59,13 @@ const fetchUserByEmailOrUsername = async (emailOrUsername) => {
     WHERE email = $1 OR username = $2
   `;
   const response = await client.query(SQL, [emailOrUsername, emailOrUsername]);
-  return response.rows;
+  return response.rows[0];
 };
 
-const loginUser = async ({ emailOrUsername, password }) => {
+const loginUser = async ({ usernameOrEmail, password }) => {
   // Query the database to find the user based on email or username
-  const user = await fetchUserByEmailOrUsername(emailOrUsername);
+  const user = await fetchUserByEmailOrUsername(usernameOrEmail);
+  console.log(user);
   // If user is not found or password doesn't match, throw an error
   if (!user || !bcrypt.compareSync(password, user.password)) {
     throw new Error("Invalid credentials");
