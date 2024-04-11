@@ -63,7 +63,7 @@ function HomeTab() {
 
       <div className="middle2-slide">
         <div className="veggie-spotlight">
-          <div>
+          <div className="home-tabs-content">
             <h4 className="main-texts">Veggie Gardens 🥬🥔 </h4>
             <h5 className="details-text">Vegetarian and Vegan friendly!</h5>
             <Link to="/veggie-gardens">

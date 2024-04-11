@@ -6,12 +6,12 @@ import Grid from '@mui/material/Grid';
 import "./styles/SingleRecipe.css"
 import { Link } from 'react-router-dom'
 import Ramen from './images/ponyo-ramen.jpg'
-import LeaveReview from './MyReviews'
+// import LeaveReview from './MyReviews'
 // import Profile from './icons/profile.png'
 import CustomerReviews from './CustomerReviews';
 
 // =======
-// import LeaveReview from './MyReviews';
+import LeaveReview from './LeaveReview';
 // >>>>>>> main
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -37,9 +37,11 @@ export default function SingleRecipe() {
               <div className='intro'>
               
               {/* this acts like an add to favorites like in the cat -api */}
-                <button className="bookmark">Add to Bookmarks 📕</button>
+                <button className="bookmarky">Add to Bookmarks 📕</button>
+               
                 <h4 className='recipe-name'>Recipe.name </h4>
                 <img  className='pic' src={Ramen} alt="pic" />
+                <LeaveReview />
             
               <div className="ratings">
                 
@@ -48,10 +50,10 @@ export default function SingleRecipe() {
 
                 {/* TRYING MODAL HERE  */}
 
-                <div className='cooking-time'>
+                {/* <div className='cooking-time'>
                   <h5>Cooking time : recipe.cooktime</h5>
-                </div>
-                <LeaveReview />
+                </div> */}
+                
               </div>
               </div>
             </Grid>

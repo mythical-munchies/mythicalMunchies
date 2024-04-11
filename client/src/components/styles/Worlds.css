@@ -155,12 +155,12 @@
   gap: 0px;
   border-radius: 10px;
   opacity: 0px;
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.world-title {
+.world-page-title {
   font-family: "Almendra", serif;
   font-weight: 400;
   font-size: 38px;
