@@ -1,0 +1,32 @@
+.btn-close {
+  display: none;
+}
+
+.modal-header {
+border-bottom: 1px solid darkred;
+width: 450px;
+margin: auto;
+}
+
+.modal-content {
+  background-color: palegoldenrod;  
+}
+
+.review-modal-title {
+  width: 400px;
+  font-family: "Almendra", sans-serif;
+  padding: 10px;
+  text-align: left;
+}
+
+#input-text {
+  font-family: "Almendra", sans-serif;
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+#review-modal-text {
+  font-family: "Almendra", sans-serif;
+  font-size: 18px;
+} 
+

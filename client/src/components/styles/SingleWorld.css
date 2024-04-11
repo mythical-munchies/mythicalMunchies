@@ -42,9 +42,11 @@
 
 .banner-image {
   margin-top: 40px;
-  width: 80%;
+  width: 60%;
   height: auto;
   border-radius: 20px;
+  display: inline;
+  margin-bottom: 30px;
 }
 
 .title {
