@@ -1,32 +1,32 @@
 {
-	"scripts": {
-		"start-dev": "NODE_ENV=development nodemon server/index.js",
-		"start": "node server/index.js",
-		"seed-dev": "NODE_ENV=development nodemon ./db/seed.js",
-		"seed": "node ./db/seed.js"
-	},
-	"dependencies": {
-		"@emotion/react": "^11.11.4",
-		"@emotion/styled": "^11.11.5",
-		"@mui/icons-material": "^5.15.15",
-		"@mui/material": "^5.15.15",
-		"@mui/styled-engine-sc": "^6.0.0-alpha.18",
-		"bcrypt": "^5.1.1",
-		"bootstrap": "^5.3.3",
-		"cors": "^2.8.5",
-		"emailjs-com": "^3.2.0",
-		"express": "^4.19.2",
-		"flowbite": "^2.3.0",
-		"flowbite-react": "^0.8.0",
-		"morgan": "^1.10.0",
-		"nodemon": "^3.1.0",
-		"pg": "^8.11.5",
-		"react-bootstrap": "^2.10.2",
-		"styled-components": "^6.1.8",
-		"tailwindcss": "^1.9.6",
-		"uuid": "^9.0.1"
-	},
-	"devDependencies": {
-		"tailwindcss": "^3.4.3"
-	}
+  "scripts": {
+    "start-dev": "NODE_ENV=development nodemon server/index.js",
+    "start": "node server/index.js",
+    "seed-dev": "NODE_ENV=development nodemon ./server/db/seed.js",
+    "seed": "node ./server/db/seed.js"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/icons-material": "^5.15.15",
+    "@mui/material": "^5.15.15",
+    "@mui/styled-engine-sc": "^6.0.0-alpha.18",
+    "bcrypt": "^5.1.1",
+    "bootstrap": "^5.3.3",
+    "cors": "^2.8.5",
+    "emailjs-com": "^3.2.0",
+    "express": "^4.19.2",
+    "flowbite": "^2.3.0",
+    "flowbite-react": "^0.8.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.0",
+    "pg": "^8.11.5",
+    "react-bootstrap": "^2.10.2",
+    "styled-components": "^6.1.8",
+    "tailwindcss": "^1.9.6",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
 }

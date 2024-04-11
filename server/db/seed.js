@@ -1,6 +1,6 @@
-const client = require('./client');
-const { rebuildDB, testDB } = require('./seedData');
+const client = require("./client");
+const { rebuild } = require("./seedData");
 
-rebuildDB()
+rebuild()
   .catch(console.error)
   .finally(() => client.end());

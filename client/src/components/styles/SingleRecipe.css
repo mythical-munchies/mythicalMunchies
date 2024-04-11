@@ -74,13 +74,14 @@
   font-family: "Almendra", sans-serif;
   width: 220px;
   /* why is the buttont two different colors */
-  border-color: darkred;
+  border: 2px darkred;
   margin-top: 100px;
   letter-spacing: 2px;
   display: flex;
   justify-content: left;
-  text-align: center;
+  /* text-align: center; */
   padding-left: 10px;
+  border-top: 2px red;
 }
 
 .bookmark-button {
@@ -138,6 +139,13 @@ height: 20px;
   border-style: none;
 }
 
+.cooking-time {
+  margin-top: 8px;
+  text-align: left;
+  padding: 10px;
+}
+
+
 .review-button:hover {
   color: darkblue;
   text-decoration: underline;
@@ -151,6 +159,7 @@ height: 20px;
   margin-bottom: 30px;
   font-weight: 100;
   text-align: left;
+  font-size: 35px;
 
 }
 
@@ -204,21 +213,25 @@ height: 20px;
   margin-left: 20px;
 }
 
-.review {
+.ingredient-item {
+  margin-left: 30px;
+}
+
+/* .review {
   color: purple;
   font-size: 25px;
   margin-left: 20px;
   margin-top: 10px;
-}
+} */
 
-.review-box {
+/* .review-box {
   display: flex;
   flex-wrap: wrap;
   margin-left: 300px;
-}
+} */
 
 /* later change height to auto with margins   */
-.review-box {
+/* .review-box {
   background-color: whitesmoke;
   box-shadow: 1px 1px 2px black;
   border-radius: 10px;
@@ -226,6 +239,9 @@ height: 20px;
   height: auto;
   margin-top: 40px;
   margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .review-title {
@@ -234,4 +250,4 @@ height: 20px;
   font-family: "Almendra", sans-serif;
   font-weight: 100;
   font-size: 30px;
-}
+} */

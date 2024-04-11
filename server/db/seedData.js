@@ -5,8 +5,8 @@ const data = require('data.json');
  const recipes= require('./worldSeedData');
 const createWorld= require('./worlds');
 
-//drop all tables if any exist 
-const dropTables = async() => {
+//drop all tables if any exist
+const dropTables = async () => {
   const SQL = `
   DROP TABLE IF EXISTS user_recipe;
   DROP TABLE IF EXISTS recipe_ingredient;
@@ -22,7 +22,7 @@ const dropTables = async() => {
 };
 
 //async function to create tables back
-const createTables = async() => {
+const createTables = async () => {
   const SQL = `
     CREATE TABLE worlds(
       id UUID PRIMARY KEY,
@@ -31,9 +31,9 @@ const createTables = async() => {
     );
     CREATE TABLE users(
       id UUID PRIMARY KEY,
-      username VARCHAR(255) NOT NULL UNIQUE,
-      email VARCHAR(255) NOT NULL UNIQUE,
-      password VARCHAR(50) NOT NULL
+      username VARCHAR(255) UNIQUE,
+      email VARCHAR(255) UNIQUE,
+      password VARCHAR(255) NOT NULL
     );
     CREATE TABLE ingredients(
       id UUID PRIMARY KEY,
@@ -76,7 +76,7 @@ const createTables = async() => {
     );
   `;
   await client.query(SQL);
-}
+};
 
 // const seedUsers = async () => {
 //   let SQL = ``
@@ -96,11 +96,11 @@ async function rebuild() {
       // await createInitialData()
       //await seedUsers
   } catch (error) {
-      console.log(error.message)
+    console.log(error.message);
   }
 };
 
-rebuild().finally(() => client.end())
+// rebuild().finally(() => client.end());
 module.exports = {
-  rebuild
+  rebuild,
 };
