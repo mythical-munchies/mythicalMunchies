@@ -6,12 +6,12 @@ import Grid from '@mui/material/Grid';
 import "./styles/SingleRecipe.css"
 import { Link } from 'react-router-dom'
 import Ramen from './images/ponyo-ramen.jpg'
-import LeaveReview from './MyReviews'
+// import LeaveReview from './MyReviews'
 // import Profile from './icons/profile.png'
 import CustomerReviews from './CustomerReviews';
 
 // =======
-// import LeaveReview from './MyReviews';
+import LeaveReview from './LeaveReview';
 // >>>>>>> main
 
 const Item = styled(Paper)(({ theme }) => ({
