@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-import { fetchUsers } from '../db/users';
+const fetchUsers = require('../db/users');
 
 // const {authenticate, findUserWithToken, getRecipes} = require('./db')
 

@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-import { fetchAllRecipes, fetchWorldRecipes, fetchRecipe } from '../db/recipes';
+const {fetchAllRecipes, fetchWorldRecipes, fetchRecipe }= require('../db/recipes');
 // const {fetchRecipes, fetchRecipe, createRecipe} = require('./db')
 
 router.get('/', async(req, res, next)=> {

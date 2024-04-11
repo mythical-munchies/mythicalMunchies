@@ -49,16 +49,4 @@ const worlds = [
   },
 ]
 
-const recipes =[
-  {
-    "name": "Pink Cake",
-    "description":"Pink Cake may sound basic, but this dainty dessert hides a secret ingredient: melon! In STARDEW VALLEY, Pink Cake is a favorite of several villagers. The in-game thumbnail shows a cute pink tube cake topped with red heart sprinkles. The ingredients are listed as flour, sugar, egg, and pink melon (a fruit unique to the game, which looks like a pink cantaloupe).", 
-    "cook_time":"1 hour 30 min",
-    "world_id": `${"Stardew Valley".id}`,
-    "user_id":"",
-    "img_url":"https://images.app.goo.gl/VL92W4BGeApxVZZ39"
-  },
-  
-]
-
-module.exports = {recipes, users, worlds}
+module.exports = {worlds}
