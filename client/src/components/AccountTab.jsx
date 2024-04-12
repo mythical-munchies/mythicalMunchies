@@ -8,12 +8,11 @@ import "./styles/AccountTab.css"
 // STRETCH GOAL TO CREATE ROUTE PATH TO MODAL
 const AccountTab = ({ authenticate })=> {
   const [accountData, setAccountData] = useState({
+    username: "",
     first: "",
     last: "",
-    username: "",
     email: "",
     password:"",
-    birthday:"",
     about: "",
   });
 
@@ -38,51 +37,55 @@ const AccountTab = ({ authenticate })=> {
                 </svg>
             </button>
 
+            {/* content should only be shown if login AUTH */}
+
+{/* THIS IS THE ACCOUNT CONTENT */}
             <div className="testicle">
-            <div className="testin">
-              
               <div className="testin">
-              <h3 className="edit">Edit your Account Information</h3>
+              
+                <div className="testin">
+                  <h3 className="edit">Edit your Account Information</h3>
+                </div>
+                
+                  <form id="account-edit" class="max-w-sm mx-auto">
+                    <div class="mb-5">
+                      <label id="textington" for="username" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Username:</label>
+                      <input type="username" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="kingOFtheNorth" required />
+                    </div>
+
+                    <div class="mb-5">
+                      <label id="textington" for="firstName" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First Name:</label>
+                      <input type="name" id="firstName" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="John" required />
+                    </div>
+
+                    <div class="mb-5">
+                      <label id="textington" for="lastName" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last Name:</label>
+                      <input type="name" id="lastName" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Snow" required />
+                    </div>
+
+                    <div class="mb-5">
+                      <label id="textington" for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> Email:</label>
+                      <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="johnsnow@gmail.com" required />
+                    </div>
+
+                    <div class="mb-5">
+                      <label id="textington" for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your password</label>
+                      <input type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="***********" required />
+                    </div>
+
+                      <form class="max-w-sm mx-auto">
+                        <label id="textington" for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">About You:</label>
+                        <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Got any powers? Tell us about it!"></textarea>
+                      </form>
+
+                        <button id="account-submit" type="submit" class="text-white bg-purple-700 hover:bg-purple-900 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Update
+                        </button>
+
+                  </form>
               </div>
-<form id="account-edit" class="max-w-sm mx-auto">
-  <div class="mb-5">
-    <label id="textington" for="username" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Username:</label>
-    <input type="username" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="kingOFtheNorth" required />
-  </div>
-
-  <div class="mb-5">
-    <label id="textington" for="firstName" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First Name:</label>
-    <input type="name" id="firstName" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="John" required />
-  </div>
-
-  <div class="mb-5">
-    <label id="textington" for="lastName" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last Name:</label>
-    <input type="name" id="lastName" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Snow" required />
-  </div>
-
-  <div class="mb-5">
-    <label id="textington" for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> Email:</label>
-    <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="johnsnow@gmail.com" required />
-  </div>
-
-  <div class="mb-5">
-    <label id="textington" for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your password</label>
-    <input type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="***********" required />
-  </div>
-
-
-<form class="max-w-sm mx-auto">
-  <label id="textington" for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">About You:</label>
-  <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Got any powers? Tell us about it!"></textarea>
-</form>
-
-
-  <button id="account-submit" type="submit" class="text-white bg-purple-700 hover:bg-purple-900 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Update</button>
-</form>
-
-            </div>
             </div>
 
+{/* THIS IS THE SIDEBAR */}
             <aside id="default-sidebar" className="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
               <div id="sideBar" className="h-full px-3 py-4 overflow-y-auto bg-white-50 dark:bg-gray-800">
 
@@ -144,8 +147,7 @@ const AccountTab = ({ authenticate })=> {
               </div>
             </aside>
             
-           
-      </div>
+        </div>
       </div>
       </>
     );
