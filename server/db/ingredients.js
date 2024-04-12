@@ -1,4 +1,5 @@
 const client = require("./client")
+const uuid = require("uuid");
 
 const createIngredient = async ({name, description}) => {
   const SQL = `
