@@ -1,5 +1,5 @@
 const client = require("./client")
-
+const uuid = require('uuid')
 const createWorld = async ({name, img_url}) => {
   const SQL = `
   INSERT INTO worlds(id, name, img_url)

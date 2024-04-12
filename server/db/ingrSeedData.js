@@ -14,7 +14,7 @@ const ingredients = [
   {"name":"Vanilla Extract",
     "description":""
   },
-  {"name":"Bakinf Soda",
+  {"name":"Baking Soda",
     "description":""
   },
   {"name":"Kosher Salt",
@@ -172,28 +172,7 @@ const ingredients = [
 },
 {"name":"Matcha",
 "description":"Green tea powder"
-},
-{"name":"",
-"description":""
-},
-{"name":"",
-"description":""
-},
-{"name":"",
-"description":""
-},
-{"name":"",
-"description":""
-},
-{"name":"",
-"description":""
-},
-{"name":"",
-"description":""
-},
-{"name":"",
-"description":""
-},
+}
 
 ]
 module.exports = {ingredients}
