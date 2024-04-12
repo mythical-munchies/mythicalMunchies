@@ -10,7 +10,7 @@ function CustomerReviews() {
             <img id='profile-logo' className="w-15 h-12 me-4 rounded-full" src={Profile} alt="" />
                 <div className="font-medium dark:text-white">
                     {/* THIS SHOULD EVENTUALLY BE A LINK TO THE PROFILE */}
-                  <p className='this-test-name'>user.name <time datetime="2024-04-01 19:00" class="block text-sm text-gray-500 dark:text-gray-400">Joined on April 2024</time></p>
+                  <p className='this-test-name'>user.name <time dateTime="2024-04-01 19:00" className="block text-sm text-gray-500 dark:text-gray-400">Joined on April 2024</time></p>
                 </div>
           </div>
               <div id="ratingz" className="flex items-center mb-1 space-x-1 rtl:space-x-reverse">
@@ -40,7 +40,7 @@ function CustomerReviews() {
             <img id='profile-logo' className="w-15 h-12 me-4 rounded-full" src={Profile} alt="" />
                 <div className="font-medium dark:text-white">
                     {/* THIS SHOULD EVENTUALLY BE A LINK TO THE PROFILE */}
-                  <p className='this-test-name'>user.name <time datetime="2024-04-01 19:00" class="block text-sm text-gray-500 dark:text-gray-400">Joined on April 2024</time></p>
+                  <p className='this-test-name'>user.name <time dateTime="2024-04-01 19:00" className="block text-sm text-gray-500 dark:text-gray-400">Joined on April 2024</time></p>
                 </div>
           </div>
               <div id="ratingz" className="flex items-center mb-1 space-x-1 rtl:space-x-reverse">
@@ -70,7 +70,7 @@ function CustomerReviews() {
             <img id='profile-logo' className="w-15 h-12 me-4 rounded-full" src={Profile} alt="" />
                 <div className="font-medium dark:text-white">
                     {/* THIS SHOULD EVENTUALLY BE A LINK TO THE PROFILE */}
-                  <p className='this-test-name'>user.name <time datetime="2024-04-01 19:00" class="block text-sm text-gray-500 dark:text-gray-400">Joined on April 2024</time></p>
+                  <p className='this-test-name'>user.name <time dateTime="2024-04-01 19:00" className="block text-sm text-gray-500 dark:text-gray-400">Joined on April 2024</time></p>
                 </div>
           </div>
               <div id="ratingz" className="flex items-center mb-1 space-x-1 rtl:space-x-reverse">
