@@ -1,6 +1,6 @@
-const client = require("./client")
-const uuid = require('uuid')
-const createWorld = async ({name, img_url}) => {
+const client = require("./client");
+const uuid = require("uuid");
+const createWorld = async ({ name, img_url }) => {
   const SQL = `
   INSERT INTO worlds(id, name, img_url)
   VALUES($1, $2, $3)
@@ -16,21 +16,22 @@ const fetchWorlds = async () => {
   FROM worlds
   `;
   const response = await client.query(SQL);
-  return response.rows[0];
+  return response.rows;
 };
 
-const fetchWorld = async (world_id) => {
+const fetchWorld = async (id) => {
   const SQL = `
   SELECT *
   FROM worlds
-  WHERE world_id = $1
+  WHERE id = $1
   `;
-  const response = await client.query(SQL, [world_id]);
+  console.log(id);
+  const response = await client.query(SQL, [id]);
   return response.rows[0];
 };
 
 module.exports = {
   createWorld,
   fetchWorlds,
-  fetchWorld
-}
+  fetchWorld,
+};
