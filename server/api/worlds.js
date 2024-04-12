@@ -9,8 +9,9 @@ router.get("/", async (req, res, next) => {
     console.log(err);
   }
 });
-
+//This will take you to a singular world. baseURL/worlds/:id
 router.get("/:id", async (req, res, next) => {
+  console.log(req);
   try {
     res.send(await fetchWorld());
   } catch (err) {
