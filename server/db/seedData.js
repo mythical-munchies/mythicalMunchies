@@ -1,15 +1,16 @@
 const client = require('./client');
-const uuid = require('uuid');
+const uuid = require("uuid");
 // const {recipes} = require('data.js');
 // const data = require('data.json');
 const {createIngredient} = require('./ingredients');
-const {ingredients} = require('./ingrSeedData')
+const {ingredients} = require('./seedArrays/ingrSeedData')
 // const {createRecipe, createRecipeIngredient} = require('./recipes')
-// const recipes = require('./recipeSeedData');
+// const recipes = require('./seedArrays/recipeSeedData');
 const {createWorld} = require('./worlds');
-const {worlds} = require('./worldSeedData');
+
+const {worlds} = require('./seedArrays/worldSeedData.js');
 const {createUser, createUserRecipe} = require('./users');
-const {users} = require('./userSeedData')
+const {users} = require('./seedArrays/userSeedData')
 
 //drop all tables if any exist
 const dropTables = async () => {

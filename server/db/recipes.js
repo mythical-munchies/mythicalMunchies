@@ -1,7 +1,7 @@
 const client = require("./client");
-const uuid = reqiure('uuid');
+const {uuid} = reqiure("uuid");
 
-const createRecipe = async ({name, description, world_name,        instructions, img_url}) => {
+const createRecipe = async ({name, description, world_name, instructions, img_url}) => {
   // let steps = instructions.map((ist, i) => `$${i+1}`)
     const SQL = `
     INSERT INTO recipes(id, name, description, world_name, instructions, img_url)
