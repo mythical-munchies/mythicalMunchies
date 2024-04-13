@@ -12,6 +12,7 @@ const {worlds} = require('./seedArrays/worldSeedData.js');
 const {createUser, createUserRecipe} = require('./users');
 const {users} = require('./seedArrays/userSeedData')
 
+
 //drop all tables if any exist
 const dropTables = async () => {
   const SQL = `
@@ -98,43 +99,44 @@ async function seedWorlds(client) {
   try {
     for (const world of worlds) {
       const createdWorld = await createWorld(world);
-      console.log(`Created world: ${createdWorld.name}`); // 
+      console.log(`Created world: ${createdWorld.name}`);
+      console.log(`${createdWorld.id}`); //
     }
   } catch (error) {
-    console.error('Error seeding worlds:', error);
+    console.error("Error seeding worlds:", error);
     throw error; // Re-throw to indicate failure
   }
-};
+}
 
 async function seedUsers(client) {
   try {
     for (const user of users) {
       const createdUser = await createUser(user);
-      console.log(`Created user: ${createdUser.username}`); // 
+      console.log(`Created user: ${createdUser.username}`); //
     }
   } catch (error) {
-    console.error('Error seeding users:', error);
+    console.error("Error seeding users:", error);
     throw error; // Re-throw to indicate failure
   }
-};
+}
 
 async function seedIngr(client) {
   try {
     for (const ingredient of ingredients) {
       const createdIngr = await createIngredient(ingredient);
-      console.log(`Created ingr: ${createdIngr.name}`); // 
+      console.log(`Created ingr: ${createdIngr.name}`); //
     }
   } catch (error) {
-    console.error('Error seeding users:', error);
+    console.error("Error seeding users:", error);
     throw error; // Re-throw to indicate failure
   }
-};
+}
 
 // async function seedInst(client) {
 //   try {
 //     for (const instruction of instruction) {
 //       const createdInst = await createInstruction(instruction);
-//       console.log(`Created ingr: ${createdInst.name}`); // 
+//       console.log(`Created ingr: ${createdInst.name}`); //
 //     }
 //   } catch (error) {
 //     console.error('Error seeding users:', error);
@@ -144,21 +146,21 @@ async function seedIngr(client) {
 
 async function rebuild() {
   try {
-      await client.connect()
-      await dropTables()
-      console.log('tables yeeted')
-      await createTables()
-      console.log('made tables')
-      await seedWorlds()
-      console.log('we got worlds')
-      await seedUsers()
-      console.log('made users')
-      await seedIngr()
-      console.log('ingredients seeded')
+    await client.connect();
+    await dropTables();
+    console.log("tables yeeted");
+    await createTables();
+    console.log("made tables");
+    await seedWorlds();
+    console.log("we got worlds");
+    await seedUsers();
+    console.log("made users");
+    await seedIngr();
+    console.log("ingredients seeded");
   } catch (error) {
     console.log(error.message);
   }
-};
+}
 
 // rebuild().finally(() => client.end());
 module.exports = {

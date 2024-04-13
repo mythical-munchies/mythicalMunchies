@@ -8,14 +8,20 @@
   background: #4a0260bf;
   font-size: 20px;
   width: 1208px;
-  height: 632.28px;
+  height: auto;
   top: 295px;
   left: 152px;
   border-radius: 20px;
   opacity: 95%;
   margin-top: 30px;
-  padding-top: 20px;
+  padding-top: 30px;
   border-radius: 20px;
+  padding-bottom: 100px;
+}
+
+.contact-hr {
+  border: 1px solid white;
+  opacity: 100%;
 }
 
 .content {
@@ -82,6 +88,7 @@ p {
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 10px;
+  text-align: left;
 }
 
 label {
@@ -125,6 +132,7 @@ textarea {
 }
 
 .send {
+  background-color: #FFC300;
   color: #004268;
   padding: 10px 20px;
   font-family: "Almendra", serif;

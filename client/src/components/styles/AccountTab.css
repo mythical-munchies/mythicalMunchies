@@ -1,4 +1,4 @@
-
+/* 
 .account-container {
   display: flex;
   justify-content: center;
@@ -10,4 +10,123 @@
   height: 500px;
   width: 1000px;
   margin-top: 30px;
+} */
+
+#default-sidebar {
+  position: static;
+  background-color: #637e74;
+  width: 450px;
+  border-radius: 30px 0px 0px 30px;
+  height: 1000px;
+  margin-top: 4px;
+  padding-right: 20px;
+  color: aliceblue;
+  z-index: 4;
+  margin-top: -96px;
+  text-align: left;
+}
+
+#account-buttons {
+  /* margin-top: 100px; */
+  text-decoration: none;
+}
+
+.sideBar {
+  border-radius: 50px;
+}
+
+.welcome-user {
+  color: #F2B900;
+  text-align: center;
+}
+
+.logout-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: "Almendra", sans-serif;
+  color: #e2d5b0;
+  font-size: 18px;
+}
+
+.logout-button:hover {
+  color: darkred;
+  text-decoration: underline;
+  
+}
+
+.testin {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* background-color: purple; */
+  width: 862px;
+  z-index: 1;
+  height: 100px;
+  margin-top: 4px;
+  border-radius: 0px 30px 0px 0px;
+}
+
+#account-edit {
+  /* margin-top: 20px; */
+  font-family: "Almendra", sans-serif;
+
+}
+
+.testicle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  z-index: 1;
+}
+.sideBar-button {
+  font-size: 30px;
+  margin-top: 50px;
+  text-decoration: none;
+}
+
+/* #side-bar-texty {
+  color: orange;
+} */
+
+.largest-contain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  /* background-color: orange; */
+}
+
+.main-contain {
+  width: 1300px;
+  height: 1000px;
+  background-color: #85A499;
+  margin-top: 30px;
+  border-radius: 50px;
+
+}
+
+.testytesty {
+  text-align: center;
+  color: orange;
+}
+
+#account-submit {
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+.edit {
+  margin-top: 20px;
+  font-size: 20px;
+  color: darkred;
+  
+}
+
+#textington {
+text-align: left;
+font-size: 20px;
+color: #e2d5b0;
+letter-spacing: 2px;
+font-family: "Almendra", sans-serif;
 }

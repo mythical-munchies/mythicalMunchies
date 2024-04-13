@@ -31,7 +31,7 @@ function ContactTab() {
       color: "#ffffff",
       fontFamily: "Almendra, serif",
       fontWeight: "normal",
-      fontSize: "42px",
+      fontSize: "50px",
       textAlign: "center",
     },
   };
@@ -41,7 +41,7 @@ function ContactTab() {
       <div className="main-container">
         <div className="container">
           <h1 style={styles.h1}>Contact Us</h1>
-          <hr></hr>
+          <hr className="contact-hr"></hr>
           <div className="content">
             {/* Text to the left of the form. Final language TBD */}
             <div className="textbox">

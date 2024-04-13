@@ -66,7 +66,7 @@
   font-size: 50px;
 }
 
-.bookmark {
+/* .bookmark {
   padding: 2px;
   background-color: #e2d5b0;
   border-radius: 5px;
@@ -74,14 +74,28 @@
   font-family: "Almendra", sans-serif;
   width: 220px;
   /* why is the buttont two different colors */
-  border: 2px darkred;
+  /* border: 2px darkred;
   margin-top: 100px;
+  letter-spacing: 2px; */
+  /* display: flex; */
+  /* justify-content: left; */
+  /* text-align: center; */
+  /* padding-left: 10px; */
+
+
+.bookmarky {
+  border: 2px  solid darkred;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 100px;
+  font-family: "Almendra", sans-serif;
+  width: 220px;
   letter-spacing: 2px;
+  font-size: 18px;
   display: flex;
   justify-content: left;
-  /* text-align: center; */
   padding-left: 10px;
-  border-top: 2px red;
+  
 }
 
 .bookmark-button {
@@ -98,8 +112,8 @@ border: 2px darkred;
 }
 
 .recipe-name {
-  margin-top: 10px;
-  font-size: 40px;
+  margin-top: 30px;
+  font-size: 42px;
   font-family: "Almendra", sans-serif;
   font-weight: normal;
   color: yellow;
@@ -123,26 +137,29 @@ border: 2px darkred;
 height: 20px;
 }
 
-.review-button {
-  color: darkblue;
-  font-family: "Almendra", sans-serif;
-  text-decoration: none;
-  word-spacing: 5px;
-  font-size: 25px;
-  margin-top: 10px;
-  margin-left: 0px;
-  display: flex;
-  justify-content: left;
-  letter-spacing: 1px;
-  padding: 5px;
-  background-color: #e2d5b0;
-  border-style: none;
-}
+
 
 .cooking-time {
   margin-top: 8px;
   text-align: left;
   padding: 10px;
+  font-family: "Almendra", sans-serif;
+}
+
+.review-button {
+  color: #3B5D80;
+  font-family: "Almendra", sans-serif;
+  text-decoration: none;
+  word-spacing: 5px;
+  font-size: 20px;
+  margin-left: 5px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: left;
+  letter-spacing: 1px;
+  /* padding: 5px; */
+  background-color: #e2d5b0;
+  border-style: none;
 }
 
 
@@ -183,7 +200,8 @@ height: 20px;
   width: 1200px;
   margin: auto;
   margin-top: 50px;
-  border: 1px solid gray;
+  border: 1px solid black;
+  opacity: 100%;
   
 }
 
