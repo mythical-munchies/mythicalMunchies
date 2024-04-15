@@ -1,13 +1,16 @@
 const client = require('./client');
 const uuid = require("uuid");
+
 const {createIngredient} = require('./ingredients');
 const {ingredients} = require('./seedArrays/ingrSeedData.js')
 const {createRecipe, createRecipeIngredient} = require('./recipes')
 const {recipes} = require('./seedArrays/recipesSeedData.js');
-const {createWorld} = require('./worlds');
+const {createWorld} = require('./worlds.js');
 const {worlds} = require('./seedArrays/worldSeedData.js');
 const {createUser, createUserRecipe} = require('./users');
-const {users} = require('./seedArrays/userSeedData')
+const {users} = require('./seedArrays/userSeedData');
+const {instructions} = require('./seedArrays/instSeedData.js');
+const {createInstruction} = require('./instructions.js')
 
 
 //drop all tables if any exist to avoid duplicates
@@ -142,17 +145,17 @@ async function seedRecipes(client) {
   }
 }
 
-// async function seedInst(client) {
-//   try {
-//     for (const instruction of instruction) {
-//       const createdInst = await createInstruction(instruction);
-//       console.log(`Created ingr: ${createdInst.name}`); //
-//     }
-//   } catch (error) {
-//     console.error('Error seeding users:', error);
-//     throw error; // Re-throw to indicate failure
-//   }
-// };
+async function seedInst(client) {
+  try {
+    for (const instruction of instructions) {
+      const createdInst = await createInstruction(instruction);
+      console.log(`Created instruction for: ${createdInst.recipe_name} at ${createdInst.index} index`); 
+    }
+  } catch (error) {
+    console.error('Error seeding users:', error);
+    throw error; // Re-throw to indicate failure
+  }
+};
 
 //function to rebuild the db, called in seeed.js using npm run seed
 async function rebuild() {
@@ -169,7 +172,9 @@ async function rebuild() {
     await seedIngr();
     console.log("ingredients seeded");
     await seedRecipes();
-    console.log('seeded recipes')
+    console.log('seeded recipes');
+    await seedInst();
+    console.log('seeded instructions');
   } catch (error) {
     console.log(error.message);
   }
