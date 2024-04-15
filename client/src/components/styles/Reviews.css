@@ -1,0 +1,51 @@
+.reviewed {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; */
+  width: 800px;
+  margin-left: 10px;
+  overflow: scroll;
+  height: 900px;
+  margin-top: 50px;
+  text-align: left;
+  
+}
+
+.review-date {
+  font-size: 16px;
+  margin-left: 20px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  color: beige;
+}
+
+.review-recipe-title {
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  margin-left: 20px;
+  font-family: "Almendra", sans-serif;
+}
+
+.delete-review {
+  margin-left: 20px;
+  border-radius: 5px;
+  /* border: 2px solid red; */
+  padding-top: 3px;
+  /* padding-left: 1px; */
+  padding-right: 15px;
+  padding-bottom: 3px;
+  font-family: "Almendra", sans-serif;
+  font-size: 13px;
+  margin-top: 0px;
+}
+
+.delete-img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+

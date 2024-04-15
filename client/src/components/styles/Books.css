@@ -28,6 +28,7 @@ justify-content: center;
   text-align: left;
   font-size: 20px;
   font-family: "Almendra", sans-serif;
+  /* margin-top: 0px; */
 }
 
 .book-title-books {
@@ -42,8 +43,6 @@ justify-content: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
-  
- 
 }
 
 .book-author {

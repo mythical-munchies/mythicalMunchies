@@ -25,6 +25,8 @@ const AccountTab = ({ authenticate })=> {
     e.prevent.Default();
   }
 
+  // ADD EVENT LISTENER TO STOP PAGE RELOAD AFTER BUTTON CLICK
+
     return (
       <>
         <div className="largest-contain">
@@ -90,7 +92,7 @@ const AccountTab = ({ authenticate })=> {
               <div id="sideBar" className="h-full px-3 py-4 overflow-y-auto bg-white-50 dark:bg-gray-800">
 
                 <div>
-                  <h1 className="welcome-user">Welcome Back username</h1>
+                  <h1 className="welcome-user">Welcome Back!</h1>
                 </div>
 
                 <span className="logout-container">
@@ -99,7 +101,7 @@ const AccountTab = ({ authenticate })=> {
 
                 <ul className="space-y-2 font-medium">
                     <li className="sideBar-button">
-                      <a href="#" className="flex items-center p-2 text-blue-900 rounded-lg dark:text-white hover:bg-yellow-400 dark:hover:bg-yellow-800 group">
+                      <a href="/account" className="flex items-center p-2 text-blue-900 rounded-lg dark:text-white hover:bg-yellow-400 dark:hover:bg-yellow-800 group">
                         <svg class="w-[30px] h-[30px] text-white-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                           <path fill-rule="evenodd" d="M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-2 9a4 4 0 0 0-4 4v1a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-1a4 4 0 0 0-4-4h-4Z" clip-rule="evenodd"/>
                         </svg>
@@ -109,7 +111,7 @@ const AccountTab = ({ authenticate })=> {
                     </li>
 
                     <li className="sideBar-button">
-                      <a href="#" className="flex items-center p-2 text-blue-900 rounded-lg   dark:text-white hover:bg-yellow-400 dark:hover:bg-yellow-800 group">
+                      <a href="/bookmarks" className="flex items-center p-2 text-blue-900 rounded-lg   dark:text-white hover:bg-yellow-400 dark:hover:bg-yellow-800 group">
                         <svg class="w-[30px] h-[30px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M7.833 2c-.507 0-.98.216-1.318.576A1.92 1.92 0 0 0 6 3.89V21a1 1 0 0 0 1.625.78L12 18.28l4.375 3.5A1 1 0 0 0 18 21V3.889c0-.481-.178-.954-.515-1.313A1.808 1.808 0 0 0 16.167 2H7.833Z"/>
                         </svg>
@@ -118,7 +120,7 @@ const AccountTab = ({ authenticate })=> {
                     </li>
 
                     <li className="sideBar-button">
-                      <a href="#" className="flex items-center p-2 text-blue-900 rounded-lg dark:text-white hover:bg-yellow-400 dark:hover:bg-yellow-800 group">
+                      <a href="/my-reviews" className="flex items-center p-2 text-blue-900 rounded-lg dark:text-white hover:bg-yellow-400 dark:hover:bg-yellow-800 group">
                         <svg class="w-[30px] h-[30px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3" d="M10.779 17.779 4.36 19.918 6.5 13.5m4.279 4.279 8.364-8.643a3.027 3.027 0 0 0-2.14-5.165 3.03 3.03 0 0 0-2.14.886L6.5 13.5m4.279 4.279L6.499 13.5m2.14 2.14 6.213-6.504M12.75 7.04 17 11.28"/>
                         </svg>
