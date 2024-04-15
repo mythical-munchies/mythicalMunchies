@@ -38,7 +38,7 @@ router.post("/login", async (req, res) => {
 });
 
 // Signup Route
-// mythicalmunchies/users/signup - come back to this to update
+// BaseURL/users/signup - come back to this to update
 router.post("/signup", async (req, res) => {
   const { usernameOrEmail, password } = req.body;
 

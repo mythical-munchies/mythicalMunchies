@@ -6,8 +6,6 @@ const app = express();
 app.use(morgan("dev"));
 app.use(express.json());
 
-const path = require("path");
-
 const client = require("./db/client");
 client.connect();
 app.use(express.static(path.join(__dirname, "public")));
