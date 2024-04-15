@@ -7,13 +7,12 @@ const {ingredients} = require('./seedArrays/ingrSeedData')
 // const {createRecipe, createRecipeIngredient} = require('./recipes')
 // const recipes = require('./seedArrays/recipeSeedData');
 const {createWorld} = require('./worlds');
-
 const {worlds} = require('./seedArrays/worldSeedData.js');
 const {createUser, createUserRecipe} = require('./users');
 const {users} = require('./seedArrays/userSeedData')
 
 
-//drop all tables if any exist
+//drop all tables if any exist to avoid duplicates
 const dropTables = async () => {
   const SQL = `
   DROP TABLE IF EXISTS user_recipe;
@@ -29,7 +28,7 @@ const dropTables = async () => {
   await client.query(SQL);
 };
 
-//async function to create tables back
+//async function to create tables
 const createTables = async () => {
   const SQL = `
     CREATE TABLE worlds(
@@ -87,14 +86,8 @@ const createTables = async () => {
 //   description TEXT
 // );
 
-// const seedWorlds = async (worlds) => {
-//   const arrayOfPromises = worlds.forEach(world => {
-//     return createWorld(name, img_url)
-//   })
-//   const newWorlds = await Promise.all(arrayOfPromises)
-//   return newWorlds
-// }
 
+//seeding worlds using create function from db/worlds.js and the array of worlds in db/seedArrays/worldSeedData.js
 async function seedWorlds(client) {
   try {
     for (const world of worlds) {
@@ -108,6 +101,7 @@ async function seedWorlds(client) {
   }
 }
 
+//Seeding users using create function from db/users.js and the array of users in db/seedArrays/usersSeedData.js
 async function seedUsers(client) {
   try {
     for (const user of users) {
@@ -120,6 +114,7 @@ async function seedUsers(client) {
   }
 }
 
+//Seeding Ingredients using create function from db/ingredients.js and the array of Ingredients in db/seedArrays/ingrSeedData.js
 async function seedIngr(client) {
   try {
     for (const ingredient of ingredients) {
@@ -144,6 +139,7 @@ async function seedIngr(client) {
 //   }
 // };
 
+//function to rebuild the db, called in seeed.js using npm run seed
 async function rebuild() {
   try {
     await client.connect();

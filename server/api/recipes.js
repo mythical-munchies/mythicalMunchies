@@ -5,8 +5,10 @@ const {
   fetchWorldRecipes,
   fetchRecipe,
 } = require("../db/recipes");
-// const {fetchRecipes, fetchRecipe, createRecipe} = require('./db')
 
+
+//Fetch All Recipes Route
+//http://localhost:8080/mythicalmunchies/recipes/
 router.get("/", async (req, res, next) => {
   try {
     res.send(await fetchAllRecipes(req.params.id));
@@ -15,6 +17,8 @@ router.get("/", async (req, res, next) => {
   }
 });
 
+//Fetch Single World Recipes Route
+//http://localhost:8080/mythicalmunchies/recipes/:world_id
 router.get("/:world_id", async (req, res, next) => {
   try {
     res.send(await fetchWorldRecipes(req.params.id));
@@ -23,6 +27,8 @@ router.get("/:world_id", async (req, res, next) => {
   }
 });
 
+//Fetch Single Recipe Route
+//http://localhost:8080/mythicalmunchies/recipes/:id
 router.get("/:id", async (req, res, next) => {
   try {
     res.send(await fetchRecipe(req.params.id));

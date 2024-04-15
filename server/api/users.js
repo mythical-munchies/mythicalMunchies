@@ -11,6 +11,8 @@ const {
   fetchUser,
 } = require("../db/users");
 
+//Fetch All Users Route
+//http://localhost:8080/mythicalmunchies/users/
 router.get("/", async (req, res, next) => {
   try {
     const users = await fetchUsers();
@@ -20,7 +22,9 @@ router.get("/", async (req, res, next) => {
   }
 });
 
+
 //Login Route
+//http://localhost:8080/mythicalmunchies/users/login
 router.post("/login", async (req, res) => {
   const { usernameOrEmail, password } = req.body;
   console.log(req.body);
@@ -37,8 +41,9 @@ router.post("/login", async (req, res) => {
   }
 });
 
+
 // Signup Route
-// BaseURL/users/signup - come back to this to update
+//http://localhost:8080/mythicalmunchies/users/signup
 router.post("/signup", async (req, res) => {
   const { usernameOrEmail, password } = req.body;
 
@@ -68,8 +73,9 @@ router.post("/signup", async (req, res) => {
 });
 module.exports = router;
 
-// Fetch User Route
-router.get("/user/:user_id", async (req, res) => {
+// Fetch Single User Route
+//http://localhost:8080/mythicalmunchies/users/:user_id
+router.get("/:user_id", async (req, res) => {
   const { user_id } = req.params;
 
   try {
