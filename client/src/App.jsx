@@ -20,6 +20,9 @@ import Footer from "./components/Footer";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import MythicalMunchiesFAQ from "./components/FAQ";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Bookmarks from "./components/Bookmarks";
+import MyReviews from "./components/MyReviews";
+// import AccountTab from "./components/AccountTab";
 
 function App() {
   return (
@@ -50,6 +53,9 @@ function App() {
         <Route path="/literature" element={<Literature />} />
         <Route path="/FAQ" element={<MythicalMunchiesFAQ />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/bookmarks" element={<Bookmarks/>} />
+        <Route path="/my-reviews" element={<MyReviews/>} />
+        
 
         {/* <Route path="/test" element={<Test/>}/> */}
         {/* <Route path="/my-reviews" element={<MyReviews/>}/> */}

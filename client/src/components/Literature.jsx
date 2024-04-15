@@ -7,9 +7,7 @@ const Literature = () => {
     <>
    
     <div className="books">
-      {/* <div className="title-box">
-      <h2 className="book-page-title">The BookShelf</h2>
-      </div> */}
+    
     {mockBooks.map((book) => {
       return (
         <div className="books-container">
