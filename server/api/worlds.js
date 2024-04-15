@@ -2,6 +2,8 @@ const express = require("express");
 const router = express.Router();
 const { fetchWorlds, fetchWorld } = require("../db/worlds");
 
+//Fetch All Worlds
+//http://localhost:8080/mythicalmunchies/worlds/
 router.get("/", async (req, res, next) => {
   try {
     res.send(await fetchWorlds());
@@ -9,7 +11,9 @@ router.get("/", async (req, res, next) => {
     console.log(err);
   }
 });
-//This will take you to a singular world. baseURL/worlds/:id
+
+//Fetch Single World
+//http://localhost:8080/mythicalmunchies/worlds/:id
 router.get("/:id", async (req, res, next) => {
   console.log(req);
   try {
