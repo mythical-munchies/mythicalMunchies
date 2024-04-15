@@ -41,19 +41,11 @@ export default function SingleRecipe() {
                
                 <h4 className='recipe-name'>Recipe.name </h4>
                 <img  className='pic' src={Ramen} alt="pic" />
+                {/* IS USER LOGGED IN? IF NOT THEN SHOW LEAVEREVIEW MODAL */}
                 <LeaveReview />
             
               <div className="ratings">
-                
-                {/* <Link to ="/my-reviews" className="review-button">Leave a Review :)</Link> */}
-                {/* <button className="review-button">Leave a Review :)</button> */}
-
-                {/* TRYING MODAL HERE  */}
-
-                {/* <div className='cooking-time'>
-                  <h5>Cooking time : recipe.cooktime</h5>
-                </div> */}
-                
+          
               </div>
               </div>
             </Grid>

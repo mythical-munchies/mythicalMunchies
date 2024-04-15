@@ -9,7 +9,6 @@ import CategoryData from "./Data.json";
 import Worlds from "./components/Worlds";
 import SingleWorld from "./components/SingleWorld";
 import SingleRecipe from "./components/SingleRecipe";
-// import Login from './components/Login'
 import Logo from "./components/icons/cauldronyellow.png";
 import DogWarts from "./components/DogWarts";
 import BottomsUp from "./components/BottomsUp";
@@ -22,7 +21,9 @@ import MythicalMunchiesFAQ from "./components/FAQ";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Bookmarks from "./components/Bookmarks";
 import MyReviews from "./components/MyReviews";
-// import AccountTab from "./components/AccountTab";
+import Login from "./components/Login"
+import SignUp from "./components/SignUp";
+
 
 function App() {
   return (
@@ -55,6 +56,8 @@ function App() {
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/bookmarks" element={<Bookmarks/>} />
         <Route path="/my-reviews" element={<MyReviews/>} />
+        <Route path="/login" element={<Login/>} />
+        <Route path="/signup" element={<SignUp/>} />
         
 
         {/* <Route path="/test" element={<Test/>}/> */}

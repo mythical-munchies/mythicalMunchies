@@ -1,6 +1,8 @@
 import { mockReviews } from "../ReviewData";
 import "./styles/Reviews.css"
 import DeleteReview from "./DeleteReview";
+import Login from "./Login"
+import SignUp from "./SignUp";
 
 function MyReviews() {
   return(
@@ -82,23 +84,25 @@ function MyReviews() {
                       </a>
                     </li>
               
-                    <li className="sideBar-button">
-                      <a href="#" className="flex items-center p-2 text-blue-900 rounded-lg dark:text-white hover:bg-yellow-400 dark:hover:bg-yellow-800 group">
+                    {/* <li className="sideBar-button">
+                      <a href="/login" className="flex items-center p-2 text-blue-900 rounded-lg dark:text-white hover:bg-yellow-400 dark:hover:bg-yellow-800 group">
                         <svg className="w-[30px] h-[30px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                           <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.6" d="M16 12H4m12 0-4 4m4-4-4-4m3-4h2a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3h-2"/>
                         </svg>
                         <span className="flex-1 ms-3 whitespace-nowrap">Sign In</span>
                       </a>
-                    </li>
+                    </li> */}
+                    <Login />
 
-                    <li className="sideBar-button">
-                      <a href="#" className="flex items-center p-2 text-blue-900 rounded-lg dark:text-white hover:bg-yellow-400 dark:hover:bg-yellow-800 group">
+                    {/* <li className="sideBar-button">
+                      <a href="/signup" className="flex items-center p-2 text-blue-900 rounded-lg dark:text-white hover:bg-yellow-400 dark:hover:bg-yellow-800 group">
                         <svg className="w-[30px] h-[30px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                           <path fillRule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm5.495.93A.5.5 0 0 0 6.5 13c0 1.19.644 2.438 1.618 3.375C9.099 17.319 10.469 18 12 18c1.531 0 2.9-.681 3.882-1.625.974-.937 1.618-2.184 1.618-3.375a.5.5 0 0 0-.995-.07.764.764 0 0 1-.156.096c-.214.106-.554.208-1.006.295-.896.173-2.111.262-3.343.262-1.232 0-2.447-.09-3.343-.262-.452-.087-.792-.19-1.005-.295a.762.762 0 0 1-.157-.096ZM8.99 8a1 1 0 0 0 0 2H9a1 1 0 1 0 0-2h-.01Zm6 0a1 1 0 1 0 0 2H15a1 1 0 1 0 0-2h-.01Z" clipRule="evenodd"/>
                         </svg>
                         <span className="flex-1 ms-3 whitespace-nowrap">Sign Up</span>
                       </a>
-                    </li>
+                    </li> */}
+                    <SignUp />
                   </ul>
               </div>
             </aside>
