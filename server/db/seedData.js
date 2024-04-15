@@ -1,11 +1,9 @@
 const client = require('./client');
 const uuid = require("uuid");
-// const {recipes} = require('data.js');
-// const data = require('data.json');
 const {createIngredient} = require('./ingredients');
-const {ingredients} = require('./seedArrays/ingrSeedData')
-// const {createRecipe, createRecipeIngredient} = require('./recipes')
-// const recipes = require('./seedArrays/recipeSeedData');
+const {ingredients} = require('./seedArrays/ingrSeedData.js')
+const {createRecipe, createRecipeIngredient} = require('./recipes')
+const {recipes} = require('./seedArrays/recipesSeedData.js');
 const {createWorld} = require('./worlds');
 const {worlds} = require('./seedArrays/worldSeedData.js');
 const {createUser, createUserRecipe} = require('./users');
@@ -18,9 +16,8 @@ const dropTables = async () => {
   DROP TABLE IF EXISTS user_recipe;
   DROP TABLE IF EXISTS recipe_ingredient;
   DROP TABLE IF EXISTS image_url; 
-  DROP TABLE IF EXISTS ingredient_allergen;
   DROP TABLE IF EXISTS ingredients;
-  DROP TABLE IF EXISTS allergens;
+  DROP TABLE IF EXISTS instructions;
   DROP TABLE IF EXISTS users CASCADE;
   DROP TABLE IF EXISTS worlds CASCADE;
   DROP TABLE IF EXISTS recipes CASCADE;
@@ -53,7 +50,6 @@ const createTables = async () => {
       description TEXT,
       cook_time VARCHAR(255),
       world_name VARCHAR(500),
-      instructions TEXT,
       img_url VARCHAR(500)
     );
     CREATE TABLE recipe_ingredient(
@@ -70,6 +66,12 @@ const createTables = async () => {
       rating INT,
       review TEXT,
       bookmarked boolean DEFAULT false
+    );
+    CREATE TABLE instructions(
+      id UUID PRIMARY KEY,
+      recipe_name VARCHAR(255) NOT NULL,
+      description TEXT,
+      index INT
     );
   `;
   await client.query(SQL);
@@ -127,6 +129,19 @@ async function seedIngr(client) {
   }
 }
 
+//Seeding Recipes using create function from db/recipes.js and the array of Recipes in db/seedArrays/recipesSeedData.js
+async function seedRecipes(client) {
+  try {
+    for (const recipe of recipes) {
+      const createdRecipe = await createRecipe(recipe);
+      console.log(`Created recipe: ${createdRecipe.name}`); //
+    }
+  } catch (error) {
+    console.error("Error seeding users:", error);
+    throw error; // Re-throw to indicate failure
+  }
+}
+
 // async function seedInst(client) {
 //   try {
 //     for (const instruction of instruction) {
@@ -146,13 +161,15 @@ async function rebuild() {
     await dropTables();
     console.log("tables yeeted");
     await createTables();
-    console.log("made tables");
+    console.log("tables built");
     await seedWorlds();
-    console.log("we got worlds");
+    console.log("seeded worlds");
     await seedUsers();
-    console.log("made users");
+    console.log("seeded users");
     await seedIngr();
     console.log("ingredients seeded");
+    await seedRecipes();
+    console.log('seeded recipes')
   } catch (error) {
     console.log(error.message);
   }

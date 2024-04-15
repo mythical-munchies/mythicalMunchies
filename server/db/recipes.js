@@ -1,18 +1,16 @@
 const client = require("./client");
-
 const uuid = require("uuid");
 
 const createRecipe = async ({
   name,
   description,
   world_name,
-  instructions,
   img_url,
 }) => {
   // let steps = instructions.map((ist, i) => `$${i+1}`)
   const SQL = `
-    INSERT INTO recipes(id, name, description, world_name, instructions, img_url)
-    VALUES($1, $2, $3, $4, '{$5, $6, $7, $8, $9}', $10)
+    INSERT INTO recipes(id, name, description, world_name, img_url)
+    VALUES($1, $2, $3, $4, $5)
     RETURNING *
     `;
   const response = await client.query(SQL, [
@@ -20,7 +18,6 @@ const createRecipe = async ({
     name,
     description,
     world_name,
-    ...instructions,
     img_url,
   ]);
   return response.rows[0];
@@ -43,7 +40,7 @@ const createRecipeIngredient = async (
     amount,
     unit,
   ]);
-  return response.rows[0];
+  return response.rows;
 };
 
 const fetchAllRecipes = async () => {
@@ -52,7 +49,7 @@ const fetchAllRecipes = async () => {
   FROM recipes
   `;
   const response = await client.query(SQL);
-  return response.rows[0];
+  return response.rows;
 };
 
 const fetchWorldRecipes = async (world_id) => {
@@ -62,7 +59,7 @@ const fetchWorldRecipes = async (world_id) => {
   WHERE world_id = $1
   `;
   const response = await client.query(SQL, [world_id]);
-  return response.rows[0];
+  return response.rows;
 };
 
 const fetchRecipe = async (id) => {
@@ -82,7 +79,7 @@ const fetchRecipeIngredients = async (recipe_id) => {
   WHERE recipe_id = $1
   `;
   const response = await client.query(SQL, [recipe_id]);
-  return response.rows[0];
+  return response.rows;
 };
 
 module.exports = {
