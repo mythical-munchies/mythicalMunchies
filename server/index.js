@@ -10,11 +10,16 @@ const path = require("path");
 
 const client = require("./db/client");
 client.connect();
+app.use(express.static(path.join(__dirname, "public")));
 
-app.use("/", express.static(path.join(__dirname, "../client/dist")));
-app.get("/", (req, res) =>
-  res.sendFile(path.join(__dirname, "../client/dist/index.html"))
-);
+app.get("/docs", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
+});
+// no dist folder currently so commented out for now. could be copy/pasted from a prior project
+// app.use("/", express.static(path.join(__dirname, "../client/dist")));
+// app.get("/", (req, res) =>
+//   res.sendFile(path.join(__dirname, "../client/dist/index.html"))
+// );
 
 app.use("/mythicalMunchies", require("./api"));
 
