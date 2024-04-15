@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Public Server </title>
+</head>
+<body>
+  <p>
+    SERVER/Index.js
+
+This is the core file in the server folder that is setting up an Express application, defining routes for serving static files, handling API requests, and starting the server listening on a specified port.
+
+Require Statements:
+The file requires necessary modules such as express, path, morgan, and the custom client module for database connectivity.
+Express Setup:
+express is instantiated and assigned to app.
+morgan is used for logging in development mode.
+express.json() middleware is used for parsing JSON requests.
+Static File Serving:
+The express.static middleware is used to serve static files located in the client/dist directory. 
+An additional route handler serves the index.html file from the client/dist directory when a request is made to the root path (/).
+API Routes:
+The /mythicalMunchies route is mounted to handle API requests. This likely delegates to another set of routes defined in the api module.
+Error Handling Middleware:
+An error-handling middleware function is defined to catch any errors that occur during request processing.
+Errors are logged to the console.
+If the error has a status code, it's used as the response status; otherwise, a generic 500 status is used.
+The error message (or the error itself, if no message is available) is sent as the response body.
+Server Initialization:
+The init function is defined to start the server.
+The port is determined from the process.env.PORT environment variable, defaulting to port 8080.
+The server listens on the specified port, and a message is logged to indicate that the server is running.
+
+DB
+seedArrays subfolder 
+UserSeedData 
+ High level, this folder houses files that provide sample user data that can be used for seeding the database with initial records
+
+
+Here is an example using the userSeedData.js file:
+Data Definition:
+The file defines an array named users.
+Each element of the users array represents a user object with properties username, email, and password.
+User Data:
+Each user object contains values for email and password, and optionally for username. 
+FYI - the group has decided to code the login to accept email or username in the credentials. 
+Exporting Data:
+The users array is exported so that it can be imported and used in other parts of the application, such as when seeding the database with initial user data.
+
+client.js- DB
+
+This file sets up the PostgreSQL client connection using the pg module and exports the client object for use in other parts of the application, such as database queries.
+
+Require Statements:
+The file requires the Client class from the pg module, which is a PostgreSQL client for Node.js.
+Client Initialization:
+A new instance of the Client class is created, representing a connection to the PostgreSQL database.
+The connection URL defaults to 'postgres://localhost/mythical_munchies_db', representing a connection to a local PostgreSQL database named mythical_munchies_db.
+Exporting Client:
+The client object, representing the PostgreSQL database connection, is exported so that it can be imported and used in other modules of the application.
+
+Ingredients.js - DB
+
+Overall, this file provides a function for creating ingredients in the database. 
+
+Require Statements:
+The file requires the client module for database connectivity and the uuid module for generating UUIDs.
+Function Definition:
+createIngredient: This function inserts a new ingredient into the ingredients table with provided name and description. It returns the inserted ingredient.
+Exporting Functions:
+The createIngredient function is exported so that it can be used externally, presumably in other parts of the application such as routes or controllers.
+SQL Query:
+The SQL query is parameterized using $1, $2, etc., to prevent SQL injection attacks and allow for safe interpolation of values into the query.
+
+
+instructions.js - NEED TO ADD 
+Holding file for Lucas and Simone will update language after April 15. 
+
+
+recipes.js - DB
+Provides functions for managing recipes in the database, including creation, retrieval, and fetching associated ingredients. 
+Require Statements:
+The file requires the client module for database connectivity and the uuid module for generating UUIDs.
+Function Definitions:
+createRecipe: This function inserts a new recipe into the recipes table with provided name, description, world_name, instructions, and image URL. It returns the inserted recipe.
+createRecipeIngredient: This function inserts a new recipe ingredient into the recipe_ingredient table with provided recipe_id, ingredient_id, amount, and unit. It returns the inserted recipe ingredient.
+fetchAllRecipes: This function retrieves all recipes from the recipes table.
+fetchWorldRecipes: This function retrieves all recipes associated with a particular world_id from the recipes table.
+fetchRecipe: This function retrieves a recipe based on the provided id.
+fetchRecipeIngredients: This function retrieves all ingredients associated with a particular recipe_id from the recipe_ingredient table.
+Exporting Functions:
+All defined functions are exported so that they can be used externally, presumably in other parts of the application such as routes or controllers.
+SQL Queries:
+The SQL queries are parameterized using $1, $2, etc., to prevent SQL injection attacks and allow for safe interpolation of values into the queries.
+Error Handling:
+There doesn't appear to be explicit error handling in these functions. If there are any errors during database queries, they would likely be handled at a higher level, depending on how these functions are used.
+
+
+
+
+
+Seed.js - DB
+Overall, this script serves the purpose of seeding the database with initial data by calling the rebuild function and handling any errors that may occur during the process. 
+Require Statements:
+The file requires the client module for database connectivity and the rebuild function from the seedData module, which presumably contains the functions for seeding initial data.
+Seeding:
+The rebuild function is called to reset the database and seed it with initial data. The rebuild function handles dropping existing tables (if any) and creating new ones, as well as populating them with initial data.
+The catch method is used to handle any errors that occur during the seeding process. If an error occurs, it is logged to the console.
+The finally method ensures that the database client is properly closed after the seeding process is complete, regardless of whether an error occurred or not.
+
+SeedData.js - DB
+This code performs the following:
+
+Defines the database schema with table structures.
+Drops existing tables.
+Creates new tables.
+Seeds initial data into the tables.
+
+Require Statements:
+The code requires various modules and files (client, uuid, createIngredient, etc.) necessary for database interactions and seeding.
+Drop Tables Function (dropTables):
+This function drops all tables if they exist in the database. It's essentially for cleaning up before rebuilding the tables.
+Create Tables Function (createTables):
+This function creates tables in the database with the specified schema. It defines tables for worlds, users, ingredients, recipes, recipe_ingredient, and user_recipe.
+Seed Functions (seedWorlds, seedUsers, seedIngr):
+These functions are responsible for seeding initial data into the respective tables.
+seedWorlds populates the worlds table.
+seedUsers populates the users table.
+seedIngr populates the ingredients table.
+Each function iterates over an array of data and calls the appropriate function (createWorld, createUser, createIngredient) to insert records into the database.
+Rebuild Function (rebuild):
+This function orchestrates the rebuilding process.
+It connects to the database, drops existing tables, creates new tables, and then seeds initial data.
+It logs messages indicating the progress of each step.
+Exporting Rebuild Function:
+The rebuild function is exported so that it can be used externally, perhaps in a script for setting up the database.
+
+
+tags.js - DB
+
+
+
+Users.js - DB
+Provides functions for user management, authentication, and interaction with user-related data in the database.
+Require Statements:
+The file requires necessary modules and files such as client, bcrypt, and uuid for database interactions and user authentication.
+Function Definitions:
+createUser: This function inserts a new user into the users table with provided username, email, and hashed password. It returns the inserted user.
+createUserRecipe: This function inserts a new user recipe into the user_recipe table with provided user_id, recipe_id, rating, and review.
+fetchUsers: This function retrieves all users from the users table.
+fetchUser: This function retrieves a user based on the provided user_id.
+fetchUserByEmailOrUsername: This function retrieves a user based on the provided email or username.
+loginUser: This function verifies user credentials (email/username and password) for login. It fetches the user based on email or username, compares the hashed password, and returns the user if authentication succeeds.
+fetchUserRecipes: This function retrieves all recipes associated with a particular user based on the provided user_id.
+deleteUserRecipe: This function deletes a user's recipe based on the provided user_id and recipe_id. It returns the deleted recipe or throws an error if no matching review is found.
+Exporting Functions:
+All defined functions are exported so that they can be used externally in other parts of the application such as routes or controllers.
+Error Handling:
+The loginUser function throws an error if the user is not found or if the provided password does not match the stored hashed password. Similarly, the deleteUserRecipe function throws an error if no matching review is found.
+
+Worlds.js - DB
+This file defines routes for serving static files and handling API requests, and starts the server listening on a specified port (while also setting up an express route).
+Require Statements:
+The file requires necessary modules and files such as client and uuid for database interactions.
+Function Definitions:
+createWorld: This function inserts a new world into the worlds table with provided name and image URL. It returns the inserted world.
+fetchWorlds: This function retrieves all worlds from the worlds table.
+fetchWorld: This function retrieves a world based on the provided id.
+Exporting Functions:
+All defined functions are exported so that they can be used externally, presumably in other parts of the application such as routes or controllers.
+Error Handling:
+There doesn't appear to be explicit error handling in these functions. If there are any errors during database queries, they would likely be handled at a higher level, depending on how these functions are used.
+Logging:
+The fetchWorld function logs the provided id before querying the database, presumably for debugging purposes.
+
+
+API 
+
+API - index.js
+This file serves as the entry point for the API routes related to the "Mythical Munchies" application. The index.js file in the API subfolder organizes the routes into separate modules and mounts them onto specific paths which is intended to best define the API endpoints. 
+
+
+Require Statements:
+The file requires the express module to create an instance of the Express router.
+Router Initialization:
+An instance of express.Router() is created and assigned to apiRouter. This router will handle all API routes defined in this file.
+Mounting Sub-Routers vis apiRouter:
+Sub-routers for different resources (worlds, recipes, users) are mounted onto the apiRouter.
+The apiRouter.use method is used to specify the middleware function or sub-router that should be called when a request is made to a specific route.
+As an example, requests to the /worlds route will be directed to the router defined in worlds.js.
+Sub-Routers:
+The require function is used to import sub-routers defined in separate files (worlds.js, recipes.js, users.js).
+Each imported sub-router is mounted on a specific route path (/worlds, /recipes, /users) relative to the base URL.
+Exporting Router:
+The apiRouter object, which now contains all the mounted sub-routers, is exported so that it can be used as middleware in the main Express application.
+
+API - recipies.js
+
+This file defines the API routes related to recipes, including routes for fetching all recipes, fetching recipes by world_id, and fetching recipes by id. It holds functions to handle database queries and error handling middleware to catch and handle any errors that may occur during request processing. 
+
+Require Statements:
+The file requires the express module to create an instance of the Express router.
+It also imports functions from the ../db/recipes module to handle database operations related to recipes.
+Router Initialization:
+An instance of express.Router() is created and assigned to router. This router will handle all routes related to recipes.
+Route Handlers:
+Three route handlers are defined for different endpoints:
+GET /: This route handler fetches all recipes and sends them as a response.
+GET /:world_id: This route handler fetches all recipes associated with a specific world_id and sends them as a response.
+GET /:id: This route handler fetches a recipe by its id and sends it as a response.
+Each route handler is asynchronous and handles potential errors by passing them to the next middleware function.
+Exporting Router:
+The router object, containing all the defined route handlers, is exported so that it can be mounted onto the main Express application.
+
+API - users.js
+This file defines the API routes related to users, including routes for fetching all users, user login, user signup, and fetching a user by their user_id. It uses asynchronous functions to handle database queries and error handling middleware to catch and handle any errors that may occur during request processing.
+
+
+
+
+Require Statements:
+The file requires the express module to create an instance of the Express router.
+It imports functions from the ../db/users module to handle database operations related to users.
+Router Initialization:
+An instance of express.Router() is created and assigned to router. This router will handle all routes related to users.
+Route Handlers:
+Two route handlers are defined for different endpoints:
+GET /: This route handler fetches all users and sends them as a response.
+POST /login: This route handler handles user login. It expects usernameOrEmail and password in the request body, attempts to authenticate the user, and sends a success message along with user data if authentication is successful, otherwise sends an error message.
+POST /signup: This route handler handles user signup. It expects usernameOrEmail and password in the request body, attempts to create a new user, and sends a success message along with user data if signup is successful, otherwise sends an error message.
+GET /user/:user_id: This route handler fetches a user by their user_id and sends them as a response.
+Exporting Router:
+The router object, containing all the defined route handlers, is exported so that it can be mounted onto the main Express application.
+Express App Setup:
+An instance of express() is created and assigned to app.
+The router is mounted on the /auth path using app.use("/auth", router).
+The server is started listening on a port (either from the environment variable PORT or defaulting to port 3000), and a message is logged to indicate that the server is running.
+
+
+API - worlds.js
+This file defines the API routes related to worlds, including routes for fetching all worlds and fetching a world by its id. It also houses the code for database queries and error handling middleware to catch and handle any errors that may occur during request processing. 
+Require Statements:
+The file requires the express module to create an instance of the Express router.
+It imports functions from the ../db/worlds module to handle database operations related to worlds.
+Router Initialization:
+An instance of express.Router() is created and assigned to router. This router will handle all routes related to worlds.
+Route Handlers:
+Two route handlers are defined for different endpoints:
+GET /: This route handler fetches all worlds and sends them as a response.
+GET /:id: This route handler fetches a world by its id and sends it as a response. It expects the id parameter in the request URL.
+Exporting Router:
+The router object, containing all the defined route handlers, is exported so that it can be mounted onto the main Express application.
+
+
+
+
+
+  </p>
+</body>
+</html>
