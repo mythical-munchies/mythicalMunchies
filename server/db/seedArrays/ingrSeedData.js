@@ -29,6 +29,9 @@ const ingredients = [
   {"name":"Confectioners Sugar",
     "description":""
   },
+  {"name":"Powdered Sugar",
+  "description":""
+},
   {"name":"Light Corn Syrup",
     "description":""
   },
@@ -83,7 +86,7 @@ const ingredients = [
 {"name":"Five Spice Powder",
 "description":""
 },
-{"name":"Scallions",
+{"name":"Scallion",
 "description":"Green onions"
 },
 {"name":"Bell Pepper",
@@ -152,13 +155,7 @@ const ingredients = [
 {"name":"Cake Flour",
 "description":"Not to be confused with self-rising or bread flour"
 },
-{"name":"Egg Yolks",
-"description":""
-},
 {"name":"Cream of Tartar",
-"description":""
-},
-{"name":"Egg Whites",
 "description":""
 },
 {"name":"Heavy Whipping Cream",
@@ -172,7 +169,11 @@ const ingredients = [
 },
 {"name":"Matcha",
 "description":"Green tea powder"
-}
+},
+
+// {"name":"",
+// "description":""
+// },
 
 ]
 module.exports = {ingredients}

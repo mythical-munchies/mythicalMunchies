@@ -1,18 +1,16 @@
 const client = require("./client");
-
 const uuid = require("uuid");
 
 const createRecipe = async ({
   name,
   description,
   world_name,
-  instructions,
   img_url,
 }) => {
   // let steps = instructions.map((ist, i) => `$${i+1}`)
   const SQL = `
-    INSERT INTO recipes(id, name, description, world_name, instructions, img_url)
-    VALUES($1, $2, $3, $4, '{$5, $6, $7, $8, $9}', $10)
+    INSERT INTO recipes(id, name, description, world_name, img_url)
+    VALUES($1, $2, $3, $4, $5)
     RETURNING *
     `;
   const response = await client.query(SQL, [
@@ -20,20 +18,25 @@ const createRecipe = async ({
     name,
     description,
     world_name,
-    ...instructions,
     img_url,
   ]);
   return response.rows[0];
 };
 
 const createRecipeIngredient = async (
-  recipe_id,
-  ingredient_id,
+  recipe_name,
+  ingredient_name,
   amount,
   unit
 ) => {
+  //select id from recipes where name = recipe_name 
+  const SQL = ``;
+  //save id as varriable to pass in response as recipe_id
+  //select id from ingredients where name = ingr_name
+  //save id as ingredient_id 
   const SQL = `
   INSERT INTO recipe_ingredient(id, recipe_id, ingredient_id, amount, unit)
+  VALUES($1, $2, $3, $4, $5)
   RETURNING *
   `;
   const response = await client.query(SQL, [
@@ -43,7 +46,7 @@ const createRecipeIngredient = async (
     amount,
     unit,
   ]);
-  return response.rows[0];
+  return response.rows;
 };
 
 const fetchAllRecipes = async () => {
@@ -52,7 +55,7 @@ const fetchAllRecipes = async () => {
   FROM recipes
   `;
   const response = await client.query(SQL);
-  return response.rows[0];
+  return response.rows;
 };
 
 const fetchWorldRecipes = async (world_id) => {
@@ -62,7 +65,7 @@ const fetchWorldRecipes = async (world_id) => {
   WHERE world_id = $1
   `;
   const response = await client.query(SQL, [world_id]);
-  return response.rows[0];
+  return response.rows;
 };
 
 const fetchRecipe = async (id) => {
@@ -82,7 +85,7 @@ const fetchRecipeIngredients = async (recipe_id) => {
   WHERE recipe_id = $1
   `;
   const response = await client.query(SQL, [recipe_id]);
-  return response.rows[0];
+  return response.rows;
 };
 
 module.exports = {
