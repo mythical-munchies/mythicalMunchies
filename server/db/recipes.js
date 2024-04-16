@@ -42,7 +42,7 @@ const getIngrId = async (ingredient_name) => {
   FROM ingredients 
   WHERE name = $1
 `;
-console.log(ingredient_name)
+// console.log(ingredient_name)
 let {rows} = await client.query(SQL, [ingredient_name])
 const ingredient_id = rows[0]
 // console.log(ingredient_id.id)
@@ -57,13 +57,13 @@ const createRecipeIngredient = async (
 ) => {
   const recipe_id = await getRecipeId(recipe_name)
   //select id from ingredients where name = ingr_name
- const ingredient_id = await getIngrId(ingredient_name)
+  const ingredient_id = await getIngrId(ingredient_name)
 //  console.log(recipe_id, ingredient_id)
- const SQL = `
- INSERT INTO recipe_ingredient(id, recipe_id, ingredient_id, amount, unit)
- VALUES($1, $2, $3, $4, $5)
- RETURNING *
- `;
+  const SQL = `
+  INSERT INTO recipe_ingredient(id, recipe_id, ingredient_id, amount, unit)
+  VALUES($1, $2, $3, $4, $5)
+  RETURNING *
+  `;
   const response = await client.query(SQL, [
     uuid.v4(),
     recipe_id,
@@ -120,4 +120,5 @@ module.exports = {
   fetchWorldRecipes,
   fetchRecipe,
   fetchRecipeIngredients,
+  getRecipeId
 };
