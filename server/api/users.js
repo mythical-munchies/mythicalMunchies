@@ -1,6 +1,5 @@
 const express = require("express");
 const router = express.Router();
-// import { fetchUsers } from '../db/users';
 
 // const {authenticate, findUserWithToken, getRecipes} = require('./db')
 
@@ -9,6 +8,7 @@ const {
   createUser,
   fetchUserByEmailOrUsername,
   fetchUser,
+  fetchUsers,
 } = require("../db/users");
 
 //Fetch All Users Route
