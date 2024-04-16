@@ -22,7 +22,6 @@ router.get("/", async (req, res, next) => {
   }
 });
 
-
 //Login Route
 //http://localhost:8080/mythicalmunchies/users/login
 router.post("/login", async (req, res) => {
@@ -40,7 +39,6 @@ router.post("/login", async (req, res) => {
     });
   }
 });
-
 
 // Signup Route
 //http://localhost:8080/mythicalmunchies/users/signup
@@ -98,9 +96,9 @@ const app = express();
 app.use("/auth", router);
 
 // This will start the server and listen on a port
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Miracle Alert! Server is listening on port ${PORT}`);
-});
+// const PORT = process.env.PORT || 3000;
+// app.listen(PORT, () => {
+//   console.log(`Miracle Alert! Server is listening on port ${PORT}`);
+// });
 
 //
