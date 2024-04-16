@@ -23,22 +23,47 @@ const createRecipe = async ({
   return response.rows[0];
 };
 
+const getRecipeId = async (recipe_name) =>{
+  let SQL = `
+  SELECT id 
+  FROM recipes 
+  WHERE name = $1
+`;
+  //save id as varriable to pass in response as recipe_id
+  let {rows} = await client.query(SQL, [recipe_name])
+  const recipe_id = rows[0]
+  // console.log(recipe_id.id, typeof(recipe_id.id))
+  return recipe_id.id
+};
+
+const getIngrId = async (ingredient_name) => {
+  let SQL = `
+  SELECT id 
+  FROM ingredients 
+  WHERE name = $1
+`;
+console.log(ingredient_name)
+let {rows} = await client.query(SQL, [ingredient_name])
+const ingredient_id = rows[0]
+// console.log(ingredient_id.id)
+return ingredient_id.id
+};
+
 const createRecipeIngredient = async (
-  recipe_name,
+  {recipe_name,
   ingredient_name,
   amount,
-  unit
+  unit}
 ) => {
-  //select id from recipes where name = recipe_name 
-  const SQL = ``;
-  //save id as varriable to pass in response as recipe_id
+  const recipe_id = await getRecipeId(recipe_name)
   //select id from ingredients where name = ingr_name
-  //save id as ingredient_id 
-  const SQL = `
-  INSERT INTO recipe_ingredient(id, recipe_id, ingredient_id, amount, unit)
-  VALUES($1, $2, $3, $4, $5)
-  RETURNING *
-  `;
+ const ingredient_id = await getIngrId(ingredient_name)
+//  console.log(recipe_id, ingredient_id)
+ const SQL = `
+ INSERT INTO recipe_ingredient(id, recipe_id, ingredient_id, amount, unit)
+ VALUES($1, $2, $3, $4, $5)
+ RETURNING *
+ `;
   const response = await client.query(SQL, [
     uuid.v4(),
     recipe_id,
@@ -46,7 +71,7 @@ const createRecipeIngredient = async (
     amount,
     unit,
   ]);
-  return response.rows;
+  return response.rows[0];
 };
 
 const fetchAllRecipes = async () => {
