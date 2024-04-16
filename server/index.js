@@ -29,9 +29,5 @@ app.use((err, req, res, next) => {
 });
 
 //Base URL is http://localhost:8080/mythicalmunchies
-const init = async () => {
-  const port = process.env.PORT || 8080;
-  app.listen(port, () => console.log(`listening on ${port}`));
-};
-
-init();
+const port = process.env.PORT || 8080;
+app.listen(port, () => console.log(`listening on ${port}`));
