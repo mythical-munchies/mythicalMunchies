@@ -3,11 +3,12 @@ const uuid = require("uuid");
 
 const {createIngredient} = require('./ingredients');
 const {ingredients} = require('./seedArrays/ingrSeedData.js')
-const {createRecipe, createRecipeIngredient} = require('./recipes')
+const {recipe_ingredients} = require('./seedArrays/recipeIngrData.js');
+const {createRecipe, createRecipeIngredient} = require('./recipes.js')
 const {recipes} = require('./seedArrays/recipesSeedData.js');
 const {createWorld} = require('./worlds.js');
 const {worlds} = require('./seedArrays/worldSeedData.js');
-const {createUser, createUserRecipe} = require('./users');
+const {createUser, createUserRecipe} = require('./users.js');
 const {users} = require('./seedArrays/userSeedData');
 const {instructions} = require('./seedArrays/instSeedData.js');
 const {createInstruction} = require('./instructions.js')
@@ -57,10 +58,10 @@ const createTables = async () => {
     );
     CREATE TABLE recipe_ingredient(
       id UUID PRIMARY KEY,
-      recipe_name VARCHAR(255) NOT NULL,
-      ingredient_name VARCHAR(255) NOT NULL,
-      amount INT,
-      unit VARCHAR(255)
+      recipe_id UUID REFERENCES recipes(id) NOT NULL,
+      ingredient_id UUID REFERENCES ingredient(id) NOT NULL,
+      amount VARCHAR(500),
+      unit VARCHAR(500)
     );
     CREATE TABLE user_recipe(
       id UUID PRIMARY KEY,
@@ -145,6 +146,7 @@ async function seedRecipes(client) {
   }
 }
 
+//Seeding Instructions using create function from db/instructions.js and the array of Instructions in db/seedArrays/instSeedData.js
 async function seedInst(client) {
   try {
     for (const instruction of instructions) {
@@ -156,6 +158,19 @@ async function seedInst(client) {
     throw error; // Re-throw to indicate failure
   }
 };
+
+//Seeding Recipe using create function from db/recipes.js and the array of Recipes in db/seedArrays/recipesSeedData.js
+async function seedRecipeIngr(client) {
+  try {
+    for (const recipe_ingredient of recipe_ingredients) {
+      const createdRecipeIngr = await createRecipeIngredient(recipe_ingredient);
+      console.log(`Created ingredients for: ${createdRecipeIngr.recipe_name} recipe`); //
+    }
+  } catch (error) {
+    console.error("Error seeding users:", error);
+    throw error; // Re-throw to indicate failure
+  }
+}
 
 //function to rebuild the db, called in seeed.js using npm run seed
 async function rebuild() {
@@ -175,6 +190,8 @@ async function rebuild() {
     console.log('seeded recipes');
     await seedInst();
     console.log('seeded instructions');
+    // await seedRecipeIngr();
+    // console.log('gathered ingredients for recipes');
   } catch (error) {
     console.log(error.message);
   }

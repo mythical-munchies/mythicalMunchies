@@ -24,13 +24,19 @@ const createRecipe = async ({
 };
 
 const createRecipeIngredient = async (
-  recipe_id,
-  ingredient_id,
+  recipe_name,
+  ingredient_name,
   amount,
   unit
 ) => {
+  //select id from recipes where name = recipe_name 
+  const SQL = ``;
+  //save id as varriable to pass in response as recipe_id
+  //select id from ingredients where name = ingr_name
+  //save id as ingredient_id 
   const SQL = `
   INSERT INTO recipe_ingredient(id, recipe_id, ingredient_id, amount, unit)
+  VALUES($1, $2, $3, $4, $5)
   RETURNING *
   `;
   const response = await client.query(SQL, [
