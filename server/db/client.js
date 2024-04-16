@@ -1,4 +1,4 @@
-const { Client, DatabaseError } = require("pg");
+const { Client } = require("pg");
 const DATABASE_URL =
   process.env.DATABASE_URL || "postgres://localhost/mythical_munchies_db";
 const client = new Client({
