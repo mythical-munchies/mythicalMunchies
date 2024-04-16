@@ -21,9 +21,8 @@ import MythicalMunchiesFAQ from "./components/FAQ";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Bookmarks from "./components/Bookmarks";
 import MyReviews from "./components/MyReviews";
-import Login from "./components/Login"
+import Login from "./components/Login";
 import SignUp from "./components/SignUp";
-
 
 function App() {
   return (
@@ -54,11 +53,19 @@ function App() {
         <Route path="/literature" element={<Literature />} />
         <Route path="/FAQ" element={<MythicalMunchiesFAQ />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
-        <Route path="/bookmarks" element={<Bookmarks/>} />
-        <Route path="/my-reviews" element={<MyReviews/>} />
-        <Route path="/login" element={<Login/>} />
-        <Route path="/signup" element={<SignUp/>} />
-        
+        <Route path="/bookmarks" element={<Bookmarks />} />
+        <Route path="/my-reviews" element={<MyReviews />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route
+          path="*"
+          element={
+            <div>
+              404 Magic Munchies missing! Looks like it vanished into thin air.
+              Let's conjure up another dish instead!" ✨🍽️!
+            </div>
+          }
+        />
 
         {/* <Route path="/test" element={<Test/>}/> */}
         {/* <Route path="/my-reviews" element={<MyReviews/>}/> */}
