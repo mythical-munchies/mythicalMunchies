@@ -59,7 +59,7 @@ const createTables = async () => {
     CREATE TABLE recipe_ingredient(
       id UUID PRIMARY KEY,
       recipe_id UUID REFERENCES recipes(id) NOT NULL,
-      ingredient_id UUID REFERENCES ingredient(id) NOT NULL,
+      ingredient_id UUID REFERENCES ingredients(id) NOT NULL,
       amount VARCHAR(500),
       unit VARCHAR(500)
     );
@@ -164,7 +164,7 @@ async function seedRecipeIngr(client) {
   try {
     for (const recipe_ingredient of recipe_ingredients) {
       const createdRecipeIngr = await createRecipeIngredient(recipe_ingredient);
-      console.log(`Created ingredients for: ${createdRecipeIngr.recipe_name} recipe`); //
+      console.log(`Created ingredients for: ${JSON.stringify(createdRecipeIngr)}`); //
     }
   } catch (error) {
     console.error("Error seeding users:", error);
@@ -190,8 +190,8 @@ async function rebuild() {
     console.log('seeded recipes');
     await seedInst();
     console.log('seeded instructions');
-    // await seedRecipeIngr();
-    // console.log('gathered ingredients for recipes');
+    await seedRecipeIngr();
+    console.log('gathered ingredients for recipes');
   } catch (error) {
     console.log(error.message);
   }
