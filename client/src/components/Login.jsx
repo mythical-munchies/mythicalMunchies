@@ -3,7 +3,8 @@ import ReactDOM from "react-dom/client";
 import { useState } from "react";
 import "./styles/Login.css"
 import Logo from './icons/cauldronyellow.png'
-import Modal from 'react-bootstrap'
+import Modal from 'react-bootstrap/Modal'
+import Button from 'react-bootstrap/Button';
 
 // ELENIS IMPORTS
 // import Button 
