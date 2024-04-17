@@ -1,44 +1,29 @@
-/* 
-.account-container {
-  display: flex;
-  justify-content: center;
-}
-
-.account-info {
-  background-color: #85A499;
-  border-radius: 20px;
-  height: 500px;
-  width: 1000px;
-  margin-top: 30px;
-} */
-
 #default-sidebar {
   position: static;
   background-color: #739287;
   width: 450px;
-  border-radius: 30px 0px 0px 30px;
+  border-radius: 20px 0px 0px 20px;
   height: 1000px;
   margin-top: 4px;
   padding-right: 20px;
-  /* color: aliceblue; */
   z-index: 4;
   margin-top: -96px;
   text-align: left;
 }
 
-#account-buttons {
-  /* margin-top: 100px; */
+/* #account-buttons {
+  margin-top: 100px;
   text-decoration: none;
-}
-
+} */
+/* 
 .sideBar {
   border-radius: 50px;
-}
+} */
 
 .welcome-user {
   color: #e2d5b0;
   text-align: center;
-  font-size: 25px;
+  font-size: 28px;
 }
 
 .logout-container {
@@ -47,7 +32,7 @@
   justify-content: center;
   font-family: "Almendra", sans-serif;
   color: #e2d5b0;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .logout-button:hover {
@@ -76,16 +61,17 @@
 
 }
 
-.testicle {
+.containerBig {
   display: flex;
   flex-wrap: wrap;
   justify-content: right;
   z-index: 1;
 }
 .sideBar-button {
-  font-size: 20px;
+  font-size: 25px;
   margin-top: 50px;
   text-decoration: none;
+  margin-left: 20px;
 }
 
 /* #side-bar-texty {
@@ -105,8 +91,8 @@
   height: 1000px;
   background-color: #85A499;
   margin-top: 30px;
-  border-radius: 50px;
-
+  border-radius: 20px;
+  margin-top: 0px;
 }
 
 .testytesty {
@@ -115,8 +101,9 @@
 }
 
 #account-submit {
-  margin-top: 50px;
+  margin-top: 30px;
   font-size: 20px;
+  width: 450px;
 }
 
 .edit {
@@ -132,58 +119,4 @@ font-size: 20px;
 color: #e2d5b0;
 letter-spacing: 2px;
 font-family: "Almendra", sans-serif;
-}
-
-.book-img-bookmarked {
-  width: 100px;
-  height: 150px;
-}
-
-.bookmarked {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 800px;
-  margin-left: 80px;
-  overflow: scroll;
-  height: 900px;
-  margin-top: 20px;
-}
-
-.bookmark-title {
-
-/* margin-left: 300px; */
-margin-bottom: 0px;
-margin-top: 30px;
-font-size: 20px;
-color: yellow;
-text-shadow: 1px 1px 0px red;
-text-align: center;
-letter-spacing: 1.5px;
-}
-
-
-
-
-.book-card-bookmark {
-  max-width: 300px;
-  margin: 50px;
-  text-align: left;
-  font-size: 20px;
-  font-family: "Almendra", sans-serif;
-  /* margin-top: 0px; */
-}
-
-.bookmarked-title-books {
-  font-weight: 100;
-  letter-spacing: 1px;
-  color: darkred;
-  margin-top: 5px;
-  text-align: left;
-  margin-bottom: 0px;
-  width: 150px;
-  height: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
 }

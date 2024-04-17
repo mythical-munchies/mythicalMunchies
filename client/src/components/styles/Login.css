@@ -1,7 +1,7 @@
 #login-logo {
   width: 60px;
   height: 60px;
-  margin-left: 135px;
+  /* margin-left: 135px; */
   margin-top: 30px;
   margin-bottom: 20px;
 }
@@ -13,11 +13,12 @@
 }
 
 .login-modal-header {
-  margin-left: 40px;
+  margin-left: 30px;
 }
 
 .modal-header {
   border-bottom: none;
+  /* margin-left: 30px; */
 }
 
 .login-welcome {
@@ -26,3 +27,42 @@
   color: darkred;
   text-align: center;
 }
+
+.top {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  margin-right: 45px;
+  margin-bottom: 0px;
+}
+
+#email,
+#password,
+#username,
+#firstName,
+#lastName
+ {
+  width: 450px;
+  height: 45px;
+  font-size: 18px;
+  color: black;
+}
+
+#message {
+  width: 450px;
+  height: 200px;
+  font-size: 18px;
+}
+
+#checky {
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-bottom: 2px;
+  /* font-size: 40px; */
+}
+
+#close {
+  margin-left: 370px;
+  margin-top: 15px;
+}
+
