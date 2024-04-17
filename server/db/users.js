@@ -3,6 +3,7 @@ const bcrypt = require("bcrypt");
 const uuid = require("uuid");
 const {getRecipeId} = require('./recipes')
 
+//Create a user
 const createUser = async ({ username, email, password }) => {
   const SQL = `
   INSERT INTO users(id, username, email, password)
@@ -18,6 +19,7 @@ const createUser = async ({ username, email, password }) => {
   return response.rows[0];
 };
 
+//Get a user's ID 
 const getUserID = async (username) => {
   const SQL = `
   SELECT *
@@ -29,11 +31,12 @@ const getUserID = async (username) => {
   return user_id.id
 };
 
+//Create a Review
 const createUserRecipe = async ({username, recipe_name, rating, review, bookmarked}) => {
   const user_id = await getUserID(username)
   const recipe_id = await getRecipeId(recipe_name)
   const SQL = `
-  INSERT INTO user_recipe(id, user_id, recipe_id, rating, review, bookmarked)
+  INSERT INTO user_recipes(id, user_id, recipe_id, rating, review, bookmarked)
   VALUES($1, $2, $3, $4, $5, $6)
   RETURNING *
   `;
@@ -48,6 +51,7 @@ const createUserRecipe = async ({username, recipe_name, rating, review, bookmark
   return response.rows[0];
 };
 
+//Get all users, may not be needed
 const fetchUsers = async () => {
   const SQL = `
     SELECT *
@@ -57,13 +61,15 @@ const fetchUsers = async () => {
   return response.rows;
 };
 
-const fetchUser = async (user_id) => {
+//fetch single user
+const fetchUser = async (username) => {
+  const id = getUserID(username)
   const SQL = `
     SELECT *
     FROM users
-    WHERE user_id = $1
+    WHERE id = $1
   `;
-  const response = await client.query(SQL, [user_id]);
+  const response = await client.query(SQL, [id]);
   return response.rows;
 };
 
@@ -91,6 +97,7 @@ const loginUser = async ({ usernameOrEmail, password }) => {
 
 //End of Simone's testing code
 
+//Get all of a user's reviews
 const fetchUserRecipes = async (user_id) => {
   const SQL = `
   SELECT *
@@ -101,9 +108,10 @@ const fetchUserRecipes = async (user_id) => {
   return response.rows;
 };
 
+//Delete a user's review
 const deleteUserRecipe = async ({ user_id, id }) => {
   const SQL = `
-    DELETE FROM user_recipe
+    DELETE FROM user_recipes
     WHERE id = $1 AND user_id = $2
     RETURNING *
   `;
@@ -114,6 +122,7 @@ const deleteUserRecipe = async ({ user_id, id }) => {
     throw error;
   }
 };
+
 module.exports = {
   createUser,
   createUserRecipe,

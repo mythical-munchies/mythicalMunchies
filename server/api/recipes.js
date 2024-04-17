@@ -37,4 +37,16 @@ router.get("/:id", async (req, res, next) => {
   }
 });
 
+//Fetch single user's recipes (reviews)
+
+//Fetch single recipe's reviews 
+
+//Post review
+
+//Delete review
+
+//Fetch recipe ingredients
+
+//Fetch recipe instructions 
+
 module.exports = router;
