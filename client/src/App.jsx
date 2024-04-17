@@ -1,49 +1,45 @@
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { Route, Routes } from "react-router-dom";
 import AccountTab from "./components/AccountTab";
-import Nav from "./components/Nav";
-import ContactTab from "./components/ContactTab";
-import HomeTab from "./components/HomeTab";
-import SearchBar from "./components/SearchBar";
-import CategoryData from "./Data.json";
-import Worlds from "./components/Worlds";
-import SingleWorld from "./components/SingleWorld";
-import SingleRecipe from "./components/SingleRecipe";
-import Logo from "./components/icons/cauldronyellow.png";
-import DogWarts from "./components/DogWarts";
-import BottomsUp from "./components/BottomsUp";
-import Dessert from "./components/Dessert";
-import Vegetables from "./components/Vegetables";
-import Literature from "./components/Literature";
-import Footer from "./components/Footer";
-import PrivacyPolicy from "./components/PrivacyPolicy";
-import MythicalMunchiesFAQ from "./components/FAQ";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Bookmarks from "./components/Bookmarks";
-import MyReviews from "./components/MyReviews";
+import BottomsUp from "./components/BottomsUp";
+import CategoryData from "./Data.json";
+import ContactTab from "./components/ContactTab";
+import Dessert from "./components/Dessert";
+import DogWarts from "./components/DogWarts";
+import Footer from "./components/Footer";
+import HomeTab from "./components/HomeTab";
+import Literature from "./components/Literature";
 import Login from "./components/Login"
+import Logo from "./components/icons/cauldronyellow.png";
+import MythicalMunchiesFAQ from "./components/FAQ";
+import MyReviews from "./components/MyReviews";
+import Nav from "./components/Nav";
+import PrivacyPolicy from "./components/PrivacyPolicy";
+import SearchBar from "./components/SearchBar";
 import SignUp from "./components/SignUp";
-
+import SingleRecipe from "./components/SingleRecipe";
+import SingleWorld from "./components/SingleWorld";
+import Vegetables from "./components/Vegetables";
+import Worlds from "./components/Worlds";
 
 function App() {
   return (
     <>
       <div className="persistent-header">
-        {/* <div> */}
         <h2 className="logo-title-main">
-          <img id="logo-image" src={Logo} />
-          Mythical Munchies
+          <img id="logo-image" src={Logo}/>Mythical Munchies
         </h2>
-        {/* </div> */}
-        <SearchBar placeholder="Explore Worlds..." data={CategoryData} />
-        {/* <Login /> */}
+          <SearchBar placeholder="Explore Worlds..." data={CategoryData} />
       </div>
+
       <Nav />
       <Routes>
         <Route path="/" element={<HomeTab />} />
         <Route path="/worlds" element={<Worlds />} />
         <Route path="/contact" element={<ContactTab />} />
-        {/* ONLY SHOW THE ACCOUNT TAB IF A USER IS LOGGED IN - fix later once modules are coded in */}
+{/* ONLY SHOW THE ACCOUNT TAB IF A USER IS LOGGED IN - fix later once modules are coded in */}
         <Route path="/account" element={<AccountTab />} />
         <Route path="/single-world" element={<SingleWorld />} />
         <Route path="/single-recipe" element={<SingleRecipe />} />
@@ -58,10 +54,6 @@ function App() {
         <Route path="/my-reviews" element={<MyReviews/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/signup" element={<SignUp/>} />
-        
-
-        {/* <Route path="/test" element={<Test/>}/> */}
-        {/* <Route path="/my-reviews" element={<MyReviews/>}/> */}
       </Routes>
       <Footer />
     </>
