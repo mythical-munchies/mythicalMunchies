@@ -47,7 +47,7 @@ function Worlds() {
       })}; */}
       {/* {/* Lord of the Rings TEST TO SEE RECIPE PAGE*/}
         <div className="each-world">
-          Link to internal page
+          {/* Link to internal page */}
           <Link to="/single-world" className="world-page-title">
             <img
               src="https://m.media-amazon.com/images/I/81EBp0vOZZL._AC_UF894,1000_QL80_.jpg"

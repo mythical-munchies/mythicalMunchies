@@ -9,6 +9,8 @@ import Ramen from './images/ponyo-ramen.jpg'
 import CustomerReviews from './CustomerReviews';
 import LeaveReview from './LeaveReview';
 import { useState } from 'react';
+import Modal from 'react-bootstrap/Modal';
+// import { Button } from "flowbite-react"
 
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -89,7 +91,9 @@ function SingleRecipe() {
                       <br />
                       <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum hic id veniam neque ea voluptatem ullam reprehenderit quibusdam eveniet dicta asperiores, quasi optio odio repudiandae porro necessitatibus soluta vitae.</li>
                     </ol>
+                  
                 </div>
+             
               </Grid>
 
 
