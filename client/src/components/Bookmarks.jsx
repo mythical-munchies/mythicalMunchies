@@ -1,3 +1,4 @@
+import "./styles/Bookmarks.css"
 import { mockBooks } from "../BookData";
 import Login from "./Login"
 import SignUp from "./SignUp";
