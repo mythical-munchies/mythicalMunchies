@@ -40,7 +40,7 @@ function SingleWorld() {
           <Link target="blank" to="/single-recipe" >Ponyo</Link>
           <div className="recipe-title">Ham Ramen</div>
         </div>
-        <div className="recipe-tile">
+        {/* <div className="recipe-tile">
           <img
             className="recipe-image"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNUF7YgIkI8JGC9DDY3yRqYe5zFrNWuFpw5I_mV1PvpA&s"
@@ -48,8 +48,8 @@ function SingleWorld() {
           />
           <div className="movie-title">Ponyos</div>
           <div className="recipe-title">Ham Ramen</div>
-        </div>
-        <div className="recipe-tile">
+        </div> */}
+        {/* <div className="recipe-tile">
           <img
             className="recipe-image"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNUF7YgIkI8JGC9DDY3yRqYe5zFrNWuFpw5I_mV1PvpA&s"
@@ -57,7 +57,7 @@ function SingleWorld() {
           />
           <div className="movie-title">Ponyos</div>
           <div className="recipe-title">Ham Ramen</div>
-        </div>
+        </div> */}
       </div>
     </div>
     </>

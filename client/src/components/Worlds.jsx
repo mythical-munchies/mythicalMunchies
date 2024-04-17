@@ -23,7 +23,7 @@ function Worlds() {
         </button>
 
         {/* {showDropdown && (
-          // this div below needs a key=
+          // this div below needs a key
           <div className="dropdown-content">
           {worlds.map((world) => {
             return (
@@ -45,6 +45,18 @@ function Worlds() {
           </Link>
         );
       })}; */}
+      {/* {/* Lord of the Rings TEST TO SEE RECIPE PAGE*/}
+        <div className="each-world">
+          Link to internal page
+          <Link to="/single-world" className="world-page-title">
+            <img
+              src="https://m.media-amazon.com/images/I/81EBp0vOZZL._AC_UF894,1000_QL80_.jpg"
+              alt="Lord of the Rings Cast"
+              className="world-image"
+            />
+            <h3 className="world-page-title">LOTR</h3>
+          </Link>
+        </div>
       </div>
     </div>
   );
