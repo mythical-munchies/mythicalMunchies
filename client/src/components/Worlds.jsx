@@ -15,49 +15,55 @@ function Worlds() {
 
   return (
     <div className="gold-background">
-      <div
-        className="dropdown"
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
-        <button className="dropbtn">
-          Find Your World{" "}
+
+{/* THIS IS THE DROPDOWN */}
+      <div className="dropdown" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <button className="dropbtn">Find Your World{" "}
           <i className="fas fa-chevron-down" style={{ marginLeft: "20px" }}></i>
         </button>
 
-        {showDropdown && (
+        {/* {showDropdown && (
+          // this div below needs a key=
           <div className="dropdown-content">
-            <a href="#">Studio Ghibli</a>
-            <a href="#">Lord of the Rings</a>
-            <a href="#">Potter World</a>
-            <a href="#">Roald Dahl</a>
-            <a href="#">Beetlejuice</a>
-            <a href="#">GOT</a>
-            <a href="#">Zelda</a>
-            <a href="#">Spongebob Squarepants</a>
-            <a href="#">Stardew</a>
-            <a href="#">Star Wars</a>
-            <a href="#">Dune</a>
-            <a href="#">Make Room!</a>
+          {worlds.map((world) => {
+            return (
+              <a href="#">{world.title}</a>
+            );
+          })}
           </div>
-        )}
+        )}; */}
       </div>
 
+{/* THESE ARE THE WORLDS */}
+      {/* this div below needs a key={} */}
       <div className="each-world">
-        {/* Link to internal page */}
-        {/* Studio Ghibli */}
-        <Link to="/single-world" className="world-page-title">
-          <img
-            src="https://media.vogue.fr/photos/5dc59b122c63420008da9dab/2:3/w_2560%2Cc_limit/010_A7A13245_284.jpg"
-            alt="Studio Ghibli"
-            className="world-image"
-          />
-          <h3 className="world-page-title">Studio Ghibli</h3>
-        </Link>
+      {/* {worlds.map((world) => {
+        return (
+          <Link to ="/{world.id}" className="world-page-title">
+            <img src={world.image} alt={world.title} className="world-image" />
+            <h3 className="world-page-title">{world.title}</h3>
+          </Link>
+        );
+      })}; */}
       </div>
-      {/* Lord of the Rings */}
+    </div>
+  );
+};
+
+export default Worlds;
+
+
+
+
+
+
+
+
+
+// SIMONES PLACEHOLDER CODE
+      {/* Lord of the Rings
       <div className="each-world">
-        {/* Link to internal page */}
+        Link to internal page
         <Link to="/single-world" className="world-page-title">
           <img
             src="https://m.media-amazon.com/images/I/81EBp0vOZZL._AC_UF894,1000_QL80_.jpg"
@@ -67,9 +73,9 @@ function Worlds() {
           <h3 className="world-page-title">LOTR</h3>
         </Link>
       </div>
-      {/* Potter World */}
+      Potter World
       <div className="each-world">
-        {/* Link to internal page */}
+        Link to internal page
         <Link to="/single-world" className="world-page-title">
           <img
             src="https://ew.com/thmb/yF648cwihcC596TnRn25tlf-Ot0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/harry-potter-key-art-1-504e85d692c24d34b4d590f919f03a62.jpg"
@@ -79,9 +85,9 @@ function Worlds() {
           <h3 className="world-page-title">Potter World</h3>
         </Link>
       </div>
-      {/* Roahl Dahl */}
+      Roahl Dahl
       <div className="each-world">
-        {/* Link to internal page */}
+        Link to internal page
         <Link to="/single-world" className="world-page-title">
           <img
             src="https://i2-prod.walesonline.co.uk/whats-on/whats-on-news/article7742492.ece/ALTERNATES/s615/Matilda.jpg"
@@ -91,9 +97,9 @@ function Worlds() {
           <h3 className="world-page-title">Roald Dahl</h3>
         </Link>
       </div>
-      {/* Beetlejuice */}
+      Beetlejuice
       <div className="each-world">
-        {/* Link to internal page */}
+        Link to internal page
         <Link to="/single-world" className="world-page-title">
           <img
             src="https://hips.hearstapps.com/hmg-prod/images/beetlejuice-1539197409.jpg?crop=0.5625xw:1xh;center,top&resize=1200:*"
@@ -103,9 +109,9 @@ function Worlds() {
           <h3 className="world-page-title">Beetlejuice</h3>
         </Link>
       </div>
-      {/* GOT */}
+      GOT
       <div className="each-world">
-        {/* Link to internal page */}
+        Link to internal page
         <Link to="/single-world" className="world-page-title">
           <img
             src="https://hips.hearstapps.com/hmg-prod/images/beetlejuice-1539197409.jpg?crop=0.5625xw:1xh;center,top&resize=1200:*"
@@ -116,9 +122,9 @@ function Worlds() {
         </Link>
       </div>
 
-      {/* Zelda */}
+      Zelda
       <div className="each-world" >
-        {/* Link to internal page */}
+        Link to internal page
         <Link to="/single-world" className="world-page-title">
           <img
             src="https://hips.hearstapps.com/hmg-prod/images/beetlejuice-1539197409.jpg?crop=0.5625xw:1xh;center,top&resize=1200:*"
@@ -129,9 +135,9 @@ function Worlds() {
         </Link>
       </div>
 
-      {/* SpongeBob */}
+      SpongeBob
       <div className="each-world">
-        {/* Link to internal page */}
+        Link to internal page
         <Link to="/single-world" className="world-page-title">
           <img
             src="https://hips.hearstapps.com/hmg-prod/images/beetlejuice-1539197409.jpg?crop=0.5625xw:1xh;center,top&resize=1200:*"
@@ -141,9 +147,9 @@ function Worlds() {
           <h3 className="world-page-title">Spongebob Squarepants </h3>
         </Link>
       </div>
-      {/* Stardew */}
+      Stardew
       <div className="each-world">
-        {/* Link to internal page */}
+        Link to internal page
         <Link to="/single-world" className="world-page-title">
           <img
             src="https://hips.hearstapps.com/hmg-prod/images/beetlejuice-1539197409.jpg?crop=0.5625xw:1xh;center,top&resize=1200:*"
@@ -154,9 +160,9 @@ function Worlds() {
         </Link>
       </div>
 
-      {/* Star Wars */}
+      Star Wars
       <div className="each-world">
-        {/* Link to internal page */}
+        Link to internal page
         <Link to="/single-world" className="world-page-title">
           <img
             src="https://hips.hearstapps.com/hmg-prod/images/beetlejuice-1539197409.jpg?crop=0.5625xw:1xh;center,top&resize=1200:*"
@@ -166,9 +172,9 @@ function Worlds() {
           <h3 className="world-page-title">StarWars</h3>
         </Link>
       </div>
-      {/* Dune */}
+      Dune
       <div className="each-world">
-        {/* Link to internal page */}
+        Link to internal page
         <Link to="/single-world" className="world-page-title">
           <img
             src="https://hips.hearstapps.com/hmg-prod/images/beetlejuice-1539197409.jpg?crop=0.5625xw:1xh;center,top&resize=1200:*"
@@ -178,9 +184,9 @@ function Worlds() {
           <h3 className="world-page-title">Dune</h3>
         </Link>
       </div>
-      {/* Soylent Green */}
+      Soylent Green
       <div className="each-world">
-        {/* Link to internal page */}
+        Link to internal page
         <Link to="/single-world" className="world-page-title">
           <img
             src="https://hips.hearstapps.com/hmg-prod/images/beetlejuice-1539197409.jpg?crop=0.5625xw:1xh;center,top&resize=1200:*"
@@ -189,9 +195,17 @@ function Worlds() {
           />
           <h3 className="world-page-title">Make Room!</h3>
         </Link>
-      </div>
-    </div>
-  );
-}
+      </div> */}
 
-export default Worlds;
+            {/* <a href="#">Studio Ghibli</a>
+            <a href="#">Lord of the Rings</a>
+            <a href="#">Potter World</a>
+            <a href="#">Roald Dahl</a>
+            <a href="#">Beetlejuice</a>
+            <a href="#">GOT</a>
+            <a href="#">Zelda</a>
+            <a href="#">Spongebob Squarepants</a>
+            <a href="#">Stardew</a>
+            <a href="#">Star Wars</a>
+            <a href="#">Dune</a>
+            <a href="#">Make Room!</a> */}
