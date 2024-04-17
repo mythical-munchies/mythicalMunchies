@@ -58,7 +58,6 @@ router.post("/signup", async (req, res) => {
       // If it's a username, attempt to create a new user using the provided username
       newUser = await createUser({ username: usernameOrEmail, password });
     }
-
     res.status(201).json({
       message: "Signup successful!",
       user: newUser,
@@ -90,10 +89,10 @@ router.get("/:user_id", async (req, res) => {
 });
 
 // Creating the instance of express
-const app = express();
+// const app = express();
 
 // To use the router for paths starting with '/auth'
-app.use("/auth", router);
+// app.use("/auth", router);
 
 // This will start the server and listen on a port
 // const PORT = process.env.PORT || 3000;

@@ -23,7 +23,7 @@ const dropTables = async () => {
   const SQL = `
   DROP TABLE IF EXISTS user_recipes;
   DROP TABLE IF EXISTS recipe_ingredients;
-  DROP TABLE IF EXISTS ingredients;
+  DROP TABLE IF EXISTS ingredients CASCADE;
   DROP TABLE IF EXISTS recipe_tags;
   DROP TABLE IF EXISTS instructions;
   DROP TABLE IF EXISTS tags CASCADE;
@@ -44,9 +44,9 @@ const createTables = async () => {
     );
     CREATE TABLE users(
       id UUID PRIMARY KEY,
-      username VARCHAR(255) UNIQUE,
-      email VARCHAR(255) UNIQUE,
-      password VARCHAR(255) NOT NULL
+      username VARCHAR(500) UNIQUE,
+      email VARCHAR(500) UNIQUE,
+      password VARCHAR(500) NOT NULL
     );
     CREATE TABLE ingredients(
       id UUID PRIMARY KEY,
@@ -58,7 +58,7 @@ const createTables = async () => {
       name VARCHAR(255) NOT NULL UNIQUE,
       description TEXT,
       cook_time VARCHAR(255),
-      world_name VARCHAR(500),
+      world_id VARCHAR(500),
       img_url VARCHAR(500)
     );
     CREATE TABLE recipe_ingredients(

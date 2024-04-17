@@ -1,5 +1,6 @@
 const client = require("./client");
 const uuid = require("uuid");
+const {getWorldId} = require("./worlds")
 
 //Create a recipe
 const createRecipe = async ({
@@ -9,8 +10,9 @@ const createRecipe = async ({
   img_url,
 }) => {
   // let steps = instructions.map((ist, i) => `$${i+1}`)
+  const world_id = await getWorldId(world_name)
   const SQL = `
-    INSERT INTO recipes(id, name, description, world_name, img_url)
+    INSERT INTO recipes(id, name, description, world_id, img_url)
     VALUES($1, $2, $3, $4, $5)
     RETURNING *
     `;
@@ -18,7 +20,7 @@ const createRecipe = async ({
     uuid.v4(),
     name,
     description,
-    world_name,
+    world_id,
     img_url,
   ]);
   return response.rows[0];
