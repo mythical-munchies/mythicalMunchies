@@ -83,6 +83,8 @@ const fetchAllRecipes = async () => {
   return response.rows;
 };
 
+
+
 const fetchWorldRecipes = async (world_id) => {
   const SQL = `
   SELECT *

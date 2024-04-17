@@ -15,6 +15,7 @@ const {createInstruction} = require('./instructions.js');
 const {tags} = require('./seedArrays/tagSeedData.js');
 const {createTag, createRecipeTag} = require('./tags.js');
 const {recipe_tags} = require('./seedArrays/recipeTagsSeed.js');
+const {user_recipes} = require('./seedArrays/userRecipeSeed.js');
 
 
 //drop all tables if any exist to avoid duplicates
@@ -194,11 +195,27 @@ async function seedRecipeTags(client) {
       const createdRecipeTag = await createRecipeTag(recipe_tag);
       tagsArr.push(createdRecipeTag)
       // console.log(`Tagged ${JSON.stringify(createdRecipeTag)}`)
-      console.log(tagsArr)
+      // console.log(tagsArr)
     }
     return tagsArr
   } catch (error) {
     console.error("Error seeding recipe tags:", error);
+    throw error; // Re-throw to indicate failure
+  }
+};
+
+//seeding user reviews(recipes)
+async function seedUserRecipes(client) {
+  try {
+    let userRecipesArr = []
+    for (const user_recipe of user_recipes) {
+      const createdReview = await createUserRecipe(user_recipe);
+      userRecipesArr.push(createdReview)
+      console.log(userRecipesArr)
+    }
+    return userRecipesArr
+  } catch(error) {
+    console.error("Error seeding user recipes:", error);
     throw error; // Re-throw to indicate failure
   }
 };
@@ -228,6 +245,8 @@ async function rebuild() {
     console.log('tags seeded');
     await seedRecipeTags();
     console.log('tagged recipes');
+    await seedUserRecipes();
+    console.log('added reviews');
   } catch (error) {
     console.log(error.message);
   }
