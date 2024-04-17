@@ -40,4 +40,16 @@ const createRecipeTag = async ({recipe_name, description}) => {
   return response.rows;
 };
 
-module.exports = {createTag, createRecipeTag}
+//Fetch recipe's tags
+const fetchRecipeTags = async ({recipe_name}) => {
+  const recipe_id = await getRecipeId(recipe_name)
+  const SQL = `
+  SELECT *
+  FROM recipe_tags
+  WHERE recipe_id = $1
+  `;
+  const response = await client.query(SQL, [uuid.v4(), recipe_id, tag_id])
+  return response.rows;
+};
+
+module.exports = {createTag, createRecipeTag, fetchRecipeTags}

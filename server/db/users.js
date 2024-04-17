@@ -80,13 +80,13 @@ const fetchUser = async (username) => {
 };
 
 // added to Lucas's original code to account for the login using username or email
-const fetchUserByEmailOrUsername = async (emailOrUsername) => {
+const fetchUserByEmailOrUsername = async ({emailOrUsername}) => {
   const SQL = `
     SELECT *
     FROM users
     WHERE email = $1 OR username = $2
   `;
-  const response = await client.query(SQL, [emailOrUsername, emailOrUsername]);
+  const response = await client.query(SQL, [emailOrUsername]);
   return response.rows[0];
 };
 
@@ -103,19 +103,32 @@ const loginUser = async ({ usernameOrEmail, password }) => {
 
 //End of Simone's testing code
 
-//Get all of a user's reviews
-const fetchUserRecipes = async (user_id) => {
+//Get all of a recipe's reviews 
+const fetchRecipeReviews = async ({recipe_id}) => {
   const SQL = `
   SELECT *
-  FROM user_recipe
+  FROM user_recipes
+  WHERE recipe_id = $1
+  `;
+  const response = await client.query(SQL, [recipe_id]);
+  return response.rows;
+}
+
+//Get all of a user's reviews
+const fetchUserReviews = async ({user_id}) => {
+  const SQL = `
+  SELECT *
+  FROM user_recipes
   WHERE user_id = $1
 `;
   const response = await client.query(SQL, [user_id]);
   return response.rows;
 };
 
+//Get a single review
+
 //Delete a user's review
-const deleteUserRecipe = async ({ user_id, id }) => {
+const deleteReview = async ({ user_id, id }) => {
   const SQL = `
     DELETE FROM user_recipes
     WHERE id = $1 AND user_id = $2
@@ -134,8 +147,9 @@ module.exports = {
   createUserRecipe,
   fetchUsers,
   fetchUser,
-  fetchUserRecipes,
-  deleteUserRecipe,
+  fetchUserReviews,
+  deleteReview,
   fetchUserByEmailOrUsername,
   loginUser,
+  fetchRecipeReviews
 };

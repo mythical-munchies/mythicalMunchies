@@ -157,7 +157,6 @@ router.post("/signup", async (req, res) => {
       // If it's a username, attempt to create a new user using the provided username
       newUser = await createUser({ username: usernameOrEmail, password });
     }
-
     res.status(201).json({
       message: "Signup successful!",
       user: newUser,
