@@ -1,6 +1,7 @@
 const client = require("./client");
 const bcrypt = require("bcrypt");
 const uuid = require("uuid");
+const {getRecipeId} = require('./recipes')
 
 const createUser = async ({ username, email, password }) => {
   const SQL = `
@@ -17,10 +18,24 @@ const createUser = async ({ username, email, password }) => {
   return response.rows[0];
 };
 
-const createUserRecipe = async (user_id, recipe_id, rating, review) => {
+const getUserID = async (username) => {
   const SQL = `
-  INSERT INTO user_recipe(id, user_id, recipe_id, rating, review)
-  VALUES($1, $2, $3, $4, $5)
+  SELECT *
+  FROM users
+  WHERE username = $1
+  `;
+  let {rows} = await client.query(SQL, [username])
+  const user_id = rows[0]
+  return user_id.id
+};
+
+const createUserRecipe = async ({username, recipe_name, rating, review, bookmarked}) => {
+  const user_id = await getUserID(username)
+  const recipe_id = await getRecipeId(recipe_name)
+  const SQL = `
+  INSERT INTO user_recipe(id, user_id, recipe_id, rating, review, bookmarked)
+  VALUES($1, $2, $3, $4, $5, $6)
+  RETURNING *
   `;
   const response = await client.query(SQL, [
     uuid.v4(),
@@ -28,6 +43,7 @@ const createUserRecipe = async (user_id, recipe_id, rating, review) => {
     recipe_id,
     rating,
     review,
+    bookmarked
   ]);
   return response.rows[0];
 };
