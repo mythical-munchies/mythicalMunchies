@@ -37,7 +37,7 @@
 }
 
 .textbox {
-  width: px;
+  /* width: px; */
   height: 273px;
   top: 462px;
   left: 242px;
@@ -47,6 +47,8 @@
   opacity: 0px;
   text-align: center;
   font-family: "Almendra", serif;
+  margin-right: 50px;
+  /* border-radius: 20px; */
 }
 
 /* h1 {
@@ -76,6 +78,7 @@ p {
   border: 1px;
   margin-top: 75px;
   font-family: "Almendra", serif;
+  margin-right: 50px;
 }
 
 .name,
