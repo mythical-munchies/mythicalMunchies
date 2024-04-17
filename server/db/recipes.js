@@ -1,6 +1,7 @@
 const client = require("./client");
 const uuid = require("uuid");
 
+//Create a recipe
 const createRecipe = async ({
   name,
   description,
@@ -23,6 +24,7 @@ const createRecipe = async ({
   return response.rows[0];
 };
 
+//Get the id by recipe name 
 const getRecipeId = async (recipe_name) =>{
   let SQL = `
   SELECT id 
@@ -36,6 +38,7 @@ const getRecipeId = async (recipe_name) =>{
   return recipe_id.id
 };
 
+//Get ingredient id by name
 const getIngrId = async (ingredient_name) => {
   let SQL = `
   SELECT id 
@@ -49,6 +52,7 @@ const ingredient_id = rows[0]
 return ingredient_id.id
 };
 
+//Adds ingredients to a recipe
 const createRecipeIngredient = async (
   {recipe_name,
   ingredient_name,
@@ -60,7 +64,7 @@ const createRecipeIngredient = async (
   const ingredient_id = await getIngrId(ingredient_name)
 //  console.log(recipe_id, ingredient_id)
   const SQL = `
-  INSERT INTO recipe_ingredient(id, recipe_id, ingredient_id, amount, unit)
+  INSERT INTO recipe_ingredients(id, recipe_id, ingredient_id, amount, unit)
   VALUES($1, $2, $3, $4, $5)
   RETURNING *
   `;
@@ -74,6 +78,7 @@ const createRecipeIngredient = async (
   return response.rows[0];
 };
 
+//Get all recipes
 const fetchAllRecipes = async () => {
   const SQL = `
   SELECT *
@@ -83,8 +88,7 @@ const fetchAllRecipes = async () => {
   return response.rows;
 };
 
-
-
+//Get all of a single worlds recipes
 const fetchWorldRecipes = async (world_id) => {
   const SQL = `
   SELECT *
@@ -95,6 +99,7 @@ const fetchWorldRecipes = async (world_id) => {
   return response.rows;
 };
 
+//Get a single recipe
 const fetchRecipe = async (id) => {
   const SQL = `
   SELECT *
@@ -105,10 +110,11 @@ const fetchRecipe = async (id) => {
   return response.rows[0];
 };
 
+//Get all the ingredients for a recipe
 const fetchRecipeIngredients = async (recipe_id) => {
   const SQL = `
   SELECT *
-  FROM recipe_ingredient
+  FROM recipe_ingredients
   WHERE recipe_id = $1
   `;
   const response = await client.query(SQL, [recipe_id]);

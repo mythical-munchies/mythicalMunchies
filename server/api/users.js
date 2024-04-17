@@ -74,10 +74,10 @@ module.exports = router;
 // Fetch Single User Route
 //http://localhost:8080/mythicalmunchies/users/:user_id
 router.get("/:user_id", async (req, res) => {
-  const { user_id } = req.params;
+  const { username } = req.params;
 
   try {
-    const user = await fetchUser(user_id);
+    const user = await fetchUser(username);
     res.status(200).json({
       message: "User fetched successfully!",
       user,

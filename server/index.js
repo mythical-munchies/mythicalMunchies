@@ -13,12 +13,14 @@ app.use(express.static(path.join(__dirname, "public")));
 app.get("/docs", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
-// no dist folder currently so commented out for now. could be copy/pasted from a prior project
+
+// For production
 // app.use("/", express.static(path.join(__dirname, "../client/dist")));
 // app.get("/", (req, res) =>
 //   res.sendFile(path.join(__dirname, "../client/dist/index.html"))
 // );
 
+//Goes to index.js in appi folder
 app.use("/mythicalMunchies", require("./api"));
 
 app.use((err, req, res, next) => {

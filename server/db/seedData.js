@@ -21,8 +21,8 @@ const {user_recipes} = require('./seedArrays/userRecipeSeed.js');
 //drop all tables if any exist to avoid duplicates
 const dropTables = async () => {
   const SQL = `
-  DROP TABLE IF EXISTS user_recipe;
-  DROP TABLE IF EXISTS recipe_ingredient;
+  DROP TABLE IF EXISTS user_recipes;
+  DROP TABLE IF EXISTS recipe_ingredients;
   DROP TABLE IF EXISTS ingredients;
   DROP TABLE IF EXISTS recipe_tags;
   DROP TABLE IF EXISTS instructions;
@@ -61,14 +61,14 @@ const createTables = async () => {
       world_name VARCHAR(500),
       img_url VARCHAR(500)
     );
-    CREATE TABLE recipe_ingredient(
+    CREATE TABLE recipe_ingredients(
       id UUID PRIMARY KEY,
       recipe_id UUID REFERENCES recipes(id) NOT NULL,
       ingredient_id UUID REFERENCES ingredients(id) NOT NULL,
       amount VARCHAR(500),
       unit VARCHAR(500)
     );
-    CREATE TABLE user_recipe(
+    CREATE TABLE user_recipes(
       id UUID PRIMARY KEY,
       user_id UUID REFERENCES users(id) NOT NULL,
       recipe_id UUID REFERENCES recipes(id) NOT NULL,

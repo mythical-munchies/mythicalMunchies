@@ -2,6 +2,7 @@ const client = require("./client");
 const uuid = require("uuid");
 const {getRecipeId} = require('./recipes');
 
+//Create a tag
 const createTag = async ({description}) => {
   const SQL = `
   INSERT INTO tags(id, description)
@@ -12,6 +13,7 @@ const createTag = async ({description}) => {
   return response.rows[0]
 };
 
+//Get tag's Id to use in tag recipe
 const getTagId = async (description) => {
   const SQL = `
   SELECT *
@@ -25,6 +27,7 @@ const getTagId = async (description) => {
   return tag_id.id
 };
 
+//Add a tag to a recipe
 const createRecipeTag = async ({recipe_name, description}) => {
   const tag_id = await getTagId(description)
   const recipe_id = await getRecipeId(recipe_name)
