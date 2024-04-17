@@ -15,9 +15,9 @@ router.get("/", async (req, res, next) => {
 //Fetch Single World
 //http://localhost:8080/mythicalmunchies/worlds/:id
 router.get("/:id", async (req, res, next) => {
-  console.log(req);
+  console.log(req.params.id);
   try {
-    res.send(await fetchWorld());
+    res.send(await fetchWorld(req.params.id));
   } catch (err) {
     console.log(err);
   }

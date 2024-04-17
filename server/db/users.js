@@ -1,7 +1,7 @@
 const client = require("./client");
 const bcrypt = require("bcrypt");
 const uuid = require("uuid");
-const {getRecipeId} = require('./recipes')
+const { getRecipeId } = require("./recipes");
 
 //Create a user
 const createUser = async ({ username, email, password }) => {
@@ -19,22 +19,28 @@ const createUser = async ({ username, email, password }) => {
   return response.rows[0];
 };
 
-//Get a user's ID 
+//Get a user's ID
 const getUserID = async (username) => {
   const SQL = `
   SELECT *
   FROM users
   WHERE username = $1
   `;
-  let {rows} = await client.query(SQL, [username])
-  const user_id = rows[0]
-  return user_id.id
+  let { rows } = await client.query(SQL, [username]);
+  const user_id = rows[0];
+  return user_id.id;
 };
 
 //Create a Review
-const createUserRecipe = async ({username, recipe_name, rating, review, bookmarked}) => {
-  const user_id = await getUserID(username)
-  const recipe_id = await getRecipeId(recipe_name)
+const createUserRecipe = async ({
+  username,
+  recipe_name,
+  rating,
+  review,
+  bookmarked,
+}) => {
+  const user_id = await getUserID(username);
+  const recipe_id = await getRecipeId(recipe_name);
   const SQL = `
   INSERT INTO user_recipes(id, user_id, recipe_id, rating, review, bookmarked)
   VALUES($1, $2, $3, $4, $5, $6)
@@ -46,7 +52,7 @@ const createUserRecipe = async ({username, recipe_name, rating, review, bookmark
     recipe_id,
     rating,
     review,
-    bookmarked
+    bookmarked,
   ]);
   return response.rows[0];
 };
@@ -63,7 +69,7 @@ const fetchUsers = async () => {
 
 //fetch single user
 const fetchUser = async (username) => {
-  const id = getUserID(username)
+  const id = getUserID(username);
   const SQL = `
     SELECT *
     FROM users
