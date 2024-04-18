@@ -116,8 +116,8 @@ const fetchRecipe = async (id) => {
 };
 
 //Get all the ingredients for a recipe
-const fetchRecipeIngredients = async (recipe_name) => {
-  const recipe_id = getRecipeId(recipe_name)
+const fetchRecipeIngredients = async (recipe_id) => {
+  // const recipe_id = getRecipeId(recipe_name)
   const SQL = `
   SELECT *
   FROM recipe_ingredients
