@@ -1,6 +1,6 @@
 const client = require("./client");
 const uuid = require("uuid");
-const {getWorldId} = require("./worlds")
+const { getWorldId } = require("./worlds");
 
 //Create a recipe
 const createRecipe = async ({
@@ -8,10 +8,10 @@ const createRecipe = async ({
   description,
   world_name,
   cook_time,
-  img_url
+  img_url,
 }) => {
   // let steps = instructions.map((ist, i) => `$${i+1}`)
-  const world_id = await getWorldId(world_name)
+  const world_id = await getWorldId(world_name);
   const SQL = `
     INSERT INTO recipes(id, name, description, cook_time, world_id, img_url)
     VALUES($1, $2, $3, $4, $5, $6)
@@ -23,24 +23,24 @@ const createRecipe = async ({
     description,
     cook_time,
     world_id,
-    img_url
+    img_url,
   ]);
   return response.rows[0];
 };
 
-//Get the id by recipe name 
-const getRecipeId = async (name) =>{
+//Get the id by recipe name
+const getRecipeId = async (name) => {
   let SQL = `
   SELECT id 
   FROM recipes 
   WHERE name = $1
 `;
-console.log(name)
-  //save id as varriable to pass in response as recipe_id
-  let {rows} = await client.query(SQL, [name])
-  const recipe_id = rows[0]
+  console.log(name);
+  //save id as variable to pass in response as recipe_id
+  let { rows } = await client.query(SQL, [name]);
+  const recipe_id = rows[0];
   // console.log(recipe_id, typeof(recipe_id))
-  return recipe_id.id
+  return recipe_id.id;
 };
 
 //Get ingredient id by name
@@ -50,24 +50,24 @@ const getIngrId = async (ingredient_name) => {
   FROM ingredients 
   WHERE name = $1
 `;
-// console.log(ingredient_name)
-let {rows} = await client.query(SQL, [ingredient_name])
-const ingredient_id = rows[0]
-// console.log(ingredient_id.id)
-return ingredient_id.id
+  // console.log(ingredient_name)
+  let { rows } = await client.query(SQL, [ingredient_name]);
+  const ingredient_id = rows[0];
+  // console.log(ingredient_id.id)
+  return ingredient_id.id;
 };
 
 //Adds ingredients to a recipe
-const createRecipeIngredient = async (
-  {recipe_name,
+const createRecipeIngredient = async ({
+  recipe_name,
   ingredient_name,
   amount,
-  unit}
-) => {
-  const recipe_id = await getRecipeId(recipe_name)
+  unit,
+}) => {
+  const recipe_id = await getRecipeId(recipe_name);
   //select id from ingredients where name = ingr_name
-  const ingredient_id = await getIngrId(ingredient_name)
-//  console.log(recipe_id, ingredient_id)
+  const ingredient_id = await getIngrId(ingredient_name);
+  //  console.log(recipe_id, ingredient_id)
   const SQL = `
   INSERT INTO recipe_ingredients(id, recipe_id, ingredient_id, amount, unit)
   VALUES($1, $2, $3, $4, $5)
@@ -95,7 +95,7 @@ const fetchAllRecipes = async () => {
 
 //Get all of a single worlds recipes
 const fetchWorldRecipes = async (world_id) => {
-  console.log(`world id ${world_id}`)
+  console.log(`world id ${world_id}`);
   const SQL = `
   SELECT *
   FROM recipes
@@ -116,7 +116,6 @@ const fetchRecipe = async (id) => {
   console.log(response);
   return response.rows;
 };
-
 
 module.exports = {
   createRecipe,

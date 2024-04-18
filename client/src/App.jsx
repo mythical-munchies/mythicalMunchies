@@ -23,9 +23,26 @@ import SingleRecipe from "./components/SingleRecipe";
 import SingleWorld from "./components/SingleWorld";
 import Vegetables from "./components/Vegetables";
 import Worlds from "./components/Worlds";
+import { useEffect, useState } from "react";
+import Error404 from "./components/Error404";
 
 
 function App() {
+  const [worlds, setWorlds] = useState([]);
+  const [auth, setAuth] = useState([]);
+  const [review, setReview] = useState([]);
+  const [favorites, setFavorites] = useState([])
+
+  useEffect(()=> {
+    const fetchWorlds = async() => {
+      const response = await fetch ('https://mythicalmunchies.onrender.com/mythicalMunchies/worlds/');
+      const json = await response.json();
+      console.log(json)
+      setWorlds(json);
+    };
+    fetchWorlds();
+  }, []);
+
   return (
     <>
       <div className="persistent-header">
@@ -38,7 +55,7 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<HomeTab />} />
-        <Route path="/worlds" element={<Worlds />} />
+        <Route path="/worlds" element={<Worlds worldsArray={worlds} />} />
         <Route path="/contact" element={<ContactTab />} />
 {/* ONLY SHOW THE ACCOUNT TAB IF A USER IS LOGGED IN - fix later once modules are coded in */}
         <Route path="/account" element={<AccountTab />} />
@@ -55,15 +72,8 @@ function App() {
         <Route path="/my-reviews" element={<MyReviews />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
-        <Route
-          path="*"
-          element={
-            <div>
-              404 Magic Munchies missing! Looks like it vanished into thin air.
-              Let's conjure up another dish instead!" ✨🍽️!
-            </div>
-          }
-        />
+        <Route path="*" element={<Error404 />} />
+
 
         {/* <Route path="/test" element={<Test/>}/> */}
         {/* <Route path="/my-reviews" element={<MyReviews/>}/> */}

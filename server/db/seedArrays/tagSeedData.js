@@ -1,19 +1,19 @@
 const tags = [
   {
-    "description":"Drink"
+    description: "Drink",
   },
   {
-    "description":"Entree"
+    description: "Entrée",
   },
   {
-    "description":"Desert"
+    description: "Dessert",
   },
   {
-    "description":"Vegan"
+    description: "Vegan",
   },
   // {
   //   "description":""
   // },
-]
+];
 
-module.exports = {tags}
+module.exports = { tags };
