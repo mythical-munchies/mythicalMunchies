@@ -125,6 +125,7 @@ router.get("/", async (req, res, next) => {
 });
 
 // Login Route
+//http://localhost:8080/mythicalmunchies/users/login
 router.post("/login", async (req, res) => {
   const { usernameOrEmail, password } = req.body;
   try {
@@ -141,6 +142,7 @@ router.post("/login", async (req, res) => {
 });
 
 // Signup Route
+//http://localhost:8080/mythicalmunchies/users/signup
 router.post("/signup", async (req, res) => {
   const { usernameOrEmail, password } = req.body;
 
@@ -169,6 +171,7 @@ router.post("/signup", async (req, res) => {
 });
 
 // Fetch Single User Route
+//http://localhost:8080/mythicalmunchies/users/:user_id
 router.get("/:user_id", async (req, res) => {
   const { user_id } = req.params;
 
