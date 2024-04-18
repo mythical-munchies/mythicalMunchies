@@ -36,7 +36,7 @@ const recipes =[
   },
   {
     "name": "Calcifer Snacks",
-    "description":"Log inspired japanese cake roll with crushed (white chocolate) egg shells. (Calcifers favorite)", 
+    "description":"Log-inspired Japanese cake roll with crushed (white chocolate) egg shells. (Calcifer's Favorite!)", 
     "cook_time":"1 hour",
     "world_name": "Studio Ghibli",
     "img_url":"https://twocrumbsup.co/wp-content/uploads/2023/10/Howls-Moving-Castle-Cake-2.jpg"
