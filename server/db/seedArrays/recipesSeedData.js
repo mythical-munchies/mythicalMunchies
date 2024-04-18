@@ -11,7 +11,6 @@ const recipes =[
     "description":"Enjoy this cozy, rainy day meal that'll get you ready for a big afternoon nap. Double the recipe and enjoy with a mermaid friend!", 
     "cook_time":"10-15 Min",
     "world_name": "Studio Ghibli",
-    "instructions": '',
     "img_url":"https://external-preview.redd.it/TDiqO4Gh1lv-GKJJB9wOrmKpjFejAK0LwoPUwl-_-EQ.jpg?auto=webp&s=763af17210f6167dd714162ae65dd141bb2ac77d"
   },
   {
