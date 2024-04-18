@@ -37,7 +37,7 @@ function App() {
       const response = await fetch ('https://mythicalmunchies.onrender.com/mythicalMunchies/worlds/');
       const json = await response.json();
       console.log(json)
-      setWorlds(json.worlds);
+      setWorlds(json);
     };
     fetchWorlds();
   }, []);
@@ -54,7 +54,7 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<HomeTab />} />
-        <Route path="/worlds" element={<Worlds />} />
+        <Route path="/worlds" element={<Worlds worldsArray={worlds} />} />
         <Route path="/contact" element={<ContactTab />} />
 {/* ONLY SHOW THE ACCOUNT TAB IF A USER IS LOGGED IN - fix later once modules are coded in */}
         <Route path="/account" element={<AccountTab />} />

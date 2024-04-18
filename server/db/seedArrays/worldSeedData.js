@@ -5,7 +5,7 @@ const worlds = [
   },
   {
     "name":"Bikini Bottom",
-    "img_url":"https://images.app.goo.gl/UMBkhtZRWNP8XzqK7"
+    "img_url":"https://www.awn.com/sites/default/files/styles/original/public/image/featured/spongebob1.jpg?itok=76tTlV2V"
   },
   {
     "name":"Dune",

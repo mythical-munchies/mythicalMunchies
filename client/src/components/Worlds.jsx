@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./styles/Worlds.css";
 
 
-const Worlds = ({ worlds }) => {
+const Worlds = ({ worldsArray }) => {
   const [showDropdown, setShowDropdown] = useState(false);
 
   const handleMouseEnter = () => {
@@ -16,8 +16,27 @@ const Worlds = ({ worlds }) => {
 
   return (
     <div className="gold-background">
+
+{/* THIS IS THE DROPDOWN */}
+      {/* <div className="dropdown" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <button className="dropbtn">Find Your World{" "}
+          <i className="fas fa-chevron-down" style={{ marginLeft: "20px" }}></i>
+        </button>
+
+        {showDropdown && (
+          this div below needs a key
+          <div className="dropdown-content">
+          {worlds.map((world) => {
+            return (
+              <a href="#">{world.title}</a>
+            );
+          })}
+          </div>
+        )}; 
+      </div> */}
+      
 {/* THESE ARE THE WORLDS */}
-      {/* {worlds.map((world) => {
+      {worldsArray.map((world) => {
         return (
           <div key={world.id} className="each-world">
             <Link to ="/{world.id}" className="world-page-title">
@@ -26,7 +45,7 @@ const Worlds = ({ worlds }) => {
             </Link>
           </div>
         );
-      })};  */}
+      })}; 
     </div>
   );
 };
@@ -204,21 +223,3 @@ export default Worlds;
             <a href="#">Dune</a>
             <a href="#">Make Room!</a> */}
 
-
-            {/* THIS IS THE DROPDOWN */}
-      {/* <div className="dropdown" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-        <button className="dropbtn">Find Your World{" "}
-          <i className="fas fa-chevron-down" style={{ marginLeft: "20px" }}></i>
-        </button>
-
-        {showDropdown && (
-          this div below needs a key
-          <div className="dropdown-content">
-          {worlds.map((world) => {
-            return (
-              <a href="#">{world.title}</a>
-            );
-          })}
-          </div>
-        )}; 
-      </div> */}
