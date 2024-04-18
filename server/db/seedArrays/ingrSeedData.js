@@ -29,7 +29,7 @@ const ingredients = [
   { name: "Beet Juice", description: "" },
   { name: "Cayenne Powder", description: "" },
   { name: "Lime", description: "" },
-  { name: "Rice Vineggar", description: "" },
+  { name: "Rice Vinegar", description: "" },
   { name: "Shaoxing Wine", description: "" },
   { name: "Soy Sauce", description: "" },
   { name: "Hoisin Sauce", description: "" },
