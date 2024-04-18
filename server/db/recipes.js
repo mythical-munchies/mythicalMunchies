@@ -7,21 +7,23 @@ const createRecipe = async ({
   name,
   description,
   world_name,
-  img_url,
+  cook_time,
+  img_url
 }) => {
   // let steps = instructions.map((ist, i) => `$${i+1}`)
   const world_id = await getWorldId(world_name)
   const SQL = `
-    INSERT INTO recipes(id, name, description, world_id, img_url)
-    VALUES($1, $2, $3, $4, $5)
+    INSERT INTO recipes(id, name, description, cook_time, world_id, img_url)
+    VALUES($1, $2, $3, $4, $5, $6)
     RETURNING *
     `;
   const response = await client.query(SQL, [
     uuid.v4(),
     name,
     description,
+    cook_time,
     world_id,
-    img_url,
+    img_url
   ]);
   return response.rows[0];
 };
@@ -113,7 +115,8 @@ const fetchRecipe = async (id) => {
 };
 
 //Get all the ingredients for a recipe
-const fetchRecipeIngredients = async (recipe_id) => {
+const fetchRecipeIngredients = async (recipe_name) => {
+  const recipe_id = getRecipeId(recipe_name)
   const SQL = `
   SELECT *
   FROM recipe_ingredients
