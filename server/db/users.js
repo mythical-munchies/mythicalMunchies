@@ -68,10 +68,21 @@ const fetchUsers = async () => {
   return response.rows;
 };
 
-//fetch single user
+//fetch single user by username
 const fetchUser = async (username) => {
   const id = await getUserID(username);
   console.log(`fetch single ${id}`)
+  const SQL = `
+    SELECT *
+    FROM users
+    WHERE id = $1
+  `;
+  const response = await client.query(SQL, [id]);
+  return response.rows[0];
+};
+
+//fetch user by id
+const fetchUserById = async (id) => {
   const SQL = `
     SELECT *
     FROM users
@@ -174,6 +185,7 @@ module.exports = {
   createUserRecipe,
   fetchUsers,
   fetchUser,
+  fetchUserById,
   fetchUserReviews,
   deleteReview,
   // fetchUserByEmailOrUsername,
