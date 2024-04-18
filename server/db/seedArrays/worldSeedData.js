@@ -1,7 +1,7 @@
 const worlds = [
   {
     "name":"Beetlejuice",
-    "img_url":"https://images.app.goo.gl/me7aDeU7EM3yoLqq6"
+    "img_url":"https://goldenglobes.com/wp-content/uploads/2023/11/01-michael-keaton-and-winona-ryder-beetlejuice.jpg"
   },
   {
     "name":"Bikini Bottom",
@@ -13,7 +13,7 @@ const worlds = [
   },
   {
     "name":"Forgotten Realms",
-    "img_url":"https://images.app.goo.gl/zbyGZ7Vw3Hj5RCdo6"
+    "img_url":"https://www.wargamer.com/wp-content/sites/wargamer/2021/06/magic-the-gathering-adventures-in-the-forgotten-realms-spoilers-roleplaying-cards.jpg"
   },
   {
     "name":"Game of Thrones",
@@ -21,11 +21,11 @@ const worlds = [
   },
   {
     "name":"Lord of the Rings",
-    "img_url":"https://images.app.goo.gl/12hRZWUBMwUguioD7"
+    "img_url":"https://assets-prd.ignimgs.com/2022/08/02/lord-of-the-rings-thumbnail-1659474646743.jpg"
   },
   {
     "name":"Make Room!",
-    "img_url":""
+    "img_url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrLtemRM7OdpeSa4KScKkosa7KUiZrR61F3gMNRppwdg&s"
   },
   {
     "name":"Roald Dahl",
@@ -33,19 +33,19 @@ const worlds = [
   },
   {
     "name":"Star Wars",
-    "img_url":"https://images.app.goo.gl/hf19o3RnQmPuPdoc8"
+    "img_url":"https://lumiere-a.akamaihd.net/v1/images/image_24641330.jpeg?region=0,276,2160,864"
   },
   {
     "name":"Stardew Valley",
-    "img_url":"https://images.app.goo.gl/vN1ZG2efB5wbnvz69"
+    "img_url":"https://cdn.akamai.steamstatic.com/steam/apps/413150/capsule_616x353.jpg?t=1711128146"
   },
   {
     "name":"Studio Ghibli",
-    "img_url": "https://yattatachi.com/wp-content/uploads/2022/12/Studio-Ghibli-Gift-Guide-Featured.jpg"
+    "img_url": "https://cdn.vox-cdn.com/uploads/chorus_asset/file/19998455/jbareham_200520_1021_ghibli_week_0001b.jpg"
   },
   {
     "name":"Wizarding World",
-    "img_url":"https://images.app.goo.gl/Nn7wGq6kJB2GQ2DK9"
+    "img_url":"https://images.ctfassets.net/usf1vwtuqyxm/4Lx4yGQ3W0daVknu7ayizS/d386272ff997df7578c175fb8b912ef8/HP-F1-philosophers-stone-harry-ron-hermione-hogwarts-express-web-landscape"
   },
   {
     "name":"The Legend of Zelda",

@@ -40,7 +40,7 @@ const Worlds = ({ worldsArray }) => {
         return (
           <div key={world.id} className="each-world">
             <Link to ="/{world.id}" className="world-page-title">
-              <img src={world.img_url} alt={world.name} className="world-image" />
+              <img src={world.img_url} alt="" className="world-image" />
               <h3 className="world-page-title">{world.name}</h3>
             </Link>
           </div>
