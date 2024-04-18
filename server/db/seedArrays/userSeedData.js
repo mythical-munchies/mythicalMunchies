@@ -44,6 +44,21 @@ const users = [
     email: "fairyoddparent@gmail.com",
     password: "booboo",
   },
+  {
+    username: "Bridge_Troll",
+    email: "troll@underthebridge.com",
+    password: "nopassnoglory",
+  },
+  {
+    username: "Space_Cadet",
+    email: "spacecadet@outerspace.com",
+    password: "rocketpopcorn",
+  },
+  {
+    username: "Barnyard_Bard",
+    email: "barnyardbard@stardewfarm.com",
+    password: "chickencrooners",
+  },
 ];
 
 module.exports = { users };
