@@ -80,19 +80,19 @@ const fetchUser = async (username) => {
 };
 
 // added to Lucas's original code to account for the login using username or email
-const fetchUserByEmailOrUsername = async ({emailOrUsername}) => {
-  const SQL = `
-    SELECT *
-    FROM users
-    WHERE email = $1 OR username = $2
-  `;
-  const response = await client.query(SQL, [emailOrUsername]);
-  return response.rows[0];
-};
+// const fetchUserByEmailOrUsername = async (username, email) => {
+//   const SQL = `
+//     SELECT *
+//     FROM users
+//     WHERE email = $1 OR username = $2
+//   `;
+//   const response = await client.query(SQL, [username, email]);
+//   return response.rows[0];
+// };
 
-const loginUser = async ({ usernameOrEmail, password }) => {
+const loginUser = async (username, password) => {
   // Query the database to find the user based on email or username
-  const user = await fetchUserByEmailOrUsername(usernameOrEmail);
+  // const user = await fetchUserByEmailOrUsername(usernameOrEmail);
   console.log(user);
   // If user is not found or password doesn't match, throw an error
   if (!user || !bcrypt.compareSync(password, user.password)) {
@@ -115,7 +115,7 @@ const fetchRecipeReviews = async ({recipe_id}) => {
 }
 
 //Get all of a user's reviews
-const fetchUserReviews = async ({user_id}) => {
+const fetchUserReviews = async (user_id) => {
   const SQL = `
   SELECT *
   FROM user_recipes
@@ -174,7 +174,7 @@ module.exports = {
   fetchUser,
   fetchUserReviews,
   deleteReview,
-  fetchUserByEmailOrUsername,
+  // fetchUserByEmailOrUsername,
   loginUser,
   fetchRecipeReviews,
   fetchReview
