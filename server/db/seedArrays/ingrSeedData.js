@@ -44,7 +44,7 @@ const ingredients = [
   { name: "Habanero Pepper", description: "" },
   { name: "Cumin", description: "" },
   { name: "Honey", description: "Local is best" },
-  { name: "Cliantro", description: "Can be subbed with parsley" },
+  { name: "Cilantro", description: "Can be subbed with parsley" },
   { name: "Canola Oil", description: "" },
   { name: "Orange Juice", description: "" },
   { name: "Curry Powder", description: "" },
