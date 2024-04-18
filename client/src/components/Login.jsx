@@ -23,10 +23,6 @@ function Login () {
     
     return ( 
     <>
-
-
-
-    
 {/* ACCOUNT PAGE - SIGN IN BUTTON */}
         <li className="sideBar-button">
             <a href="#" onClick={handleShow} className="flex items-center p-2 text-blue-900 rounded-lg dark:text-white hover:bg-yellow-400 dark:hover:bg-yellow-800 group">

@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./styles/Worlds.css";
 
-function Worlds() {
+
+const Worlds = ({ worlds }) => {
   const [showDropdown, setShowDropdown] = useState(false);
 
   const handleMouseEnter = () => {
@@ -15,49 +16,17 @@ function Worlds() {
 
   return (
     <div className="gold-background">
-
-{/* THIS IS THE DROPDOWN */}
-      <div className="dropdown" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-        <button className="dropbtn">Find Your World{" "}
-          <i className="fas fa-chevron-down" style={{ marginLeft: "20px" }}></i>
-        </button>
-
-        {/* {showDropdown && (
-          // this div below needs a key
-          <div className="dropdown-content">
-          {worlds.map((world) => {
-            return (
-              <a href="#">{world.title}</a>
-            );
-          })}
-          </div>
-        )}; */}
-      </div>
-
 {/* THESE ARE THE WORLDS */}
-      {/* this div below needs a key={} */}
-      <div className="each-world">
       {/* {worlds.map((world) => {
         return (
-          <Link to ="/{world.id}" className="world-page-title">
-            <img src={world.image} alt={world.title} className="world-image" />
-            <h3 className="world-page-title">{world.title}</h3>
-          </Link>
+          <div key={world.id} className="each-world">
+            <Link to ="/{world.id}" className="world-page-title">
+              <img src={world.img_url} alt={world.name} className="world-image" />
+              <h3 className="world-page-title">{world.name}</h3>
+            </Link>
+          </div>
         );
-      })}; */}
-      {/* {/* Lord of the Rings TEST TO SEE RECIPE PAGE*/}
-        <div className="each-world">
-          {/* Link to internal page */}
-          <Link to="/single-world" className="world-page-title">
-            <img
-              src="https://m.media-amazon.com/images/I/81EBp0vOZZL._AC_UF894,1000_QL80_.jpg"
-              alt="Lord of the Rings Cast"
-              className="world-image"
-            />
-            <h3 className="world-page-title">LOTR</h3>
-          </Link>
-        </div>
-      </div>
+      })};  */}
     </div>
   );
 };
@@ -209,6 +178,19 @@ export default Worlds;
         </Link>
       </div> */}
 
+            {/* {/* Lord of the Rings TEST TO SEE RECIPE PAGE*/}
+        {/* <div className="each-world">
+         
+          <Link to="/single-world" className="world-page-title">
+            <img
+              src="https://m.media-amazon.com/images/I/81EBp0vOZZL._AC_UF894,1000_QL80_.jpg"
+              alt="Lord of the Rings Cast"
+              className="world-image"
+            />
+            <h3 className="world-page-title">LOTR</h3>
+          </Link>
+        </div> */}
+
             {/* <a href="#">Studio Ghibli</a>
             <a href="#">Lord of the Rings</a>
             <a href="#">Potter World</a>
@@ -221,3 +203,22 @@ export default Worlds;
             <a href="#">Star Wars</a>
             <a href="#">Dune</a>
             <a href="#">Make Room!</a> */}
+
+
+            {/* THIS IS THE DROPDOWN */}
+      {/* <div className="dropdown" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <button className="dropbtn">Find Your World{" "}
+          <i className="fas fa-chevron-down" style={{ marginLeft: "20px" }}></i>
+        </button>
+
+        {showDropdown && (
+          this div below needs a key
+          <div className="dropdown-content">
+          {worlds.map((world) => {
+            return (
+              <a href="#">{world.title}</a>
+            );
+          })}
+          </div>
+        )}; 
+      </div> */}
