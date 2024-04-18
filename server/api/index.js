@@ -20,4 +20,7 @@ apiRouter.use("/reviews", require("./reviews.js"))
 //http://localhost:8080/mythicalmunchies/tags
 apiRouter.use("/tags", require("./tags.js"))
 
+//http://localhost:8080/mythicalmunchies/ingredients
+apiRouter.use("/ingredients", require("./ingredients.js"))
+
 module.exports = apiRouter

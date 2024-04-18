@@ -28,6 +28,7 @@ const getUserID = async (username) => {
   `;
   let { rows } = await client.query(SQL, [username]);
   const user_id = rows[0];
+  console.log(user_id.id)
   return user_id.id;
 };
 
@@ -69,14 +70,15 @@ const fetchUsers = async () => {
 
 //fetch single user
 const fetchUser = async (username) => {
-  const id = getUserID(username);
+  const id = await getUserID(username);
+  console.log(`fetch single ${id}`)
   const SQL = `
     SELECT *
     FROM users
     WHERE id = $1
   `;
   const response = await client.query(SQL, [id]);
-  return response.rows;
+  return response.rows[0];
 };
 
 // added to Lucas's original code to account for the login using username or email
@@ -90,21 +92,21 @@ const fetchUser = async (username) => {
 //   return response.rows[0];
 // };
 
-const loginUser = async (username, password) => {
-  // Query the database to find the user based on email or username
-  // const user = await fetchUserByEmailOrUsername(usernameOrEmail);
-  console.log(user);
-  // If user is not found or password doesn't match, throw an error
-  if (!user || !bcrypt.compareSync(password, user.password)) {
-    throw new Error("Invalid credentials");
-  }
-  return user;
-};
+// const loginUser = async (username, password) => {
+//   // Query the database to find the user based on email or username
+//   // const user = await fetchUserByEmailOrUsername(usernameOrEmail);
+//   console.log(user);
+//   // If user is not found or password doesn't match, throw an error
+//   if (!user || !bcrypt.compareSync(password, user.password)) {
+//     throw new Error("Invalid credentials");
+//   }
+//   return user;
+// };
 
 //End of Simone's testing code
 
 //Get all of a recipe's reviews 
-const fetchRecipeReviews = async ({recipe_id}) => {
+const fetchRecipeReviews = async (recipe_id) => {
   const SQL = `
   SELECT *
   FROM user_recipes
@@ -175,7 +177,7 @@ module.exports = {
   fetchUserReviews,
   deleteReview,
   // fetchUserByEmailOrUsername,
-  loginUser,
+  // loginUser,
   fetchRecipeReviews,
   fetchReview
 };

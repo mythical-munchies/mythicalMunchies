@@ -117,25 +117,11 @@ const fetchRecipe = async (id) => {
   return response.rows;
 };
 
-//Get all the ingredients for a recipe
-const fetchRecipeIngredients = async (recipe_id) => {
-  // const recipe_id = getRecipeId(recipe_name)
-  console.log(recipe_id);
-  const SQL = `
-  SELECT *
-  FROM recipe_ingredients
-  WHERE recipe_id = $1
-  `;
-  const response = await client.query(SQL, [recipe_id]);
-  return response.rows;
-};
-
 module.exports = {
   createRecipe,
   createRecipeIngredient,
   fetchAllRecipes,
   fetchWorldRecipes,
   fetchRecipe,
-  fetchRecipeIngredients,
-  getRecipeId,
+  getRecipeId
 };
