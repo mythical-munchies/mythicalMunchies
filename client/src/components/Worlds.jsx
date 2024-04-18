@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./styles/Worlds.css";
+import WorldDropDown from "./WorldDropdown";
 
 
 const Worlds = ({ worldsArray }) => {
@@ -16,24 +17,12 @@ const Worlds = ({ worldsArray }) => {
 
   return (
     <div className="gold-background">
+      <div className="dropdown">
+        <div>
+          <WorldDropDown />
+        </div>
+      </div>
 
-{/* THIS IS THE DROPDOWN */}
-      {/* <div className="dropdown" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-        <button className="dropbtn">Find Your World{" "}
-          <i className="fas fa-chevron-down" style={{ marginLeft: "20px" }}></i>
-        </button>
-
-        {showDropdown && (
-          this div below needs a key
-          <div className="dropdown-content">
-          {worlds.map((world) => {
-            return (
-              <a href="#">{world.title}</a>
-            );
-          })}
-          </div>
-        )}; 
-      </div> */}
       
 {/* THESE ARE THE WORLDS */}
       {worldsArray.map((world) => {

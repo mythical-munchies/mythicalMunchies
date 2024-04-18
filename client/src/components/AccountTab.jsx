@@ -44,7 +44,7 @@ const AccountTab = ({ authenticate })=> {
 {/* ACCOUNT - EDIT FORM */}
       <div className="containerBig">
         <div className="testin">
-          <div className="testin">
+          <div className="account-testin">
             <h3 className="edit">Edit your Account Information</h3>
           </div>
           <form id="account-edit" className="max-w-sm mx-auto">
