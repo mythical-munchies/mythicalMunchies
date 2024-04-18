@@ -15,8 +15,8 @@ const createInstruction = async ({recipe_name, description, index}) => {
 };
 
 //Fetch instructions
-const fetchInstructions = async ({recipe_name}) => {
-  const recipe_id = await getRecipeId(recipe_name)
+const fetchInstructions = async (recipe_id) => {
+  // const recipe_id = await getRecipeId(recipe_name)
   const SQL = `
   SELECT *
   FROM instructions 

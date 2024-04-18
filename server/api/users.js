@@ -109,7 +109,7 @@ const router = express.Router();
 const {
   loginUser,
   createUser,
-  fetchUserByEmailOrUsername,
+  // fetchUserByEmailOrUsername,
   fetchUser,
   fetchUsers,
 } = require("../db/users");

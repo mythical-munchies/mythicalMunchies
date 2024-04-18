@@ -28,10 +28,10 @@ router.get("/", async (req, res, next) => {
 
 //Fetch Single World Recipes Route
 //http://localhost:8080/mythicalmunchies/recipes/:world_id
-router.get("/:world_id", async (req, res, next) => {
+router.get("/:id", async (req, res, next) => {
   try {
     console.log('all recipes one world')
-    res.send(await fetchWorldRecipes(req.params.world_id));
+    res.send(await fetchWorldRecipes(req.params.id));
   } catch (ex) {
     next(ex);
   }
@@ -52,13 +52,13 @@ router.get("/single/:id", async (req, res, next) => {
 
 //Create a review
 //http://localhost:8080/mythicalmunchies/recipes/:review_id
-router.post("/:user_id/:review_id", async (req, res, next) => {
-  try {
-    res.send(await createUserRecipe(req.params.review_id));
-  } catch (ex) {
-    next(ex);
-  }
-});
+// router.post("/:user_id/:review_id", async (req, res, next) => {
+//   try {
+//     res.send(await createUserRecipe(req.params.review_id));
+//   } catch (ex) {
+//     next(ex);
+//   }
+// });
 
 //Fetch single user's recipes (reviews)
 //http://localhost:8080/mythicalmunchies/recipes/:user_id/reviews
@@ -81,10 +81,11 @@ router.get("/:recipe_id/reviews", async(req, res, next) => {
 });
 
 //Fetch a single review
-//http://localhost:8080/mythicalmunchies/recipes/:review_id
-router.get("/:user_id/:review_id", async (req, res, next) => {
+//http://localhost:8080/mythicalmunchies/recipes/review/:review_id
+router.get("/review/:review_id", async (req, res, next) => {
   try {
-    res.send(await fetchReview(req.params.id));
+
+    res.send(await fetchReview(req.params.review_d));
   } catch (ex) {
     next(ex);
   }
@@ -112,9 +113,9 @@ router.delete("/:user_id/:review_id", async (req, res, next) => {
 
 //Fetch recipe ingredients
 //http://localhost:8080/mythicalmunchies/recipes/:recipe_id/ingredients
-router.get("/:recipe_id/ingredients", async (req, res, next) => {
+router.get("/ingredients/:recipe_id", async (req, res, next) => {
   try {
-    res.send(await fetchRecipeIngredients(req.params.id))
+    res.send(await fetchRecipeIngredients(req.params.recipe_id))
   } catch (ex) {
     next(ex)
   }
@@ -122,9 +123,10 @@ router.get("/:recipe_id/ingredients", async (req, res, next) => {
 
 //Fetch recipe instructions 
 //http://localhost:8080/mythicalmunchies/recipes/:recipe_id/instructions
-router.get("/:recipe_id/instructions", async (req, res, next) => {
+router.get("/instructions/:recipe_id", async (req, res, next) => {
   try {
-    res.send(await fetchInstructions(req.params.id))
+    // console.log(req.params.recipe_id)
+    res.send(await fetchInstructions(req.params.recipe_id))
   } catch (ex) {
     next(ex)
   }
@@ -132,9 +134,10 @@ router.get("/:recipe_id/instructions", async (req, res, next) => {
 
 //Fetch recipe's tags
 //http://localhost:8080/mythicalmunchies/recipes/:recipe_id/tags
-router.get("/:recipe_id/tags", async(req, res, next) => {
+router.get("/tags/:recipe_id", async(req, res, next) => {
   try {
-    res.send(await fetchRecipeTags(req.params.id))
+    console.log()
+    res.send(await fetchRecipeTags(req.params.recipe_id))
   } catch (ex) {
     next(ex)
   }
