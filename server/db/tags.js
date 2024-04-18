@@ -20,9 +20,9 @@ const getTagId = async (description) => {
   FROM tags
   WHERE description = $1
   `;
-  // console.log(description)
+  console.log(description)
   let {rows} = await client.query(SQL, [description])
-  // console.log(rows)
+  console.log(rows)
   const tag_id = rows[0]
   return tag_id.id
 };
@@ -52,4 +52,24 @@ const fetchRecipeTags = async (recipe_id) => {
   return response.rows;
 };
 
-module.exports = {createTag, createRecipeTag, fetchRecipeTags}
+const fetchTags = async () => {
+  const SQL = `
+  SELECT *
+  FROM tags
+  `;
+  const response = await client.query(SQL);
+  return response.rows;
+};
+
+const fetchTaggedRecipes = async (tag_id) => {
+  const SQL = `
+  SELECT *
+  FROM recipe_tags
+  WHERE tag_id = $1
+  `;
+  const response = await client.query(SQL, [tag_id]);
+  console.log(response)
+  return response.rows;
+}
+
+module.exports = {createTag, createRecipeTag, fetchTags, fetchRecipeTags, fetchTaggedRecipes}

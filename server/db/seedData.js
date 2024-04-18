@@ -180,7 +180,7 @@ async function seedTags(client) {
   try {
     for (const tag of tags) {
       const createdTag = await createTag(tag);
-      // console.log(`Creates ${JSON.stringify(createdTag)}`)
+      console.log(`Creates ${JSON.stringify(createdTag)}`)
     }
   } catch (error) {
     console.error("Error seeding tags:", error);

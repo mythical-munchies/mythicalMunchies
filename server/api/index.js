@@ -14,4 +14,10 @@ apiRouter.use("/recipes", require("./recipes.js"))
 //Goes to api/users.js
 apiRouter.use("/users", require("./users.js"))
 
+//http://localhost:8080/mythicalmunchies/reviews
+apiRouter.use("/reviews", require("./reviews.js"))
+
+//http://localhost:8080/mythicalmunchies/tags
+apiRouter.use("/tags", require("./tags.js"))
+
 module.exports = apiRouter
