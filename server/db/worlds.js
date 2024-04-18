@@ -35,14 +35,15 @@ const fetchWorld = async (id) => {
 };
 
 //Get world's id by world name
-const getWorldId = async ({name}) => {
+const getWorldId = async (name) => {
+  console.log(name)
   const SQL = `
   SELECT *
   FROM worlds 
   WHERE name = $1
   `;
   const response = await client.query(SQL, [name])
-  return response.rows[0];
+  return response.rows[0].id;
 }
 
 module.exports = {

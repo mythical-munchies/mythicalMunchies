@@ -95,6 +95,7 @@ const fetchAllRecipes = async () => {
 
 //Get all of a single worlds recipes
 const fetchWorldRecipes = async (world_id) => {
+  console.log(`world id ${world_id}`)
   const SQL = `
   SELECT *
   FROM recipes

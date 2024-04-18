@@ -19,6 +19,7 @@ const {fetchRecipeTags} = require('../db/tags')
 //http://localhost:8080/mythicalmunchies/recipes/
 router.get("/", async (req, res, next) => {
   try {
+    console.log('howdy')
     res.send(await fetchAllRecipes(req.params.id));
   } catch (ex) {
     next(ex);
@@ -29,17 +30,21 @@ router.get("/", async (req, res, next) => {
 //http://localhost:8080/mythicalmunchies/recipes/:world_id
 router.get("/:world_id", async (req, res, next) => {
   try {
-    res.send(await fetchWorldRecipes(req.params.id));
+    console.log('all recipes one world')
+    res.send(await fetchWorldRecipes(req.params.world_id));
   } catch (ex) {
     next(ex);
   }
 });
 
 //Fetch Single Recipe Route
-//http://localhost:8080/mythicalmunchies/recipes/:id
-router.get("/:id", async (req, res, next) => {
+//http://localhost:8080/mythicalmunchies/recipes/single/:id
+router.get("/single/:id", async (req, res, next) => {
   try {
+    console.log('howdy2')
+    // console.log(`id: ${req.params.id}`)
     res.send(await fetchRecipe(req.params.id));
+
   } catch (ex) {
     next(ex);
   }
@@ -49,7 +54,7 @@ router.get("/:id", async (req, res, next) => {
 //http://localhost:8080/mythicalmunchies/recipes/:review_id
 router.post("/:user_id/:review_id", async (req, res, next) => {
   try {
-    res.send(await createUserRecipe(req.params.id));
+    res.send(await createUserRecipe(req.params.review_id));
   } catch (ex) {
     next(ex);
   }
@@ -59,7 +64,7 @@ router.post("/:user_id/:review_id", async (req, res, next) => {
 //http://localhost:8080/mythicalmunchies/recipes/:user_id/reviews
 router.get("/:user_id/reviews", async (req, res, next) => {
   try {
-    res.send(await fetchUserReviews(req.params.id));
+    res.send(await fetchUserReviews(req.params.user_id));
   } catch (ex) {
     next(ex);
   }
@@ -69,7 +74,7 @@ router.get("/:user_id/reviews", async (req, res, next) => {
 //http://localhost:8080/mythicalmunchies/recipes/:recipe_id/reviews
 router.get("/:recipe_id/reviews", async(req, res, next) => {
   try {
-    res.send(await fetchRecipeReviews(req.params.id))
+    res.send(await fetchRecipeReviews(req.params.recipe_id))
   } catch (ex) {
     next(ex);
   }

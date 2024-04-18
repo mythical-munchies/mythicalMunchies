@@ -139,6 +139,7 @@ async function seedIngr(client) {
 async function seedRecipes(client) {
   try {
     for (const recipe of recipes) {
+      console.log(recipe)
       const createdRecipe = await createRecipe(recipe);
       console.log(`Created recipe: ${createdRecipe}`); //
     }
