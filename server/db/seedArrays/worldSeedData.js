@@ -40,6 +40,10 @@ const worlds = [
     "img_url":"https://images.app.goo.gl/vN1ZG2efB5wbnvz69"
   },
   {
+    "name":"Studio Ghibli",
+    "img_url": "https://yattatachi.com/wp-content/uploads/2022/12/Studio-Ghibli-Gift-Guide-Featured.jpg"
+  },
+  {
     "name":"Wizarding World",
     "img_url":"https://images.app.goo.gl/Nn7wGq6kJB2GQ2DK9"
   },
@@ -47,6 +51,10 @@ const worlds = [
     "name":"The Legend of Zelda",
     "img_url":"https://cdn11.bigcommerce.com/s-b72t4x/images/stencil/1280x1280/products/24571/33924/PAS0578__15763.1624831033.jpg?c=2"
   },
+  // {
+  //   "name":"",
+  //   "img_url":""
+  // },
 ]
 
 module.exports = {worlds}

@@ -85,15 +85,15 @@ router.get("/:user_id/:review_id", async (req, res, next) => {
   }
 });
 
-//Update a review
+//Update a review not working
 //http://localhost:8080/mythicalmunchies/recipes/:review_id
-router.put('/:user_id/:review_id', async (req, res, next) => {
-  try {
-    res.send(await updateReview(req.params.id))
-  } catch(ex) {
-    next(ex);
-  }
-})
+// router.put('/:user_id/:review_id', async (req, res, next) => {
+//   try {
+//     res.send(await updateReview(req.params.id))
+//   } catch(ex) {
+//     next(ex);
+//   }
+// })
 
 //Delete review
 //http://localhost:8080/mythicalmunchies/recipes/:review_id

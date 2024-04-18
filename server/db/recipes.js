@@ -111,7 +111,8 @@ const fetchRecipe = async (id) => {
   WHERE id = $1
   `;
   const response = await client.query(SQL, [id]);
-  return response.rows[0];
+  console.log(response);
+  return response.rows;
 };
 
 //Get all the ingredients for a recipe
