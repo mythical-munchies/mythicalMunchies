@@ -97,7 +97,7 @@ const instructions = [
   {
     recipe_name: "Calcifer Snacks",
     description:
-      "While your cake is chiling, tackle your white chocolate 'egg shells'! Very important PSA-- do not use regular white chocolate, which tends to get gloopy and separate. You HAVE to invest in melting chocolate. Blow up mini balloons to egg size-- rinse them lightly and coat with a very thin layer of vegetable oil. Next, microwave your melting chocolate in a glass bowl for a minute, pausing at 30 seconds to stir. Allow to come to room temperature, stirring frequently to maintain liquidy texture-- if you don't allow your chocolate to cool a bit, your balloons will pop when you dip them (and trust me when I say the mess is extreme)",
+      "While your cake is chilling, tackle your white chocolate 'egg shells'! Very important PSA-- do not use regular white chocolate, which tends to get gloopy and separate. You HAVE to invest in melting chocolate. Blow up mini balloons to egg size-- rinse them lightly and coat with a very thin layer of vegetable oil. Next, microwave your melting chocolate in a glass bowl for a minute, pausing at 30 seconds to stir. Allow to come to room temperature, stirring frequently to maintain liquidy texture-- if you don't allow your chocolate to cool a bit, your balloons will pop when you dip them (and trust me when I say the mess is extreme)",
     index: "10",
   },
   {
