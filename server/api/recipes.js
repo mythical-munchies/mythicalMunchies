@@ -9,7 +9,8 @@ const {
 const {createUserRecipe,
   deleteReview,
   fetchUserReviews,
-  fetchRecipeReviews 
+  fetchRecipeReviews,
+  fetchReview 
 } = require('../db/users')
 const {fetchInstructions} = require('../db/instructions')
 const {fetchRecipeTags} = require('../db/tags')
@@ -45,8 +46,8 @@ router.get("/:id", async (req, res, next) => {
 });
 
 //Create a review
-//http://localhost:8080/mythicalmunchies/recipes/:user_id/:recipe_id/review
-router.post("/:user_id/:recipe_id/review", async (req, res, next) => {
+//http://localhost:8080/mythicalmunchies/recipes/:review_id
+router.post("/:user_id/:review_id", async (req, res, next) => {
   try {
     res.send(await createUserRecipe(req.params.id));
   } catch (ex) {
@@ -74,9 +75,29 @@ router.get("/:recipe_id/reviews", async(req, res, next) => {
   }
 });
 
+//Fetch a single review
+//http://localhost:8080/mythicalmunchies/recipes/:review_id
+router.get("/:user_id/:review_id", async (req, res, next) => {
+  try {
+    res.send(await fetchReview(req.params.id));
+  } catch (ex) {
+    next(ex);
+  }
+});
+
+//Update a review
+//http://localhost:8080/mythicalmunchies/recipes/:review_id
+router.put('/:user_id/:review_id', async (req, res, next) => {
+  try {
+    res.send(await updateReview(req.params.id))
+  } catch(ex) {
+    next(ex);
+  }
+})
+
 //Delete review
-//http://localhost:8080/mythicalmunchies/recipes/:user_id/:recipe_id/review
-router.delete("/:user_id/:recipe_id/review", async (req, res, next) => {
+//http://localhost:8080/mythicalmunchies/recipes/:review_id
+router.delete("/:user_id/:review_id", async (req, res, next) => {
   try {
     res.send(await deleteReview(req.params.id));
   } catch (ex) {
@@ -106,7 +127,7 @@ router.get("/:recipe_id/instructions", async (req, res, next) => {
 
 //Fetch recipe's tags
 //http://localhost:8080/mythicalmunchies/recipes/:recipe_id/tags
-router.get("//:recipe_id/tags", async(req, res, next) => {
+router.get("/:recipe_id/tags", async(req, res, next) => {
   try {
     res.send(await fetchRecipeTags(req.params.id))
   } catch (ex) {

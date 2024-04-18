@@ -35,20 +35,6 @@ const recipes =[
     "world_name": "Studio Ghibli",
     "img_url":"https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/03/78b8067ac5f13032d21a743f0b4d1318.jpg"
   },
-  // {
-  //   "name": "",
-  //   "description":"", 
-  //   "cook_time":"",
-  //   "world_name": "Studio Ghibli",
-  //   "img_url":""
-  // },
-  // {
-  //   "name": "Souske Sandwiches",
-  //   "description":"", 
-  //   "cook_time":"",
-  //   "world_name": "Studio Ghibli",
-  //   "img_url":""
-  // },
   {
     "name": "Calcifer Snacks",
     "description":"Log inspired japanese cake roll with crushed (white chocolate) egg shells. (Calcifers favorite)", 

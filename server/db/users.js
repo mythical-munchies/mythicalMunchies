@@ -126,6 +126,31 @@ const fetchUserReviews = async ({user_id}) => {
 };
 
 //Get a single review
+const fetchReview = async ({id}) => {
+  const SQL = `
+  SELECT *
+  FROM user_recipes 
+  WHERE id = $1
+  `;
+  const response = await client.query(SQL, [id])
+  return response.rows;
+};
+
+//Update a review 
+// const updateReview = async ({ user_id, id }) => {
+//   const SQL = `
+//     UPDATE user_recipes
+
+//     WHERE id = $1 AND user_id = $2
+//     RETURNING *
+//   `;
+//   const response = await client.query(SQL, [id, user_id]);
+//   if (!response.rows.length) {
+//     const error = Error("no review found");
+//     error.status = 500;
+//     throw error;
+//   }
+// };
 
 //Delete a user's review
 const deleteReview = async ({ user_id, id }) => {
@@ -151,5 +176,6 @@ module.exports = {
   deleteReview,
   fetchUserByEmailOrUsername,
   loginUser,
-  fetchRecipeReviews
+  fetchRecipeReviews,
+  fetchReview
 };
