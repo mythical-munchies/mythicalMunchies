@@ -32,7 +32,7 @@ const worlds = [
   {
     name: "Make Room!",
     img_url:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrLtemRM7OdpeSa4KScKkosa7KUiZrR61F3gMNRppwdg&s",
+      "https://play-lh.googleusercontent.com/4ra-3nXLC3T-HZA7aFju7b-2SZTaWxZCB02olKonhykW5-SV3VpEFPb3u08EWun4qNEP",
   },
   {
     name: "Roald Dahl",
