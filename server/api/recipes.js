@@ -4,7 +4,6 @@ const {
   fetchAllRecipes,
   fetchWorldRecipes,
   fetchRecipe,
-  fetchRecipeIngredients
 } = require("../db/recipes");
 
 const {fetchInstructions} = require('../db/instructions')
@@ -45,20 +44,8 @@ router.get("/single/:id", async (req, res, next) => {
   }
 });
 
-//Fetch recipe ingredients
-//http://localhost:8080/mythicalmunchies/recipes/:recipe_id/ingredients
-router.get("/ingredients/:recipe_id", async (req, res, next) => {
-  try {
-    res.send(await fetchRecipeIngredients(req.params.recipe_id))
-  } catch (ex) {
-    next(ex)
-  }
-});
-
-//Fetch all ingredients
-
 //Fetch recipe instructions 
-//http://localhost:8080/mythicalmunchies/recipes/:recipe_id/instructions
+//http://localhost:8080/mythicalmunchies/recipes/instructions/:recipe_id
 router.get("/instructions/:recipe_id", async (req, res, next) => {
   try {
     // console.log(req.params.recipe_id)
@@ -67,5 +54,6 @@ router.get("/instructions/:recipe_id", async (req, res, next) => {
     next(ex)
   }
 });
+
 
 module.exports = router;

@@ -9,25 +9,34 @@ const {createUserRecipe,
 } = require('../db/users')
 
 // Create a review
-// http://localhost:8080/mythicalmunchies/recipes/:review_id
-router.post("/:review_id", async (req, res, next) => {
-  try {
-    res.send(await createUserRecipe(req.params.review_id));
-  } catch (ex) {
-    next(ex);
-  }
-});
+// http://localhost:8080/mythicalmunchies/reviews/:review_id
+// router.post("/:review_id", async (req, res, next) => {
+//   try {
+//     const token = req.headers.authorization
+
+//     // console.log(token)
+//     if (!token) {
+//       res.send('Please log in!')
+//     } else {
+//       res.send(await createUserRecipe(req.params.review_id));
+//     }
+//   } catch (ex) {
+//     next(ex);
+//   }
+// });
 
 //Fetch a single review
-//http://localhost:8080/mythicalmunchies/review/:review_id
-router.get("/:review_id", async (req, res, next) => {
-  try {
-
-    res.send(await fetchReview(req.params.review_d));
-  } catch (ex) {
-    next(ex);
-  }
-});
+//http://localhost:8080/mythicalmunchies/reviews/:review_id
+// router.get("/:review_id", async (req, res, next) => {
+//   try {
+//     const token = req.headers.authorization
+//     if 
+//     // console.log(token)
+//     res.send(await fetchReview(req.params.review_id));
+//   } catch (ex) {
+//     next(ex);
+//   }
+// });
 
 //Update a review not working
 //http://localhost:8080/mythicalmunchies/recipes/:review_id
@@ -41,7 +50,7 @@ router.get("/:review_id", async (req, res, next) => {
 
 //Delete review
 //http://localhost:8080/mythicalmunchies/recipes/:review_id
-router.delete("/:user_id/:review_id", async (req, res, next) => {
+router.delete("/:review_id", async (req, res, next) => {
   try {
     res.send(await deleteReview(req.params.id));
   } catch (ex) {
@@ -50,8 +59,8 @@ router.delete("/:user_id/:review_id", async (req, res, next) => {
 });
 
 //Fetch single user's recipes (reviews)
-//http://localhost:8080/mythicalmunchies/recipes/:user_id/reviews
-router.get("/:user_id/reviews", async (req, res, next) => {
+//http://localhost:8080/mythicalmunchies/reviews/user/:user_id/reviews
+router.get("/user/:user_id", async (req, res, next) => {
   try {
     res.send(await fetchUserReviews(req.params.user_id));
   } catch (ex) {
@@ -60,8 +69,8 @@ router.get("/:user_id/reviews", async (req, res, next) => {
 });
 
 //Fetch single recipe's reviews 
-//http://localhost:8080/mythicalmunchies/recipes/:recipe_id/reviews
-router.get("/:recipe_id/reviews", async(req, res, next) => {
+//http://localhost:8080/mythicalmunchies/reviews/recipe/:recipe_id
+router.get("/recipe/:recipe_id", async(req, res, next) => {
   try {
     res.send(await fetchRecipeReviews(req.params.recipe_id))
   } catch (ex) {

@@ -4,7 +4,7 @@ const router = express.Router();
 const {fetchRecipeTags, fetchTags, fetchTaggedRecipes} = require('../db/tags');
 
 //Fetch all tags
-//http://localhost:8080/mythicalmunchies/tags
+//http://localhost:8080/mythicalmunchies/tags/
 router.get("/", async(req, res, next) => {
   try {
     console.log()

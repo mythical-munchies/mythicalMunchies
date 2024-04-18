@@ -105,6 +105,9 @@
 
 const express = require("express");
 const router = express.Router();
+const bcrypt = require("bcrypt");
+const JWT = require("jsonwebtoken");
+const secret = "mythicalmunchieshowdy";
 
 const {
   loginUser,
@@ -127,12 +130,21 @@ router.get("/", async (req, res, next) => {
 // Login Route
 //http://localhost:8080/mythicalmunchies/users/login
 router.post("/login", async (req, res) => {
-  const { usernameOrEmail, password } = req.body;
+  const { username, password } = req.body;
   try {
-    const user = await loginUser({ usernameOrEmail, password });
+    const user = await fetchUser(username)
+    if (!user){
+      res.send('No user found :(')
+    } else {
+      const passwordValidation = await bcrypt.compare(password, user.password)
+      if (!passwordValidation) {
+        res.send('You shall not pass :(')
+      }
+    }
     res.status(200).json({
       message: "Login successful!",
-      user,
+      user, 
+      token: JWT.sign({user: user.id}, secret)
     });
   } catch (error) {
     res.status(401).json({
