@@ -140,7 +140,7 @@ async function seedRecipes(client) {
   try {
     for (const recipe of recipes) {
       const createdRecipe = await createRecipe(recipe);
-      // console.log(`Created recipe: ${createdRecipe.name}`); //
+      console.log(`Created recipe: ${createdRecipe}`); //
     }
   } catch (error) {
     console.error("Error seeding recipes:", error);

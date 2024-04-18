@@ -29,16 +29,17 @@ const createRecipe = async ({
 };
 
 //Get the id by recipe name 
-const getRecipeId = async (recipe_name) =>{
+const getRecipeId = async (name) =>{
   let SQL = `
   SELECT id 
   FROM recipes 
   WHERE name = $1
 `;
+console.log(name)
   //save id as varriable to pass in response as recipe_id
-  let {rows} = await client.query(SQL, [recipe_name])
+  let {rows} = await client.query(SQL, [name])
   const recipe_id = rows[0]
-  // console.log(recipe_id.id, typeof(recipe_id.id))
+  // console.log(recipe_id, typeof(recipe_id))
   return recipe_id.id
 };
 

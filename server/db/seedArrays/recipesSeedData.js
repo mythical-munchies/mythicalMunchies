@@ -7,7 +7,7 @@ const recipes =[
   //   "img_url":"https://images.app.goo.gl/VL92W4BGeApxVZZ39"
   // },
   {
-    "name": "'Ham Ramen'",
+    "name": "Ham Ramen",
     "description":"Enjoy this cozy, rainy day meal that'll get you ready for a big afternoon nap. Double the recipe and enjoy with a mermaid friend!", 
     "cook_time":"10-15 Min",
     "world_name": "'Studio Ghibli'",
