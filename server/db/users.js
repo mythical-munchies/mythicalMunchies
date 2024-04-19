@@ -92,30 +92,6 @@ const fetchUserById = async (id) => {
   return response.rows[0];
 };
 
-// added to Lucas's original code to account for the login using username or email
-// const fetchUserByEmailOrUsername = async (username, email) => {
-//   const SQL = `
-//     SELECT *
-//     FROM users
-//     WHERE email = $1 OR username = $2
-//   `;
-//   const response = await client.query(SQL, [username, email]);
-//   return response.rows[0];
-// };
-
-// const loginUser = async (username, password) => {
-//   // Query the database to find the user based on email or username
-//   // const user = await fetchUserByEmailOrUsername(usernameOrEmail);
-//   console.log(user);
-//   // If user is not found or password doesn't match, throw an error
-//   if (!user || !bcrypt.compareSync(password, user.password)) {
-//     throw new Error("Invalid credentials");
-//   }
-//   return user;
-// };
-
-//End of Simone's testing code
-
 //Get all of a recipe's reviews 
 const fetchRecipeReviews = async (recipe_id) => {
   const SQL = `
@@ -139,31 +115,15 @@ const fetchUserReviews = async (user_id) => {
 };
 
 //Get a single review
-const fetchReview = async ({id}) => {
+const fetchReview = async (id) => {
   const SQL = `
   SELECT *
   FROM user_recipes 
   WHERE id = $1
   `;
   const response = await client.query(SQL, [id])
-  return response.rows;
+  return response.rows[0];
 };
-
-//Update a review 
-// const updateReview = async ({ user_id, id }) => {
-//   const SQL = `
-//     UPDATE user_recipes
-
-//     WHERE id = $1 AND user_id = $2
-//     RETURNING *
-//   `;
-//   const response = await client.query(SQL, [id, user_id]);
-//   if (!response.rows.length) {
-//     const error = Error("no review found");
-//     error.status = 500;
-//     throw error;
-//   }
-// };
 
 //Delete a user's review
 const deleteReview = async ({ user_id, id }) => {

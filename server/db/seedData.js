@@ -114,7 +114,7 @@ async function seedUsers(client) {
   try {
     for (const user of users) {
       const createdUser = await createUser(user);
-      // console.log(`Created user: ${createdUser.username}`); //
+      console.log(`Created user: ${createdUser}`); //
     }
   } catch (error) {
     console.error("Error seeding users:", error);
@@ -141,7 +141,7 @@ async function seedRecipes(client) {
     for (const recipe of recipes) {
       console.log(recipe)
       const createdRecipe = await createRecipe(recipe);
-      console.log(`Created recipe: ${createdRecipe}`); //
+      console.log(`Created recipe: ${createdRecipe.id}`); //
     }
   } catch (error) {
     console.error("Error seeding recipes:", error);
@@ -154,7 +154,7 @@ async function seedInst(client) {
   try {
     for (const instruction of instructions) {
       const createdInst = await createInstruction(instruction);
-      console.log(`Created step ${createdInst.index} for ${JSON.stringify(createdInst)}`); 
+      // console.log(`Created step ${createdInst.index} for ${JSON.stringify(createdInst)}`); 
     }
   } catch (error) {
     console.error('Error seeding instructions:', error);
