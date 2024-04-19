@@ -124,6 +124,790 @@ const instructions = [
       "Combine with slices of bread and cheese on a plate and enjoy!",
     index: "2",
   },
+  {
+    recipe_name: "Harry Potter Butterbeer",
+    description:
+      "In a small saucepan over medium heat, combine brown sugar and water. Bring to a gentle boil and cook, stirring constantly, until the mixture reaches a syrup-like consistency, about 7-8 minutes.",
+    index: "0",
+  },
+  {
+    recipe_name: "Harry Potter Butterbeer",
+    description:
+      "Remove from heat and stir in salt, apple cider vinegar, and vanilla extract.",
+    index: "1",
+  },
+  {
+    recipe_name: "Harry Potter Butterbeer",
+    description:
+      "In a large mixing bowl, combine the cream soda and the prepared brown sugar syrup. Stir until well combined.",
+    index: "2",
+  },
+  {
+    recipe_name: "Harry Potter Butterbeer",
+    description:
+      "In a separate bowl, whip the heavy cream until stiff peaks form.",
+    index: "3",
+  },
+  {
+    recipe_name: "Harry Potter Butterbeer",
+    description:
+      "To serve, pour the butterbeer mixture into mugs or glasses, top with a dollop of whipped cream, and a small pat of softened butter.",
+    index: "4",
+  },
+  {
+    recipe_name: "Harry Potter Butterbeer",
+    description:
+      "Optionally, you can sprinkle a pinch of cinnamon or nutmeg on top for extra flavor.",
+    index: "5",
+  },
+  {
+    recipe_name: "Lembas Bread",
+    description:
+      "Preheat oven to 350°F (175°C). Grease and flour a 9x13-inch baking dish.",
+    index: "0",
+  },
+  {
+    recipe_name: "Lembas Bread",
+    description:
+      "In a large bowl, mix together the all-purpose flour, baking powder, and salt.",
+    index: "1",
+  },
+  {
+    recipe_name: "Lembas Bread",
+    description: "Cut in the butter until the mixture resembles coarse crumbs.",
+    index: "2",
+  },
+  {
+    recipe_name: "Lembas Bread",
+    description: "Stir in the honey and vanilla extract until well combined.",
+    index: "3",
+  },
+  {
+    recipe_name: "Lembas Bread",
+    description: "Press the mixture evenly into the prepared baking dish.",
+    index: "4",
+  },
+  {
+    recipe_name: "Lembas Bread",
+    description:
+      "Bake in the preheated oven for 25-30 minutes, or until golden brown.",
+    index: "5",
+  },
+  {
+    recipe_name: "Lembas Bread",
+    description: "Allow to cool completely before cutting into squares.",
+    index: "6",
+  },
+  {
+    recipe_name: "Second Breakfast Spread",
+    description:
+      "In a frying pan, cook bacon until crispy. Remove from pan and set aside.",
+    index: "0",
+  },
+  {
+    recipe_name: "Second Breakfast Spread",
+    description:
+      "In the same pan, cook eggs to your liking. Season with salt and pepper.",
+    index: "1",
+  },
+  {
+    recipe_name: "Second Breakfast Spread",
+    description: "Toast bread slices and spread with butter.",
+    index: "2",
+  },
+  {
+    recipe_name: "Second Breakfast Spread",
+    description:
+      "Slice tomato and sauté mushrooms in the bacon fat until golden brown.",
+    index: "3",
+  },
+  {
+    recipe_name: "Second Breakfast Spread",
+    description:
+      "Assemble toast with eggs, bacon, sautéed mushrooms, and sliced tomato. Serve hot.",
+    index: "4",
+  },
+  {
+    recipe_name: "Arya's Direwolf Bread",
+    description:
+      "In a large mixing bowl, dissolve the sugar in warm water, then stir in the yeast. Let it sit for about 5 minutes until the mixture becomes frothy.",
+    index: "0",
+  },
+  {
+    recipe_name: "Arya's Direwolf Bread",
+    description:
+      "Add the salt and 2 cups of flour to the yeast mixture. Stir until well combined.",
+    index: "1",
+  },
+  {
+    recipe_name: "Arya's Direwolf Bread",
+    description:
+      "Gradually add the remaining flour, 1/2 cup at a time, until the dough forms a soft ball.",
+    index: "2",
+  },
+  {
+    recipe_name: "Arya's Direwolf Bread",
+    description:
+      "Knead the dough on a lightly floured surface for about 6-8 minutes, or until it becomes smooth and elastic.",
+    index: "3",
+  },
+  {
+    recipe_name: "Arya's Direwolf Bread",
+    description:
+      "Place the dough in a greased bowl, cover with a clean kitchen towel, and let it rise in a warm place for about 1 hour, or until doubled in size.",
+    index: "4",
+  },
+  {
+    recipe_name: "Tyrion's Mulled Wine",
+    description: "Pour the red wine into a large saucepan.",
+    index: "0",
+  },
+  {
+    recipe_name: "Tyrion's Mulled Wine",
+    description:
+      "Slice the orange and add it to the saucepan along with the cloves, cinnamon sticks, and star anise.",
+    index: "1",
+  },
+  {
+    recipe_name: "Tyrion's Mulled Wine",
+    description:
+      "Heat the wine mixture over medium heat until it just begins to simmer. Do not boil.",
+    index: "2",
+  },
+  {
+    recipe_name: "Tyrion's Mulled Wine",
+    description:
+      "Reduce the heat to low and let the wine steep for 20-30 minutes to allow the flavors to meld together.",
+    index: "3",
+  },
+  {
+    recipe_name: "Tyrion's Mulled Wine",
+    description:
+      "Strain the mulled wine into mugs or heatproof glasses and serve warm.",
+    index: "4",
+  },
+  {
+    recipe_name: "Jon Snow's Wildling Stew",
+    description:
+      "In a large pot or Dutch oven, heat some olive oil over medium-high heat.",
+    index: "0",
+  },
+  {
+    recipe_name: "Jon Snow's Wildling Stew",
+    description:
+      "Season the beef stew meat with salt and pepper, then add it to the pot. Brown the meat on all sides, then remove it from the pot and set aside.",
+    index: "1",
+  },
+  {
+    recipe_name: "Jon Snow's Wildling Stew",
+    description:
+      "Add the chopped onion and minced garlic to the pot, and cook until softened and fragrant, about 3-4 minutes.",
+    index: "2",
+  },
+  {
+    recipe_name: "Jon Snow's Wildling Stew",
+    description:
+      "Return the browned beef stew meat to the pot, along with any accumulated juices.",
+    index: "3",
+  },
+  {
+    recipe_name: "Jon Snow's Wildling Stew",
+    description:
+      "Add enough water or beef broth to cover the meat, then bring the mixture to a simmer.",
+    index: "4",
+  },
+  {
+    recipe_name: "Jon Snow's Wildling Stew",
+    description:
+      "Peel and chop the potatoes and carrots into bite-sized pieces. Add them to the pot.",
+    index: "5",
+  },
+  {
+    recipe_name: "Jon Snow's Wildling Stew",
+    description:
+      "Let the stew simmer for about 1 to 1.5 hours, or until the meat and vegetables are tender.",
+    index: "6",
+  },
+  {
+    recipe_name: "Jon Snow's Wildling Stew",
+    description:
+      "Season the stew with salt, pepper, and any additional herbs or spices to taste.",
+    index: "7",
+  },
+  {
+    recipe_name: "Jon Snow's Wildling Stew",
+    description: "Serve hot and enjoy your hearty Wildling stew!",
+    index: "8",
+  },
+  {
+    recipe_name: "Lon Lon Milkshake",
+    description:
+      "In a blender, combine the vanilla ice cream, milk, honey, and banana.",
+    index: "0",
+  },
+  {
+    recipe_name: "Lon Lon Milkshake",
+    description: "Blend until smooth and creamy.",
+    index: "1",
+  },
+  {
+    recipe_name: "Lon Lon Milkshake",
+    description:
+      "Pour into glasses and serve immediately. Enjoy your refreshing Lon Lon Milkshake!",
+    index: "2",
+  },
+  {
+    recipe_name: "Triforce Sugar Cookies",
+    description:
+      "Preheat oven to 350°F (175°C). Line baking sheets with parchment paper.",
+    index: "0",
+  },
+  {
+    recipe_name: "Triforce Sugar Cookies",
+    description:
+      "In a large bowl, cream together the butter and sugar until smooth.",
+    index: "1",
+  },
+  {
+    recipe_name: "Triforce Sugar Cookies",
+    description: "Beat in the egg and vanilla extract until well combined.",
+    index: "2",
+  },
+  {
+    recipe_name: "Triforce Sugar Cookies",
+    description: "Gradually add the flour and mix until a dough forms.",
+    index: "3",
+  },
+  {
+    recipe_name: "Triforce Sugar Cookies",
+    description:
+      "Roll out the dough on a floured surface to about 1/4 inch thickness. Use a Triforce-shaped cookie cutter to cut out the cookies.",
+    index: "4",
+  },
+  {
+    recipe_name: "Triforce Sugar Cookies",
+    description:
+      "Place the cookies on the prepared baking sheets and bake for 8-10 minutes, or until the edges are lightly golden.",
+    index: "5",
+  },
+  {
+    recipe_name: "Triforce Sugar Cookies",
+    description:
+      "Allow the cookies to cool on the baking sheets for a few minutes before transferring them to a wire rack to cool completely.",
+    index: "6",
+  },
+  {
+    recipe_name: "Blue Milkshake",
+    description:
+      "In a blender, combine the vanilla ice cream, milk, and blue food coloring.",
+    index: "0",
+  },
+  {
+    recipe_name: "Blue Milkshake",
+    description: "Blend until smooth and creamy.",
+    index: "1",
+  },
+  {
+    recipe_name: "Blue Milkshake",
+    description:
+      "Pour into glasses, top with whipped cream, and serve chilled. May the Force be with you!",
+    index: "2",
+  },
+  {
+    recipe_name: "Beetlejuice's Ghostly Grub",
+    description:
+      "Cook black pasta according to package instructions. Drain and set aside.",
+    index: "0",
+  },
+  {
+    recipe_name: "Beetlejuice's Ghostly Grub",
+    description:
+      "In a skillet, heat olive oil over medium heat. Add minced garlic and cook until fragrant.",
+    index: "1",
+  },
+  {
+    recipe_name: "Beetlejuice's Ghostly Grub",
+    description:
+      "Add halved cherry tomatoes to the skillet. Cook until slightly softened.",
+    index: "2",
+  },
+  {
+    recipe_name: "Beetlejuice's Ghostly Grub",
+    description:
+      "Toss in cooked black olives and shredded mozzarella cheese. Stir until cheese is melted.",
+    index: "3",
+  },
+  {
+    recipe_name: "Beetlejuice's Ghostly Grub",
+    description:
+      "Add cooked black pasta to the skillet. Mix until well combined.",
+    index: "4",
+  },
+  {
+    recipe_name: "Beetlejuice's Ghostly Grub",
+    description:
+      "Season with salt and pepper to taste. Garnish with chopped fresh basil leaves.",
+    index: "5",
+  },
+  {
+    recipe_name: "Beetlejuice's Ghostly Grub",
+    description: "Serve hot and enjoy this spooky dish!",
+    index: "6",
+  },
+  {
+    recipe_name: "Matilda's Chocolate Cake",
+    description:
+      "Preheat oven to 350°F (175°C). Grease and flour two 9-inch round cake pans.",
+    index: "0",
+  },
+  {
+    recipe_name: "Matilda's Chocolate Cake",
+    description:
+      "In a large bowl, sift together flour, sugar, cocoa powder, baking powder, baking soda, and salt.",
+    index: "1",
+  },
+  {
+    recipe_name: "Matilda's Chocolate Cake",
+    description:
+      "Add eggs, buttermilk, vegetable oil, and vanilla extract to the dry ingredients. Beat on medium speed for 2 minutes.",
+    index: "2",
+  },
+  {
+    recipe_name: "Matilda's Chocolate Cake",
+    description:
+      "Stir in boiling water until the batter is well combined. The batter will be thin.",
+    index: "3",
+  },
+  {
+    recipe_name: "Matilda's Chocolate Cake",
+    description: "Pour the batter evenly into the prepared pans.",
+    index: "4",
+  },
+  {
+    recipe_name: "Matilda's Chocolate Cake",
+    description:
+      "Bake in the preheated oven for 30 to 35 minutes, or until a toothpick inserted into the center comes out clean.",
+    index: "5",
+  },
+  {
+    recipe_name: "Matilda's Chocolate Cake",
+    description:
+      "Allow cakes to cool in the pans for 10 minutes, then remove from pans and transfer to a wire rack to cool completely.",
+    index: "6",
+  },
+  {
+    recipe_name: "Matilda's Chocolate Cake",
+    description:
+      "Once cooled, dust the top of the cakes with confectioners' sugar before serving.",
+    index: "7",
+  },
+  {
+    recipe_name: "Matilda's Chocolate Cake",
+    description: "Slice and enjoy this deliciously moist chocolate cake!",
+    index: "8",
+  },
+  {
+    recipe_name: "The BFG's Frobscottle",
+    description: "In a tall glass, pour clear lemon-lime soda.",
+    index: "0",
+  },
+  {
+    recipe_name: "The BFG's Frobscottle",
+    description:
+      "Add a few drops of green food coloring to the soda and stir gently to mix.",
+    index: "1",
+  },
+  {
+    recipe_name: "The BFG's Frobscottle",
+    description: "Top the drink with whipped cream.",
+    index: "2",
+  },
+  {
+    recipe_name: "The BFG's Frobscottle",
+    description: "Garnish with a maraschino cherry.",
+    index: "3",
+  },
+  {
+    recipe_name: "The BFG's Frobscottle",
+    description:
+      "Serve chilled and enjoy the delightful fizziness of Frobscottle!",
+    index: "4",
+  },
+  {
+    recipe_name: "Wonka's Whipple-Scrumptious Fudgemallow Delight",
+    description: "Line a baking sheet with parchment paper.",
+    index: "0",
+  },
+  {
+    recipe_name: "Wonka's Whipple-Scrumptious Fudgemallow Delight",
+    description:
+      "In a microwave-safe bowl, melt milk chocolate in 30-second intervals, stirring in between, until smooth.",
+    index: "1",
+  },
+  {
+    recipe_name: "Wonka's Whipple-Scrumptious Fudgemallow Delight",
+    description:
+      "Pour melted chocolate onto the prepared baking sheet and spread it evenly.",
+    index: "2",
+  },
+  {
+    recipe_name: "Wonka's Whipple-Scrumptious Fudgemallow Delight",
+    description:
+      "Sprinkle mini marshmallows, chopped peanuts, and drizzle caramel sauce over the melted chocolate.",
+    index: "3",
+  },
+  {
+    recipe_name: "Wonka's Whipple-Scrumptious Fudgemallow Delight",
+    description:
+      "Place the baking sheet in the refrigerator for about 20 minutes, or until the chocolate sets.",
+    index: "4",
+  },
+  {
+    recipe_name: "Wonka's Whipple-Scrumptious Fudgemallow Delight",
+    description: "Once set, break the chocolate bark into pieces.",
+    index: "5",
+  },
+  {
+    recipe_name: "Wonka's Whipple-Scrumptious Fudgemallow Delight",
+    description:
+      "Enjoy the scrumptious goodness of Wonka's Whipple-Scrumptious Fudgemallow Delight!",
+    index: "6",
+  },
+  {
+    recipe_name: "Charlie's Cabbage Soup",
+    description: "In a large pot, heat some olive oil over medium heat.",
+    index: "0",
+  },
+  {
+    recipe_name: "Charlie's Cabbage Soup",
+    description:
+      "Add chopped onions and minced garlic. Cook until softened and fragrant.",
+    index: "1",
+  },
+  {
+    recipe_name: "Charlie's Cabbage Soup",
+    description:
+      "Add chopped carrots, diced potatoes, and shredded cabbage to the pot.",
+    index: "2",
+  },
+  {
+    recipe_name: "Charlie's Cabbage Soup",
+    description:
+      "Pour in vegetable broth and bring to a simmer. Cook until vegetables are tender.",
+    index: "3",
+  },
+  {
+    recipe_name: "Charlie's Cabbage Soup",
+    description: "Season with salt and pepper to taste.",
+    index: "4",
+  },
+  {
+    recipe_name: "Charlie's Cabbage Soup",
+    description:
+      "Serve hot and enjoy this comforting bowl of Charlie's Cabbage Soup!",
+    index: "5",
+  },
+  {
+    recipe_name: "Wonka's Everlasting Gobstoppers",
+    description:
+      "In a saucepan, combine sugar, corn syrup, and water. Stir over medium heat until sugar dissolves.",
+    index: "0",
+  },
+  {
+    recipe_name: "Wonka's Everlasting Gobstoppers",
+    description:
+      "Bring the mixture to a boil without stirring. Use a candy thermometer and cook until it reaches 300°F (hard crack stage).",
+    index: "1",
+  },
+  {
+    recipe_name: "Wonka's Everlasting Gobstoppers",
+    description:
+      "Remove from heat and quickly stir in food coloring, flavor extracts, and citric acid.",
+    index: "2",
+  },
+  {
+    recipe_name: "Wonka's Everlasting Gobstoppers",
+    description:
+      "Pour the mixture onto a greased baking sheet or into candy molds.",
+    index: "3",
+  },
+  {
+    recipe_name: "Wonka's Everlasting Gobstoppers",
+    description:
+      "Allow the candy to cool and harden completely before breaking it into pieces or unmolding from molds.",
+    index: "4",
+  },
+  {
+    recipe_name: "Wonka's Everlasting Gobstoppers",
+    description:
+      "Enjoy the magical and everlasting taste of Wonka's Gobstoppers!",
+    index: "5",
+  },
+  {
+    recipe_name: "Krabby Patty",
+    description:
+      "Divide ground beef into two equal portions and shape them into patties.",
+    index: "0",
+  },
+  {
+    recipe_name: "Krabby Patty",
+    description:
+      "Preheat a grill or skillet over medium heat. Cook the patties for about 4-5 minutes on each side, or until cooked to your desired doneness.",
+    index: "1",
+  },
+  {
+    recipe_name: "Krabby Patty",
+    description:
+      "Toast the hamburger buns lightly on the grill or in a toaster.",
+    index: "2",
+  },
+  {
+    recipe_name: "Krabby Patty",
+    description:
+      "Assemble the Krabby Patty: place lettuce, tomato slices, cheese, pickles, and sliced onion on the bottom bun. Top with a cooked beef patty.",
+    index: "3",
+  },
+  {
+    recipe_name: "Krabby Patty",
+    description:
+      "Spread ketchup and mustard on the top bun, then place it on top of the assembled burger.",
+    index: "4",
+  },
+  {
+    recipe_name: "Krabby Patty",
+    description: "Serve hot and enjoy the deliciousness of the Krabby Patty!",
+    index: "5",
+  },
+  {
+    recipe_name: "Sandy's Texas Corn Ribs",
+    description: "Preheat grill to medium-high heat.",
+    index: "0",
+  },
+  {
+    recipe_name: "Sandy's Texas Corn Ribs",
+    description:
+      "In a small bowl, mix melted butter, barbecue sauce, chili powder, garlic powder, salt, and pepper.",
+    index: "1",
+  },
+  {
+    recipe_name: "Sandy's Texas Corn Ribs",
+    description: "Brush the corn on the cob generously with the sauce mixture.",
+    index: "2",
+  },
+  {
+    recipe_name: "Sandy's Texas Corn Ribs",
+    description:
+      "Place the corn on the grill and cook for about 10-15 minutes, turning occasionally, until tender and lightly charred.",
+    index: "3",
+  },
+  {
+    recipe_name: "Sandy's Texas Corn Ribs",
+    description: "Remove from grill and sprinkle with fresh chopped cilantro.",
+    index: "4",
+  },
+  {
+    recipe_name: "Sandy's Texas Corn Ribs",
+    description: "Serve hot and enjoy Sandy's Texas Corn Ribs!",
+    index: "5",
+  },
+  {
+    recipe_name: "Jellyfish Jelly Sandwich",
+    description: "Spread peanut butter on one slice of bread.",
+    index: "0",
+  },
+  {
+    recipe_name: "Jellyfish Jelly Sandwich",
+    description: "Spread jellyfish jelly on the other slice of bread.",
+    index: "1",
+  },
+  {
+    recipe_name: "Jellyfish Jelly Sandwich",
+    description: "Place the two slices of bread together to form a sandwich.",
+    index: "2",
+  },
+  {
+    recipe_name: "Jellyfish Jelly Sandwich",
+    description: "Slice diagonally and serve.",
+    index: "3",
+  },
+  {
+    recipe_name: "Spice Melange",
+    description: "Combine all ground spices in a small bowl.",
+    index: "0",
+  },
+  {
+    recipe_name: "Spice Melange",
+    description: "Mix well until thoroughly combined.",
+    index: "1",
+  },
+  {
+    recipe_name: "Spice Melange",
+    description: "Store in an airtight container in a cool, dark place.",
+    index: "2",
+  },
+  {
+    recipe_name: "Spice Melange",
+    description: "Use as desired to add flavor and depth to your dishes.",
+    index: "3",
+  },
+  {
+    recipe_name: "Arrakeen Spice Tea",
+    description: "In a saucepan, bring water to a boil.",
+    index: "0",
+  },
+  {
+    recipe_name: "Arrakeen Spice Tea",
+    description:
+      "Add black tea leaves, cinnamon stick, cloves, cardamom pods, and sliced ginger to the boiling water.",
+    index: "1",
+  },
+  {
+    recipe_name: "Arrakeen Spice Tea",
+    description: "Reduce heat and simmer for 5 minutes.",
+    index: "2",
+  },
+  {
+    recipe_name: "Arrakeen Spice Tea",
+    description: "Strain the tea into cups, discarding the spices.",
+    index: "3",
+  },
+  {
+    recipe_name: "Arrakeen Spice Tea",
+    description:
+      "Stir in honey to taste, and add milk for creaminess if desired.",
+    index: "4",
+  },
+  {
+    recipe_name: "Arrakeen Spice Tea",
+    description:
+      "Serve hot and enjoy the exotic flavors of Arrakeen Spice Tea!",
+    index: "5",
+  },
+  {
+    recipe_name: "Fremen Spice Rice",
+    description:
+      "Rinse the basmati rice under cold water until the water runs clear. Drain well.",
+    index: "0",
+  },
+  {
+    recipe_name: "Fremen Spice Rice",
+    description:
+      "Heat a tablespoon of olive oil in a large saucepan over medium heat.",
+    index: "1",
+  },
+  {
+    recipe_name: "Fremen Spice Rice",
+    description:
+      "Add chopped onion and minced garlic to the saucepan. Cook until softened and fragrant.",
+    index: "2",
+  },
+  {
+    recipe_name: "Fremen Spice Rice",
+    description:
+      "Add chopped bell pepper, diced tomatoes, cumin seeds, coriander seeds, ground turmeric, and cayenne pepper to the saucepan. Cook for 2-3 minutes, stirring occasionally.",
+    index: "3",
+  },
+  {
+    recipe_name: "Fremen Spice Rice",
+    description:
+      "Add the rinsed basmati rice to the saucepan. Stir to coat the rice with the spices and vegetables.",
+    index: "4",
+  },
+  {
+    recipe_name: "Fremen Spice Rice",
+    description:
+      "Pour in vegetable broth and water. Season with salt to taste.",
+    index: "5",
+  },
+  {
+    recipe_name: "Fremen Spice Rice",
+    description:
+      "Bring the mixture to a boil, then reduce heat to low. Cover and simmer for 15-20 minutes, or until the rice is cooked and the liquid is absorbed.",
+    index: "6",
+  },
+  {
+    recipe_name: "Fremen Spice Rice",
+    description:
+      "Fluff the rice with a fork and garnish with fresh chopped cilantro before serving.",
+    index: "7",
+  },
+  {
+    recipe_name: "Arrakeen Chicken Tagine",
+    description:
+      "In a large bowl, combine minced garlic, minced ginger, ground cumin, ground coriander, ground cinnamon, ground turmeric, cayenne pepper, salt, and black pepper to create a spice rub.",
+    index: "0",
+  },
+  {
+    recipe_name: "Arrakeen Chicken Tagine",
+    description:
+      "Rub the spice mixture all over the chicken thighs, ensuring they are evenly coated. Let marinate for at least 30 minutes.",
+    index: "1",
+  },
+  {
+    recipe_name: "Arrakeen Chicken Tagine",
+    description:
+      "Heat olive oil in a large Dutch oven over medium-high heat. Add chopped onion and cook until softened.",
+    index: "2",
+  },
+  {
+    recipe_name: "Arrakeen Chicken Tagine",
+    description:
+      "Add the marinated chicken thighs to the Dutch oven and sear on both sides until browned.",
+    index: "3",
+  },
+  {
+    recipe_name: "Arrakeen Chicken Tagine",
+    description:
+      "Stir in diced tomatoes, chicken broth, and lemon juice. Bring to a simmer.",
+    index: "4",
+  },
+  {
+    recipe_name: "Arrakeen Chicken Tagine",
+    description:
+      "Cover and reduce heat to low. Let the chicken simmer for 45-50 minutes, or until tender and cooked through.",
+    index: "5",
+  },
+  {
+    recipe_name: "Arrakeen Chicken Tagine",
+    description:
+      "Garnish with fresh chopped cilantro before serving. Enjoy the savory flavors of Arrakeen Chicken Tagine!",
+    index: "6",
+  },
+  {
+    recipe_name: "Elven Honeyed Chicken",
+    description: "Preheat the oven to 375°F (190°C).",
+    index: "0",
+  },
+  {
+    recipe_name: "Elven Honeyed Chicken",
+    description:
+      "In a small bowl, mix together honey, minced garlic, chopped thyme leaves, chopped rosemary leaves, olive oil, salt, and black pepper to create a marinade.",
+    index: "1",
+  },
+  {
+    recipe_name: "Elven Honeyed Chicken",
+    description:
+      "Place the chicken thighs in a baking dish. Pour the marinade over the chicken, ensuring it is evenly coated.",
+    index: "2",
+  },
+  {
+    recipe_name: "Elven Honeyed Chicken",
+    description: "Arrange lemon slices on top of the chicken for garnish.",
+    index: "3",
+  },
+  {
+    recipe_name: "Elven Honeyed Chicken",
+    description:
+      "Bake in the preheated oven for 45-50 minutes, or until the chicken is cooked through and golden brown.",
+    index: "4",
+  },
+  {
+    recipe_name: "Elven Honeyed Chicken",
+    description:
+      "Serve hot, garnished with fresh thyme and rosemary sprigs. Enjoy the delightful flavors of Elven Honeyed Chicken!",
+    index: "5",
+  },
+
   // {
   //   recipe_name:"",
   //   description:"",

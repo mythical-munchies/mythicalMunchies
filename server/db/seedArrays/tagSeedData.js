@@ -11,6 +11,24 @@ const tags = [
   {
     description: "Vegan",
   },
+  {
+    description: "Snack",
+  },
+  {
+    description: "Seasoning",
+  },
+  {
+    description: "Appetizer",
+  },
+  {
+    description: "Side Dish",
+  },
+  {
+    description: "Entree",
+  },
+  {
+    description: "Soup",
+  },
   // {
   //   "description":""
   // },
