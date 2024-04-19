@@ -171,6 +171,10 @@ const ingredients = [
   { name: "Ground turmeric", description: "" },
   { name: "Chicken broth", description: "" },
   { name: "Lemon", description: "Juiced" },
+  { name: "Thyme", description: "Fresh" },
+  { name: "Rosemary", description: "Fresh" },
+
+  { name: "Sliced Lemon", description: "Sliced, for garnish" },
 
   // {"name":"",
   // "description":""

@@ -96,6 +96,10 @@ const recipe_tags = [
     recipe_name: "Arrakeen Chicken Tagine",
     description: "Entrée",
   },
+  {
+    recipe_name: "Elven Honeyed Chicken",
+    description: "Entrée",
+  },
 
   // {
   //   "recipe_name":"",

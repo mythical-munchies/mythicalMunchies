@@ -197,7 +197,7 @@ const recipes = [
   {
     name: "Krabby Patty",
     description:
-      "The iconic burger from the Krusty Krab, as featured in 'SpongeBob SquarePants'.",
+      "The iconic burger from the Krusty Krab, as featured in SpongeBob SquarePants.",
     cook_time: "20 minutes",
     world_name: "Bikini Bottom",
     img_url:
@@ -206,7 +206,7 @@ const recipes = [
   {
     name: "Sandy's Texas Corn Ribs",
     description:
-      "A spicy and flavorful dish inspired by Sandy Cheeks in 'SpongeBob SquarePants'.",
+      "A spicy and flavorful dish inspired by Sandy Cheeks in SpongeBob SquarePants.",
     cook_time: "30 minutes",
     world_name: "Bikini Bottom",
     img_url: "https://i.ytimg.com/vi/Tt7_Qao0TCw/hqdefault.jpg",
@@ -223,7 +223,7 @@ const recipes = [
   {
     name: "Spice Melange",
     description:
-      "A mystical and coveted substance from Planet Arrakis in 'Dune'.",
+      "A mystical and coveted substance from the planet Arrakis in 'Dune'. The Spice must flow.",
     cook_time: "2 minutes",
     world_name: "Dune",
     img_url:
@@ -232,7 +232,7 @@ const recipes = [
   {
     name: "Arrakeen Spice Tea",
     description:
-      "A fragrant and exotic tea brewed with spices from the planet Arrakis in 'Dune'.",
+      "A fragrant and exotic tea brewed with spices from the planet Arrakis.",
     cook_time: "10 minutes",
     world_name: "Dune",
     img_url:
@@ -241,7 +241,7 @@ const recipes = [
   {
     name: "Fremen Spice Rice",
     description:
-      "A fragrant and flavorful rice dish inspired by the Fremen people of the planet Arrakis in 'Dune'.",
+      "A fragrant and flavorful rice dish inspired by the Fremen people of the planet Arrakis.",
     cook_time: "25 minutes",
     world_name: "Dune",
     img_url: "https://www.africanbites.com/wp-content/uploads/2021/08/1-3.jpg",
@@ -249,11 +249,20 @@ const recipes = [
   {
     name: "Arrakeen Chicken Tagine",
     description:
-      "A savory and aromatic chicken tagine inspired by the flavors of Arrakis in 'Dune'.",
+      "A savory and aromatic chicken tagine inspired by the flavors of Arrakis.",
     cook_time: "1 hour 15 minutes",
     world_name: "Dune",
     img_url:
       "https://middlebury.coop/wp-content/uploads/2023/01/Chicken-Tagine.-SS.-Low-Res-476x476.jpg",
+  },
+  {
+    name: "Elven Honeyed Chicken",
+    description:
+      "A delectable chicken dish infused with honey and herbs, inspired by the culinary traditions of the elves in the Forgotten Realms.",
+    cook_time: "1 hour",
+    world_name: "Forgotten Realms",
+    img_url:
+      "https://i.pinimg.com/736x/da/1b/95/da1b9548a944d02b53a017b9018da15f.jpg",
   },
 
   // {

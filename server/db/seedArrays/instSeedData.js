@@ -873,6 +873,40 @@ const instructions = [
       "Garnish with fresh chopped cilantro before serving. Enjoy the savory flavors of Arrakeen Chicken Tagine!",
     index: "6",
   },
+  {
+    recipe_name: "Elven Honeyed Chicken",
+    description: "Preheat the oven to 375°F (190°C).",
+    index: "0",
+  },
+  {
+    recipe_name: "Elven Honeyed Chicken",
+    description:
+      "In a small bowl, mix together honey, minced garlic, chopped thyme leaves, chopped rosemary leaves, olive oil, salt, and black pepper to create a marinade.",
+    index: "1",
+  },
+  {
+    recipe_name: "Elven Honeyed Chicken",
+    description:
+      "Place the chicken thighs in a baking dish. Pour the marinade over the chicken, ensuring it is evenly coated.",
+    index: "2",
+  },
+  {
+    recipe_name: "Elven Honeyed Chicken",
+    description: "Arrange lemon slices on top of the chicken for garnish.",
+    index: "3",
+  },
+  {
+    recipe_name: "Elven Honeyed Chicken",
+    description:
+      "Bake in the preheated oven for 45-50 minutes, or until the chicken is cooked through and golden brown.",
+    index: "4",
+  },
+  {
+    recipe_name: "Elven Honeyed Chicken",
+    description:
+      "Serve hot, garnished with fresh thyme and rosemary sprigs. Enjoy the delightful flavors of Elven Honeyed Chicken!",
+    index: "5",
+  },
 
   // {
   //   recipe_name:"",
