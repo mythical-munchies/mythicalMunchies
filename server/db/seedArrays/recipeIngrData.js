@@ -1159,5 +1159,77 @@ const recipe_ingredients = [
     amount: "For garnish",
     unit: "",
   },
+  {
+    recipe_name: "Pink Cake",
+    ingredient_name: "All-purpose flour",
+    amount: "2",
+    unit: "cups",
+  },
+  {
+    recipe_name: "Pink Cake",
+    ingredient_name: "Baking Powder",
+    amount: "1",
+    unit: "teaspoon",
+  },
+  {
+    recipe_name: "Pink Cake",
+    ingredient_name: "Baking Soda",
+    amount: "1/2",
+    unit: "teaspoon",
+  },
+  {
+    recipe_name: "Pink Cake",
+    ingredient_name: "Unsalted butter",
+    amount: "1/2",
+    unit: "cup",
+  },
+  {
+    recipe_name: "Pink Cake",
+    ingredient_name: "Granulated Sugar",
+    amount: "1",
+    unit: "cup",
+  },
+  {
+    recipe_name: "Pink Cake",
+    ingredient_name: "Vanilla Extract",
+    amount: "1",
+    unit: "teaspoon",
+  },
+  {
+    recipe_name: "Pink Cake",
+    ingredient_name: "Eggs",
+    amount: "2",
+    unit: "",
+  },
+  {
+    recipe_name: "Pink Cake",
+    ingredient_name: "Buttermilk",
+    amount: "1",
+    unit: "cup",
+  },
+  {
+    recipe_name: "Pink Cake",
+    ingredient_name: "Pink food coloring",
+    amount: "As needed",
+    unit: "",
+  },
+  {
+    recipe_name: "Pink Cake",
+    ingredient_name: "Melon puree",
+    amount: "1/2",
+    unit: "cup",
+  },
+  {
+    recipe_name: "Pink Cake",
+    ingredient_name: "Whipped cream",
+    amount: "For topping",
+    unit: "",
+  },
+  {
+    recipe_name: "Pink Cake",
+    ingredient_name: "Sprinkles",
+    amount: "For decoration",
+    unit: "",
+  },
 ];
 module.exports = { recipe_ingredients };

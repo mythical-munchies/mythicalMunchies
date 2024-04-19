@@ -907,6 +907,66 @@ const instructions = [
       "Serve hot, garnished with fresh thyme and rosemary sprigs. Enjoy the delightful flavors of Elven Honeyed Chicken!",
     index: "5",
   },
+  {
+    recipe_name: "Pink Cake",
+    description:
+      "Preheat the oven to 350°F (175°C). Grease and flour a cake pan.",
+    index: "0",
+  },
+  {
+    recipe_name: "Pink Cake",
+    description:
+      "In a medium bowl, sift together all-purpose flour, baking powder, and baking soda.",
+    index: "1",
+  },
+  {
+    recipe_name: "Pink Cake",
+    description:
+      "In a separate bowl, cream together unsalted butter and granulated sugar until light and fluffy.",
+    index: "2",
+  },
+  {
+    recipe_name: "Pink Cake",
+    description:
+      "Beat in vanilla extract and eggs, one at a time, until well combined.",
+    index: "3",
+  },
+  {
+    recipe_name: "Pink Cake",
+    description:
+      "Alternate adding the dry ingredients, buttermilk, and melon puree to the butter mixture, beginning and ending with the dry ingredients.",
+    index: "4",
+  },
+  {
+    recipe_name: "Pink Cake",
+    description:
+      "Add pink food coloring to achieve desired shade of pink, mixing until evenly distributed.",
+    index: "5",
+  },
+  {
+    recipe_name: "Pink Cake",
+    description:
+      "Pour the batter into the prepared cake pan and smooth the top with a spatula.",
+    index: "6",
+  },
+  {
+    recipe_name: "Pink Cake",
+    description:
+      "Bake in the preheated oven for 25-30 minutes, or until a toothpick inserted into the center comes out clean.",
+    index: "7",
+  },
+  {
+    recipe_name: "Pink Cake",
+    description:
+      "Allow the cake to cool in the pan for 10 minutes before transferring to a wire rack to cool completely.",
+    index: "8",
+  },
+  {
+    recipe_name: "Pink Cake",
+    description:
+      "Once cooled, top with whipped cream and sprinkle with colorful sprinkles. Slice and serve.",
+    index: "9",
+  },
 
   // {
   //   recipe_name:"",

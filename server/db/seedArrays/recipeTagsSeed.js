@@ -1,5 +1,9 @@
 const recipe_tags = [
   {
+    recipe_name: "Pink Cake",
+    description: "Dessert",
+  },
+  {
     recipe_name: "Hot Honey Milk",
     description: "Drink",
   },

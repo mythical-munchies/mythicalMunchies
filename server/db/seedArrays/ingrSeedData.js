@@ -165,6 +165,11 @@ const ingredients = [
   { name: "Water", description: "" },
   { name: "Whipped cream", description: "" },
 
+  { name: "Unsalted butter", description: "" },
+  { name: "Pink food coloring", description: "" },
+  { name: "Melon puree", description: "From fresh melon, strained" },
+  { name: "Sprinkles", description: "For decoration" },
+
   // {"name":"",
   // "description":""
   // },
