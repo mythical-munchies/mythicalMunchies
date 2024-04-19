@@ -22,6 +22,10 @@
   /* margin-left: 30px; */
 }
 
+.modal-footer {
+  border-top: none;
+}
+
 .login-welcome {
   font-size: 25px;
   letter-spacing: 1px;
