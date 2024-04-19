@@ -133,6 +133,18 @@ const ingredients = [
   { name: "Garlic", description: "Minced" },
   { name: "Salt", description: "To taste" },
   { name: "Pepper", description: "To taste" },
+  { name: "All-purpose flour", description: "" },
+  { name: "Granulated sugar", description: "" },
+  { name: "Cocoa powder", description: "" },
+  { name: "Baking powder", description: "" },
+  { name: "Baking soda", description: "" },
+  { name: "Salt", description: "" },
+  { name: "Eggs", description: "" },
+  { name: "Buttermilk", description: "" },
+  { name: "Vegetable oil", description: "" },
+  { name: "Vanilla extract", description: "" },
+  { name: "Boiling water", description: "" },
+  { name: "Confectioners' sugar", description: "For dusting" },
 
   // {"name":"",
   // "description":""

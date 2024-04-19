@@ -454,6 +454,58 @@ const instructions = [
     description: "Serve hot and enjoy this spooky dish!",
     index: "6",
   },
+  {
+    recipe_name: "Matilda's Chocolate Cake",
+    description:
+      "Preheat oven to 350°F (175°C). Grease and flour two 9-inch round cake pans.",
+    index: "0",
+  },
+  {
+    recipe_name: "Matilda's Chocolate Cake",
+    description:
+      "In a large bowl, sift together flour, sugar, cocoa powder, baking powder, baking soda, and salt.",
+    index: "1",
+  },
+  {
+    recipe_name: "Matilda's Chocolate Cake",
+    description:
+      "Add eggs, buttermilk, vegetable oil, and vanilla extract to the dry ingredients. Beat on medium speed for 2 minutes.",
+    index: "2",
+  },
+  {
+    recipe_name: "Matilda's Chocolate Cake",
+    description:
+      "Stir in boiling water until the batter is well combined. The batter will be thin.",
+    index: "3",
+  },
+  {
+    recipe_name: "Matilda's Chocolate Cake",
+    description: "Pour the batter evenly into the prepared pans.",
+    index: "4",
+  },
+  {
+    recipe_name: "Matilda's Chocolate Cake",
+    description:
+      "Bake in the preheated oven for 30 to 35 minutes, or until a toothpick inserted into the center comes out clean.",
+    index: "5",
+  },
+  {
+    recipe_name: "Matilda's Chocolate Cake",
+    description:
+      "Allow cakes to cool in the pans for 10 minutes, then remove from pans and transfer to a wire rack to cool completely.",
+    index: "6",
+  },
+  {
+    recipe_name: "Matilda's Chocolate Cake",
+    description:
+      "Once cooled, dust the top of the cakes with confectioners' sugar before serving.",
+    index: "7",
+  },
+  {
+    recipe_name: "Matilda's Chocolate Cake",
+    description: "Slice and enjoy this deliciously moist chocolate cake!",
+    index: "8",
+  },
 
   // {
   //   recipe_name:"",

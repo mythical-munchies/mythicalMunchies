@@ -149,6 +149,15 @@ const recipes = [
     img_url:
       "https://i.pinimg.com/474x/d6/fa/4a/d6fa4ab21845d48462f8a7b6ed6a3d04.jpg",
   },
+  {
+    name: "Matilda's Chocolate Cake",
+    description:
+      "A decadent chocolate cake inspired by the mouth-watering treat from Roald Dahl's Matilda.",
+    cook_time: "60 minutes",
+    world_name: "Roald Dahl",
+    img_url:
+      "https://thestayathomechef.com/wp-content/uploads/2016/06/The-Most-Amazing-Chocolate-Cake-1-e1496872274436.jpg",
+  },
 
   // {
   //   "name": "",

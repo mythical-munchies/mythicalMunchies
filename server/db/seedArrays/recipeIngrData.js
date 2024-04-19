@@ -534,14 +534,77 @@ const recipe_ingredients = [
     amount: "to taste",
     unit: "",
   },
-
-
-
-
-
-
-
-
-  
+  {
+    recipe_name: "Matilda's Chocolate Cake",
+    ingredient_name: "All-purpose flour",
+    amount: "2",
+    unit: "cups",
+  },
+  {
+    recipe_name: "Matilda's Chocolate Cake",
+    ingredient_name: "Granulated sugar",
+    amount: "2",
+    unit: "cups",
+  },
+  {
+    recipe_name: "Matilda's Chocolate Cake",
+    ingredient_name: "Cocoa powder",
+    amount: "3/4",
+    unit: "cup",
+  },
+  {
+    recipe_name: "Matilda's Chocolate Cake",
+    ingredient_name: "Baking powder",
+    amount: "2",
+    unit: "teaspoons",
+  },
+  {
+    recipe_name: "Matilda's Chocolate Cake",
+    ingredient_name: "Baking soda",
+    amount: "1",
+    unit: "teaspoon",
+  },
+  {
+    recipe_name: "Matilda's Chocolate Cake",
+    ingredient_name: "Salt",
+    amount: "1",
+    unit: "teaspoon",
+  },
+  {
+    recipe_name: "Matilda's Chocolate Cake",
+    ingredient_name: "Eggs",
+    amount: "2",
+    unit: "",
+  },
+  {
+    recipe_name: "Matilda's Chocolate Cake",
+    ingredient_name: "Buttermilk",
+    amount: "1",
+    unit: "cup",
+  },
+  {
+    recipe_name: "Matilda's Chocolate Cake",
+    ingredient_name: "Vegetable oil",
+    amount: "1/2",
+    unit: "cup",
+  },
+  {
+    recipe_name: "Matilda's Chocolate Cake",
+    ingredient_name: "Vanilla extract",
+    amount: "2",
+    unit: "teaspoons",
+  },
+  {
+    recipe_name: "Matilda's Chocolate Cake",
+    ingredient_name: "Boiling water",
+    amount: "1",
+    unit: "cup",
+  },
+  {
+    recipe_name: "Matilda's Chocolate Cake",
+    ingredient_name: "Confectioners' sugar",
+    amount: "For dusting",
+    unit: "",
+  },
 ];
 module.exports = { recipe_ingredients };
