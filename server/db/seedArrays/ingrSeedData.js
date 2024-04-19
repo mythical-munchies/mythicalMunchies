@@ -92,6 +92,7 @@ const ingredients = [
   { name: "Blue food coloring", description: "" },
 
   { name: "Bacon", description: "" },
+  { name: "Toast", description: "" },
   { name: "Sausages", description: "" },
   { name: "Tomatoes", description: "Sliced" },
   { name: "Mushrooms", description: "Sliced" },

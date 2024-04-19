@@ -29,7 +29,7 @@ const recipe_tags = [
   },
   {
     recipe_name: "Jon Snow's Wildling Stew",
-    description: "Entree",
+    description: "Entrée",
   },
   {
     recipe_name: "Lon Lon Milkshake",
@@ -45,11 +45,11 @@ const recipe_tags = [
   },
   {
     recipe_name: "Second Breakfast Spread",
-    description: "Entree",
+    description: "Entrée",
   },
   {
     recipe_name: "Beetlejuice's Ghostly Grub",
-    description: "Entree",
+    description: "Entrée",
   },
   {
     recipe_name: "Matilda's Chocolate Cake",
@@ -70,7 +70,7 @@ const recipe_tags = [
   },
   {
     recipe_name: "Krabby Patty",
-    description: "Burger",
+    description: "Entrée",
   },
   {
     recipe_name: "Sandy's Texas Corn Ribs",
@@ -78,7 +78,7 @@ const recipe_tags = [
   },
   {
     recipe_name: "Jellyfish Jelly Sandwich",
-    description: "Sandwich",
+    description: "Entrée",
   },
   {
     recipe_name: "Spice Melange",
@@ -92,12 +92,10 @@ const recipe_tags = [
     recipe_name: "Fremen Spice Rice",
     description: "Side Dish",
   },
-{
-  recipe_name: "Arrakeen Chicken Tagine",
-  description: "Entree",
-},
-
-  
+  {
+    recipe_name: "Arrakeen Chicken Tagine",
+    description: "Entrée",
+  },
 
   // {
   //   "recipe_name":"",
