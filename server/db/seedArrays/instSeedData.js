@@ -367,6 +367,23 @@ const instructions = [
       "Allow the cookies to cool on the baking sheets for a few minutes before transferring them to a wire rack to cool completely.",
     index: "6",
   },
+  {
+    recipe_name: "Blue Milkshake",
+    description:
+      "In a blender, combine the vanilla ice cream, milk, and blue food coloring.",
+    index: "0",
+  },
+  {
+    recipe_name: "Blue Milkshake",
+    description: "Blend until smooth and creamy.",
+    index: "1",
+  },
+  {
+    recipe_name: "Blue Milkshake",
+    description:
+      "Pour into glasses, top with whipped cream, and serve chilled. May the Force be with you!",
+    index: "2",
+  },
 
   // {
   //   recipe_name:"",

@@ -407,5 +407,36 @@ const recipe_ingredients = [
     amount: "1",
     unit: "teaspoon",
   },
+  {
+    recipe_name: "Blue Milkshake",
+    ingredient_name: "Vanilla ice cream",
+    amount: "2",
+    unit: "cups",
+  },
+  {
+    recipe_name: "Blue Milkshake",
+    ingredient_name: "Milk",
+    amount: "1",
+    unit: "cup",
+  },
+  {
+    recipe_name: "Blue Milkshake",
+    ingredient_name: "Blue food coloring",
+    amount: "Few drops",
+    unit: "",
+  },
+  {
+    recipe_name: "Blue Milkshake",
+    ingredient_name: "Whipped cream",
+    amount: "For topping",
+    unit: "",
+  },
+
+
+
+
+
+
+  
 ];
 module.exports = { recipe_ingredients };

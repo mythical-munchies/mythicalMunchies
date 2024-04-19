@@ -111,6 +111,10 @@ const ingredients = [
   { name: "Granulated sugar", description: "" },
   { name: "Egg", description: "" },
   { name: "Vanilla extract", description: "" },
+  { name: "Vanilla ice cream", description: "" },
+  { name: "Milk", description: "" },
+  { name: "Blue food coloring", description: "" },
+  { name: "Whipped cream", description: "" },
 
   // {"name":"",
   // "description":""

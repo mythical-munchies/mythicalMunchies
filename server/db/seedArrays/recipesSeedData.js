@@ -122,6 +122,14 @@ const recipes = [
     img_url:
       "https://images.squarespace-cdn.com/content/v1/5508c899e4b0a308ed6ba859/1505364763444-SG6UGU8H7D2U1CBEZL2N/triforce-linzer-cookies-2.jpg",
   },
+  {
+    name: "Blue Milkshake",
+    description:
+      "Inspired by the iconic blue milk enjoyed by characters in the Star Wars universe, this milkshake is a refreshing and vibrant treat. Made with creamy vanilla ice cream, cold milk, and a few drops of blue food coloring for a galaxy-inspired twist. Topped with fluffy whipped cream for extra indulgence.",
+    cook_time: "5 minutes",
+    world_name: "Star Wars",
+    img_url: "Insert URL of Blue Milkshake image here",
+  },
 
   // {
   //   "name": "",
