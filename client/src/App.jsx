@@ -29,6 +29,7 @@ import { useEffect, useState } from "react";
 
 function App() {
   const [worlds, setWorlds] = useState([]);
+  const [recipes, setRecipes] =useState([]);
   const [auth, setAuth] = useState([]);
   const [review, setReview] = useState([]);
   const [favorites, setFavorites] = useState([])
@@ -42,6 +43,17 @@ function App() {
     };
     fetchWorlds();
   }, []);
+
+
+  // useEffect(()=> {
+  //   const fetchRecipes = async() => {
+  //     const response = await fetch ('https://mythicalmunchies.onrender.com/mythicalMunchies/worlds/recipes/:world_id');
+  //     const json = await response.json();
+  //     console.log(json)
+  //     setRecipes(json);
+  //   };
+  //   fetchRecipes();
+  // }, []);
 
   return (
     <>

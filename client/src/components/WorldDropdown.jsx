@@ -1,12 +1,10 @@
 import Dropdown from "react-bootstrap/Dropdown";
 import { useState, useEffect } from "react";
-// import { Link } 
 
 function WorldDropDown({ worldsArray }) {
   // console.log( worldsArray )
   const [showDropdown, setShowDropdown] = useState(false);
   const [worlds, setWorlds] = useState([]);
-console.log(worldsArray)
 
 useEffect(()=> {
   const fetchWorlds = async() => {

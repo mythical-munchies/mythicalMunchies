@@ -5,7 +5,7 @@ import ghibliBanner from "../images/banner_studioghibli.png";
 import { useState, useEffect } from "react"
 function SingleWorld() {
   const [world, setWorld] = useState({});
-  const [recipe, setRecipe] = useState({});
+  const [recipes, setRecipes] = useState({});
 
   const {worldid} = useParams();
   useEffect(()=> {
@@ -29,7 +29,7 @@ function SingleWorld() {
     };
     fetchRecipes
   })
-
+  
   return (
     <>
       <div className="single-container">
@@ -37,6 +37,28 @@ function SingleWorld() {
           <Link to="/worlds" className="back-button">
             Back
           </Link>
+
+          {/* TO MAP OVER - WILL IT NEED TO BE AN IF STATEMENT? */}
+
+          {/* if ${world.id} === {recipe.id}
+
+          return (
+            {recipes.map((world) => {
+              return (
+                <div key={world.id} className="title">{world.name}</div>
+
+              <div className="banner-image-container">
+                <img src={world.img_url} className="banner-image" alt="world-banner"/>
+              </div>
+
+              <div className="recipe-tile">
+                <img className="recipe-image" src={recipe.img_url} alt="some yummy food!"/>
+                  <Link target="blank" to="/single-recipe">Recipe.name</Link>
+              </div>
+              )
+            })}
+          )
+           */}
 
             <div className="title"> World.name </div>
 

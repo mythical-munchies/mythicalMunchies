@@ -5,6 +5,7 @@ import "../styles/SearchBar.css"
 // MUST BE LINKED WITH THE DATABASE -not mock data 
 function SearchBar({placeholder, data}) {
   const [filteredData, setFilteredData] = useState([]);
+
   const handleFilter = (e) => {
     const searchWord = e.target.value
     const newFilter = data.filter((value) => {
@@ -29,8 +30,6 @@ function SearchBar({placeholder, data}) {
       {filteredData.length != 0 && (
       <div className='dataResults'>
         {filteredData.map((value, key) => {
-          // TURN THIS INTO LINKS TO TAKE USER TO A NEW PAGE ONCE CLICKED
-          // a href 
           return <div className='text'>
             <div>
               <a href="/worlds/worldid">{value.title}</a>
