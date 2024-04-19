@@ -38,7 +38,7 @@
   width: 1000px;
   height: 480px;
   padding-bottom: 20px;
-  opacity: 90%
+  opacity: 95%
 }
 
 .dessert-spotlight {
@@ -46,7 +46,7 @@
   border-radius: 10px;
   width: 375px;
   height: 450px;
-  opacity: 90%;
+  opacity: 95%;
 }
 
 .book-spotlight {
@@ -54,7 +54,7 @@
   border-radius: 10px;
   width: 375px;
   height: 450px;
-  opacity: 90%
+  opacity: 95%
 }
 
 .doggy-spotlight {
@@ -62,7 +62,7 @@
   border-radius: 10px;
   width: 375px;
   height: 450px;
-  opacity: 90%
+  opacity: 95%
 }
 
 .veggie-spotlight {
@@ -70,7 +70,7 @@
   border-radius: 10px;
   width: 400px;
   height: 450px;
-  opacity: 90%
+  opacity: 95%
 }
 
 .brews-spotlight {
@@ -78,7 +78,7 @@
   border-radius: 10px;
   width: 400px;
   height: 450px;
-  opacity: 90%
+  opacity: 95%
 }
 
 
@@ -89,7 +89,7 @@
   font-family: "Almendra", sans-serif;
   font-weight: 100;
   font-style: oblique;
-  color: darkblue;
+  color: white;
   letter-spacing: 1px;
   padding-top: 15px;
   padding-bottom: 10px;

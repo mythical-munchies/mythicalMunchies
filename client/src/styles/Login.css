@@ -1,0 +1,73 @@
+#login-logo {
+  width: 60px;
+  height: 60px;
+  /* margin-left: 135px; */
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#login-text {
+  font-size: 20px;
+  text-align: center;
+  color: darkblue;
+}
+
+.login-modal-header {
+  margin-left: 30px;
+}
+
+.modal-header {
+  border-bottom: none;
+  /* margin-left: 30px; */
+}
+
+.login-welcome {
+  font-size: 25px;
+  letter-spacing: 1px;
+  color: darkred;
+  text-align: center;
+}
+
+#login-check {
+  font-family: "Almendra", serif;
+  font-size: 16px;
+}
+
+.top {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  margin-right: 45px;
+  margin-bottom: 0px;
+}
+
+#email,
+#password,
+#username,
+#firstName,
+#lastName
+ {
+  width: 450px;
+  height: 45px;
+  font-size: 18px;
+  color: black;
+}
+
+#message {
+  width: 450px;
+  height: 200px;
+  font-size: 18px;
+}
+
+#checky {
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-bottom: 2px;
+  /* font-size: 40px; */
+}
+
+#close {
+  margin-left: 370px;
+  margin-top: 15px;
+}
+

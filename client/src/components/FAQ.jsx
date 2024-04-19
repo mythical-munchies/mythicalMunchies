@@ -7,7 +7,7 @@ import {
   Typography,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import "./styles/FAQ.css";
+import "../styles/FAQ.css";
 
 const MythicalMunchiesFAQ = () => {
   return (

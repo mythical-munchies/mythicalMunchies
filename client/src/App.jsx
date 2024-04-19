@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.css"
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Route, Routes } from "react-router-dom";
 import AccountTab from "./components/AccountTab";
@@ -12,7 +12,8 @@ import Footer from "./components/Footer";
 import HomeTab from "./components/HomeTab";
 import Literature from "./components/Literature";
 import Login from "./components/Login"
-import Logo from "./components/icons/cauldronyellow.png";
+import Logo from "./icons/cauldronyellow.png"
+// import Logo from "/icons/cauldronyellow.png";
 import MythicalMunchiesFAQ from "./components/FAQ";
 import MyReviews from "./components/MyReviews";
 import Nav from "./components/Nav";
@@ -23,9 +24,25 @@ import SingleRecipe from "./components/SingleRecipe";
 import SingleWorld from "./components/SingleWorld";
 import Vegetables from "./components/Vegetables";
 import Worlds from "./components/Worlds";
+import { useEffect, useState } from "react";
 
 
 function App() {
+  const [worlds, setWorlds] = useState([]);
+  const [auth, setAuth] = useState([]);
+  const [review, setReview] = useState([]);
+  const [favorites, setFavorites] = useState([])
+
+  useEffect(()=> {
+    const fetchWorlds = async() => {
+      const response = await fetch ('https://mythicalmunchies.onrender.com/mythicalMunchies/worlds/');
+      const json = await response.json();
+      console.log(json)
+      setWorlds(json);
+    };
+    fetchWorlds();
+  }, []);
+
   return (
     <>
       <div className="persistent-header">
@@ -38,11 +55,12 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<HomeTab />} />
-        <Route path="/worlds" element={<Worlds />} />
+        <Route path="/worlds" element={<Worlds worldsArray={worlds} />} />
         <Route path="/contact" element={<ContactTab />} />
 {/* ONLY SHOW THE ACCOUNT TAB IF A USER IS LOGGED IN - fix later once modules are coded in */}
+        <Route path={`single-world/:worldid`} element={<SingleWorld />} />
         <Route path="/account" element={<AccountTab />} />
-        <Route path="/single-world" element={<SingleWorld />} />
+        {/* <Route path="/single-world" element={<SingleWorld />} /> */}
         <Route path="/single-recipe" element={<SingleRecipe />} />
         <Route path="/dogwarts" element={<DogWarts />} />
         <Route path="/bottoms-up" element={<BottomsUp />} />

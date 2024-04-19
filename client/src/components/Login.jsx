@@ -1,22 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { useState, useRef, useEffect, useContext } from "react";
-import "./styles/Login.css"
+import "../styles/Login.css"
 import user from './icons/user.jpg';
 // import Modal from 'react-bootstrap/Modal';
-// import Logo from './icons/cauldronyellow.png'
-
-// ELENIS IMPORTS
-// import Button 
-// import axios from "axios";
-// import Account from "./Account"
-
-// function Login () {
-//     const [show, setShow] = useState(false);
-//     const handleClose = () => setShow(false);
-//     const handleShow = () => setShow(true);
-
-// ELENIS CODE 
+// import Logo from '../icons/cauldronyellow.png'
+import Logo from '../icons/cauldronyellow.png'
 
 // const LOGIN_URL = '/auth';
 
@@ -75,15 +64,6 @@ const Login = () => {
 }
 
 return (
-    // if (usernameOrEmail === user.email || usernameOrEmail === user.username) {
-    //     if (password === user.password) {
-    //         console.log("Welcome Back!");
-    //     } else {
-    //         console.log("Wrong Password");
-    //     }
-    //    } else {
-    //     console.log("Wrong Username or Email");
-    //    }
     <>
        {success ? (
         <section>
@@ -154,18 +134,7 @@ return (
 
     export default Login;
 
-    
-//     return ( 
-//     <>
-// {/* ACCOUNT PAGE - SIGN IN BUTTON */}
-//         <li className="sideBar-button">
-//             <a href="#" onClick={handleShow} className="flex items-center p-2 text-blue-900 rounded-lg dark:text-white hover:bg-yellow-400 dark:hover:bg-yellow-800 group">
-//                 <svg className="w-[30px] h-[30px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-//                     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.6" d="M16 12H4m12 0-4 4m4-4-4-4m3-4h2a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3h-2"/>
-//                 </svg>
-//                 <span className="flex-1 ms-3 whitespace-nowrap">Sign In</span>
-//             </a>
-//         </li>
+
 // {/* MODAL */}
 //     <Modal  
 //         show={show}

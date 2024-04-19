@@ -2,6 +2,7 @@ const client = require("./client");
 const uuid = require("uuid");
 const {getRecipeId} = require('./recipes');
 
+//Create a tag
 const createTag = async ({description}) => {
   const SQL = `
   INSERT INTO tags(id, description)
@@ -12,19 +13,21 @@ const createTag = async ({description}) => {
   return response.rows[0]
 };
 
+//Get tag's Id to use in tag recipe
 const getTagId = async (description) => {
   const SQL = `
   SELECT *
   FROM tags
   WHERE description = $1
   `;
-  // console.log(description)
+  console.log(description)
   let {rows} = await client.query(SQL, [description])
-  // console.log(rows)
+  console.log(rows)
   const tag_id = rows[0]
   return tag_id.id
 };
 
+//Add a tag to a recipe
 const createRecipeTag = async ({recipe_name, description}) => {
   const tag_id = await getTagId(description)
   const recipe_id = await getRecipeId(recipe_name)
@@ -37,4 +40,36 @@ const createRecipeTag = async ({recipe_name, description}) => {
   return response.rows;
 };
 
-module.exports = {createTag, createRecipeTag}
+//Fetch recipe's tags
+const fetchRecipeTags = async (recipe_id) => {
+  // const recipe_id = await getRecipeId(recipe_name)
+  const SQL = `
+  SELECT *
+  FROM recipe_tags
+  WHERE recipe_id = $1
+  `;
+  const response = await client.query(SQL, [recipe_id])
+  return response.rows;
+};
+
+const fetchTags = async () => {
+  const SQL = `
+  SELECT *
+  FROM tags
+  `;
+  const response = await client.query(SQL);
+  return response.rows;
+};
+
+const fetchTaggedRecipes = async (tag_id) => {
+  const SQL = `
+  SELECT *
+  FROM recipe_tags
+  WHERE tag_id = $1
+  `;
+  const response = await client.query(SQL, [tag_id]);
+  console.log(response)
+  return response.rows;
+}
+
+module.exports = {createTag, createRecipeTag, fetchTags, fetchRecipeTags, fetchTaggedRecipes}

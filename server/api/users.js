@@ -1,37 +1,45 @@
 const express = require("express");
 const router = express.Router();
-
-// const {authenticate, findUserWithToken, getRecipes} = require('./db')
+const bcrypt = require("bcrypt");
+const JWT = require("jsonwebtoken");
+const secret = "ravioliRavioliGiveMeTheFormuioli";
 
 const {
-  loginUser,
+  // loginUser,
   createUser,
-  fetchUserByEmailOrUsername,
+  fetchUserById,
   fetchUser,
   fetchUsers,
 } = require("../db/users");
 
-//Fetch All Users Route
-//http://localhost:8080/mythicalmunchies/users/
+// Fetch All Users Route
 router.get("/", async (req, res, next) => {
   try {
     const users = await fetchUsers();
     res.send({ users });
-  } catch (ex) {
-    next(ex);
+  } catch (error) {
+    next(error);
   }
 });
 
-//Login Route
+// Login Route
 //http://localhost:8080/mythicalmunchies/users/login
 router.post("/login", async (req, res) => {
-  const { usernameOrEmail, password } = req.body;
-  console.log(req.body);
+  const { username, password } = req.body;
   try {
-    const user = await loginUser({ usernameOrEmail, password });
+    const user = await fetchUser(username)
+    if (!user){
+      res.send('No user found :(')
+    } else {
+      const passwordValidation = await bcrypt.compare(password, user.password)
+      if (!passwordValidation) {
+        res.send('You shall not pass :(')
+      }
+    }
     res.status(200).json({
       message: "Login successful!",
-      user,
+      user, 
+      token: JWT.sign({user: user.id}, secret)
     });
   } catch (error) {
     res.status(401).json({
@@ -58,7 +66,6 @@ router.post("/signup", async (req, res) => {
       // If it's a username, attempt to create a new user using the provided username
       newUser = await createUser({ username: usernameOrEmail, password });
     }
-
     res.status(201).json({
       message: "Signup successful!",
       user: newUser,
@@ -69,36 +76,17 @@ router.post("/signup", async (req, res) => {
     });
   }
 });
-module.exports = router;
 
 // Fetch Single User Route
 //http://localhost:8080/mythicalmunchies/users/:user_id
-router.get("/:user_id", async (req, res) => {
-  const { user_id } = req.params;
-
+router.get("/:id", async (req, res) => {
+  const { id } = req.params;
   try {
-    const user = await fetchUser(user_id);
-    res.status(200).json({
-      message: "User fetched successfully!",
-      user,
-    });
+    const user = await fetchUserById(id);
+    res.send({ user });
   } catch (error) {
-    res.status(404).json({
-      error: `Error: ${error.message}`,
-    });
+    next(error);
   }
 });
 
-// Creating the instance of express
-const app = express();
-
-// To use the router for paths starting with '/auth'
-app.use("/auth", router);
-
-// This will start the server and listen on a port
-// const PORT = process.env.PORT || 3000;
-// app.listen(PORT, () => {
-//   console.log(`Miracle Alert! Server is listening on port ${PORT}`);
-// });
-
-//
+module.exports = router;

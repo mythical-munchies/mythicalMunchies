@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/PrivacyPolicy.css";
+import "../styles/PrivacyPolicy.css";
 import { Link } from "react-router-dom";
 
 const PrivacyPolicy = () => {

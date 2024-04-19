@@ -2,6 +2,7 @@ const client = require("./client")
 const uuid = require("uuid");
 const {getRecipeId} = require('./recipes');
 
+//Create a instruction 
 const createInstruction = async ({recipe_name, description, index}) => {
   const recipe_id = await getRecipeId(recipe_name)
   const SQL = `
@@ -13,12 +14,19 @@ const createInstruction = async ({recipe_name, description, index}) => {
   return response.rows[0];
 };
 
-// const fetchInstructions = async () => {
-//   const SQL = `
-  
-//   `;
-// }
+//Fetch instructions
+const fetchInstructions = async (recipe_id) => {
+  // const recipe_id = await getRecipeId(recipe_name)
+  const SQL = `
+  SELECT *
+  FROM instructions 
+  WHERE recipe_id = $1
+  `;
+  const response = await client.query(SQL,[recipe_id]);
+  return response.rows;
+};
 
 module.exports = {
-  createInstruction
+  createInstruction,
+  fetchInstructions
 }

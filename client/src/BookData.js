@@ -65,5 +65,11 @@ export const mockBooks = [
     title: "Ratatouille",
     author: "RH Disney",
     img_url: "https://m.media-amazon.com/images/I/81wREsAB6EL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    id: "01esdasdsa",
+    title: "Junie B. Jones Boss of Lunch",
+    author: "Barbara Park",
+    img_url: "https://m.media-amazon.com/images/I/712lDPMy-RL._AC_UF1000,1000_QL80_.jpg"
   }
 ]

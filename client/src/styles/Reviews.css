@@ -15,7 +15,7 @@
   font-size: 16px;
   margin-left: 20px;
   margin-bottom: 0px;
-  margin-top: 5px;
+  /* margin-top: 5px; */
   color: beige;
 }
 
@@ -25,7 +25,10 @@
   text-decoration: none;
   margin-left: 20px;
   font-family: "Almendra", sans-serif;
+  /* margin-top: 30px; */
 }
+
+
 
 .delete-review {
   margin-left: 20px;
@@ -38,6 +41,12 @@
   font-family: "Almendra", sans-serif;
   font-size: 13px;
   margin-top: 0px;
+  padding-bottom: 30px;
+}
+
+.myreview-hr {
+  color: white;
+  padding-top: 20px;
 }
 
 .delete-img {

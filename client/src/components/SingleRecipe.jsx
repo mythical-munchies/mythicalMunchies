@@ -3,12 +3,14 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
-import "./styles/SingleRecipe.css"
+import "../styles/SingleRecipe.css"
 import { Link } from 'react-router-dom'
-import Ramen from './images/ponyo-ramen.jpg'
+import Ramen from '../images/ponyo-ramen.jpg'
 import CustomerReviews from './CustomerReviews';
 import LeaveReview from './LeaveReview';
 import { useState } from 'react';
+import Modal from 'react-bootstrap/Modal';
+// import { Button } from "flowbite-react"
 
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -89,7 +91,9 @@ function SingleRecipe() {
                       <br />
                       <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum hic id veniam neque ea voluptatem ullam reprehenderit quibusdam eveniet dicta asperiores, quasi optio odio repudiandae porro necessitatibus soluta vitae.</li>
                     </ol>
+                  
                 </div>
+             
               </Grid>
 
 

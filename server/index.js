@@ -2,9 +2,11 @@ const express = require("express");
 const path = require("path");
 const morgan = require("morgan");
 const app = express();
+const cors = require("cors");
 
 app.use(morgan("dev"));
 app.use(express.json());
+app.use(cors());
 
 const client = require("./db/client");
 client.connect();
@@ -13,12 +15,14 @@ app.use(express.static(path.join(__dirname, "public")));
 app.get("/docs", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
-// no dist folder currently so commented out for now. could be copy/pasted from a prior project
+
+// For production
 // app.use("/", express.static(path.join(__dirname, "../client/dist")));
 // app.get("/", (req, res) =>
 //   res.sendFile(path.join(__dirname, "../client/dist/index.html"))
 // );
 
+//Goes to index.js in api folder
 app.use("/mythicalMunchies", require("./api"));
 
 app.use((err, req, res, next) => {

@@ -1,8 +1,9 @@
 const client = require("./client");
 const bcrypt = require("bcrypt");
 const uuid = require("uuid");
-const {getRecipeId} = require('./recipes')
+const { getRecipeId } = require("./recipes");
 
+//Create a user
 const createUser = async ({ username, email, password }) => {
   const SQL = `
   INSERT INTO users(id, username, email, password)
@@ -18,22 +19,31 @@ const createUser = async ({ username, email, password }) => {
   return response.rows[0];
 };
 
+//Get a user's ID
 const getUserID = async (username) => {
   const SQL = `
   SELECT *
   FROM users
   WHERE username = $1
   `;
-  let {rows} = await client.query(SQL, [username])
-  const user_id = rows[0]
-  return user_id.id
+  let { rows } = await client.query(SQL, [username]);
+  const user_id = rows[0];
+  console.log(user_id.id)
+  return user_id.id;
 };
 
-const createUserRecipe = async ({username, recipe_name, rating, review, bookmarked}) => {
-  const user_id = await getUserID(username)
-  const recipe_id = await getRecipeId(recipe_name)
+//Create a Review
+const createUserRecipe = async ({
+  username,
+  recipe_name,
+  rating,
+  review,
+  bookmarked,
+}) => {
+  const user_id = await getUserID(username);
+  const recipe_id = await getRecipeId(recipe_name);
   const SQL = `
-  INSERT INTO user_recipe(id, user_id, recipe_id, rating, review, bookmarked)
+  INSERT INTO user_recipes(id, user_id, recipe_id, rating, review, bookmarked)
   VALUES($1, $2, $3, $4, $5, $6)
   RETURNING *
   `;
@@ -43,11 +53,12 @@ const createUserRecipe = async ({username, recipe_name, rating, review, bookmark
     recipe_id,
     rating,
     review,
-    bookmarked
+    bookmarked,
   ]);
   return response.rows[0];
 };
 
+//Get all users, may not be needed
 const fetchUsers = async () => {
   const SQL = `
     SELECT *
@@ -57,53 +68,107 @@ const fetchUsers = async () => {
   return response.rows;
 };
 
-const fetchUser = async (user_id) => {
+//fetch single user by username
+const fetchUser = async (username) => {
+  const id = await getUserID(username);
+  console.log(`fetch single ${id}`)
   const SQL = `
     SELECT *
     FROM users
-    WHERE user_id = $1
+    WHERE id = $1
   `;
-  const response = await client.query(SQL, [user_id]);
-  return response.rows;
-};
-
-// added to Lucas's original code to account for the login using username or email
-const fetchUserByEmailOrUsername = async (emailOrUsername) => {
-  const SQL = `
-    SELECT *
-    FROM users
-    WHERE email = $1 OR username = $2
-  `;
-  const response = await client.query(SQL, [emailOrUsername, emailOrUsername]);
+  const response = await client.query(SQL, [id]);
   return response.rows[0];
 };
 
-const loginUser = async ({ usernameOrEmail, password }) => {
-  // Query the database to find the user based on email or username
-  const user = await fetchUserByEmailOrUsername(usernameOrEmail);
-  console.log(user);
-  // If user is not found or password doesn't match, throw an error
-  if (!user || !bcrypt.compareSync(password, user.password)) {
-    throw new Error("Invalid credentials");
-  }
-  return user;
+//fetch user by id
+const fetchUserById = async (id) => {
+  const SQL = `
+    SELECT *
+    FROM users
+    WHERE id = $1
+  `;
+  const response = await client.query(SQL, [id]);
+  return response.rows[0];
 };
+
+// added to Lucas's original code to account for the login using username or email
+// const fetchUserByEmailOrUsername = async (username, email) => {
+//   const SQL = `
+//     SELECT *
+//     FROM users
+//     WHERE email = $1 OR username = $2
+//   `;
+//   const response = await client.query(SQL, [username, email]);
+//   return response.rows[0];
+// };
+
+// const loginUser = async (username, password) => {
+//   // Query the database to find the user based on email or username
+//   // const user = await fetchUserByEmailOrUsername(usernameOrEmail);
+//   console.log(user);
+//   // If user is not found or password doesn't match, throw an error
+//   if (!user || !bcrypt.compareSync(password, user.password)) {
+//     throw new Error("Invalid credentials");
+//   }
+//   return user;
+// };
 
 //End of Simone's testing code
 
-const fetchUserRecipes = async (user_id) => {
+//Get all of a recipe's reviews 
+const fetchRecipeReviews = async (recipe_id) => {
   const SQL = `
   SELECT *
-  FROM user_recipe
+  FROM user_recipes
+  WHERE recipe_id = $1
+  `;
+  const response = await client.query(SQL, [recipe_id]);
+  return response.rows;
+}
+
+//Get all of a user's reviews
+const fetchUserReviews = async (user_id) => {
+  const SQL = `
+  SELECT *
+  FROM user_recipes
   WHERE user_id = $1
 `;
   const response = await client.query(SQL, [user_id]);
   return response.rows;
 };
 
-const deleteUserRecipe = async ({ user_id, id }) => {
+//Get a single review
+const fetchReview = async ({id}) => {
   const SQL = `
-    DELETE FROM user_recipe
+  SELECT *
+  FROM user_recipes 
+  WHERE id = $1
+  `;
+  const response = await client.query(SQL, [id])
+  return response.rows;
+};
+
+//Update a review 
+// const updateReview = async ({ user_id, id }) => {
+//   const SQL = `
+//     UPDATE user_recipes
+
+//     WHERE id = $1 AND user_id = $2
+//     RETURNING *
+//   `;
+//   const response = await client.query(SQL, [id, user_id]);
+//   if (!response.rows.length) {
+//     const error = Error("no review found");
+//     error.status = 500;
+//     throw error;
+//   }
+// };
+
+//Delete a user's review
+const deleteReview = async ({ user_id, id }) => {
+  const SQL = `
+    DELETE FROM user_recipes
     WHERE id = $1 AND user_id = $2
     RETURNING *
   `;
@@ -114,13 +179,17 @@ const deleteUserRecipe = async ({ user_id, id }) => {
     throw error;
   }
 };
+
 module.exports = {
   createUser,
   createUserRecipe,
   fetchUsers,
   fetchUser,
-  fetchUserRecipes,
-  deleteUserRecipe,
-  fetchUserByEmailOrUsername,
-  loginUser,
+  fetchUserById,
+  fetchUserReviews,
+  deleteReview,
+  // fetchUserByEmailOrUsername,
+  // loginUser,
+  fetchRecipeReviews,
+  fetchReview
 };

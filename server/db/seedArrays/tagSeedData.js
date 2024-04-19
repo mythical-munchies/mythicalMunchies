@@ -1,19 +1,37 @@
 const tags = [
   {
-    "description":"Drink"
+    description: "Drink",
   },
   {
-    "description":"Entree"
+    description: "Entrée",
   },
   {
-    "description":"Desert"
+    description: "Dessert",
   },
   {
-    "description":"Vegan"
+    description: "Vegan",
+  },
+  {
+    description: "Snack",
+  },
+  {
+    description: "Seasoning",
+  },
+  {
+    description: "Appetizer",
+  },
+  {
+    description: "Side Dish",
+  },
+  {
+    description: "Entree",
+  },
+  {
+    description: "Soup",
   },
   // {
   //   "description":""
   // },
-]
+];
 
-module.exports = {tags}
+module.exports = { tags };

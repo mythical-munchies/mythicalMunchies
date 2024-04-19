@@ -21,9 +21,9 @@ const {user_recipes} = require('./seedArrays/userRecipeSeed.js');
 //drop all tables if any exist to avoid duplicates
 const dropTables = async () => {
   const SQL = `
-  DROP TABLE IF EXISTS user_recipe;
-  DROP TABLE IF EXISTS recipe_ingredient;
-  DROP TABLE IF EXISTS ingredients;
+  DROP TABLE IF EXISTS user_recipes;
+  DROP TABLE IF EXISTS recipe_ingredients;
+  DROP TABLE IF EXISTS ingredients CASCADE;
   DROP TABLE IF EXISTS recipe_tags;
   DROP TABLE IF EXISTS instructions;
   DROP TABLE IF EXISTS tags CASCADE;
@@ -44,9 +44,9 @@ const createTables = async () => {
     );
     CREATE TABLE users(
       id UUID PRIMARY KEY,
-      username VARCHAR(255) UNIQUE,
-      email VARCHAR(255) UNIQUE,
-      password VARCHAR(255) NOT NULL
+      username VARCHAR(500) UNIQUE,
+      email VARCHAR(500) UNIQUE,
+      password VARCHAR(500) NOT NULL
     );
     CREATE TABLE ingredients(
       id UUID PRIMARY KEY,
@@ -58,17 +58,17 @@ const createTables = async () => {
       name VARCHAR(255) NOT NULL UNIQUE,
       description TEXT,
       cook_time VARCHAR(255),
-      world_name VARCHAR(500),
+      world_id VARCHAR(500),
       img_url VARCHAR(500)
     );
-    CREATE TABLE recipe_ingredient(
+    CREATE TABLE recipe_ingredients(
       id UUID PRIMARY KEY,
       recipe_id UUID REFERENCES recipes(id) NOT NULL,
       ingredient_id UUID REFERENCES ingredients(id) NOT NULL,
       amount VARCHAR(500),
       unit VARCHAR(500)
     );
-    CREATE TABLE user_recipe(
+    CREATE TABLE user_recipes(
       id UUID PRIMARY KEY,
       user_id UUID REFERENCES users(id) NOT NULL,
       recipe_id UUID REFERENCES recipes(id) NOT NULL,
@@ -139,8 +139,9 @@ async function seedIngr(client) {
 async function seedRecipes(client) {
   try {
     for (const recipe of recipes) {
+      console.log(recipe)
       const createdRecipe = await createRecipe(recipe);
-      // console.log(`Created recipe: ${createdRecipe.name}`); //
+      console.log(`Created recipe: ${createdRecipe}`); //
     }
   } catch (error) {
     console.error("Error seeding recipes:", error);
@@ -179,7 +180,7 @@ async function seedTags(client) {
   try {
     for (const tag of tags) {
       const createdTag = await createTag(tag);
-      // console.log(`Creates ${JSON.stringify(createdTag)}`)
+      console.log(`Creates ${JSON.stringify(createdTag)}`)
     }
   } catch (error) {
     console.error("Error seeding tags:", error);

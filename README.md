@@ -85,8 +85,12 @@ Get ready to sprinkle some magic into your kitchen and unleash the culinary wiza
 - BCrypt => Encrypts sensitive passwords
 - EmailJS => Utilized for seamless form submission functionality.
 
+
 ## Design 🎨
 
+- React - Bootstrap
+- Tailwind CSS
+- Flowbite React 
 Font: Almendra
 
 ## Install Instructions 

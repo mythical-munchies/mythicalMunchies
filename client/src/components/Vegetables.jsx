@@ -1,6 +1,6 @@
 // import "./styles/Dessert.css"
-import "./styles/Veggie.css"
-import Flatbread from "./recipe images/netherworld-flatbread.jpg"
+import "../styles/Veggie.css"
+import Flatbread from "../recipe images/netherworld-flatbread.jpg"
 
 
 
