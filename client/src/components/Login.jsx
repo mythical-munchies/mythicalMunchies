@@ -1,142 +1,148 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { useState, useRef, useEffect, useContext } from "react";
-import "../styles/Login.css"
-import user from './icons/user.jpg';
+import "../styles/Login.css";
+import user from "../icons/user.jpg";
 // import Modal from 'react-bootstrap/Modal';
 // import Logo from '../icons/cauldronyellow.png'
-import Logo from '../icons/cauldronyellow.png'
+import Logo from "../icons/cauldronyellow.png";
 
 // const LOGIN_URL = '/auth';
 
 const Login = () => {
-    // const { setAuth } = useContext(AuthContext);
-    const userRef = useRef();
-    const errRef = useRef();
+  // const { setAuth } = useContext(AuthContext);
+  const userRef = useRef();
+  const errRef = useRef();
 
-    const [usernameOrEmail, setUsernameOrEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [error, setError] = useState('');
-    const [success, setSuccess] = useState(false);
+  const [usernameOrEmail, setUsernameOrEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState(false);
 
-    useEffect(() => {
-        userRef.current.focus();
-    }, [])
-    
-    useEffect(() => {
-        setError('');
-    }, [usernameOrEmail, password])
+  useEffect(() => {
+    userRef.current.focus();
+  }, []);
 
-    const loginHandler = async(ev)=> {
-        ev.preventDefault();
+  useEffect(() => {
+    setError("");
+  }, [usernameOrEmail, password]);
 
-        try {
-            const response = await axios.post(LOGIN_URL,
-                JSON.stringify({usernameOrEmail, password}),
-                {
-                    headers: {'Content-Type': 'application/json' },
-                    withCredentials: true
-                }
-                );
-                console.log(JSON.stringify(response?.data));
-                //console.log(JSON.stringify(response));
+  const loginHandler = async (ev) => {
+    ev.preventDefault();
 
-                const accessToken = response?.data?.accessToken;
-                const roles = response?.data?.roles;
-                setAuth({ usernameOrEmail, password, roles, accessToken });
-                setUsernameOrEmail('');
-                setPassword('');
-                setSuccess(true);
+    try {
+      const response = await axios.post(
+        LOGIN_URL,
+        JSON.stringify({ usernameOrEmail, password }),
+        {
+          headers: { "Content-Type": "application/json" },
+          withCredentials: true,
+        }
+      );
+      console.log(JSON.stringify(response?.data));
+      //console.log(JSON.stringify(response));
 
-            } catch (error) {
-                if (!error?.response) {
-                    setError('You Shall Not Pass');
-                } else if (error.response?.status === 400) {
-                    setError('Missing Username or Password');
-                } else if (error.response?.status === 401) {
-                    setError('You Shall Not Pass');
-                } else {
-                    setError('Login Failed');
-                }
-                errRef.current.focus();
-            }
+      const accessToken = response?.data?.accessToken;
+      const roles = response?.data?.roles;
+      setAuth({ usernameOrEmail, password, roles, accessToken });
+      setUsernameOrEmail("");
+      setPassword("");
+      setSuccess(true);
+    } catch (error) {
+      if (!error?.response) {
+        setError("You Shall Not Pass");
+      } else if (error.response?.status === 400) {
+        setError("Missing Username or Password");
+      } else if (error.response?.status === 401) {
+        setError("You Shall Not Pass");
+      } else {
+        setError("Login Failed");
+      }
+      errRef.current.focus();
+    }
+  };
 
-}
-
-return (
+  return (
     <>
-       {success ? (
+      {success ? (
         <section>
-            <h2 className="welcome" style={{color: "red", font: "Almendra"}}>Welcome to Mythical Munchies</h2>
-            <br/>
-            <p>
-                <a href="#">Go to Home</a>
-            </p>
+          <h2 className="welcome" style={{ color: "red", font: "Almendra" }}>
+            Welcome to Mythical Munchies
+          </h2>
+          <br />
+          <p>
+            <a href="#">Go to Home</a>
+          </p>
         </section>
-    ) : (
+      ) : (
         <div className="main-container">
-        <div className="small-container">
-            <p ref={errRef} className={error ? "error" : "offscreen"} aria-live="assertive">{error}</p>
-            <h3 className="cooking" style={{color: "blue", font: "Almendra"}}>Lets get to Cooking</h3>
+          <div className="small-container">
+            <p
+              ref={errRef}
+              className={error ? "error" : "offscreen"}
+              aria-live="assertive"
+            >
+              {error}
+            </p>
+            <h3 className="cooking" style={{ color: "blue", font: "Almendra" }}>
+              Lets get to Cooking
+            </h3>
             <h1>Sign In</h1>
             <form onSubmit={loginHandler} className="loginForm">
-                <div className="form">
-                  <label htmlFor="username">Username:</label>
-                  <br/>
-                        
-                      
-                        <img className="user" src= {user} alt="user"/>
-                        <label htmlFor="Email or Username">Email or Username</label>
-                        <input
-                        type= "text"
-                        id="email or username"
-                        placeholder= 'email or username'
-                        ref={userRef}
-                        autocomplete="off"
-                        value= {usernameOrEmail}
-                        onChange= {ev => setUsernameOrEmail(ev.target.value)}
-                        required
-                        />
+              <div className="form">
+                <label htmlFor="username">Username:</label>
+                <br />
 
+                <img className="user" src={user} alt="user" />
+                <label htmlFor="Email or Username">Email or Username</label>
+                <input
+                  type="text"
+                  id="email or username"
+                  placeholder="email or username"
+                  ref={userRef}
+                  autocomplete="off"
+                  value={usernameOrEmail}
+                  onChange={(ev) => setUsernameOrEmail(ev.target.value)}
+                  required
+                />
 
-                        <label htmlFor="password">Password:</label>
-                        <input 
-                        type="password"
-                        id="password"
-                        placeholder= 'password'
-                        value= {password}
-                        onChange= {ev => setPassword(ev.target.value)}
-                        required
-                        /> 
+                <label htmlFor="password">Password:</label>
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="password"
+                  value={password}
+                  onChange={(ev) => setPassword(ev.target.value)}
+                  required
+                />
 
-                        <br/><br/>
-                        <button className="button" type="submit">Login</button>
-                    </div>
-                    <br/><br/>
-                </form>
-                <p>
-                    Create Account
-                    <br />
-                    <span className="line">
-                        <a href="#">Sign Up</a>
-                    </span>
-                </p>
-            </div>
-        </div>    
-        )}
+                <br />
+                <br />
+                <button className="button" type="submit">
+                  Login
+                </button>
+              </div>
+              <br />
+              <br />
+            </form>
+            <p>
+              Create Account
+              <br />
+              <span className="line">
+                <a href="#">Sign Up</a>
+              </span>
+            </p>
+          </div>
+        </div>
+      )}
+    </>
+  );
+};
 
-        </>
-
-        );
-
-    }; 
-    
-
-    export default Login;
-
+export default Login;
 
 // {/* MODAL */}
-//     <Modal  
+//     <Modal
 //         show={show}
 //         onHide={handleClose}
 //         backdrop="static"
@@ -152,7 +158,7 @@ return (
 //                 <p id="login-text">Lets get to cooking!</p>
 //             </div>
 //         </Modal.Header>
-    
+
 // {/* MODAL BODY */}
 //         <Modal.Body>
 //             <div className="p-4 md:p-5">
@@ -179,32 +185,15 @@ return (
 //             </div>
 //         </Modal.Body>
 
-{/* MODAL FOOTER */}
-        {/* <Modal.Footer>
+{
+  /* MODAL FOOTER */
+}
+{
+  /* <Modal.Footer>
             <button onClick={handleClose} type="submit" className="text-white inline-flex items-center bg-red-900 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Close</button>
         </Modal.Footer>
     </Modal>
     </>
     );
-}; */}
-
-
-
-
-
-
-  
-
-  
-   
-
-
-
-
-        
-      
-    
- 
-                         
- 
-    
+}; */
+}
