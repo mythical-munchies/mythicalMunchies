@@ -1,5 +1,9 @@
 const recipe_tags = [
   {
+    recipe_name: "Pink Cake",
+    description: "Dessert",
+  },
+  {
     recipe_name: "Hot Honey Milk",
     description: "Drink",
   },
@@ -103,6 +107,18 @@ const recipe_tags = [
   {
     recipe_name: "Elven Honeyed Chicken",
     description: "Entrée",
+  },
+  {
+    recipe_name: "Soylent Green Smoothie",
+    description: "Drink",
+  },
+  {
+    recipe_name: "Polyjuice Potion Punch",
+    description: "Drink",
+  },
+  {
+    recipe_name: "Pumpkin Pasties",
+    description: "Snack",
   },
 
   // {

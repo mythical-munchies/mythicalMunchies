@@ -3,7 +3,7 @@ const recipes = [
     name: "Pink Cake",
     description:
       "Pink Cake may sound basic, but this dainty dessert hides a secret ingredient: melon! In STARDEW VALLEY, Pink Cake is a favorite of several villagers. The in-game thumbnail shows a cute pink tube cake topped with red heart sprinkles. The ingredients are listed as flour, sugar, egg, and pink melon (a fruit unique to the game, which looks like a pink cantaloupe).",
-    cook_time: "1 Hour 30 Min",
+    cook_time: "1 Hour",
     world_name: "Stardew Valley",
     img_url: "https://images.app.goo.gl/VL92W4BGeApxVZZ39",
   },
@@ -263,6 +263,32 @@ const recipes = [
     world_name: "Forgotten Realms",
     img_url:
       "https://i.pinimg.com/736x/da/1b/95/da1b9548a944d02b53a017b9018da15f.jpg",
+  },
+  {
+    name: "Soylent Green Smoothie",
+    description:
+      "A nutritious and sustainable smoothie inspired by the concept of Soylent Green.",
+    cook_time: "10 minutes",
+    world_name: "Make Room!",
+    img_url:
+      "https://cdn.loveandlemons.com/wp-content/uploads/2022/12/green-smoothie-recipes.jpg",
+  },
+  {
+    name: "Polyjuice Potion Punch",
+    description:
+      "A bewitching potion-inspired punch, perfect for wizarding gatherings in the Harry Potter universe.",
+    cook_time: "15 minutes",
+    world_name: "Wizarding World",
+    img_url:
+      "https://zenandhoney.com/wp-content/uploads/2023/08/harry-potter-polyjuice-potion-500x500.jpg",
+  },
+  {
+    name: "Pumpkin Pasties",
+    description:
+      "Delicious hand pies filled with spiced pumpkin filling, a favorite treat among Hogwarts students.",
+    cook_time: "45 minutes",
+    world_name: "Wizarding World",
+    img_url: "https://siftrva.com/wp-content/uploads/2023/09/IMG_0679.jpg",
   },
 
   // {

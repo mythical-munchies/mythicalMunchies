@@ -907,6 +907,160 @@ const instructions = [
       "Serve hot, garnished with fresh thyme and rosemary sprigs. Enjoy the delightful flavors of Elven Honeyed Chicken!",
     index: "5",
   },
+  {
+    recipe_name: "Pink Cake",
+    description:
+      "Preheat the oven to 350°F (175°C). Grease and flour a cake pan.",
+    index: "0",
+  },
+  {
+    recipe_name: "Pink Cake",
+    description:
+      "In a medium bowl, sift together all-purpose flour, baking powder, and baking soda.",
+    index: "1",
+  },
+  {
+    recipe_name: "Pink Cake",
+    description:
+      "In a separate bowl, cream together unsalted butter and granulated sugar until light and fluffy.",
+    index: "2",
+  },
+  {
+    recipe_name: "Pink Cake",
+    description:
+      "Beat in vanilla extract and eggs, one at a time, until well combined.",
+    index: "3",
+  },
+  {
+    recipe_name: "Pink Cake",
+    description:
+      "Alternate adding the dry ingredients, buttermilk, and melon puree to the butter mixture, beginning and ending with the dry ingredients.",
+    index: "4",
+  },
+  {
+    recipe_name: "Pink Cake",
+    description:
+      "Add pink food coloring to achieve desired shade of pink, mixing until evenly distributed.",
+    index: "5",
+  },
+  {
+    recipe_name: "Pink Cake",
+    description:
+      "Pour the batter into the prepared cake pan and smooth the top with a spatula.",
+    index: "6",
+  },
+  {
+    recipe_name: "Pink Cake",
+    description:
+      "Bake in the preheated oven for 25-30 minutes, or until a toothpick inserted into the center comes out clean.",
+    index: "7",
+  },
+  {
+    recipe_name: "Pink Cake",
+    description:
+      "Allow the cake to cool in the pan for 10 minutes before transferring to a wire rack to cool completely.",
+    index: "8",
+  },
+  {
+    recipe_name: "Pink Cake",
+    description:
+      "Once cooled, top with whipped cream and sprinkle with colorful sprinkles. Slice and serve.",
+    index: "9",
+  },
+  {
+    recipe_name: "Soylent Green Smoothie",
+    description:
+      "In a blender, combine spinach, kale, soy milk, banana, apple, chia seeds, hemp seeds, and ice cubes.",
+    index: "0",
+  },
+  {
+    recipe_name: "Soylent Green Smoothie",
+    description: "Blend until smooth and creamy.",
+    index: "1",
+  },
+  {
+    recipe_name: "Soylent Green Smoothie",
+    description:
+      "Pour into glasses and serve immediately. Enjoy your nutritious and sustainable Soylent Green Smoothie!",
+    index: "2",
+  },
+  {
+    recipe_name: "Polyjuice Potion Punch",
+    description:
+      "In a large punch bowl, combine chilled green tea, apple juice, lemon-lime soda, and ginger ale.",
+    index: "0",
+  },
+  {
+    recipe_name: "Polyjuice Potion Punch",
+    description:
+      "Add a few drops of blue food coloring to give the punch a magical hue. Stir gently to combine.",
+    index: "1",
+  },
+  {
+    recipe_name: "Polyjuice Potion Punch",
+    description: "Add ice cubes to keep the punch cold.",
+    index: "2",
+  },
+  {
+    recipe_name: "Polyjuice Potion Punch",
+    description: "Garnish with sliced lime for an extra touch of magic.",
+    index: "3",
+  },
+  {
+    recipe_name: "Polyjuice Potion Punch",
+    description:
+      "Serve in glasses and enjoy the enchanting taste of Polyjuice Potion Punch!",
+    index: "4",
+  },
+
+  {
+    recipe_name: "Pumpkin Pasties",
+    description:
+      "Preheat the oven to 375°F (190°C). Line a baking sheet with parchment paper.",
+    index: "0",
+  },
+  {
+    recipe_name: "Pumpkin Pasties",
+    description:
+      "In a bowl, mix together pumpkin puree, brown sugar, cinnamon, nutmeg, cloves, and ginger until well combined.",
+    index: "1",
+  },
+  {
+    recipe_name: "Pumpkin Pasties",
+    description:
+      "Roll out the pie crust dough on a lightly floured surface. Using a round cutter, cut out circles of dough.",
+    index: "2",
+  },
+  {
+    recipe_name: "Pumpkin Pasties",
+    description:
+      "Place a spoonful of pumpkin filling onto one half of each dough circle. Fold the other half over to create a half-moon shape. Press the edges firmly to seal.",
+    index: "3",
+  },
+  {
+    recipe_name: "Pumpkin Pasties",
+    description:
+      "Transfer the pasties to the prepared baking sheet. Brush each pasty with beaten egg for a golden finish.",
+    index: "4",
+  },
+  {
+    recipe_name: "Pumpkin Pasties",
+    description:
+      "Using a sharp knife, make small slits on the top of each pasty to allow steam to escape. Sprinkle with granulated sugar.",
+    index: "5",
+  },
+  {
+    recipe_name: "Pumpkin Pasties",
+    description:
+      "Bake in the preheated oven for 20-25 minutes, or until golden brown.",
+    index: "6",
+  },
+  {
+    recipe_name: "Pumpkin Pasties",
+    description:
+      "Allow to cool slightly before serving. Enjoy these delicious Pumpkin Pasties, a delightful treat straight from the wizarding world!",
+    index: "7",
+  },
 
   // {
   //   recipe_name:"",
