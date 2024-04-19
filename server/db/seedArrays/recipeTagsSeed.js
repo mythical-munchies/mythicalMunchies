@@ -15,6 +15,25 @@ const recipe_tags = [
     recipe_name: "Harry Potter Butterbeer",
     description: "Drink",
    }
+     {
+    recipe_name: "Lembas Bread",
+    description: "Snack"
+  },
+    {
+    recipe_name: "Arya's Direwolf Bread",
+    description: "Snack"
+  }
+
+
+
+
+
+
+
+
+
+
+  
   // {
   //   "recipe_name":"",
   //   "description":""

@@ -68,6 +68,15 @@ const recipes = [
     img_url:
       "https://abeautifulmess.com/wp-content/uploads/2023/10/Harry-Potter-Butterbeer.jpg",
   },
+  {
+    name: "Lembas Bread",
+    description:
+      "Nourishing Elven waybread known for its dense texture and sustaining properties. A single bite can fill the stomach of a grown man.",
+    cook_time: "45 Min",
+    world_name: "The Lord of the Rings",
+    img_url:
+      "https://i.pinimg.com/736x/4f/3e/d2/4f3ed234f3bbb2a77ce3b2b9c8570de6.jpg",
+  },
 
   // {
   //   "name": "",

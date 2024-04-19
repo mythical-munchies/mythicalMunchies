@@ -81,6 +81,17 @@ const ingredients = [
   { name: "Cream Soda", description: "" },
   { name: "Heavy Cream", description: "" },
   { name: "Butter", description: "" },
+  { name: "All-purpose flour", description: "" },
+  { name: "Baking powder", description: "" },
+  { name: "Salt", description: "" },
+  { name: "Butter", description: "" },
+  { name: "Honey", description: "" },
+  { name: "Vanilla extract", description: "" },
+  { name: "All-purpose flour", description: "" },
+  { name: "Active dry yeast", description: "" },
+  { name: "Sugar", description: "" },
+  { name: "Salt", description: "" },
+  { name: "Warm water", description: "" },
 
   // {"name":"",
   // "description":""

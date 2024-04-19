@@ -179,70 +179,119 @@ const recipe_ingredients = [
     amount: "1",
     unit: "Splash",
   },
-    {
-      recipe_name: "Harry Potter Butterbeer",
-      ingredient_name: "Brown Sugar",
-      amount: "1",
-      unit: "Cup",
-    },
-    {
-      recipe_name: "Harry Potter Butterbeer",
-      ingredient_name: "Water",
-      amount: "2",
-      unit: "tablespoons",
-    },
-    {
-      recipe_name: "Harry Potter Butterbeer",
-      ingredient_name: "Salt",
-      amount: "1/2",
-      unit: "teaspoon",
-    },
-    {
-      recipe_name: "Harry Potter Butterbeer",
-      ingredient_name: "Apple Cider Vinegar",
-      amount: "1/2",
-      unit: "teaspoon",
-    },
-    {
-      recipe_name: "Harry Potter Butterbeer",
-      ingredient_name: "Vanilla Extract",
-      amount: "1/2",
-      unit: "teaspoon",
-    },
-    {
-      recipe_name: "Harry Potter Butterbeer",
-      ingredient_name: "Cream Soda",
-      amount: "4",
-      unit: "cups",
-    },
-    {
-      recipe_name: "Harry Potter Butterbeer",
-      ingredient_name: "Heavy Cream",
-      amount: "1",
-      unit: "cup",
-    },
-    {
-      recipe_name: "Harry Potter Butterbeer",
-      ingredient_name: "Butter",
-      amount: "1/4",
-      unit: "cup",
-    },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-  ]
-module.exports = {recipe_ingredients}
+  {
+    recipe_name: "Harry Potter Butterbeer",
+    ingredient_name: "Brown Sugar",
+    amount: "1",
+    unit: "Cup",
+  },
+  {
+    recipe_name: "Harry Potter Butterbeer",
+    ingredient_name: "Water",
+    amount: "2",
+    unit: "tablespoons",
+  },
+  {
+    recipe_name: "Harry Potter Butterbeer",
+    ingredient_name: "Salt",
+    amount: "1/2",
+    unit: "teaspoon",
+  },
+  {
+    recipe_name: "Harry Potter Butterbeer",
+    ingredient_name: "Apple Cider Vinegar",
+    amount: "1/2",
+    unit: "teaspoon",
+  },
+  {
+    recipe_name: "Harry Potter Butterbeer",
+    ingredient_name: "Vanilla Extract",
+    amount: "1/2",
+    unit: "teaspoon",
+  },
+  {
+    recipe_name: "Harry Potter Butterbeer",
+    ingredient_name: "Cream Soda",
+    amount: "4",
+    unit: "cups",
+  },
+  {
+    recipe_name: "Harry Potter Butterbeer",
+    ingredient_name: "Heavy Cream",
+    amount: "1",
+    unit: "cup",
+  },
+  {
+    recipe_name: "Harry Potter Butterbeer",
+    ingredient_name: "Butter",
+    amount: "1/4",
+    unit: "cup",
+  },
+  {
+    recipe_name: "Lembas Bread",
+    ingredient_name: "All-purpose flour",
+    amount: "3",
+    unit: "cups",
+  },
+  {
+    recipe_name: "Lembas Bread",
+    ingredient_name: "Baking powder",
+    amount: "1",
+    unit: "tablespoon",
+  },
+  {
+    recipe_name: "Lembas Bread",
+    ingredient_name: "Salt",
+    amount: "1/2",
+    unit: "teaspoon",
+  },
+  {
+    recipe_name: "Lembas Bread",
+    ingredient_name: "Butter",
+    amount: "1",
+    unit: "cup",
+  },
+  {
+    recipe_name: "Lembas Bread",
+    ingredient_name: "Honey",
+    amount: "1",
+    unit: "cup",
+  },
+  {
+    recipe_name: "Lembas Bread",
+    ingredient_name: "Vanilla extract",
+    amount: "1",
+    unit: "teaspoon",
+  },
+  {
+    recipe_name: "Arya's Direwolf Bread",
+    ingredient_name: "All-purpose flour",
+    amount: "3",
+    unit: "cups",
+  },
+  {
+    recipe_name: "Arya's Direwolf Bread",
+    ingredient_name: "Active dry yeast",
+    amount: "2 1/4",
+    unit: "teaspoons",
+  },
+  {
+    recipe_name: "Arya's Direwolf Bread",
+    ingredient_name: "Sugar",
+    amount: "1",
+    unit: "tablespoon",
+  },
+  {
+    recipe_name: "Arya's Direwolf Bread",
+    ingredient_name: "Salt",
+    amount: "1",
+    unit: "teaspoon",
+  },
+  {
+    recipe_name: "Arya's Direwolf Bread",
+    ingredient_name: "Warm water",
+    amount: "1 1/4",
+    unit: "cups",
+  },
+];
+module.exports = { recipe_ingredients };

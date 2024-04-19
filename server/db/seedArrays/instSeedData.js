@@ -124,43 +124,110 @@ const instructions = [
       "Combine with slices of bread and cheese on a plate and enjoy!",
     index: "2",
   },
-    {
-      recipe_name: "Harry Potter Butterbeer",
-      description:
-        "In a small saucepan over medium heat, combine brown sugar and water. Bring to a gentle boil and cook, stirring constantly, until the mixture reaches a syrup-like consistency, about 7-8 minutes.",
-      index: "0",
-    },
-    {
-      recipe_name: "Harry Potter Butterbeer",
-      description:
-        "Remove from heat and stir in salt, apple cider vinegar, and vanilla extract.",
-      index: "1",
-    },
-    {
-      recipe_name: "Harry Potter Butterbeer",
-      description:
-        "In a large mixing bowl, combine the cream soda and the prepared brown sugar syrup. Stir until well combined.",
-      index: "2",
-    },
-    {
-      recipe_name: "Harry Potter Butterbeer",
-      description:
-        "In a separate bowl, whip the heavy cream until stiff peaks form.",
-      index: "3",
-    },
-    {
-      recipe_name: "Harry Potter Butterbeer",
-      description:
-        "To serve, pour the butterbeer mixture into mugs or glasses, top with a dollop of whipped cream, and a small pat of softened butter.",
-      index: "4",
-    },
-    {
-      recipe_name: "Harry Potter Butterbeer",
-      description:
-        "Optionally, you can sprinkle a pinch of cinnamon or nutmeg on top for extra flavor.",
-      index: "5",
-    },
-  
+  {
+    recipe_name: "Harry Potter Butterbeer",
+    description:
+      "In a small saucepan over medium heat, combine brown sugar and water. Bring to a gentle boil and cook, stirring constantly, until the mixture reaches a syrup-like consistency, about 7-8 minutes.",
+    index: "0",
+  },
+  {
+    recipe_name: "Harry Potter Butterbeer",
+    description:
+      "Remove from heat and stir in salt, apple cider vinegar, and vanilla extract.",
+    index: "1",
+  },
+  {
+    recipe_name: "Harry Potter Butterbeer",
+    description:
+      "In a large mixing bowl, combine the cream soda and the prepared brown sugar syrup. Stir until well combined.",
+    index: "2",
+  },
+  {
+    recipe_name: "Harry Potter Butterbeer",
+    description:
+      "In a separate bowl, whip the heavy cream until stiff peaks form.",
+    index: "3",
+  },
+  {
+    recipe_name: "Harry Potter Butterbeer",
+    description:
+      "To serve, pour the butterbeer mixture into mugs or glasses, top with a dollop of whipped cream, and a small pat of softened butter.",
+    index: "4",
+  },
+  {
+    recipe_name: "Harry Potter Butterbeer",
+    description:
+      "Optionally, you can sprinkle a pinch of cinnamon or nutmeg on top for extra flavor.",
+    index: "5",
+  },
+  {
+    recipe_name: "Lembas Bread",
+    description:
+      "Preheat oven to 350°F (175°C). Grease and flour a 9x13-inch baking dish.",
+    index: "0",
+  },
+  {
+    recipe_name: "Lembas Bread",
+    description:
+      "In a large bowl, mix together the all-purpose flour, baking powder, and salt.",
+    index: "1",
+  },
+  {
+    recipe_name: "Lembas Bread",
+    description: "Cut in the butter until the mixture resembles coarse crumbs.",
+    index: "2",
+  },
+  {
+    recipe_name: "Lembas Bread",
+    description: "Stir in the honey and vanilla extract until well combined.",
+    index: "3",
+  },
+  {
+    recipe_name: "Lembas Bread",
+    description: "Press the mixture evenly into the prepared baking dish.",
+    index: "4",
+  },
+  {
+    recipe_name: "Lembas Bread",
+    description:
+      "Bake in the preheated oven for 25-30 minutes, or until golden brown.",
+    index: "5",
+  },
+  {
+    recipe_name: "Lembas Bread",
+    description: "Allow to cool completely before cutting into squares.",
+    index: "6",
+  },
+  {
+    recipe_name: "Arya's Direwolf Bread",
+    description:
+      "In a large mixing bowl, dissolve the sugar in warm water, then stir in the yeast. Let it sit for about 5 minutes until the mixture becomes frothy.",
+    index: "0",
+  },
+  {
+    recipe_name: "Arya's Direwolf Bread",
+    description:
+      "Add the salt and 2 cups of flour to the yeast mixture. Stir until well combined.",
+    index: "1",
+  },
+  {
+    recipe_name: "Arya's Direwolf Bread",
+    description:
+      "Gradually add the remaining flour, 1/2 cup at a time, until the dough forms a soft ball.",
+    index: "2",
+  },
+  {
+    recipe_name: "Arya's Direwolf Bread",
+    description:
+      "Knead the dough on a lightly floured surface for about 6-8 minutes, or until it becomes smooth and elastic.",
+    index: "3",
+  },
+  {
+    recipe_name: "Arya's Direwolf Bread",
+    description:
+      "Place the dough in a greased bowl, cover with a clean kitchen towel, and let it rise in a warm place for about 1 hour, or until doubled in size.",
+    index: "4",
+  },
 
   // {
   //   recipe_name:"",
