@@ -84,6 +84,10 @@ const recipe_tags = [
     recipe_name: "Spice Melange",
     description: "Seasoning",
   },
+  {
+    recipe_name: "Arrakeen Spice Tea",
+    description: "Drink",
+  },
 
   // {
   //   "recipe_name":"",

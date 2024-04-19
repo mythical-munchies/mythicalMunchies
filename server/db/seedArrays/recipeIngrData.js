@@ -888,5 +888,53 @@ const recipe_ingredients = [
     amount: "1/4",
     unit: "teaspoon",
   },
+  {
+    recipe_name: "Arrakeen Spice Tea",
+    ingredient_name: "Black tea leaves",
+    amount: "2",
+    unit: "teaspoons",
+  },
+  {
+    recipe_name: "Arrakeen Spice Tea",
+    ingredient_name: "Cinnamon stick",
+    amount: "1",
+    unit: "",
+  },
+  {
+    recipe_name: "Arrakeen Spice Tea",
+    ingredient_name: "Cloves",
+    amount: "2",
+    unit: "",
+  },
+  {
+    recipe_name: "Arrakeen Spice Tea",
+    ingredient_name: "Cardamom pods",
+    amount: "2",
+    unit: "",
+  },
+  {
+    recipe_name: "Arrakeen Spice Tea",
+    ingredient_name: "Ginger",
+    amount: "1",
+    unit: "inch piece",
+  },
+  {
+    recipe_name: "Arrakeen Spice Tea",
+    ingredient_name: "Honey",
+    amount: "To taste",
+    unit: "",
+  },
+  {
+    recipe_name: "Arrakeen Spice Tea",
+    ingredient_name: "Water",
+    amount: "2",
+    unit: "cups",
+  },
+  {
+    recipe_name: "Arrakeen Spice Tea",
+    ingredient_name: "Milk",
+    amount: "1/4",
+    unit: "cup",
+  },
 ];
 module.exports = { recipe_ingredients };

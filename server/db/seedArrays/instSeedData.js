@@ -750,6 +750,39 @@ const instructions = [
     description: "Use as desired to add flavor and depth to your dishes.",
     index: "3",
   },
+  {
+    recipe_name: "Arrakeen Spice Tea",
+    description: "In a saucepan, bring water to a boil.",
+    index: "0",
+  },
+  {
+    recipe_name: "Arrakeen Spice Tea",
+    description:
+      "Add black tea leaves, cinnamon stick, cloves, cardamom pods, and sliced ginger to the boiling water.",
+    index: "1",
+  },
+  {
+    recipe_name: "Arrakeen Spice Tea",
+    description: "Reduce heat and simmer for 5 minutes.",
+    index: "2",
+  },
+  {
+    recipe_name: "Arrakeen Spice Tea",
+    description: "Strain the tea into cups, discarding the spices.",
+    index: "3",
+  },
+  {
+    recipe_name: "Arrakeen Spice Tea",
+    description:
+      "Stir in honey to taste, and add milk for creaminess if desired.",
+    index: "4",
+  },
+  {
+    recipe_name: "Arrakeen Spice Tea",
+    description:
+      "Serve hot and enjoy the exotic flavors of Arrakeen Spice Tea!",
+    index: "5",
+  },
 
   // {
   //   recipe_name:"",

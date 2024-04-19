@@ -229,6 +229,15 @@ const recipes = [
     img_url:
       "https://i0.wp.com/www.innatthecrossroads.com/wp-content/uploads/2020/09/DSC00805-1.png?fit=797%2C1200&ssl=1",
   },
+  {
+    name: "Arrakeen Spice Tea",
+    description:
+      "A fragrant and exotic tea brewed with spices from the planet Arrakis in 'Dune'.",
+    cook_time: "10 minutes",
+    world_name: "Arrakis",
+    img_url:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpnvx-UMs60vVwJ-cnztji_FJsKcyLokKef5cUWv6ajQ&s",
+  },
 
   // {
   //   "name": "",

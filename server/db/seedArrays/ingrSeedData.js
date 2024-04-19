@@ -192,7 +192,14 @@ const ingredients = [
   { name: "Cardamom", description: "Ground" },
   { name: "Cloves", description: "Ground" },
   { name: "Ginger", description: "Ground" },
-
+  { name: "Black tea leaves", description: "" },
+  { name: "Cinnamon stick", description: "" },
+  { name: "Cloves", description: "" },
+  { name: "Cardamom pods", description: "" },
+  { name: "Ginger", description: "Fresh, sliced" },
+  { name: "Honey", description: "Optional, for sweetness" },
+  { name: "Water", description: "" },
+  { name: "Milk", description: "Optional, for creaminess" },
 
   // {"name":"",
   // "description":""
