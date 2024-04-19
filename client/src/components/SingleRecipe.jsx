@@ -30,7 +30,6 @@ function SingleRecipe() {
   // }
   // console.log(favorites)
 
-
   return (
   <>
     <div className="single-container">
@@ -38,7 +37,39 @@ function SingleRecipe() {
         <Link to="/single-world" className="back-button-recipe">Back</Link>
 
         {/* this is where the return should start */}
-    
+        {/* {recipes.map((recipe) => {
+          return (
+            <h2 className="title">{world.name}</h2>
+            <Box className="boxes" sx={{ flexGrow: 1 }}>
+          )   <Grid container spacing={2}>
+                <Grid className='box-1'item xs={6} >
+                  <div className='intro'>
+                  <button className="bookmarky">Add to Bookmarks 📕</button>
+                    <h4 className='recipe-name'>Recipe.name </h4>
+                      <img  className='pic' src={Ramen} alt="pic" />
+                        <LeaveReview />
+                  </div>
+                </Grid>
+
+                <Grid id="ingredients-list" item xs={6} >
+                  <div className="ingredients-post">
+                    <h4 className="ingredients-title">Ingredients:</h4>
+                      <ul className="ingredient-list">
+                        <li className='ingredient-item'>map over ingredients array</li>
+                      </ul>
+                  </div>
+                </Grid>
+
+                 <Grid id="intstructions" item xs={12} >
+                <div className="instructions">
+                  <h2 className='cooking-title'>Cooking Instructions:</h2>
+                    <ol>
+                      <li>recipe.instructions</li>
+                      <br />
+                    </ol>
+                </div>  
+              </Grid>
+        })} */}
 
           <h2 className="title"> World.name</h2>
           <Box className="boxes" sx={{ flexGrow: 1 }}>
