@@ -194,6 +194,24 @@ const recipes = [
     img_url:
       "https://upload.wikimedia.org/wikipedia/commons/0/04/Jawbreaker_plate.jpg",
   },
+  {
+    name: "Krabby Patty",
+    description:
+      "The iconic burger from the Krusty Krab, as featured in 'SpongeBob SquarePants'.",
+    cook_time: "20 minutes",
+    world_name: "Bikini Bottom",
+    img_url:
+      "https://static.wikia.nocookie.net/garpedia/images/f/fa/Krabby_Patty.jpg/revision/latest?cb=20190219175518",
+  },
+  {
+    name: "Sandy's Texas Corn Ribs",
+    description:
+      "A spicy and flavorful dish inspired by Sandy Cheeks in 'SpongeBob SquarePants'.",
+    cook_time: "30 minutes",
+    world_name: "Bikini Bottom",
+    img_url:
+      "https://www.recipetineats.com/wp-content/uploads/2023/06/Corn-ribs_7.jpg",
+  },
 
   // {
   //   "name": "",

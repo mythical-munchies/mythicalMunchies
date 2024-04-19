@@ -643,6 +643,73 @@ const instructions = [
       "Enjoy the magical and everlasting taste of Wonka's Gobstoppers!",
     index: "5",
   },
+  {
+    recipe_name: "Krabby Patty",
+    description:
+      "Divide ground beef into two equal portions and shape them into patties.",
+    index: "0",
+  },
+  {
+    recipe_name: "Krabby Patty",
+    description:
+      "Preheat a grill or skillet over medium heat. Cook the patties for about 4-5 minutes on each side, or until cooked to your desired doneness.",
+    index: "1",
+  },
+  {
+    recipe_name: "Krabby Patty",
+    description:
+      "Toast the hamburger buns lightly on the grill or in a toaster.",
+    index: "2",
+  },
+  {
+    recipe_name: "Krabby Patty",
+    description:
+      "Assemble the Krabby Patty: place lettuce, tomato slices, cheese, pickles, and sliced onion on the bottom bun. Top with a cooked beef patty.",
+    index: "3",
+  },
+  {
+    recipe_name: "Krabby Patty",
+    description:
+      "Spread ketchup and mustard on the top bun, then place it on top of the assembled burger.",
+    index: "4",
+  },
+  {
+    recipe_name: "Krabby Patty",
+    description: "Serve hot and enjoy the deliciousness of the Krabby Patty!",
+    index: "5",
+  },
+  {
+    recipe_name: "Sandy's Texas Corn Ribs",
+    description: "Preheat grill to medium-high heat.",
+    index: "0",
+  },
+  {
+    recipe_name: "Sandy's Texas Corn Ribs",
+    description:
+      "In a small bowl, mix melted butter, barbecue sauce, chili powder, garlic powder, salt, and pepper.",
+    index: "1",
+  },
+  {
+    recipe_name: "Sandy's Texas Corn Ribs",
+    description: "Brush the corn on the cob generously with the sauce mixture.",
+    index: "2",
+  },
+  {
+    recipe_name: "Sandy's Texas Corn Ribs",
+    description:
+      "Place the corn on the grill and cook for about 10-15 minutes, turning occasionally, until tender and lightly charred.",
+    index: "3",
+  },
+  {
+    recipe_name: "Sandy's Texas Corn Ribs",
+    description: "Remove from grill and sprinkle with fresh chopped cilantro.",
+    index: "4",
+  },
+  {
+    recipe_name: "Sandy's Texas Corn Ribs",
+    description: "Serve hot and enjoy Sandy's Texas Corn Ribs!",
+    index: "5",
+  },
 
   // {
   //   recipe_name:"",

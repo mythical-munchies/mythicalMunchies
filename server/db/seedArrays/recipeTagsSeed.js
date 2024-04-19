@@ -68,6 +68,14 @@ const recipe_tags = [
     recipe_name: "Wonka's Everlasting Gobstoppers",
     description: "Dessert",
   },
+  {
+    recipe_name: "Krabby Patty",
+    description: "Burger",
+  },
+  {
+    recipe_name: "Sandy's Texas Corn Ribs",
+    description: "Appetizer",
+  },
 
   // {
   //   "recipe_name":"",
