@@ -936,5 +936,84 @@ const recipe_ingredients = [
     amount: "1/4",
     unit: "cup",
   },
+  {
+    recipe_name: "Fremen Spice Rice",
+    ingredient_name: "Basmati rice",
+    amount: "1",
+    unit: "cup",
+  },
+  {
+    recipe_name: "Fremen Spice Rice",
+    ingredient_name: "Onion",
+    amount: "1",
+    unit: "medium",
+  },
+  {
+    recipe_name: "Fremen Spice Rice",
+    ingredient_name: "Garlic",
+    amount: "2",
+    unit: "cloves",
+  },
+  {
+    recipe_name: "Fremen Spice Rice",
+    ingredient_name: "Bell pepper",
+    amount: "1",
+    unit: "",
+  },
+  {
+    recipe_name: "Fremen Spice Rice",
+    ingredient_name: "Tomatoes",
+    amount: "2",
+    unit: "medium",
+  },
+  {
+    recipe_name: "Fremen Spice Rice",
+    ingredient_name: "Cumin seeds",
+    amount: "1",
+    unit: "teaspoon",
+  },
+  {
+    recipe_name: "Fremen Spice Rice",
+    ingredient_name: "Coriander seeds",
+    amount: "1",
+    unit: "teaspoon",
+  },
+  {
+    recipe_name: "Fremen Spice Rice",
+    ingredient_name: "Turmeric",
+    amount: "1/2",
+    unit: "teaspoon",
+  },
+  {
+    recipe_name: "Fremen Spice Rice",
+    ingredient_name: "Cayenne pepper",
+    amount: "1/4",
+    unit: "teaspoon",
+  },
+  {
+    recipe_name: "Fremen Spice Rice",
+    ingredient_name: "Salt",
+    amount: "To taste",
+    unit: "",
+  },
+  {
+    recipe_name: "Fremen Spice Rice",
+    ingredient_name: "Vegetable broth",
+    amount: "1",
+    unit: "cup",
+  },
+  {
+    recipe_name: "Fremen Spice Rice",
+    ingredient_name: "Water",
+    amount: "1",
+    unit: "cup",
+  },
+  {
+    recipe_name: "Fremen Spice Rice",
+    ingredient_name: "Fresh cilantro",
+    amount: "For garnish",
+    unit: "",
+  },
+  
 ];
 module.exports = { recipe_ingredients };

@@ -783,6 +783,54 @@ const instructions = [
       "Serve hot and enjoy the exotic flavors of Arrakeen Spice Tea!",
     index: "5",
   },
+  {
+    recipe_name: "Fremen Spice Rice",
+    description:
+      "Rinse the basmati rice under cold water until the water runs clear. Drain well.",
+    index: "0",
+  },
+  {
+    recipe_name: "Fremen Spice Rice",
+    description:
+      "Heat a tablespoon of olive oil in a large saucepan over medium heat.",
+    index: "1",
+  },
+  {
+    recipe_name: "Fremen Spice Rice",
+    description:
+      "Add chopped onion and minced garlic to the saucepan. Cook until softened and fragrant.",
+    index: "2",
+  },
+  {
+    recipe_name: "Fremen Spice Rice",
+    description:
+      "Add chopped bell pepper, diced tomatoes, cumin seeds, coriander seeds, ground turmeric, and cayenne pepper to the saucepan. Cook for 2-3 minutes, stirring occasionally.",
+    index: "3",
+  },
+  {
+    recipe_name: "Fremen Spice Rice",
+    description:
+      "Add the rinsed basmati rice to the saucepan. Stir to coat the rice with the spices and vegetables.",
+    index: "4",
+  },
+  {
+    recipe_name: "Fremen Spice Rice",
+    description:
+      "Pour in vegetable broth and water. Season with salt to taste.",
+    index: "5",
+  },
+  {
+    recipe_name: "Fremen Spice Rice",
+    description:
+      "Bring the mixture to a boil, then reduce heat to low. Cover and simmer for 15-20 minutes, or until the rice is cooked and the liquid is absorbed.",
+    index: "6",
+  },
+  {
+    recipe_name: "Fremen Spice Rice",
+    description:
+      "Fluff the rice with a fork and garnish with fresh chopped cilantro before serving.",
+    index: "7",
+  },
 
   // {
   //   recipe_name:"",

@@ -234,9 +234,17 @@ const recipes = [
     description:
       "A fragrant and exotic tea brewed with spices from the planet Arrakis in 'Dune'.",
     cook_time: "10 minutes",
-    world_name: "Arrakis",
+    world_name: "Dune",
     img_url:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpnvx-UMs60vVwJ-cnztji_FJsKcyLokKef5cUWv6ajQ&s",
+  },
+  {
+    name: "Fremen Spice Rice",
+    description:
+      "A fragrant and flavorful rice dish inspired by the Fremen people of the planet Arrakis in 'Dune'.",
+    cook_time: "25 minutes",
+    world_name: "Dune",
+    img_url: "https://www.africanbites.com/wp-content/uploads/2021/08/1-3.jpg",
   },
 
   // {

@@ -88,6 +88,10 @@ const recipe_tags = [
     recipe_name: "Arrakeen Spice Tea",
     description: "Drink",
   },
+  {
+    recipe_name: "Fremen Spice Rice",
+    description: "Side Dish",
+  },
 
   // {
   //   "recipe_name":"",
