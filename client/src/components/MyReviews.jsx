@@ -1,5 +1,5 @@
 import { mockReviews } from "../ReviewData";
-import "./styles/Reviews.css"
+import "../styles/Reviews.css"
 import DeleteReview from "./DeleteReview";
 import Login from "./Login"
 import SignUp from "./SignUp";

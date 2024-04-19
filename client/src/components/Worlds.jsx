@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "./styles/Worlds.css";
+import "../styles/Worlds.css";
+// import "../index.css"
 import WorldDropDown from "./WorldDropdown";
-
 
 const Worlds = ({ worldsArray }) => {
   const [showDropdown, setShowDropdown] = useState(false);

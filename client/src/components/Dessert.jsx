@@ -1,5 +1,5 @@
-import "./styles/Dessert.css"
-import PinkCakee from "./recipe images/pinkCakee.jpg"
+import "../styles/Dessert.css"
+import PinkCakee from "../recipe images/pinkCakee.jpg"
 
 function Dessert() {
   return(

@@ -5,7 +5,7 @@ Toggle modal
 import { useState } from "react";
 import Modal from 'react-bootstrap/Modal';
 import { mockReviews } from "../ReviewData";
-import DogFrog from "./images/dog-frog.jpg";
+import DogFrog from "../images/dog-frog.jpg";
 
 function DeleteReview(){
   const [show, setShow] = useState(false);

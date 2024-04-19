@@ -1,7 +1,7 @@
-import "./styles/Veggie.css"
+import "../styles/Veggie.css"
 
 
-import Drank from "./recipe images/beetlejuiceMarg.jpg"
+import Drank from "../recipe images/beetlejuiceMarg.jpg"
 
 
 function BottomsUp() {

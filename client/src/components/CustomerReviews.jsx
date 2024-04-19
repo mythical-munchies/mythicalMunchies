@@ -1,5 +1,5 @@
-import Profile from './icons/profile.png'
-import "./styles/CustomerReview.css"
+import Profile from '../icons/profile.png'
+import "../styles/CustomerReview.css"
 
 function CustomerReviews() {
   return(

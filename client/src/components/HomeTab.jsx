@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import "./styles/HomeTab.css";
-import Fav from "./images/butterbeer.jpg";
-import PeachBun from "./images/peachBuns.png";
-import BFG from "./images/bfg.png";
-import HarryDog from "./images/harryDog.png";
-import Veggies from "./images/veggies.jpg";
-import Drinks from "./images/drinks.jpg";
+import "../styles/HomeTab.css";
+import Fav from "../images/butterbeer.jpg";
+import PeachBun from "../images/peachBuns.png";
+import BFG from "../images/bfg.png";
+import HarryDog from "../images/harryDog.png";
+import Veggies from "../images/veggies.jpg";
+import Drinks from "../images/drinks.jpg";
 
 function HomeTab() {
   return (

@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom"
-import WizHat from './icons/witchHat.png'
+import WizHat from '../icons/witchHat.png'
 import { useState } from "react";
 import Modal from 'react-bootstrap/Modal';
-import Logo from './icons/cauldronyellow.png'
+import Logo from '../icons/cauldronyellow.png'
 
 function Nav() {
   const [show, setShow] = useState(false);
