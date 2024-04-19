@@ -293,5 +293,35 @@ const recipe_ingredients = [
     amount: "1 1/4",
     unit: "cups",
   },
+  {
+    recipe_name: "Tyrion's Mulled Wine",
+    ingredient_name: "Red wine",
+    amount: "1",
+    unit: "bottle",
+  },
+  {
+    recipe_name: "Tyrion's Mulled Wine",
+    ingredient_name: "Orange",
+    amount: "1",
+    unit: "",
+  },
+  {
+    recipe_name: "Tyrion's Mulled Wine",
+    ingredient_name: "Cloves",
+    amount: "8",
+    unit: "",
+  },
+  {
+    recipe_name: "Tyrion's Mulled Wine",
+    ingredient_name: "Cinnamon sticks",
+    amount: "2",
+    unit: "",
+  },
+  {
+    recipe_name: "Tyrion's Mulled Wine",
+    ingredient_name: "Star anise",
+    amount: "2",
+    unit: "",
+  },
 ];
 module.exports = { recipe_ingredients };

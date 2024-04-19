@@ -92,6 +92,11 @@ const ingredients = [
   { name: "Sugar", description: "" },
   { name: "Salt", description: "" },
   { name: "Warm water", description: "" },
+  { name: "Red wine", description: "" },
+  { name: "Orange", description: "" },
+  { name: "Cloves", description: "" },
+  { name: "Cinnamon sticks", description: "" },
+  { name: "Star anise", description: "" },
 
   // {"name":"",
   // "description":""

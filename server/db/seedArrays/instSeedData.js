@@ -228,6 +228,35 @@ const instructions = [
       "Place the dough in a greased bowl, cover with a clean kitchen towel, and let it rise in a warm place for about 1 hour, or until doubled in size.",
     index: "4",
   },
+  {
+    recipe_name: "Tyrion's Mulled Wine",
+    description: "Pour the red wine into a large saucepan.",
+    index: "0",
+  },
+  {
+    recipe_name: "Tyrion's Mulled Wine",
+    description:
+      "Slice the orange and add it to the saucepan along with the cloves, cinnamon sticks, and star anise.",
+    index: "1",
+  },
+  {
+    recipe_name: "Tyrion's Mulled Wine",
+    description:
+      "Heat the wine mixture over medium heat until it just begins to simmer. Do not boil.",
+    index: "2",
+  },
+  {
+    recipe_name: "Tyrion's Mulled Wine",
+    description:
+      "Reduce the heat to low and let the wine steep for 20-30 minutes to allow the flavors to meld together.",
+    index: "3",
+  },
+  {
+    recipe_name: "Tyrion's Mulled Wine",
+    description:
+      "Strain the mulled wine into mugs or heatproof glasses and serve warm.",
+    index: "4",
+  },
 
   // {
   //   recipe_name:"",

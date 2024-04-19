@@ -22,18 +22,22 @@ const recipe_tags = [
     {
     recipe_name: "Arya's Direwolf Bread",
     description: "Snack"
-  }
-
-
-
-
-
-
-
-
-
-
+  },
+    {
+    recipe_name: "Tyrion's Mulled Wine",
+    description: "Drink"
+  },
   
+
+
+
+
+
+
+
+
+
+
   // {
   //   "recipe_name":"",
   //   "description":""
