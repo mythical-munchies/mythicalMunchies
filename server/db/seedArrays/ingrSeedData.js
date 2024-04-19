@@ -149,6 +149,10 @@ const ingredients = [
   { name: "Green food coloring", description: "" },
   { name: "Whipped cream", description: "" },
   { name: "Maraschino cherry", description: "" },
+  { name: "Milk chocolate", description: "Chopped" },
+  { name: "Marshmallows", description: "Mini" },
+  { name: "Peanuts", description: "Chopped" },
+  { name: "Caramel sauce", description: "" },
 
   // {"name":"",
   // "description":""

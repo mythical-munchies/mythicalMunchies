@@ -533,6 +533,46 @@ const instructions = [
       "Serve chilled and enjoy the delightful fizziness of Frobscottle!",
     index: "4",
   },
+  {
+    recipe_name: "Wonka's Whipple-Scrumptious Fudgemallow Delight",
+    description: "Line a baking sheet with parchment paper.",
+    index: "0",
+  },
+  {
+    recipe_name: "Wonka's Whipple-Scrumptious Fudgemallow Delight",
+    description:
+      "In a microwave-safe bowl, melt milk chocolate in 30-second intervals, stirring in between, until smooth.",
+    index: "1",
+  },
+  {
+    recipe_name: "Wonka's Whipple-Scrumptious Fudgemallow Delight",
+    description:
+      "Pour melted chocolate onto the prepared baking sheet and spread it evenly.",
+    index: "2",
+  },
+  {
+    recipe_name: "Wonka's Whipple-Scrumptious Fudgemallow Delight",
+    description:
+      "Sprinkle mini marshmallows, chopped peanuts, and drizzle caramel sauce over the melted chocolate.",
+    index: "3",
+  },
+  {
+    recipe_name: "Wonka's Whipple-Scrumptious Fudgemallow Delight",
+    description:
+      "Place the baking sheet in the refrigerator for about 20 minutes, or until the chocolate sets.",
+    index: "4",
+  },
+  {
+    recipe_name: "Wonka's Whipple-Scrumptious Fudgemallow Delight",
+    description: "Once set, break the chocolate bark into pieces.",
+    index: "5",
+  },
+  {
+    recipe_name: "Wonka's Whipple-Scrumptious Fudgemallow Delight",
+    description:
+      "Enjoy the scrumptious goodness of Wonka's Whipple-Scrumptious Fudgemallow Delight!",
+    index: "6",
+  },
 
   // {
   //   recipe_name:"",

@@ -58,6 +58,11 @@ const recipe_tags = [
   {  recipe_name: "The BFG's Frobscottle",
   description: "Drink",
 },
+{
+ recipe_name: "Wonka's Whipple-Scrumptious Fudgemallow Delight",
+  description: "Dessert",
+},
+
 
 
 

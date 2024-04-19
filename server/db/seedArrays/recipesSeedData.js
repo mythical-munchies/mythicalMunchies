@@ -167,6 +167,14 @@ const recipes = [
     img_url:
       "https://static.wikia.nocookie.net/roalddahl/images/6/66/Scottle.jpg/revision/latest?cb=20171007215444",
   },
+  {
+    name: "Wonka's Whipple-Scrumptious Fudgemallow Delight",
+    description:
+      "A mouthwatering candy bar featured in Roald Dahl's 'Charlie and the Chocolate Factory'.",
+    cook_time: "30 minutes",
+    world_name: "Roald Dahl",
+    img_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_ziLxNcVGrUyyaoR9gFPEvZjeFrZCeLH80BNOM4e5Ag&s",
+  },
 
   // {
   //   "name": "",

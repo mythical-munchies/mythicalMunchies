@@ -630,5 +630,29 @@ const recipe_ingredients = [
     amount: "1",
     unit: "",
   },
+  {
+    recipe_name: "Wonka's Whipple-Scrumptious Fudgemallow Delight",
+    ingredient_name: "Milk chocolate",
+    amount: "2",
+    unit: "cups",
+  },
+  {
+    recipe_name: "Wonka's Whipple-Scrumptious Fudgemallow Delight",
+    ingredient_name: "Marshmallows",
+    amount: "1",
+    unit: "cup",
+  },
+  {
+    recipe_name: "Wonka's Whipple-Scrumptious Fudgemallow Delight",
+    ingredient_name: "Peanuts",
+    amount: "1/2",
+    unit: "cup",
+  },
+  {
+    recipe_name: "Wonka's Whipple-Scrumptious Fudgemallow Delight",
+    ingredient_name: "Caramel sauce",
+    amount: "1/4",
+    unit: "cup",
+  },
 ];
 module.exports = { recipe_ingredients };
