@@ -173,7 +173,26 @@ const recipes = [
       "A mouthwatering candy bar featured in Roald Dahl's 'Charlie and the Chocolate Factory'.",
     cook_time: "30 minutes",
     world_name: "Roald Dahl",
-    img_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_ziLxNcVGrUyyaoR9gFPEvZjeFrZCeLH80BNOM4e5Ag&s",
+    img_url:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_ziLxNcVGrUyyaoR9gFPEvZjeFrZCeLH80BNOM4e5Ag&s",
+  },
+  {
+    name: "Charlie's Cabbage Soup",
+    description:
+      "A humble yet comforting soup enjoyed by Charlie Bucket in 'Willy Wonka & the Chocolate Factory'.",
+    cook_time: "45 minutes",
+    world_name: "Roald Dahl",
+    img_url:
+      "https://www.medieval-recipes.com/noisette/wp-content/uploads/2014/03/homemadepottage.jpg",
+  },
+  {
+    name: "Wonka's Everlasting Gobstoppers",
+    description:
+      "Magical and everlasting jawbreakers created by Willy Wonka in 'Willy Wonka & the Chocolate Factory'.",
+    cook_time: "60 minutes",
+    world_name: "Roald Dahl",
+    img_url:
+      "https://upload.wikimedia.org/wikipedia/commons/0/04/Jawbreaker_plate.jpg",
   },
 
   // {

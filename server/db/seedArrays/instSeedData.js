@@ -573,6 +573,76 @@ const instructions = [
       "Enjoy the scrumptious goodness of Wonka's Whipple-Scrumptious Fudgemallow Delight!",
     index: "6",
   },
+  {
+    recipe_name: "Charlie's Cabbage Soup",
+    description: "In a large pot, heat some olive oil over medium heat.",
+    index: "0",
+  },
+  {
+    recipe_name: "Charlie's Cabbage Soup",
+    description:
+      "Add chopped onions and minced garlic. Cook until softened and fragrant.",
+    index: "1",
+  },
+  {
+    recipe_name: "Charlie's Cabbage Soup",
+    description:
+      "Add chopped carrots, diced potatoes, and shredded cabbage to the pot.",
+    index: "2",
+  },
+  {
+    recipe_name: "Charlie's Cabbage Soup",
+    description:
+      "Pour in vegetable broth and bring to a simmer. Cook until vegetables are tender.",
+    index: "3",
+  },
+  {
+    recipe_name: "Charlie's Cabbage Soup",
+    description: "Season with salt and pepper to taste.",
+    index: "4",
+  },
+  {
+    recipe_name: "Charlie's Cabbage Soup",
+    description:
+      "Serve hot and enjoy this comforting bowl of Charlie's Cabbage Soup!",
+    index: "5",
+  },
+  {
+    recipe_name: "Wonka's Everlasting Gobstoppers",
+    description:
+      "In a saucepan, combine sugar, corn syrup, and water. Stir over medium heat until sugar dissolves.",
+    index: "0",
+  },
+  {
+    recipe_name: "Wonka's Everlasting Gobstoppers",
+    description:
+      "Bring the mixture to a boil without stirring. Use a candy thermometer and cook until it reaches 300°F (hard crack stage).",
+    index: "1",
+  },
+  {
+    recipe_name: "Wonka's Everlasting Gobstoppers",
+    description:
+      "Remove from heat and quickly stir in food coloring, flavor extracts, and citric acid.",
+    index: "2",
+  },
+  {
+    recipe_name: "Wonka's Everlasting Gobstoppers",
+    description:
+      "Pour the mixture onto a greased baking sheet or into candy molds.",
+    index: "3",
+  },
+  {
+    recipe_name: "Wonka's Everlasting Gobstoppers",
+    description:
+      "Allow the candy to cool and harden completely before breaking it into pieces or unmolding from molds.",
+    index: "4",
+  },
+  {
+    recipe_name: "Wonka's Everlasting Gobstoppers",
+    description:
+      "Enjoy the magical and everlasting taste of Wonka's Gobstoppers!",
+    index: "5",
+  },
 
   // {
   //   recipe_name:"",

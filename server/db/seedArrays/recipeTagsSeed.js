@@ -55,21 +55,19 @@ const recipe_tags = [
     recipe_name: "Matilda's Chocolate Cake",
     description: "Dessert",
   },
-  {  recipe_name: "The BFG's Frobscottle",
-  description: "Drink",
-},
-{
- recipe_name: "Wonka's Whipple-Scrumptious Fudgemallow Delight",
-  description: "Dessert",
-},
-
-
-
-
-
-
-
-
+  { recipe_name: "The BFG's Frobscottle", description: "Drink" },
+  {
+    recipe_name: "Wonka's Whipple-Scrumptious Fudgemallow Delight",
+    description: "Dessert",
+  },
+  {
+    recipe_name: "Charlie's Cabbage Soup",
+    description: "Soup",
+  },
+  {
+    recipe_name: "Wonka's Everlasting Gobstoppers",
+    description: "Dessert",
+  },
 
   // {
   //   "recipe_name":"",
