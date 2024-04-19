@@ -264,6 +264,32 @@ const recipes = [
     img_url:
       "https://i.pinimg.com/736x/da/1b/95/da1b9548a944d02b53a017b9018da15f.jpg",
   },
+  {
+    name: "Soylent Green Smoothie",
+    description:
+      "A nutritious and sustainable smoothie inspired by the concept of Soylent Green.",
+    cook_time: "10 minutes",
+    world_name: "Make Room!",
+    img_url:
+      "https://cdn.loveandlemons.com/wp-content/uploads/2022/12/green-smoothie-recipes.jpg",
+  },
+  {
+    name: "Polyjuice Potion Punch",
+    description:
+      "A bewitching potion-inspired punch, perfect for wizarding gatherings in the Harry Potter universe.",
+    cook_time: "15 minutes",
+    world_name: "Wizarding World",
+    img_url:
+      "https://zenandhoney.com/wp-content/uploads/2023/08/harry-potter-polyjuice-potion-500x500.jpg",
+  },
+  {
+    name: "Pumpkin Pasties",
+    description:
+      "Delicious hand pies filled with spiced pumpkin filling, a favorite treat among Hogwarts students.",
+    cook_time: "45 minutes",
+    world_name: "Wizarding World",
+    img_url: "https://siftrva.com/wp-content/uploads/2023/09/IMG_0679.jpg",
+  },
 
   // {
   //   "name": "",

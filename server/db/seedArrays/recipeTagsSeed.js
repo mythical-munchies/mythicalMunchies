@@ -108,6 +108,18 @@ const recipe_tags = [
     recipe_name: "Elven Honeyed Chicken",
     description: "Entrée",
   },
+  {
+    recipe_name: "Soylent Green Smoothie",
+    description: "Drink",
+  },
+  {
+    recipe_name: "Polyjuice Potion Punch",
+    description: "Drink",
+  },
+  {
+    recipe_name: "Pumpkin Pasties",
+    description: "Snack",
+  },
 
   // {
   //   "recipe_name":"",
