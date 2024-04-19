@@ -831,6 +831,48 @@ const instructions = [
       "Fluff the rice with a fork and garnish with fresh chopped cilantro before serving.",
     index: "7",
   },
+  {
+    recipe_name: "Arrakeen Chicken Tagine",
+    description:
+      "In a large bowl, combine minced garlic, minced ginger, ground cumin, ground coriander, ground cinnamon, ground turmeric, cayenne pepper, salt, and black pepper to create a spice rub.",
+    index: "0",
+  },
+  {
+    recipe_name: "Arrakeen Chicken Tagine",
+    description:
+      "Rub the spice mixture all over the chicken thighs, ensuring they are evenly coated. Let marinate for at least 30 minutes.",
+    index: "1",
+  },
+  {
+    recipe_name: "Arrakeen Chicken Tagine",
+    description:
+      "Heat olive oil in a large Dutch oven over medium-high heat. Add chopped onion and cook until softened.",
+    index: "2",
+  },
+  {
+    recipe_name: "Arrakeen Chicken Tagine",
+    description:
+      "Add the marinated chicken thighs to the Dutch oven and sear on both sides until browned.",
+    index: "3",
+  },
+  {
+    recipe_name: "Arrakeen Chicken Tagine",
+    description:
+      "Stir in diced tomatoes, chicken broth, and lemon juice. Bring to a simmer.",
+    index: "4",
+  },
+  {
+    recipe_name: "Arrakeen Chicken Tagine",
+    description:
+      "Cover and reduce heat to low. Let the chicken simmer for 45-50 minutes, or until tender and cooked through.",
+    index: "5",
+  },
+  {
+    recipe_name: "Arrakeen Chicken Tagine",
+    description:
+      "Garnish with fresh chopped cilantro before serving. Enjoy the savory flavors of Arrakeen Chicken Tagine!",
+    index: "6",
+  },
 
   // {
   //   recipe_name:"",

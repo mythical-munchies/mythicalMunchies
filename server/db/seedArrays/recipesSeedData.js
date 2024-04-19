@@ -246,6 +246,15 @@ const recipes = [
     world_name: "Dune",
     img_url: "https://www.africanbites.com/wp-content/uploads/2021/08/1-3.jpg",
   },
+  {
+    name: "Arrakeen Chicken Tagine",
+    description:
+      "A savory and aromatic chicken tagine inspired by the flavors of Arrakis in 'Dune'.",
+    cook_time: "1 hour 15 minutes",
+    world_name: "Dune",
+    img_url:
+      "https://middlebury.coop/wp-content/uploads/2023/01/Chicken-Tagine.-SS.-Low-Res-476x476.jpg",
+  },
 
   // {
   //   "name": "",

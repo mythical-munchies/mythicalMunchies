@@ -1014,6 +1014,95 @@ const recipe_ingredients = [
     amount: "For garnish",
     unit: "",
   },
-  
+  {
+    recipe_name: "Arrakeen Chicken Tagine",
+    ingredient_name: "Chicken thighs",
+    amount: "6",
+    unit: "",
+  },
+  {
+    recipe_name: "Arrakeen Chicken Tagine",
+    ingredient_name: "Onion",
+    amount: "1",
+    unit: "large",
+  },
+  {
+    recipe_name: "Arrakeen Chicken Tagine",
+    ingredient_name: "Garlic",
+    amount: "4",
+    unit: "cloves",
+  },
+  {
+    recipe_name: "Arrakeen Chicken Tagine",
+    ingredient_name: "Ginger",
+    amount: "1",
+    unit: "inch piece",
+  },
+  {
+    recipe_name: "Arrakeen Chicken Tagine",
+    ingredient_name: "Ground cumin",
+    amount: "1",
+    unit: "teaspoon",
+  },
+  {
+    recipe_name: "Arrakeen Chicken Tagine",
+    ingredient_name: "Ground coriander",
+    amount: "1",
+    unit: "teaspoon",
+  },
+  {
+    recipe_name: "Arrakeen Chicken Tagine",
+    ingredient_name: "Ground cinnamon",
+    amount: "1/2",
+    unit: "teaspoon",
+  },
+  {
+    recipe_name: "Arrakeen Chicken Tagine",
+    ingredient_name: "Ground turmeric",
+    amount: "1/2",
+    unit: "teaspoon",
+  },
+  {
+    recipe_name: "Arrakeen Chicken Tagine",
+    ingredient_name: "Cayenne pepper",
+    amount: "1/4",
+    unit: "teaspoon",
+  },
+  {
+    recipe_name: "Arrakeen Chicken Tagine",
+    ingredient_name: "Salt",
+    amount: "To taste",
+    unit: "",
+  },
+  {
+    recipe_name: "Arrakeen Chicken Tagine",
+    ingredient_name: "Black pepper",
+    amount: "To taste",
+    unit: "",
+  },
+  {
+    recipe_name: "Arrakeen Chicken Tagine",
+    ingredient_name: "Tomatoes",
+    amount: "2",
+    unit: "medium",
+  },
+  {
+    recipe_name: "Arrakeen Chicken Tagine",
+    ingredient_name: "Chicken broth",
+    amount: "1",
+    unit: "cup",
+  },
+  {
+    recipe_name: "Arrakeen Chicken Tagine",
+    ingredient_name: "Lemon",
+    amount: "1",
+    unit: "",
+  },
+  {
+    recipe_name: "Arrakeen Chicken Tagine",
+    ingredient_name: "Fresh cilantro",
+    amount: "For garnish",
+    unit: "",
+  },
 ];
 module.exports = { recipe_ingredients };

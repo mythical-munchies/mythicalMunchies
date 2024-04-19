@@ -92,6 +92,12 @@ const recipe_tags = [
     recipe_name: "Fremen Spice Rice",
     description: "Side Dish",
   },
+{
+  recipe_name: "Arrakeen Chicken Tagine",
+  description: "Entree",
+},
+
+  
 
   // {
   //   "recipe_name":"",
