@@ -11,6 +11,10 @@ const recipe_tags = [
     recipe_name: "Ham Ramen",
     description: "Entrée",
   },
+   {
+    recipe_name: "Harry Potter Butterbeer",
+    description: "Drink",
+   }
   // {
   //   "recipe_name":"",
   //   "description":""

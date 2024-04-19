@@ -124,6 +124,44 @@ const instructions = [
       "Combine with slices of bread and cheese on a plate and enjoy!",
     index: "2",
   },
+    {
+      recipe_name: "Harry Potter Butterbeer",
+      description:
+        "In a small saucepan over medium heat, combine brown sugar and water. Bring to a gentle boil and cook, stirring constantly, until the mixture reaches a syrup-like consistency, about 7-8 minutes.",
+      index: "0",
+    },
+    {
+      recipe_name: "Harry Potter Butterbeer",
+      description:
+        "Remove from heat and stir in salt, apple cider vinegar, and vanilla extract.",
+      index: "1",
+    },
+    {
+      recipe_name: "Harry Potter Butterbeer",
+      description:
+        "In a large mixing bowl, combine the cream soda and the prepared brown sugar syrup. Stir until well combined.",
+      index: "2",
+    },
+    {
+      recipe_name: "Harry Potter Butterbeer",
+      description:
+        "In a separate bowl, whip the heavy cream until stiff peaks form.",
+      index: "3",
+    },
+    {
+      recipe_name: "Harry Potter Butterbeer",
+      description:
+        "To serve, pour the butterbeer mixture into mugs or glasses, top with a dollop of whipped cream, and a small pat of softened butter.",
+      index: "4",
+    },
+    {
+      recipe_name: "Harry Potter Butterbeer",
+      description:
+        "Optionally, you can sprinkle a pinch of cinnamon or nutmeg on top for extra flavor.",
+      index: "5",
+    },
+  
+
   // {
   //   recipe_name:"",
   //   description:"",

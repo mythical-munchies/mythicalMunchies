@@ -73,6 +73,14 @@ const ingredients = [
   { name: "Chili Powder", description: "" },
   { name: "Cornstarch", description: "" },
   { name: "Matcha", description: "Green tea powder" },
+  { name: "Brown Sugar", description: "" },
+  { name: "Water", description: "" },
+  { name: "Salt", description: "" },
+  { name: "Apple Cider Vinegar", description: "" },
+  { name: "Vanilla Extract", description: "" },
+  { name: "Cream Soda", description: "" },
+  { name: "Heavy Cream", description: "" },
+  { name: "Butter", description: "" },
 
   // {"name":"",
   // "description":""
