@@ -80,6 +80,10 @@ const recipe_tags = [
     recipe_name: "Jellyfish Jelly Sandwich",
     description: "Sandwich",
   },
+  {
+    recipe_name: "Spice Melange",
+    description: "Seasoning",
+  },
 
   // {
   //   "recipe_name":"",

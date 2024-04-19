@@ -858,5 +858,35 @@ const recipe_ingredients = [
     amount: "2",
     unit: "tablespoons",
   },
+  {
+    recipe_name: "Spice Melange",
+    ingredient_name: "Cinnamon",
+    amount: "1",
+    unit: "teaspoon",
+  },
+  {
+    recipe_name: "Spice Melange",
+    ingredient_name: "Nutmeg",
+    amount: "1",
+    unit: "teaspoon",
+  },
+  {
+    recipe_name: "Spice Melange",
+    ingredient_name: "Cardamom",
+    amount: "1/2",
+    unit: "teaspoon",
+  },
+  {
+    recipe_name: "Spice Melange",
+    ingredient_name: "Cloves",
+    amount: "1/4",
+    unit: "teaspoon",
+  },
+  {
+    recipe_name: "Spice Melange",
+    ingredient_name: "Ginger",
+    amount: "1/4",
+    unit: "teaspoon",
+  },
 ];
 module.exports = { recipe_ingredients };

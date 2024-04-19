@@ -730,6 +730,26 @@ const instructions = [
     description: "Slice diagonally and serve.",
     index: "3",
   },
+  {
+    recipe_name: "Spice Melange",
+    description: "Combine all ground spices in a small bowl.",
+    index: "0",
+  },
+  {
+    recipe_name: "Spice Melange",
+    description: "Mix well until thoroughly combined.",
+    index: "1",
+  },
+  {
+    recipe_name: "Spice Melange",
+    description: "Store in an airtight container in a cool, dark place.",
+    index: "2",
+  },
+  {
+    recipe_name: "Spice Melange",
+    description: "Use as desired to add flavor and depth to your dishes.",
+    index: "3",
+  },
 
   // {
   //   recipe_name:"",

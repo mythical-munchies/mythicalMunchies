@@ -220,6 +220,15 @@ const recipes = [
     img_url:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0laIOxEnSpNyrO5zffPeY30me3w6751T2dzcKuSVJYw&s",
   },
+  {
+    name: "Spice Melange",
+    description:
+      "A mystical and coveted substance from Planet Arrakis in 'Dune'.",
+    cook_time: "2 minutes",
+    world_name: "Dune",
+    img_url:
+      "https://i0.wp.com/www.innatthecrossroads.com/wp-content/uploads/2020/09/DSC00805-1.png?fit=797%2C1200&ssl=1",
+  },
 
   // {
   //   "name": "",

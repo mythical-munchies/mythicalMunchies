@@ -187,6 +187,12 @@ const ingredients = [
   { name: "Bread slices", description: "" },
   { name: "Jellyfish jelly", description: "" },
   { name: "Peanut butter", description: "" },
+  { name: "Cinnamon", description: "Ground" },
+  { name: "Nutmeg", description: "Ground" },
+  { name: "Cardamom", description: "Ground" },
+  { name: "Cloves", description: "Ground" },
+  { name: "Ginger", description: "Ground" },
+
 
   // {"name":"",
   // "description":""
