@@ -4,13 +4,6 @@ import "./styles/SingleWorld.css";
 import ghibliBanner from "./images/banner_studioghibli.png";
 import { useState, useEffect } from "react"
 
-// Tried to fix the scrolling issue but will come back to it later
-// const scrolltoTop = () => {
-//   document.getElementById("toTOP").scroll(0,0)
-// }
-
-
- 
 
 function SingleWorld() {
 
