@@ -12,7 +12,7 @@ const {fetchRecipeIngredients} = require("../db/ingredients")
 // });
 
 //Fetch recipe ingredients
-//http://localhost:8080/mythicalmunchies/recipes/ingredients/:recipe_id
+//http://localhost:8080/mythicalmunchies/ingredients/:recipe_id
 router.get("/:recipe_id", async (req, res, next) => {
   try {
     res.send(await fetchRecipeIngredients(req.params.recipe_id))
