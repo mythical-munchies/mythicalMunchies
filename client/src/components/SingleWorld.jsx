@@ -1,12 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import "./styles/SingleWorld.css";
 import ghibliBanner from "./images/banner_studioghibli.png";
-import { useState, useEffect, useParams } from "react"
-
+import { useState, useEffect } from "react"
 
 function SingleWorld() {
-
   const [world, setWorld] = useState({});
 
   const {worldid} = useParams();
@@ -20,23 +18,23 @@ function SingleWorld() {
     fetchSingleWorld();
   }, []);
 
+
   return (
     <>
     <div className="single-container">
-      {/* Everything that is in the gold container */}
       <div className="gold-background">
         <Link to="/worlds" className="back-button">
           Back
         </Link>
 
         {/* Make title linked to database. Hard coded for styling. */}
-        <div className="title"> World.Name </div>
+        <div className="title"> World.name </div>
         {/* Banner image */}
         <div className="banner-image-container">
           <img
             className="banner-image"
             src={ghibliBanner}
-            alt="Studio Ghibli Banner"
+            alt="world-banner"
           />
         </div>
 
@@ -48,8 +46,8 @@ function SingleWorld() {
             alt="Ham Ramen"
           />
           {/* <div className="movie-title">Ponyos</div> */}
-          <Link target="blank" to="/single-recipe" >Ponyo</Link>
-          <div className="recipe-title">Ham Ramen</div>
+          <Link target="blank" to="/single-recipe" >Recipe.name</Link>
+          {/* <div className="recipe-title">Ham Ramen</div> */}
         </div>
         {/* <div className="recipe-tile">
           <img
