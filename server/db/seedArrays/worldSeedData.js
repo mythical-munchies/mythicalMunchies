@@ -66,7 +66,8 @@ const worlds = [
   },
   // {
   //   "name":"",
-  //   "img_url":""
+  //   "img_url":"",
+  //    "banner_url":""
   // },
 ];
 
