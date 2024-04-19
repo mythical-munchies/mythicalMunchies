@@ -1,12 +1,12 @@
 // THIS PAGE IS HARDCODED FOR PROJECT COMPLETION
-import "./styles/DogWarts.css"
-import DogParty from "./images/harry-dog-party.jpg"
-import DogBeer from "./images/dog-beer.jpg"
-import DogFrog from "./images/dog-frog.jpg"
-import Banner from "./images/banner.jpg"
-import PhotoBooth from "./images/photobooth.jpg"
-import Scarf from "./images/scarf.jpg"
-import Cloak from "./images/cloak.jpg"
+import "../styles/DogWarts.css"
+import DogParty from "../images/harry-dog-party.jpg"
+import DogBeer from "../images/dog-beer.jpg"
+import DogFrog from "../images/dog-frog.jpg"
+import Banner from "../images/banner.jpg"
+import PhotoBooth from "../images/photobooth.jpg"
+import Scarf from "../images/scarf.jpg"
+import Cloak from "../images/cloak.jpg"
 import { useEffect } from "react"
 
 // useEffect(() => {

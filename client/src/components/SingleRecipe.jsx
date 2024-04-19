@@ -3,9 +3,9 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
-import "./styles/SingleRecipe.css"
+import "../styles/SingleRecipe.css"
 import { Link } from 'react-router-dom'
-import Ramen from './images/ponyo-ramen.jpg'
+import Ramen from '../images/ponyo-ramen.jpg'
 import CustomerReviews from './CustomerReviews';
 import LeaveReview from './LeaveReview';
 import { useState } from 'react';

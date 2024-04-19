@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import "./styles/ContactTab.css";
+import "../styles/ContactTab.css";
 import emailjs from "emailjs-com";
 
 function ContactTab() {

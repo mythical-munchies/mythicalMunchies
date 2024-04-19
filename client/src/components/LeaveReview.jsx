@@ -2,10 +2,8 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './styles/LeaveReview.css'
-import Rating from './mui-components/rating'
-// import HeartRating from './mui-components/HeartRating'
-import Cauldron from './icons/cauldronyellow.png'
+import '../styles/LeaveReview.css'
+import Cauldron from '../icons/cauldronyellow.png'
 
 
 function LeaveReview() {

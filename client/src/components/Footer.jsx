@@ -8,7 +8,7 @@ import { Container, IconButton } from "@mui/material";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import "./styles/Footer.css";
+import "../styles/Footer.css";
 import MythicalMunchiesFAQ from "./FAQ";
 import PrivacyPolicy from "./PrivacyPolicy";
 

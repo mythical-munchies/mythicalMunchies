@@ -1,8 +1,8 @@
 import React from "react";
 import { useState } from "react";
-import "./styles/Login.css"
+import "../styles/Login.css"
 import Modal from 'react-bootstrap/Modal';
-import Logo from './icons/cauldronyellow.png'
+import Logo from '../icons/cauldronyellow.png'
 
 function SignUp () {
   const [show, setShow] = useState(false);
