@@ -257,6 +257,59 @@ const instructions = [
       "Strain the mulled wine into mugs or heatproof glasses and serve warm.",
     index: "4",
   },
+  {
+    recipe_name: "Jon Snow's Wildling Stew",
+    description:
+      "In a large pot or Dutch oven, heat some olive oil over medium-high heat.",
+    index: "0",
+  },
+  {
+    recipe_name: "Jon Snow's Wildling Stew",
+    description:
+      "Season the beef stew meat with salt and pepper, then add it to the pot. Brown the meat on all sides, then remove it from the pot and set aside.",
+    index: "1",
+  },
+  {
+    recipe_name: "Jon Snow's Wildling Stew",
+    description:
+      "Add the chopped onion and minced garlic to the pot, and cook until softened and fragrant, about 3-4 minutes.",
+    index: "2",
+  },
+  {
+    recipe_name: "Jon Snow's Wildling Stew",
+    description:
+      "Return the browned beef stew meat to the pot, along with any accumulated juices.",
+    index: "3",
+  },
+  {
+    recipe_name: "Jon Snow's Wildling Stew",
+    description:
+      "Add enough water or beef broth to cover the meat, then bring the mixture to a simmer.",
+    index: "4",
+  },
+  {
+    recipe_name: "Jon Snow's Wildling Stew",
+    description:
+      "Peel and chop the potatoes and carrots into bite-sized pieces. Add them to the pot.",
+    index: "5",
+  },
+  {
+    recipe_name: "Jon Snow's Wildling Stew",
+    description:
+      "Let the stew simmer for about 1 to 1.5 hours, or until the meat and vegetables are tender.",
+    index: "6",
+  },
+  {
+    recipe_name: "Jon Snow's Wildling Stew",
+    description:
+      "Season the stew with salt, pepper, and any additional herbs or spices to taste.",
+    index: "7",
+  },
+  {
+    recipe_name: "Jon Snow's Wildling Stew",
+    description: "Serve hot and enjoy your hearty Wildling stew!",
+    index: "8",
+  },
 
   // {
   //   recipe_name:"",

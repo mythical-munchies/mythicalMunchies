@@ -323,5 +323,44 @@ const recipe_ingredients = [
     amount: "2",
     unit: "",
   },
+  {
+    recipe_name: "Jon Snow's Wildling Stew",
+    ingredient_name: "Beef stew meat",
+    amount: "1",
+    unit: "pound",
+  },
+  {
+    recipe_name: "Jon Snow's Wildling Stew",
+    ingredient_name: "Potatoes",
+    amount: "2",
+    unit: "large",
+  },
+  {
+    recipe_name: "Jon Snow's Wildling Stew",
+    ingredient_name: "Carrots",
+    amount: "2",
+    unit: "medium",
+  },
+  {
+    recipe_name: "Jon Snow's Wildling Stew",
+    ingredient_name: "Onion",
+    amount: "1",
+    unit: "large",
+  },
+  {
+    recipe_name: "Jon Snow's Wildling Stew",
+    ingredient_name: "Garlic",
+    amount: "3",
+    unit: "cloves",
+  },
+
+
+
+
+
+
+
+
+  
 ];
 module.exports = { recipe_ingredients };

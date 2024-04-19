@@ -27,6 +27,10 @@ const recipe_tags = [
     recipe_name: "Tyrion's Mulled Wine",
     description: "Drink"
   },
+  {
+    recipe_name: "Jon Snow's Wildling Stew",
+    description: "Entree"
+  },
   
 
 

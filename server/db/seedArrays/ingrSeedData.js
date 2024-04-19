@@ -97,6 +97,11 @@ const ingredients = [
   { name: "Cloves", description: "" },
   { name: "Cinnamon sticks", description: "" },
   { name: "Star anise", description: "" },
+  { name: "Beef stew meat", description: "" },
+  { name: "Potatoes", description: "" },
+  { name: "Carrots", description: "" },
+  { name: "Onion", description: "" },
+  { name: "Garlic", description: "" },
 
   // {"name":"",
   // "description":""

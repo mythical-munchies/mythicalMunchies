@@ -77,6 +77,31 @@ const recipes = [
     img_url:
       "https://i.pinimg.com/736x/4f/3e/d2/4f3ed234f3bbb2a77ce3b2b9c8570de6.jpg",
   },
+  {
+    name: "Arya's Direwolf Bread",
+    description:
+      "Inspired by Arya Stark's journey and her connection with her direwolf, Nymeria, this bread is shaped like a fearsome direwolf. Made with wholesome ingredients and baked to golden perfection, it's a symbol of strength and resilience in the world of Game of Thrones.",
+    cook_time: "1 Hour",
+    world_name: "Game of Thrones",
+    img_url:
+      "https://thestarvingchefblog.com/wp-content/uploads/2022/03/Wolf_Cake.jpg",
+  },
+  {
+  "name": "Tyrion's Mulled Wine",
+  "description": "A rich and aromatic beverage favored by Tyrion Lannister, known for its warming spices and deep flavor. Perfect for cold nights in King's Landing or feasting in the Great Hall of the Red Keep.",
+  "cook_time": "30 Minutes",
+  "world_name": "Game of Thrones",
+  "img_url": "https://www.pedestrian.tv/wp-content/uploads/2021/07/21/warm-cocktails-lead.jpg?quality=75&w=1200&h=630&crop=1"
+}
+  {
+    name: "Jon Snow's Wildling Stew",
+    description:
+      "A hearty and nourishing stew inspired by the rugged lifestyle beyond the Wall in the world of Game of Thrones. Made with tender beef, potatoes, carrots, onions, and garlic, it's a comforting meal fit for any Winterfell feast.",
+    cook_time: "1.5 Hours",
+    world_name: "Game of Thrones",
+    img_url:
+      "https://img.jamieoliver.com/jamieoliver/news-and-features/features/wp-content/uploads/sites/2/2014/10/P1_Features_Stew_51_Joe-Sarah.jpg?tr=w-720",
+  },
 
   // {
   //   "name": "",
