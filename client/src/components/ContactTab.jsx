@@ -39,9 +39,9 @@ function ContactTab() {
   return (
     <>
       <div className="main-container">
-        <div className="container">
+        <div id="container">
           <h1 style={styles.h1}>Contact Us</h1>
-          <hr className="contact-hr"></hr>
+          {/* <hr className="contact-hr"></hr> */}
           <div className="content">
             {/* Text to the left of the form. Final language TBD */}
             <div className="textbox">
@@ -57,19 +57,19 @@ function ContactTab() {
             </div>
 
             {/* Div is for everything related to the form */}
-            <form ref={form} onSubmit={sendEmail}>
-              <label className="name"> Name:</label>
-              <input type="text" name="name" />
+            <form id="formy" ref={form} onSubmit={sendEmail}>
+              <label id="contact-form-labels" className="name"> Name:</label>
+              <input type="text" name="name" placeholder="Name" />
 
-              <label className="email">Email:</label>
-              <input type="email" name="email" />
+              <label id="contact-form-labels" className="email">Email:</label>
+              <input type="email" name="email" placeholder="Email" />
 
-              <label className="message"> Message:</label>
+              <label id="contact-form-labels" className="message">Message:</label>
               <textarea
+                id="contact-text-box"
                 name="message"
-                style={{ fontFamily: "Almendra, serif" }}
+                placeholder="Start Typing"
               />
-              {/* The above is a workaround to get the message field to be in Almendra font as the CSS file wasn't working. */}
 
               <button className="send" type="submit">
                 Send

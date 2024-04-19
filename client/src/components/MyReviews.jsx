@@ -32,7 +32,7 @@ function MyReviews() {
                           <p className="review-date">{review.day}</p>
                           {/* delete review Modal */}
                           <DeleteReview />
-                          <hr />
+                          <hr className="myreview-hr"/>
                       </div>
                     </div>
                   );

@@ -28,13 +28,13 @@ const Worlds = ({ worldsArray }) => {
       {worldsArray.map((world) => {
         return (
           <div key={world.id} className="each-world">
-            <Link to ="/{world.id}" className="world-page-title">
+            <Link to ={`/single-world/${world.id}`} className="world-page-title">
               <img src={world.img_url} alt="" className="world-image" />
               <h3 className="world-page-title">{world.name}</h3>
             </Link>
           </div>
         );
-      })}; 
+      })} 
     </div>
   );
 };

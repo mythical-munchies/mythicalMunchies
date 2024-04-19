@@ -12,6 +12,21 @@
   text-align: left;
 }
 
+#testin {
+  margin-top: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* background-color: purple; */
+  width: 862px;
+  z-index: 1;
+  height: 100px;
+  /* margin-top: 4px; */
+  margin-left: 430px;
+  border-radius: 0px 30px 0px 0px;
+  
+}
+
 #sideBar {
   margin-top: 4px
 }
@@ -110,7 +125,7 @@
   text-align: center;
   color: darkred;
   margin-left: 0px;
-  
+ 
 }
 
 #textington {

@@ -27,6 +27,7 @@ const Footer = () => {
       <AppBar position="static" className="footer">
         <Container>
           <Toolbar className="footer-content">
+{/* COLUMN 1 */}
             <div className="column">
               <h1>Customer Care</h1>
               <Typography className="link">
@@ -39,6 +40,7 @@ const Footer = () => {
                 <Link to="/privacy">Privacy Policy</Link>
               </Typography>
             </div>
+{/* COLUMN 2 */}
             <div className="column">
               <h1>My Account</h1>
               <Typography className="link">
@@ -51,6 +53,7 @@ const Footer = () => {
                 <Link to="#">Add a Recipe</Link>
               </Typography>
             </div>
+{/* COLUMN 3 */}
             <div className="column">
               <h1>Top Searches</h1>
               <Typography className="link">
@@ -64,10 +67,10 @@ const Footer = () => {
               </Typography>
             </div>
           </Toolbar>
-          <br></br>
-          <br></br>
-          <hr></hr>
-          <br></br>
+          {/* <br></br>
+          <br></br> */}
+          <hr className="footer-hr"></hr>
+          {/* <br></br> */}
 
           <Typography align="center" className="footer-copyright">
             &#169; 2024 Mythical Munchies. All rights reserved.

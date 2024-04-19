@@ -35,6 +35,10 @@
   color: #4a0260;
 }
 
+#dropdown-basic:hover {
+  background-color: #e9c761;
+}
+
 .world-menu {
   width: 1200px;
   font-family: "Almendra", serif;
@@ -175,6 +179,7 @@
   width: calc(33.33% - 20px);
   margin: 10px;
   margin-bottom: 50px;
+  margin: 0 auto 0 0;
 }
 
 .world-image {
@@ -188,6 +193,8 @@
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
+  object-fit: cover;
+  /* margin: 0 auto 0 0; */
 }
 
 .world-page-title {
