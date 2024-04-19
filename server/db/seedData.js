@@ -1,22 +1,21 @@
-const client = require('./client');
+const client = require("./client");
 const uuid = require("uuid");
 
-const {createIngredient} = require('./ingredients');
-const {ingredients} = require('./seedArrays/ingrSeedData.js')
-const {recipe_ingredients} = require('./seedArrays/recipeIngrData.js');
-const {createRecipe, createRecipeIngredient} = require('./recipes.js')
-const {recipes} = require('./seedArrays/recipesSeedData.js');
-const {createWorld} = require('./worlds.js');
-const {worlds} = require('./seedArrays/worldSeedData.js');
-const {createUser, createUserRecipe} = require('./users.js');
-const {users} = require('./seedArrays/userSeedData');
-const {instructions} = require('./seedArrays/instSeedData.js');
-const {createInstruction} = require('./instructions.js');
-const {tags} = require('./seedArrays/tagSeedData.js');
-const {createTag, createRecipeTag} = require('./tags.js');
-const {recipe_tags} = require('./seedArrays/recipeTagsSeed.js');
-const {user_recipes} = require('./seedArrays/userRecipeSeed.js');
-
+const { createIngredient } = require("./ingredients");
+const { ingredients } = require("./seedArrays/ingrSeedData.js");
+const { recipe_ingredients } = require("./seedArrays/recipeIngrData.js");
+const { createRecipe, createRecipeIngredient } = require("./recipes.js");
+const { recipes } = require("./seedArrays/recipesSeedData.js");
+const { createWorld } = require("./worlds.js");
+const { worlds } = require("./seedArrays/worldSeedData.js");
+const { createUser, createUserRecipe } = require("./users.js");
+const { users } = require("./seedArrays/userSeedData");
+const { instructions } = require("./seedArrays/instSeedData.js");
+const { createInstruction } = require("./instructions.js");
+const { tags } = require("./seedArrays/tagSeedData.js");
+const { createTag, createRecipeTag } = require("./tags.js");
+const { recipe_tags } = require("./seedArrays/recipeTagsSeed.js");
+const { user_recipes } = require("./seedArrays/userRecipeSeed.js");
 
 //drop all tables if any exist to avoid duplicates
 const dropTables = async () => {
@@ -41,7 +40,7 @@ const createTables = async () => {
       id UUID PRIMARY KEY,
       name VARCHAR(100) NOT NULL UNIQUE,
       img_url VARCHAR(500),
-      banner_url VARCHAR(500)
+      banner_url VARCHAR(900)
     );
     CREATE TABLE users(
       id UUID PRIMARY KEY,
@@ -102,7 +101,7 @@ async function seedWorlds(client) {
     for (const world of worlds) {
       const createdWorld = await createWorld(world);
       // console.log(`Created world: ${createdWorld.name}`);
-      // console.log(`${createdWorld.id}`); 
+      // console.log(`${createdWorld.id}`);
     }
   } catch (error) {
     console.error("Error seeding worlds:", error);
@@ -115,7 +114,7 @@ async function seedUsers(client) {
   try {
     for (const user of users) {
       const createdUser = await createUser(user);
-      console.log(`Created user: ${JSON.stringify(createdUser)}`); 
+      console.log(`Created user: ${JSON.stringify(createdUser)}`);
     }
   } catch (error) {
     console.error("Error seeding users:", error);
@@ -140,7 +139,7 @@ async function seedIngr(client) {
 async function seedRecipes(client) {
   try {
     for (const recipe of recipes) {
-      console.log(recipe)
+      console.log(recipe);
       const createdRecipe = await createRecipe(recipe);
       console.log(`Created recipe: ${createdRecipe.id}`); //
     }
@@ -155,73 +154,72 @@ async function seedInst(client) {
   try {
     for (const instruction of instructions) {
       const createdInst = await createInstruction(instruction);
-      // console.log(`Created step ${createdInst.index} for ${JSON.stringify(createdInst)}`); 
+      // console.log(`Created step ${createdInst.index} for ${JSON.stringify(createdInst)}`);
     }
   } catch (error) {
-    console.error('Error seeding instructions:', error);
+    console.error("Error seeding instructions:", error);
     throw error; // Re-throw to indicate failure
   }
-};
+}
 
 //Seeding Recipe Ingredients using create function from db/recipes.js and the array of Recipe Ingredients in db/seedArrays/recipeIngrSeedData.js
 async function seedRecipeIngr(client) {
   try {
     for (const recipe_ingredient of recipe_ingredients) {
       const createdRecipeIngr = await createRecipeIngredient(recipe_ingredient);
-      // console.log(`Created ingredients for: ${JSON.stringify(createdRecipeIngr)}`); 
+      // console.log(`Created ingredients for: ${JSON.stringify(createdRecipeIngr)}`);
     }
   } catch (error) {
     console.error("Error seeding recipe ingredients:", error);
     throw error; // Re-throw to indicate failure
   }
-};
+}
 
 //Seeding Tags
 async function seedTags(client) {
   try {
     for (const tag of tags) {
       const createdTag = await createTag(tag);
-      console.log(`Creates ${JSON.stringify(createdTag)}`)
+      console.log(`Creates ${JSON.stringify(createdTag)}`);
     }
   } catch (error) {
     console.error("Error seeding tags:", error);
     throw error; // Re-throw to indicate failure
   }
-};
+}
 
 //Seeding recipe tags
 async function seedRecipeTags(client) {
   try {
-    let tagsArr = []
+    let tagsArr = [];
     for (const recipe_tag of recipe_tags) {
       const createdRecipeTag = await createRecipeTag(recipe_tag);
-      tagsArr.push(createdRecipeTag)
+      tagsArr.push(createdRecipeTag);
       // console.log(`Tagged ${JSON.stringify(createdRecipeTag)}`)
       // console.log(tagsArr)
     }
-    return tagsArr
+    return tagsArr;
   } catch (error) {
     console.error("Error seeding recipe tags:", error);
     throw error; // Re-throw to indicate failure
   }
-};
+}
 
 //seeding user reviews(recipes)
 async function seedUserRecipes(client) {
   try {
-    let userRecipesArr = []
+    let userRecipesArr = [];
     for (const user_recipe of user_recipes) {
       const createdReview = await createUserRecipe(user_recipe);
-      userRecipesArr.push(createdReview)
-      console.log(userRecipesArr)
+      userRecipesArr.push(createdReview);
+      console.log(userRecipesArr);
     }
-    return userRecipesArr
-  } catch(error) {
+    return userRecipesArr;
+  } catch (error) {
     console.error("Error seeding user recipes:", error);
     throw error; // Re-throw to indicate failure
   }
-};
-
+}
 
 //function to rebuild the db, called in seeed.js using npm run seed
 async function rebuild() {
@@ -238,17 +236,17 @@ async function rebuild() {
     await seedIngr();
     console.log("ingredients seeded");
     await seedRecipes();
-    console.log('seeded recipes');
+    console.log("seeded recipes");
     await seedInst();
-    console.log('seeded instructions');
+    console.log("seeded instructions");
     await seedRecipeIngr();
-    console.log('gathered ingredients for recipes');
+    console.log("gathered ingredients for recipes");
     await seedTags();
-    console.log('tags seeded');
+    console.log("tags seeded");
     await seedRecipeTags();
-    console.log('tagged recipes');
+    console.log("tagged recipes");
     await seedUserRecipes();
-    console.log('added reviews');
+    console.log("added reviews");
   } catch (error) {
     console.log(error.message);
   }
