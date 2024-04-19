@@ -19,7 +19,7 @@ function SingleWorld() {
         </Link>
 
         {/* Make title linked to database. Hard coded for styling. */}
-        <div className="title"> Studio Ghibli </div>
+        <div className="title"> World.Name </div>
         {/* Banner image */}
         <div className="banner-image-container">
           <img
