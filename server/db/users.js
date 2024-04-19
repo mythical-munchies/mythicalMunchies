@@ -126,13 +126,13 @@ const fetchReview = async (id) => {
 };
 
 //Delete a user's review
-const deleteReview = async ({ user_id, id }) => {
+const deleteReview = async (id) => {
   const SQL = `
     DELETE FROM user_recipes
-    WHERE id = $1 AND user_id = $2
+    WHERE id = $1
     RETURNING *
   `;
-  const response = await client.query(SQL, [id, user_id]);
+  const response = await client.query(SQL, [id]);
   if (!response.rows.length) {
     const error = Error("no review found");
     error.status = 500;

@@ -40,7 +40,7 @@ router.post("/login", async (req, res) => {
     res.status(200).json({
       message: "Login successful!",
       user, 
-      token: JWT.sign({user: user.id}, secret)
+      token: JWT.sign({user: user.username}, secret)
     });
     console.log(token)
   } catch (error) {

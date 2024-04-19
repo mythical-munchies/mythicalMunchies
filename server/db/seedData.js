@@ -114,7 +114,7 @@ async function seedUsers(client) {
   try {
     for (const user of users) {
       const createdUser = await createUser(user);
-      console.log(`Created user: ${createdUser}`); //
+      console.log(`Created user: ${JSON.stringify(createdUser)}`); 
     }
   } catch (error) {
     console.error("Error seeding users:", error);
