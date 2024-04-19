@@ -49,7 +49,6 @@ function App() {
           <img id="logo-image" src={Logo}/>Mythical Munchies
         </h2>
           <SearchBar placeholder="Explore Worlds..." data={CategoryData} />
-          <h3>Test</h3>
       </div>
 
       <Nav />

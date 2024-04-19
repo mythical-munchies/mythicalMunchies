@@ -2,13 +2,31 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./styles/SingleWorld.css";
 import ghibliBanner from "./images/banner_studioghibli.png";
+import { useState, useEffect } from "react"
 
 // Tried to fix the scrolling issue but will come back to it later
 // const scrolltoTop = () => {
 //   document.getElementById("toTOP").scroll(0,0)
 // }
 
+
+ 
+
 function SingleWorld() {
+
+  const [world, setWorld] = useState({});
+
+  const {worldid} = useParams();
+  useEffect(()=> {
+    const fetchSingleWorld = async() => {
+      const response = await fetch (`https://mythicalmunchies.onrender.com/mythicalMunchies/worlds/${worldid}`);
+      const json = await response.json();
+      console.log(json)
+      setWorld(json);
+    };
+    fetchSingleWorld();
+  }, []);
+
   return (
     <>
     <div className="single-container">
