@@ -310,6 +310,63 @@ const instructions = [
     description: "Serve hot and enjoy your hearty Wildling stew!",
     index: "8",
   },
+  {
+    recipe_name: "Lon Lon Milkshake",
+    description:
+      "In a blender, combine the vanilla ice cream, milk, honey, and banana.",
+    index: "0",
+  },
+  {
+    recipe_name: "Lon Lon Milkshake",
+    description: "Blend until smooth and creamy.",
+    index: "1",
+  },
+  {
+    recipe_name: "Lon Lon Milkshake",
+    description:
+      "Pour into glasses and serve immediately. Enjoy your refreshing Lon Lon Milkshake!",
+    index: "2",
+  },
+  {
+    recipe_name: "Triforce Sugar Cookies",
+    description:
+      "Preheat oven to 350°F (175°C). Line baking sheets with parchment paper.",
+    index: "0",
+  },
+  {
+    recipe_name: "Triforce Sugar Cookies",
+    description:
+      "In a large bowl, cream together the butter and sugar until smooth.",
+    index: "1",
+  },
+  {
+    recipe_name: "Triforce Sugar Cookies",
+    description: "Beat in the egg and vanilla extract until well combined.",
+    index: "2",
+  },
+  {
+    recipe_name: "Triforce Sugar Cookies",
+    description: "Gradually add the flour and mix until a dough forms.",
+    index: "3",
+  },
+  {
+    recipe_name: "Triforce Sugar Cookies",
+    description:
+      "Roll out the dough on a floured surface to about 1/4 inch thickness. Use a Triforce-shaped cookie cutter to cut out the cookies.",
+    index: "4",
+  },
+  {
+    recipe_name: "Triforce Sugar Cookies",
+    description:
+      "Place the cookies on the prepared baking sheets and bake for 8-10 minutes, or until the edges are lightly golden.",
+    index: "5",
+  },
+  {
+    recipe_name: "Triforce Sugar Cookies",
+    description:
+      "Allow the cookies to cool on the baking sheets for a few minutes before transferring them to a wire rack to cool completely.",
+    index: "6",
+  },
 
   // {
   //   recipe_name:"",

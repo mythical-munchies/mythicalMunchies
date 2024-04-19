@@ -87,12 +87,14 @@ const recipes = [
       "https://thestarvingchefblog.com/wp-content/uploads/2022/03/Wolf_Cake.jpg",
   },
   {
-  "name": "Tyrion's Mulled Wine",
-  "description": "A rich and aromatic beverage favored by Tyrion Lannister, known for its warming spices and deep flavor. Perfect for cold nights in King's Landing or feasting in the Great Hall of the Red Keep.",
-  "cook_time": "30 Minutes",
-  "world_name": "Game of Thrones",
-  "img_url": "https://www.pedestrian.tv/wp-content/uploads/2021/07/21/warm-cocktails-lead.jpg?quality=75&w=1200&h=630&crop=1"
-}
+    name: "Tyrion's Mulled Wine",
+    description:
+      "A rich and aromatic beverage favored by Tyrion Lannister, known for its warming spices and deep flavor. Perfect for cold nights in King's Landing or feasting in the Great Hall of the Red Keep.",
+    cook_time: "30 Minutes",
+    world_name: "Game of Thrones",
+    img_url:
+      "https://www.pedestrian.tv/wp-content/uploads/2021/07/21/warm-cocktails-lead.jpg?quality=75&w=1200&h=630&crop=1",
+  },
   {
     name: "Jon Snow's Wildling Stew",
     description:
@@ -101,6 +103,24 @@ const recipes = [
     world_name: "Game of Thrones",
     img_url:
       "https://img.jamieoliver.com/jamieoliver/news-and-features/features/wp-content/uploads/sites/2/2014/10/P1_Features_Stew_51_Joe-Sarah.jpg?tr=w-720",
+  },
+  {
+    name: "Lon Lon Milkshake",
+    description:
+      "Inspired by Lon Lon Ranch from The Legend of Zelda series, this milkshake is a creamy and refreshing treat. Made with fresh milk, vanilla ice cream, and a hint of nostalgia, it's perfect for adventurers seeking a moment of respite on their journey.",
+    cook_time: "10 Minutes",
+    world_name: "The Legend of Zelda",
+    img_url:
+      "https://preview.redd.it/oot-lon-lon-milk-i-made-for-our-new-years-party-nope-its-v0-lelj2m1cky9a1.jpg?width=1080&crop=smart&auto=webp&s=fa79cfda2ad6e8e6fcbb6e2fb9c0089246bf6dca",
+  },
+  {
+    name: "Triforce Sugar Cookies",
+    description:
+      "Delicious sugar cookies inspired by the iconic Triforce symbol from The Legend of Zelda series. These cookies are buttery, sweet, and perfect for any gaming-themed gathering or snack time adventure.",
+    cook_time: "Varies based on recipe, typically 10-15 minutes",
+    world_name: "The Legend of Zelda",
+    img_url:
+      "https://images.squarespace-cdn.com/content/v1/5508c899e4b0a308ed6ba859/1505364763444-SG6UGU8H7D2U1CBEZL2N/triforce-linzer-cookies-2.jpg",
   },
 
   // {

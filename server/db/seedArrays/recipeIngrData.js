@@ -353,14 +353,59 @@ const recipe_ingredients = [
     amount: "3",
     unit: "cloves",
   },
-
-
-
-
-
-
-
-
-  
+  {
+    recipe_name: "Lon Lon Milkshake",
+    ingredient_name: "Vanilla ice cream",
+    amount: "2",
+    unit: "cups",
+  },
+  {
+    recipe_name: "Lon Lon Milkshake",
+    ingredient_name: "Milk",
+    amount: "1",
+    unit: "cup",
+  },
+  {
+    recipe_name: "Lon Lon Milkshake",
+    ingredient_name: "Honey",
+    amount: "2",
+    unit: "tablespoons",
+  },
+  {
+    recipe_name: "Lon Lon Milkshake",
+    ingredient_name: "Banana",
+    amount: "1",
+    unit: "",
+  },
+  {
+    recipe_name: "Triforce Sugar Cookies",
+    ingredient_name: "All-purpose flour",
+    amount: "2",
+    unit: "cups",
+  },
+  {
+    recipe_name: "Triforce Sugar Cookies",
+    ingredient_name: "Butter",
+    amount: "1",
+    unit: "cup",
+  },
+  {
+    recipe_name: "Triforce Sugar Cookies",
+    ingredient_name: "Granulated sugar",
+    amount: "1",
+    unit: "cup",
+  },
+  {
+    recipe_name: "Triforce Sugar Cookies",
+    ingredient_name: "Egg",
+    amount: "1",
+    unit: "",
+  },
+  {
+    recipe_name: "Triforce Sugar Cookies",
+    ingredient_name: "Vanilla extract",
+    amount: "1",
+    unit: "teaspoon",
+  },
 ];
 module.exports = { recipe_ingredients };

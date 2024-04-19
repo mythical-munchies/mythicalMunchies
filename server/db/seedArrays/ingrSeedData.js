@@ -102,6 +102,15 @@ const ingredients = [
   { name: "Carrots", description: "" },
   { name: "Onion", description: "" },
   { name: "Garlic", description: "" },
+  { name: "Vanilla ice cream", description: "" },
+  { name: "Milk", description: "" },
+  { name: "Honey", description: "" },
+  { name: "Banana", description: "" },
+  { name: "All-purpose flour", description: "" },
+  { name: "Butter", description: "" },
+  { name: "Granulated sugar", description: "" },
+  { name: "Egg", description: "" },
+  { name: "Vanilla extract", description: "" },
 
   // {"name":"",
   // "description":""
