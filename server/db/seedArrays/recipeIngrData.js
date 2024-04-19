@@ -67,7 +67,7 @@ const recipe_ingredients = [
   },
   {
     recipe_name: "Calcifer Snacks",
-    ingredient_name: "Cocoa Powder",
+    ingredient_name: "Cocoa powder",
     amount: "5",
     unit: "Teaspoons",
   },
@@ -235,7 +235,7 @@ const recipe_ingredients = [
   },
   {
     recipe_name: "Lembas Bread",
-    ingredient_name: "Baking powder",
+    ingredient_name: "Baking Powder",
     amount: "1",
     unit: "tablespoon",
   },
@@ -326,7 +326,7 @@ const recipe_ingredients = [
   },
   {
     recipe_name: "Arya's Direwolf Bread",
-    ingredient_name: "Sugar",
+    ingredient_name: "Granulated Sugar",
     amount: "1",
     unit: "tablespoon",
   },
@@ -440,7 +440,7 @@ const recipe_ingredients = [
   },
   {
     recipe_name: "Triforce Sugar Cookies",
-    ingredient_name: "Granulated sugar",
+    ingredient_name: "Granulated Sugar",
     amount: "1",
     unit: "cup",
   },
@@ -542,7 +542,7 @@ const recipe_ingredients = [
   },
   {
     recipe_name: "Matilda's Chocolate Cake",
-    ingredient_name: "Granulated sugar",
+    ingredient_name: "Granulated Sugar",
     amount: "2",
     unit: "cups",
   },
@@ -554,13 +554,13 @@ const recipe_ingredients = [
   },
   {
     recipe_name: "Matilda's Chocolate Cake",
-    ingredient_name: "Baking powder",
+    ingredient_name: "Baking Powder",
     amount: "2",
     unit: "teaspoons",
   },
   {
     recipe_name: "Matilda's Chocolate Cake",
-    ingredient_name: "Baking soda",
+    ingredient_name: "Baking Soda",
     amount: "1",
     unit: "teaspoon",
   },
@@ -704,7 +704,7 @@ const recipe_ingredients = [
   },
   {
     recipe_name: "Wonka's Everlasting Gobstoppers",
-    ingredient_name: "Sugar",
+    ingredient_name: "Granulated Sugar",
     amount: "2",
     unit: "cups",
   },
@@ -854,7 +854,7 @@ const recipe_ingredients = [
   },
   {
     recipe_name: "Jellyfish Jelly Sandwich",
-    ingredient_name: "Peanut butter",
+    ingredient_name: "Peanut Butter",
     amount: "2",
     unit: "tablespoons",
   },
@@ -956,7 +956,7 @@ const recipe_ingredients = [
   },
   {
     recipe_name: "Fremen Spice Rice",
-    ingredient_name: "Bell pepper",
+    ingredient_name: "Bell Pepper",
     amount: "1",
     unit: "",
   },
@@ -1024,7 +1024,7 @@ const recipe_ingredients = [
     recipe_name: "Arrakeen Chicken Tagine",
     ingredient_name: "Onion",
     amount: "1",
-    unit: "large",
+    unit: "",
   },
   {
     recipe_name: "Arrakeen Chicken Tagine",

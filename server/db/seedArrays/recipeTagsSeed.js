@@ -8,6 +8,10 @@ const recipe_tags = [
     description: "Drink",
   },
   {
+    recipe_name: "Calcifer Snacks",
+    description: "Dessert",
+  },
+  {
     recipe_name: "Ham Ramen",
     description: "Entrée",
   },
