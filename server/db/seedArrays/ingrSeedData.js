@@ -184,6 +184,9 @@ const ingredients = [
   { name: "Salt", description: "" },
   { name: "Pepper", description: "" },
   { name: "Fresh cilantro", description: "Chopped, for garnish" },
+  { name: "Bread slices", description: "" },
+  { name: "Jellyfish jelly", description: "" },
+  { name: "Peanut butter", description: "" },
 
   // {"name":"",
   // "description":""

@@ -209,8 +209,16 @@ const recipes = [
       "A spicy and flavorful dish inspired by Sandy Cheeks in 'SpongeBob SquarePants'.",
     cook_time: "30 minutes",
     world_name: "Bikini Bottom",
+    img_url: "https://i.ytimg.com/vi/Tt7_Qao0TCw/hqdefault.jpg",
+  },
+  {
+    name: "Jellyfish Jelly Sandwich",
+    description:
+      "A sweet and gooey sandwich made with jellyfish jelly, a favorite of SpongeBob SquarePants.",
+    cook_time: "10 minutes",
+    world_name: "Bikini Bottom",
     img_url:
-      "https://www.recipetineats.com/wp-content/uploads/2023/06/Corn-ribs_7.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0laIOxEnSpNyrO5zffPeY30me3w6751T2dzcKuSVJYw&s",
   },
 
   // {

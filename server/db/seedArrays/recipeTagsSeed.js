@@ -76,6 +76,10 @@ const recipe_tags = [
     recipe_name: "Sandy's Texas Corn Ribs",
     description: "Appetizer",
   },
+  {
+    recipe_name: "Jellyfish Jelly Sandwich",
+    description: "Sandwich",
+  },
 
   // {
   //   "recipe_name":"",

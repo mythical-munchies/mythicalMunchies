@@ -710,6 +710,26 @@ const instructions = [
     description: "Serve hot and enjoy Sandy's Texas Corn Ribs!",
     index: "5",
   },
+  {
+    recipe_name: "Jellyfish Jelly Sandwich",
+    description: "Spread peanut butter on one slice of bread.",
+    index: "0",
+  },
+  {
+    recipe_name: "Jellyfish Jelly Sandwich",
+    description: "Spread jellyfish jelly on the other slice of bread.",
+    index: "1",
+  },
+  {
+    recipe_name: "Jellyfish Jelly Sandwich",
+    description: "Place the two slices of bread together to form a sandwich.",
+    index: "2",
+  },
+  {
+    recipe_name: "Jellyfish Jelly Sandwich",
+    description: "Slice diagonally and serve.",
+    index: "3",
+  },
 
   // {
   //   recipe_name:"",

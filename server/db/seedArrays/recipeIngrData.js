@@ -840,5 +840,23 @@ const recipe_ingredients = [
     amount: "For garnish",
     unit: "",
   },
+  {
+    recipe_name: "Jellyfish Jelly Sandwich",
+    ingredient_name: "Bread slices",
+    amount: "2",
+    unit: "",
+  },
+  {
+    recipe_name: "Jellyfish Jelly Sandwich",
+    ingredient_name: "Jellyfish jelly",
+    amount: "2",
+    unit: "tablespoons",
+  },
+  {
+    recipe_name: "Jellyfish Jelly Sandwich",
+    ingredient_name: "Peanut butter",
+    amount: "2",
+    unit: "tablespoons",
+  },
 ];
 module.exports = { recipe_ingredients };
