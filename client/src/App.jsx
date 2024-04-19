@@ -49,7 +49,6 @@ function App() {
           <img id="logo-image" src={Logo}/>Mythical Munchies
         </h2>
           <SearchBar placeholder="Explore Worlds..." data={CategoryData} />
-          <h3>Test</h3>
       </div>
 
       <Nav />
@@ -58,8 +57,9 @@ function App() {
         <Route path="/worlds" element={<Worlds worldsArray={worlds} />} />
         <Route path="/contact" element={<ContactTab />} />
 {/* ONLY SHOW THE ACCOUNT TAB IF A USER IS LOGGED IN - fix later once modules are coded in */}
+        <Route path={`single-world/:worldid`} element={<SingleWorld />} />
         <Route path="/account" element={<AccountTab />} />
-        <Route path="/single-world" element={<SingleWorld />} />
+        {/* <Route path="/single-world" element={<SingleWorld />} /> */}
         <Route path="/single-recipe" element={<SingleRecipe />} />
         <Route path="/dogwarts" element={<DogWarts />} />
         <Route path="/bottoms-up" element={<BottomsUp />} />
