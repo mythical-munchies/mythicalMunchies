@@ -3,7 +3,6 @@ import { Link, useParams } from "react-router-dom";
 import "./styles/SingleWorld.css";
 import ghibliBanner from "./images/banner_studioghibli.png";
 import { useState, useEffect } from "react"
-
 function SingleWorld() {
   const [world, setWorld] = useState({});
 
