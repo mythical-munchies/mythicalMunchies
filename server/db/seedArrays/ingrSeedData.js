@@ -145,6 +145,10 @@ const ingredients = [
   { name: "Vanilla extract", description: "" },
   { name: "Boiling water", description: "" },
   { name: "Confectioners' sugar", description: "For dusting" },
+  { name: "Clear lemon-lime soda", description: "" },
+  { name: "Green food coloring", description: "" },
+  { name: "Whipped cream", description: "" },
+  { name: "Maraschino cherry", description: "" },
 
   // {"name":"",
   // "description":""

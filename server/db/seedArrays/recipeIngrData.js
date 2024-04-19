@@ -606,5 +606,29 @@ const recipe_ingredients = [
     amount: "For dusting",
     unit: "",
   },
+  {
+    recipe_name: "The BFG's Frobscottle",
+    ingredient_name: "Clear lemon-lime soda",
+    amount: "2",
+    unit: "cups",
+  },
+  {
+    recipe_name: "The BFG's Frobscottle",
+    ingredient_name: "Green food coloring",
+    amount: "A few drops",
+    unit: "",
+  },
+  {
+    recipe_name: "The BFG's Frobscottle",
+    ingredient_name: "Whipped cream",
+    amount: "For topping",
+    unit: "",
+  },
+  {
+    recipe_name: "The BFG's Frobscottle",
+    ingredient_name: "Maraschino cherry",
+    amount: "1",
+    unit: "",
+  },
 ];
 module.exports = { recipe_ingredients };

@@ -506,6 +506,33 @@ const instructions = [
     description: "Slice and enjoy this deliciously moist chocolate cake!",
     index: "8",
   },
+  {
+    recipe_name: "The BFG's Frobscottle",
+    description: "In a tall glass, pour clear lemon-lime soda.",
+    index: "0",
+  },
+  {
+    recipe_name: "The BFG's Frobscottle",
+    description:
+      "Add a few drops of green food coloring to the soda and stir gently to mix.",
+    index: "1",
+  },
+  {
+    recipe_name: "The BFG's Frobscottle",
+    description: "Top the drink with whipped cream.",
+    index: "2",
+  },
+  {
+    recipe_name: "The BFG's Frobscottle",
+    description: "Garnish with a maraschino cherry.",
+    index: "3",
+  },
+  {
+    recipe_name: "The BFG's Frobscottle",
+    description:
+      "Serve chilled and enjoy the delightful fizziness of Frobscottle!",
+    index: "4",
+  },
 
   // {
   //   recipe_name:"",

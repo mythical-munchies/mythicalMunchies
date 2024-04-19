@@ -158,6 +158,15 @@ const recipes = [
     img_url:
       "https://thestayathomechef.com/wp-content/uploads/2016/06/The-Most-Amazing-Chocolate-Cake-1-e1496872274436.jpg",
   },
+  {
+    name: "The BFG's Frobscottle",
+    description:
+      "A fizzy and whimsical drink enjoyed by the Big Friendly Giant in Roald Dahl's 'The BFG'.",
+    cook_time: "10 minutes",
+    world_name: "Roald Dahl",
+    img_url:
+      "https://static.wikia.nocookie.net/roalddahl/images/6/66/Scottle.jpg/revision/latest?cb=20171007215444",
+  },
 
   // {
   //   "name": "",
