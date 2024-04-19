@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { useState, useRef, useEffect, useContext } from "react";
 import "./styles/Login.css"
+import user from './icons/user.jpg';
 // import Modal from 'react-bootstrap/Modal';
 // import Logo from './icons/cauldronyellow.png'
 
@@ -104,7 +105,7 @@ return (
                   <br/>
                         
                       
-                        <img className="user" src="./icons/user.jpg" alt="user"/>
+                        <img className="user" src= {user} alt="user"/>
                         <label htmlFor="Email or Username">Email or Username</label>
                         <input
                         type= "text"
