@@ -11,6 +11,7 @@ const {
   fetchUser,
   fetchUsers,
 } = require("../db/users");
+const { token } = require("morgan");
 
 // Fetch All Users Route
 router.get("/", async (req, res, next) => {
@@ -39,8 +40,9 @@ router.post("/login", async (req, res) => {
     res.status(200).json({
       message: "Login successful!",
       user, 
-      token: JWT.sign({user: user.id}, secret)
+      token: JWT.sign({user: user.username}, secret)
     });
+    console.log(token)
   } catch (error) {
     res.status(401).json({
       error: `Error: ${error.message}`,

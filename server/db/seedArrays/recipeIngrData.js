@@ -127,6 +127,12 @@ const recipe_ingredients = [
   },
   {
     recipe_name: "Calcifer Snacks",
+    ingredient_name: "Cornstarch",
+    amount: "1",
+    unit: "Tablespoons",
+  },
+  {
+    recipe_name: "Calcifer Snacks",
     ingredient_name: "Heavy Whipping Cream",
     amount: "1",
     unit: "Cup",
@@ -135,13 +141,7 @@ const recipe_ingredients = [
     recipe_name: "Calcifer Snacks",
     ingredient_name: "Powdered Sugar",
     amount: "2.5",
-    unit: "Tablespoons",
-  },
-  {
-    recipe_name: "Calcifer Snacks",
-    ingredient_name: "Cornstarch",
-    amount: "1",
-    unit: "Tablespoons",
+     unit: "Teaspoons"
   },
   {
     recipe_name: "Calcifer Snacks",
@@ -1161,3 +1161,4 @@ const recipe_ingredients = [
   },
 ];
 module.exports = { recipe_ingredients };
+
