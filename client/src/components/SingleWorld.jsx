@@ -2,36 +2,39 @@ import React from "react";
 import { Link, useParams } from "react-router-dom";
 import "../styles/SingleWorld.css";
 import ghibliBanner from "../images/banner_studioghibli.png";
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
 function SingleWorld() {
   const [world, setWorld] = useState({});
   const [recipes, setRecipes] = useState([]);
 
-  const {worldid} = useParams();
-  useEffect(()=> {
-    const fetchSingleWorld = async() => {
-      const response = await fetch (`https://mythicalmunchies.onrender.com/mythicalMunchies/worlds/${worldid}`);
+  const { worldid } = useParams();
+  useEffect(() => {
+    const fetchSingleWorld = async () => {
+      const response = await fetch(
+        `https://mythicalmunchies.onrender.com/mythicalMunchies/worlds/${worldid}`
+      );
       const json = await response.json();
-      console.log(json)
+      console.log(json);
       setWorld(json);
     };
     fetchSingleWorld();
   }, []);
 
-
-  const {recipeid} = useParams();
-  useEffect(()=> {
-    console.log("hello")
-    const fetchWorldRecipes = async() => {
-      const response = await fetch (`https://mythicalmunchies.onrender.com/mythicalMunchies/recipes/${worldid}`);
+  const { recipeid } = useParams();
+  useEffect(() => {
+    console.log("hello");
+    const fetchWorldRecipes = async () => {
+      const response = await fetch(
+        `https://mythicalmunchies.onrender.com/mythicalMunchies/recipes/${worldid}`
+      );
       const json = await response.json();
-      console.log("recipes", json)
-      console.log(worldid)
+      console.log("recipes", json);
+      console.log(worldid);
       setRecipes(json);
     };
     fetchWorldRecipes();
-  }, [])
-  
+  }, []);
+
   return (
     <>
       <div className="single-container">
@@ -44,26 +47,34 @@ function SingleWorld() {
 
           {/* if ${world.id} === {recipe.id} */}
 
-                <div  className="title">{world.name}</div>
+          <div className="title">{world.name}</div>
 
-                  <div className="banner-image-container">
-                    <img src={world.img_url} className="banner-image" alt="world-banner"/>
-                  </div>
+          <div className="banner-image-container">
+            <img
+              src={world.banner_url}
+              className="banner-image"
+              alt="world-banner"
+            />
+          </div>
 
-            {recipes.map((recipe) => {
-              return (
-                <>
-                  <div key={recipe.id} className="recipe-tile">
-                      <img className="recipe-image" src={recipe.img_url} alt="some yummy food!"/>
-                      <Link target="blank" to={`/single-recipe/${recipe.id}`}>{recipe.name}</Link>
-                  </div>
+          {recipes.map((recipe) => {
+            return (
+              <>
+                <div key={recipe.id} className="recipe-tile">
+                  <img
+                    className="recipe-image"
+                    src={recipe.img_url}
+                    alt="some yummy food!"
+                  />
+                  <Link target="blank" to={`/single-recipe/${recipe.id}`}>
+                    {recipe.name}
+                  </Link>
+                </div>
               </>
-              )
-            })}
-          
-          
+            );
+          })}
 
-            {/* <div className="title"> World.name </div>
+          {/* <div className="title"> World.name </div>
 
               <div className="banner-image-container">
                 <img className="banner-image" src={ghibliBanner} alt="world-banner"/>
@@ -82,8 +93,8 @@ function SingleWorld() {
 
 export default SingleWorld;
 
-
-{/* <div className="recipe-tile">
+{
+  /* <div className="recipe-tile">
           <img
             className="recipe-image"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNUF7YgIkI8JGC9DDY3yRqYe5zFrNWuFpw5I_mV1PvpA&s"
@@ -91,8 +102,10 @@ export default SingleWorld;
           />
           <div className="movie-title">Ponyos</div>
           <div className="recipe-title">Ham Ramen</div>
-        </div> */}
-        {/* <div className="recipe-tile">
+        </div> */
+}
+{
+  /* <div className="recipe-tile">
           <img
             className="recipe-image"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNUF7YgIkI8JGC9DDY3yRqYe5zFrNWuFpw5I_mV1PvpA&s"
@@ -100,4 +113,5 @@ export default SingleWorld;
           />
           <div className="movie-title">Ponyos</div>
           <div className="recipe-title">Ham Ramen</div>
-        </div> */}
+        </div> */
+}
