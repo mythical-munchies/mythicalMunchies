@@ -40,7 +40,8 @@ const createTables = async () => {
     CREATE TABLE worlds(
       id UUID PRIMARY KEY,
       name VARCHAR(100) NOT NULL UNIQUE,
-      img_url VARCHAR(500)
+      img_url VARCHAR(500),
+      banner_url VARCHAR(500)
     );
     CREATE TABLE users(
       id UUID PRIMARY KEY,

@@ -2,13 +2,13 @@ const client = require("./client");
 const uuid = require("uuid");
 
 //Create a world
-const createWorld = async ({ name, img_url }) => {
+const createWorld = async ({ name, img_url, banner_url }) => {
   const SQL = `
-  INSERT INTO worlds(id, name, img_url)
-  VALUES($1, $2, $3)
+  INSERT INTO worlds(id, name, img_url, banner_url)
+  VALUES($1, $2, $3, $4)
   RETURNING *
   `;
-  const response = await client.query(SQL, [uuid.v4(), name, img_url]);
+  const response = await client.query(SQL, [uuid.v4(), name, img_url, banner_url]);
   return response.rows[0];
 };
 
