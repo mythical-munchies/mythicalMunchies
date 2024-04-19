@@ -199,6 +199,35 @@ const instructions = [
     index: "6",
   },
   {
+    recipe_name: "Second Breakfast Spread",
+    description:
+      "In a frying pan, cook bacon until crispy. Remove from pan and set aside.",
+    index: "0",
+  },
+  {
+    recipe_name: "Second Breakfast Spread",
+    description:
+      "In the same pan, cook eggs to your liking. Season with salt and pepper.",
+    index: "1",
+  },
+  {
+    recipe_name: "Second Breakfast Spread",
+    description: "Toast bread slices and spread with butter.",
+    index: "2",
+  },
+  {
+    recipe_name: "Second Breakfast Spread",
+    description:
+      "Slice tomato and sauté mushrooms in the bacon fat until golden brown.",
+    index: "3",
+  },
+  {
+    recipe_name: "Second Breakfast Spread",
+    description:
+      "Assemble toast with eggs, bacon, sautéed mushrooms, and sliced tomato. Serve hot.",
+    index: "4",
+  },
+  {
     recipe_name: "Arya's Direwolf Bread",
     description:
       "In a large mixing bowl, dissolve the sugar in warm water, then stir in the yeast. Let it sit for about 5 minutes until the mixture becomes frothy.",

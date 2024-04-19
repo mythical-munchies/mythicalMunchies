@@ -263,6 +263,63 @@ const recipe_ingredients = [
     amount: "1",
     unit: "teaspoon",
   },
+{
+      recipe_name: "Second Breakfast",
+      ingredient_name: "Eggs",
+      amount: "2",
+      unit: ""
+    },
+    {
+      recipe_name: "Second Breakfast",
+      ingredient_name: "Bacon",
+      amount: "4",
+      unit: "slices"
+    },
+    {
+      recipe_name: "Second Breakfast",
+      ingredient_name: "Toast",
+      amount: "2",
+      unit: "slices"
+    },
+    {
+      recipe_name: "Second Breakfast",
+      ingredient_name: "Mushrooms",
+      amount: "1",
+      unit: "cup"
+    },
+    {
+      recipe_name: "Second Breakfast",
+      ingredient_name: "Tomato",
+      amount: "1",
+      unit: ""
+    },
+    {
+      recipe_name: "Second Breakfast",
+      ingredient_name: "Butter",
+      amount: "2",
+      unit: "tablespoons"
+    },
+    {
+      recipe_name: "Second Breakfast",
+      ingredient_name: "Salt",
+      amount: "to taste",
+      unit: ""
+    },
+    {
+      recipe_name: "Second Breakfast",
+      ingredient_name: "Pepper",
+      amount: "to taste",
+      unit: ""
+    },
+
+
+
+
+
+
+
+
+
   {
     recipe_name: "Arya's Direwolf Bread",
     ingredient_name: "All-purpose flour",
@@ -437,6 +494,6 @@ const recipe_ingredients = [
 
 
 
-  
+
 ];
 module.exports = { recipe_ingredients };

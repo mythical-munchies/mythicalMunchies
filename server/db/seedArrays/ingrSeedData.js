@@ -115,6 +115,15 @@ const ingredients = [
   { name: "Milk", description: "" },
   { name: "Blue food coloring", description: "" },
   { name: "Whipped cream", description: "" },
+  { name: "Eggs", description: "" },
+  { name: "Bacon", description: "" },
+  { name: "Sausages", description: "" },
+  { name: "Tomatoes", description: "Sliced" },
+  { name: "Mushrooms", description: "Sliced" },
+  { name: "Bread", description: "Toasted" },
+  { name: "Butter", description: "For spreading" },
+  { name: "Salt", description: "To taste" },
+  { name: "Pepper", description: "To taste" },
 
   // {"name":"",
   // "description":""

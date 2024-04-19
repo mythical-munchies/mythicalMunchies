@@ -73,10 +73,19 @@ const recipes = [
     description:
       "Nourishing Elven waybread known for its dense texture and sustaining properties. A single bite can fill the stomach of a grown man.",
     cook_time: "45 Min",
-    world_name: "The Lord of the Rings",
+    world_name: "Lord of the Rings",
     img_url:
       "https://i.pinimg.com/736x/4f/3e/d2/4f3ed234f3bbb2a77ce3b2b9c8570de6.jpg",
   },
+  {
+    name: "Second Breakfast Spread",
+    description:
+      "A hearty spread featuring eggs, bacon, sausages, and all the fixings for a proper Hobbit second breakfast.",
+    cook_time: "30 Minutes",
+    world_name: "Lord of the Rings",
+    img_url: "https://i.redd.it/vl5nh5wemqqb1.jpg",
+  },
+
   {
     name: "Arya's Direwolf Bread",
     description:
@@ -109,7 +118,7 @@ const recipes = [
     description:
       "Inspired by Lon Lon Ranch from The Legend of Zelda series, this milkshake is a creamy and refreshing treat. Made with fresh milk, vanilla ice cream, and a hint of nostalgia, it's perfect for adventurers seeking a moment of respite on their journey.",
     cook_time: "10 Minutes",
-    world_name: "The Legend of Zelda",
+    world_name: "Legend of Zelda",
     img_url:
       "https://preview.redd.it/oot-lon-lon-milk-i-made-for-our-new-years-party-nope-its-v0-lelj2m1cky9a1.jpg?width=1080&crop=smart&auto=webp&s=fa79cfda2ad6e8e6fcbb6e2fb9c0089246bf6dca",
   },
@@ -118,7 +127,7 @@ const recipes = [
     description:
       "Delicious sugar cookies inspired by the iconic Triforce symbol from The Legend of Zelda series. These cookies are buttery, sweet, and perfect for any gaming-themed gathering or snack time adventure.",
     cook_time: "Varies based on recipe, typically 10-15 minutes",
-    world_name: "The Legend of Zelda",
+    world_name: "Legend of Zelda",
     img_url:
       "https://images.squarespace-cdn.com/content/v1/5508c899e4b0a308ed6ba859/1505364763444-SG6UGU8H7D2U1CBEZL2N/triforce-linzer-cookies-2.jpg",
   },
