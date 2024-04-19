@@ -263,62 +263,54 @@ const recipe_ingredients = [
     amount: "1",
     unit: "teaspoon",
   },
-{
-      recipe_name: "Second Breakfast",
-      ingredient_name: "Eggs",
-      amount: "2",
-      unit: ""
-    },
-    {
-      recipe_name: "Second Breakfast",
-      ingredient_name: "Bacon",
-      amount: "4",
-      unit: "slices"
-    },
-    {
-      recipe_name: "Second Breakfast",
-      ingredient_name: "Toast",
-      amount: "2",
-      unit: "slices"
-    },
-    {
-      recipe_name: "Second Breakfast",
-      ingredient_name: "Mushrooms",
-      amount: "1",
-      unit: "cup"
-    },
-    {
-      recipe_name: "Second Breakfast",
-      ingredient_name: "Tomato",
-      amount: "1",
-      unit: ""
-    },
-    {
-      recipe_name: "Second Breakfast",
-      ingredient_name: "Butter",
-      amount: "2",
-      unit: "tablespoons"
-    },
-    {
-      recipe_name: "Second Breakfast",
-      ingredient_name: "Salt",
-      amount: "to taste",
-      unit: ""
-    },
-    {
-      recipe_name: "Second Breakfast",
-      ingredient_name: "Pepper",
-      amount: "to taste",
-      unit: ""
-    },
-
-
-
-
-
-
-
-
+  {
+    recipe_name: "Second Breakfast",
+    ingredient_name: "Eggs",
+    amount: "2",
+    unit: "",
+  },
+  {
+    recipe_name: "Second Breakfast",
+    ingredient_name: "Bacon",
+    amount: "4",
+    unit: "slices",
+  },
+  {
+    recipe_name: "Second Breakfast",
+    ingredient_name: "Toast",
+    amount: "2",
+    unit: "slices",
+  },
+  {
+    recipe_name: "Second Breakfast",
+    ingredient_name: "Mushrooms",
+    amount: "1",
+    unit: "cup",
+  },
+  {
+    recipe_name: "Second Breakfast",
+    ingredient_name: "Tomato",
+    amount: "1",
+    unit: "",
+  },
+  {
+    recipe_name: "Second Breakfast",
+    ingredient_name: "Butter",
+    amount: "2",
+    unit: "tablespoons",
+  },
+  {
+    recipe_name: "Second Breakfast",
+    ingredient_name: "Salt",
+    amount: "to taste",
+    unit: "",
+  },
+  {
+    recipe_name: "Second Breakfast",
+    ingredient_name: "Pepper",
+    amount: "to taste",
+    unit: "",
+  },
 
   {
     recipe_name: "Arya's Direwolf Bread",
@@ -488,6 +480,60 @@ const recipe_ingredients = [
     amount: "For topping",
     unit: "",
   },
+  {
+    recipe_name: "Beetlejuice's Ghostly Grub",
+    ingredient_name: "Black pasta",
+    amount: "8",
+    unit: "ounces",
+  },
+  {
+    recipe_name: "Beetlejuice's Ghostly Grub",
+    ingredient_name: "Black olives",
+    amount: "1/2",
+    unit: "cup",
+  },
+  {
+    recipe_name: "Beetlejuice's Ghostly Grub",
+    ingredient_name: "Mozzarella cheese",
+    amount: "1",
+    unit: "cup",
+  },
+  {
+    recipe_name: "Beetlejuice's Ghostly Grub",
+    ingredient_name: "Cherry tomatoes",
+    amount: "1",
+    unit: "cup",
+  },
+  {
+    recipe_name: "Beetlejuice's Ghostly Grub",
+    ingredient_name: "Fresh basil leaves",
+    amount: "1/4",
+    unit: "cup",
+  },
+  {
+    recipe_name: "Beetlejuice's Ghostly Grub",
+    ingredient_name: "Olive oil",
+    amount: "2",
+    unit: "tablespoons",
+  },
+  {
+    recipe_name: "Beetlejuice's Ghostly Grub",
+    ingredient_name: "Garlic",
+    amount: "2",
+    unit: "cloves",
+  },
+  {
+    recipe_name: "Beetlejuice's Ghostly Grub",
+    ingredient_name: "Salt",
+    amount: "to taste",
+    unit: "",
+  },
+  {
+    recipe_name: "Beetlejuice's Ghostly Grub",
+    ingredient_name: "Pepper",
+    amount: "to taste",
+    unit: "",
+  },
 
 
 
@@ -495,5 +541,7 @@ const recipe_ingredients = [
 
 
 
+
+  
 ];
 module.exports = { recipe_ingredients };

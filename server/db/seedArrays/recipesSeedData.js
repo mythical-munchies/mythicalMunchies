@@ -80,7 +80,7 @@ const recipes = [
   {
     name: "Second Breakfast Spread",
     description:
-      "A hearty spread featuring eggs, bacon, sausages, and all the fixings for a proper Hobbit second breakfast.",
+      "A hearty meal enjoyed by hobbits in the Shire, often served between breakfast and elevenses.",
     cook_time: "30 Minutes",
     world_name: "Lord of the Rings",
     img_url: "https://i.redd.it/vl5nh5wemqqb1.jpg",
@@ -137,7 +137,17 @@ const recipes = [
       "Inspired by the iconic blue milk enjoyed by characters in the Star Wars universe, this milkshake is a refreshing and vibrant treat. Made with creamy vanilla ice cream, cold milk, and a few drops of blue food coloring for a galaxy-inspired twist. Topped with fluffy whipped cream for extra indulgence.",
     cook_time: "5 minutes",
     world_name: "Star Wars",
-    img_url: "Insert URL of Blue Milkshake image here",
+    img_url:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWNUBu7yapHn72eQocoVokUTC1EXXerTMaKchv1FWicxKa11LYOtIsvpk2Rh7759ebwAU&usqp=CAU",
+  },
+  {
+    name: "Beetlejuice's Ghostly Grub",
+    description:
+      "A spooky dish inspired by the mischievous antics of Beetlejuice.",
+    cook_time: "45 minutes",
+    world_name: "The Neitherworld",
+    img_url:
+      "https://i.pinimg.com/474x/d6/fa/4a/d6fa4ab21845d48462f8a7b6ed6a3d04.jpg",
   },
 
   // {

@@ -124,6 +124,15 @@ const ingredients = [
   { name: "Butter", description: "For spreading" },
   { name: "Salt", description: "To taste" },
   { name: "Pepper", description: "To taste" },
+  { name: "Black pasta", description: "Cooked" },
+  { name: "Black olives", description: "Sliced" },
+  { name: "Mozzarella cheese", description: "Shredded" },
+  { name: "Cherry tomatoes", description: "Halved" },
+  { name: "Fresh basil leaves", description: "Chopped" },
+  { name: "Olive oil", description: "" },
+  { name: "Garlic", description: "Minced" },
+  { name: "Salt", description: "To taste" },
+  { name: "Pepper", description: "To taste" },
 
   // {"name":"",
   // "description":""

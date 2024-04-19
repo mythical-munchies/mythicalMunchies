@@ -413,6 +413,47 @@ const instructions = [
       "Pour into glasses, top with whipped cream, and serve chilled. May the Force be with you!",
     index: "2",
   },
+  {
+    recipe_name: "Beetlejuice's Ghostly Grub",
+    description:
+      "Cook black pasta according to package instructions. Drain and set aside.",
+    index: "0",
+  },
+  {
+    recipe_name: "Beetlejuice's Ghostly Grub",
+    description:
+      "In a skillet, heat olive oil over medium heat. Add minced garlic and cook until fragrant.",
+    index: "1",
+  },
+  {
+    recipe_name: "Beetlejuice's Ghostly Grub",
+    description:
+      "Add halved cherry tomatoes to the skillet. Cook until slightly softened.",
+    index: "2",
+  },
+  {
+    recipe_name: "Beetlejuice's Ghostly Grub",
+    description:
+      "Toss in cooked black olives and shredded mozzarella cheese. Stir until cheese is melted.",
+    index: "3",
+  },
+  {
+    recipe_name: "Beetlejuice's Ghostly Grub",
+    description:
+      "Add cooked black pasta to the skillet. Mix until well combined.",
+    index: "4",
+  },
+  {
+    recipe_name: "Beetlejuice's Ghostly Grub",
+    description:
+      "Season with salt and pepper to taste. Garnish with chopped fresh basil leaves.",
+    index: "5",
+  },
+  {
+    recipe_name: "Beetlejuice's Ghostly Grub",
+    description: "Serve hot and enjoy this spooky dish!",
+    index: "6",
+  },
 
   // {
   //   recipe_name:"",

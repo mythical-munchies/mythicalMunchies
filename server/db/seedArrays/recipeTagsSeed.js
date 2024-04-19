@@ -47,6 +47,10 @@ const recipe_tags = [
     recipe_name: "Second Breakfast Spread",
     description: "Entree",
   },
+  {
+    recipe_name: "Beetlejuice's Ghostly Grub",
+    description: "Entree",
+  },
 
   // {
   //   "recipe_name":"",
