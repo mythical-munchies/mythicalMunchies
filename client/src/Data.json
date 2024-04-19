@@ -9,7 +9,7 @@
 	},
 	{
 		"category": "Studio Ghibli",
-		"title": "Game of Thrones",
+		"title": "Bikini Bottom",
 		"food": "Hot Honey Milk",
 		"description": "Warm and comforting. Perfect for a rainy day!",
 		"ingredients": "1 cup milk, 1 BIG tbsp honey, cinnamon to sprinkle on top",
@@ -17,7 +17,7 @@
 	},
 	{
 		"category": "Studio Ghibli",
-		"title": "Howls Moving Castle",
+		"title": "Dune",
 		"food": "Bacon and Eggs (Family Breakfast)",
 		"description": "Yummy big breakfast",
 		"ingredients": "Bacon, Eggs, Bread, Cheese",
@@ -25,7 +25,7 @@
 	},
 	{
 		"category": "Studio Ghibli",
-		"title": "Harry Potter",
+		"title": "Forgotten Realms",
 		"food": "Sophie's Tea",
 		"description": "For the flower loving hat shop proprietess with a big heart to steal-- piping hot hibiscus tea. If you need to loosen up as much as Sophie does, let your hair down and add a little Japanese whiskey.",
 		"ingredients": "1 cup water, 1 hibiscus tea bag, 1 piece ginger root, 2 tsp honey, japanese whiskey",
@@ -33,7 +33,63 @@
 	},
 	{
 		"category": "James & the Giant Peach",
-		"title": "James & the Giant Peach",
+		"title": "Lord of the Rings",
+		"food": "Peach",
+		"description": "For a hot day",
+		"ingredients": "1 single peach",
+		"time": "1 minute"
+	},
+	{
+		"category": "James & the Giant Peach",
+		"title": "Make Room!",
+		"food": "Peach",
+		"description": "For a hot day",
+		"ingredients": "1 single peach",
+		"time": "1 minute"
+	},
+	{
+		"category": "James & the Giant Peach",
+		"title": "Roald Dahl",
+		"food": "Peach",
+		"description": "For a hot day",
+		"ingredients": "1 single peach",
+		"time": "1 minute"
+	},
+	{
+		"category": "James & the Giant Peach",
+		"title": "Star Wars",
+		"food": "Peach",
+		"description": "For a hot day",
+		"ingredients": "1 single peach",
+		"time": "1 minute"
+	},
+	{
+		"category": "James & the Giant Peach",
+		"title": "Stardew Valley",
+		"food": "Peach",
+		"description": "For a hot day",
+		"ingredients": "1 single peach",
+		"time": "1 minute"
+	},
+	{
+		"category": "James & the Giant Peach",
+		"title": "Studio Ghibli",
+		"food": "Peach",
+		"description": "For a hot day",
+		"ingredients": "1 single peach",
+		"time": "1 minute"
+	},
+	{
+		"category": "James & the Giant Peach",
+		"title": "The Legend of Zelda",
+		"food": "Peach",
+		"description": "For a hot day",
+		"ingredients": "1 single peach",
+		"time": "1 minute"
+	},
+	{
+		"category": "James & the Giant Peach",
+		"title": "Harry Potter World",
 		"food": "Peach",
 		"description": "For a hot day",
 		"ingredients": "1 single peach",

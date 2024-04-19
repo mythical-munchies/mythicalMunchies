@@ -1,24 +1,35 @@
 #default-sidebar {
   position: static;
-  background-color: #739287;
+  /* background-color: #739287; */
+  background-color: none;
   width: 450px;
   border-radius: 20px 0px 0px 20px;
   height: 1000px;
   margin-top: 4px;
   padding-right: 20px;
   z-index: 4;
-  margin-top: -96px;
+  margin-top: -100px;
   text-align: left;
 }
 
-/* #account-buttons {
-  margin-top: 100px;
-  text-decoration: none;
-} */
-/* 
-.sideBar {
-  border-radius: 50px;
-} */
+#testin {
+  margin-top: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* background-color: purple; */
+  width: 862px;
+  z-index: 1;
+  height: 100px;
+  /* margin-top: 4px; */
+  margin-left: 430px;
+  border-radius: 0px 30px 0px 0px;
+  
+}
+
+#sideBar {
+  margin-top: 4px
+}
 
 .welcome-user {
   color: #e2d5b0;
@@ -41,7 +52,7 @@
   
 }
 
-.testin {
+.account-testin {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -50,6 +61,7 @@
   z-index: 1;
   height: 100px;
   margin-top: 4px;
+  /* margin-left: 430px; */
   border-radius: 0px 30px 0px 0px;
   
 }
@@ -90,7 +102,8 @@
   width: 1300px;
   height: 1000px;
   background-color: #85A499;
-  margin-top: 30px;
+  /* background-color: #739287; */
+  /* margin-top: 30px; */
   border-radius: 20px;
   margin-top: 0px;
 }
@@ -109,8 +122,10 @@
 .edit {
   margin-top: 20px;
   font-size: 20px;
+  text-align: center;
   color: darkred;
-  
+  margin-left: 0px;
+ 
 }
 
 #textington {

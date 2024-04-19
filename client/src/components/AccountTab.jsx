@@ -43,8 +43,8 @@ const AccountTab = ({ authenticate })=> {
 
 {/* ACCOUNT - EDIT FORM */}
       <div className="containerBig">
-        <div className="testin">
-          <div className="testin">
+        <div id="testin">
+          <div className="account-testin">
             <h3 className="edit">Edit your Account Information</h3>
           </div>
           <form id="account-edit" className="max-w-sm mx-auto">
@@ -65,7 +65,7 @@ const AccountTab = ({ authenticate })=> {
                 <input type="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="johnsnow@gmail.com" required />
               </div>
               <div className="mb-5">
-                <label id="textington" htmlFor="password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your password</label>
+                <label id="textington" htmlFor="password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password:</label>
                   <input type="password" id="password" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="***********" required />
               </div>
               <div className="max-w-sm mx-auto">

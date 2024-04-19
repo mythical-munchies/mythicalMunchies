@@ -4,15 +4,21 @@
   justify-content: center;
 }
 
-.container {
-  background: #4a0260bf;
+#container {
+  background-image: url(https://img.freepik.com/premium-photo/feather-pen-into-inkwell-isolated-white-background_488220-33938.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* -webkit-transform: scaleX(-1);
+  transform: scaleX(-1); */
+  /* background-attachment: fixed; */
   font-size: 20px;
   width: 1208px;
   height: auto;
   top: 295px;
   left: 152px;
   border-radius: 20px;
-  opacity: 95%;
+  opacity: 100%;
   margin-top: 30px;
   padding-top: 30px;
   border-radius: 20px;
@@ -48,6 +54,7 @@
   text-align: center;
   font-family: "Almendra", serif;
   margin-right: 50px;
+  padding-left: 50px;
   /* border-radius: 20px; */
 }
 
@@ -69,16 +76,16 @@ p {
   text-align: left;
 }
 
-.form {
+#formy {
   /* position: relative; */
   /* left: 750px; */
 
   /* width: 300px; */
   border-radius: 10px;
   border: 1px;
-  margin-top: 75px;
+  /* margin-top: 75px; */
   font-family: "Almendra", serif;
-  margin-right: 50px;
+  margin-right: 100px;
 }
 
 .name,
@@ -89,15 +96,19 @@ p {
   font-size: 25px;
   width: 401px;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 10px;
   text-align: left;
-}
-
-label {
   display: block;
   align-items: left;
   font-family: "Almendra", serif;
+}
+
+#contact-form-labels {
+  display: block;
+  align-items: left;
+  font-family: "Almendra", serif;
+  text-shadow: 2px 2px 4px black;
 }
 
 input[type="text"],
@@ -110,16 +121,24 @@ textarea {
   border: 1px;
   border-radius: 5px;
   font-family: "Almendra", serif;
+  font-size: 20px;
+  
+}
+
+#contact-text-box {
+  border-radius: 5px;
+  font-size: 20px;
 }
 
 textarea {
   width: 400px;
   height: 150px;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   border: 1px solid #ccc;
   box-sizing: border-box;
   font-family: "Almendra", serif;
+  /* font-size: 30px; */
 }
 
 .field {

@@ -14,6 +14,7 @@ justify-content: center;
     background-color: #e2d5b0;
     border-radius: 20px;
     margin-top: 30px;
+    /* margin: 0 auto 0 0; */
   }
 
 .book-img {
@@ -28,6 +29,7 @@ justify-content: center;
   text-align: left;
   font-size: 20px;
   font-family: "Almendra", sans-serif;
+  /* margin: 0 auto 0 0; */
   /* margin-top: 0px; */
 }
 

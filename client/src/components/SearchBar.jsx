@@ -31,7 +31,11 @@ function SearchBar({placeholder, data}) {
         {filteredData.map((value, key) => {
           // TURN THIS INTO LINKS TO TAKE USER TO A NEW PAGE ONCE CLICKED
           // a href 
-          return <div className='text'> {value.title} </div>
+          return <div className='text'>
+            <div>
+              <a href="/worlds/worldid">{value.title}</a>
+            </div>
+          </div>
         })}
       </div>
       )}
@@ -40,7 +44,6 @@ function SearchBar({placeholder, data}) {
     </div>
     </>
   )
-}
-
+};
 
 export default SearchBar
