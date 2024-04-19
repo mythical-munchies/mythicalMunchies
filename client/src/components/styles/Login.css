@@ -28,6 +28,11 @@
   text-align: center;
 }
 
+#login-check {
+  font-family: "Almendra", serif;
+  font-size: 16px;
+}
+
 .top {
   flex-wrap: wrap;
   display: flex;

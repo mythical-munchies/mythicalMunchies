@@ -4,7 +4,8 @@ import "./styles/SingleWorld.css";
 import ghibliBanner from "./images/banner_studioghibli.png";
 import { useState, useEffect } from "react"
 function SingleWorld() {
-  const [world, setWorld] = useState({});
+  // const [world, setWorld] = useState({});
+  const [recipe, setRecipe] = useState({});
 
   const {worldid} = useParams();
   useEffect(()=> {
@@ -17,6 +18,17 @@ function SingleWorld() {
     fetchSingleWorld();
   }, []);
 
+
+  const {recipeid} = useParams();
+  useEffect(()=> {
+    const fetchRecipes = async() => {
+      const response = await fetch (`https://mythicalmunchies.onrender.com/mythicalMunchies/worlds/${worldid}/${recipeid}`);
+      const json = await response.json();
+      console.log(json)
+      setRecipe(json);
+    };
+    fetchRecipes
+  })
 
   return (
     <>
