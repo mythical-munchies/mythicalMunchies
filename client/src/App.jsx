@@ -13,7 +13,6 @@ import HomeTab from "./components/HomeTab";
 import Literature from "./components/Literature";
 import Login from "./components/Login"
 import Logo from "./icons/cauldronyellow.png"
-// import Logo from "/icons/cauldronyellow.png";
 import MythicalMunchiesFAQ from "./components/FAQ";
 import MyReviews from "./components/MyReviews";
 import Nav from "./components/Nav";
@@ -29,9 +28,10 @@ import { useEffect, useState } from "react";
 
 function App() {
   const [worlds, setWorlds] = useState([]);
+  const [recipes, setRecipes] =useState([]);
   const [auth, setAuth] = useState([]);
   const [review, setReview] = useState([]);
-  const [favorites, setFavorites] = useState([])
+  const [favorites, setFavorites] = useState([]);
 
   useEffect(()=> {
     const fetchWorlds = async() => {
@@ -42,6 +42,7 @@ function App() {
     };
     fetchWorlds();
   }, []);
+
 
   return (
     <>

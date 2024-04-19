@@ -45,14 +45,6 @@ const Worlds = ({ worldsArray }) => {
 
 export default Worlds;
 
-
-
-
-
-
-
-
-
 // SIMONES PLACEHOLDER CODE
       {/* Lord of the Rings
       <div className="each-world">
