@@ -1,5 +1,5 @@
 import { mockBooks } from "../BookData";
-import "./styles/Books.css"
+import "../styles/Books.css"
 
 
 const Literature = () => {

@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import "./styles/AccountTab.css"
+import "../styles/AccountTab.css"
 import Login from "./Login"
 import SignUp from "./SignUp";
 // ELENI IMPORT - COPY REGISTER LOGIC INTO SIGN UP.JSX

@@ -12,7 +12,8 @@ import Footer from "./components/Footer";
 import HomeTab from "./components/HomeTab";
 import Literature from "./components/Literature";
 import Login from "./components/Login"
-import Logo from "./components/icons/cauldronyellow.png";
+import Logo from "./icons/cauldronyellow.png"
+// import Logo from "/icons/cauldronyellow.png";
 import MythicalMunchiesFAQ from "./components/FAQ";
 import MyReviews from "./components/MyReviews";
 import Nav from "./components/Nav";

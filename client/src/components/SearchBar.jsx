@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import "./styles/SearchBar.css"
+import "../styles/SearchBar.css"
 
 // MUST BE LINKED WITH THE DATABASE -not mock data 
 function SearchBar({placeholder, data}) {
