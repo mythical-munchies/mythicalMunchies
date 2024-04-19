@@ -13,7 +13,6 @@ import HomeTab from "./components/HomeTab";
 import Literature from "./components/Literature";
 import Login from "./components/Login"
 import Logo from "./icons/cauldronyellow.png"
-// import Logo from "/icons/cauldronyellow.png";
 import MythicalMunchiesFAQ from "./components/FAQ";
 import MyReviews from "./components/MyReviews";
 import Nav from "./components/Nav";
@@ -32,7 +31,7 @@ function App() {
   const [recipes, setRecipes] =useState([]);
   const [auth, setAuth] = useState([]);
   const [review, setReview] = useState([]);
-  const [favorites, setFavorites] = useState([])
+  const [favorites, setFavorites] = useState([]);
 
   useEffect(()=> {
     const fetchWorlds = async() => {
@@ -44,16 +43,6 @@ function App() {
     fetchWorlds();
   }, []);
 
-
-  // useEffect(()=> {
-  //   const fetchRecipes = async() => {
-  //     const response = await fetch ('https://mythicalmunchies.onrender.com/mythicalMunchies/worlds/recipes/:world_id');
-  //     const json = await response.json();
-  //     console.log(json)
-  //     setRecipes(json);
-  //   };
-  //   fetchRecipes();
-  // }, []);
 
   return (
     <>

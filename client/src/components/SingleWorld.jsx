@@ -51,9 +51,11 @@ function SingleWorld() {
                 <img src={world.img_url} className="banner-image" alt="world-banner"/>
               </div>
 
+                            // how to change to recipe array?
+
               <div className="recipe-tile">
                 <img className="recipe-image" src={recipe.img_url} alt="some yummy food!"/>
-                  <Link target="blank" to="/single-recipe">Recipe.name</Link>
+                  <Link target="blank" to="{`/single-recipe/$recipe.id}`}">Recipe.name</Link>
               </div>
               )
             })}

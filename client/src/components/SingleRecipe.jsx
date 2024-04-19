@@ -23,20 +23,24 @@ const Item = styled(Paper)(({ theme }) => ({
 
 function SingleRecipe() {
   const [favorites, setFavorites] = useState([])
-
+  const [recipe, setRecipe] = useState([])
   // const addToFavorites = () => {
   //   const newArray = [...favorites, somethinghere ]
   //   setFavorites(newArray)
   // }
   // console.log(favorites)
 
+
   return (
   <>
     <div className="single-container">
       <div className="goldy-background">
         <Link to="/single-world" className="back-button-recipe">Back</Link>
+
+        {/* this is where the return should start */}
+    
+
           <h2 className="title"> World.name</h2>
-          
           <Box className="boxes" sx={{ flexGrow: 1 }}>
             <Grid container spacing={2}>
               <Grid className='box-1'item xs={6} >
@@ -68,33 +72,11 @@ function SingleRecipe() {
                     <ol>
                       <li>recipe.instructions</li>
                       <br />
-                      <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum explicabo aliquid similique. Rem dolorum autem nesciunt eum facilis eveniet quia nostrum tenetur, ducimus sunt delectus accusantium a nobis iste impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur eaque autem dignissimos iusto. Veniam magni, optio officiis, hic possimus soluta, eius dolores rerum quam repudiandae odit. Consequatur, quasi accusamus!Lorem</li>
-                      <br />
-                      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum hic id veniam neque ea voluptatem ullam reprehenderit quibusdam eveniet dicta asperiores, quasi optio odio repudiandae porro necessitatibus soluta vitae.</li>
-                      <br />
-                      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum hic id veniam neque ea voluptatem ullam reprehenderit quibusdam eveniet dicta asperiores, quasi optio odio repudiandae porro necessitatibus soluta vitae.</li>
-                      <br />
-                      <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum explicabo aliquid similique. Rem dolorum autem nesciunt eum facilis eveniet quia nostrum tenetur, ducimus sunt delectus accusantium a nobis iste impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur eaque autem dignissimos iusto. Veniam magni, optio officiis, hic possimus soluta, eius dolores rerum quam repudiandae odit. Consequatur, quasi accusamus!Lorem</li>
-                      <br />
-                      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum hic id veniam neque ea voluptatem ullam reprehenderit quibusdam eveniet dicta asperiores, quasi optio odio repudiandae porro necessitatibus soluta vitae.</li>
-                      <br />
-                      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum hic id veniam neque ea voluptatem ullam reprehenderit quibusdam eveniet dicta asperiores, quasi optio odio repudiandae porro necessitatibus soluta vitae.</li>
-                      <br />
-                      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum hic id veniam neque ea voluptatem ullam reprehenderit quibusdam eveniet dicta asperiores, quasi optio odio repudiandae porro necessitatibus soluta vitae.</li>
-                      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum hic id veniam neque ea voluptatem ullam reprehenderit quibusdam eveniet dicta asperiores, quasi optio odio repudiandae porro necessitatibus soluta vitae.</li>
-                      <br />
-                      <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum explicabo aliquid similique. Rem dolorum autem nesciunt eum facilis eveniet quia nostrum tenetur, ducimus sunt delectus accusantium a nobis iste impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur eaque autem dignissimos iusto. Veniam magni, optio officiis, hic possimus soluta, eius dolores rerum quam repudiandae odit. Consequatur, quasi accusamus!Lorem</li>
-                      <br />
-                      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum hic id veniam neque ea voluptatem ullam reprehenderit quibusdam eveniet dicta asperiores, quasi optio odio repudiandae porro necessitatibus soluta vitae.</li>
-                      <br />
-                      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum hic id veniam neque ea voluptatem ullam reprehenderit quibusdam eveniet dicta asperiores, quasi optio odio repudiandae porro necessitatibus soluta vitae.</li>
-                      <br />
-                      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum hic id veniam neque ea voluptatem ullam reprehenderit quibusdam eveniet dicta asperiores, quasi optio odio repudiandae porro necessitatibus soluta vitae.</li>
                     </ol>
-                  
                 </div>
              
               </Grid>
+              {/* this is where the return ends - i think  */}
 
 
               <Grid id="reviewz"item xs={12} >
@@ -113,3 +95,25 @@ function SingleRecipe() {
 
 export default SingleRecipe
 
+       {/* <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum explicabo aliquid similique. Rem dolorum autem nesciunt eum facilis eveniet quia nostrum tenetur, ducimus sunt delectus accusantium a nobis iste impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur eaque autem dignissimos iusto. Veniam magni, optio officiis, hic possimus soluta, eius dolores rerum quam repudiandae odit. Consequatur, quasi accusamus!Lorem</li>
+                      <br /> */}
+                      {/* <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum hic id veniam neque ea voluptatem ullam reprehenderit quibusdam eveniet dicta asperiores, quasi optio odio repudiandae porro necessitatibus soluta vitae.</li>
+                      <br />
+                      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum hic id veniam neque ea voluptatem ullam reprehenderit quibusdam eveniet dicta asperiores, quasi optio odio repudiandae porro necessitatibus soluta vitae.</li>
+                      <br />
+                      <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum explicabo aliquid similique. Rem dolorum autem nesciunt eum facilis eveniet quia nostrum tenetur, ducimus sunt delectus accusantium a nobis iste impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur eaque autem dignissimos iusto. Veniam magni, optio officiis, hic possimus soluta, eius dolores rerum quam repudiandae odit. Consequatur, quasi accusamus!Lorem</li>
+                      <br />
+                      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum hic id veniam neque ea voluptatem ullam reprehenderit quibusdam eveniet dicta asperiores, quasi optio odio repudiandae porro necessitatibus soluta vitae.</li>
+                      <br />
+                      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum hic id veniam neque ea voluptatem ullam reprehenderit quibusdam eveniet dicta asperiores, quasi optio odio repudiandae porro necessitatibus soluta vitae.</li>
+                      <br />
+                      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum hic id veniam neque ea voluptatem ullam reprehenderit quibusdam eveniet dicta asperiores, quasi optio odio repudiandae porro necessitatibus soluta vitae.</li>
+                      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum hic id veniam neque ea voluptatem ullam reprehenderit quibusdam eveniet dicta asperiores, quasi optio odio repudiandae porro necessitatibus soluta vitae.</li>
+                      <br />
+                      <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum explicabo aliquid similique. Rem dolorum autem nesciunt eum facilis eveniet quia nostrum tenetur, ducimus sunt delectus accusantium a nobis iste impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur eaque autem dignissimos iusto. Veniam magni, optio officiis, hic possimus soluta, eius dolores rerum quam repudiandae odit. Consequatur, quasi accusamus!Lorem</li>
+                      <br />
+                      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum hic id veniam neque ea voluptatem ullam reprehenderit quibusdam eveniet dicta asperiores, quasi optio odio repudiandae porro necessitatibus soluta vitae.</li>
+                      <br />
+                      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum hic id veniam neque ea voluptatem ullam reprehenderit quibusdam eveniet dicta asperiores, quasi optio odio repudiandae porro necessitatibus soluta vitae.</li>
+                      <br />
+                      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum hic id veniam neque ea voluptatem ullam reprehenderit quibusdam eveniet dicta asperiores, quasi optio odio repudiandae porro necessitatibus soluta vitae.</li> */}
