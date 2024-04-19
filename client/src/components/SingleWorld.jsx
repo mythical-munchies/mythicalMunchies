@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./styles/SingleWorld.css";
 import ghibliBanner from "./images/banner_studioghibli.png";
-import { useState, useEffect } from "react"
+import { useState, useEffect, useParams } from "react"
 
 
 function SingleWorld() {
