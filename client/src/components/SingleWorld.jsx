@@ -5,7 +5,7 @@ import ghibliBanner from "../images/banner_studioghibli.png";
 import { useState, useEffect } from "react"
 function SingleWorld() {
   const [world, setWorld] = useState({});
-  const [recipes, setRecipes] = useState({});
+  const [recipes, setRecipes] = useState([]);
 
   const {worldid} = useParams();
   useEffect(()=> {
@@ -21,14 +21,16 @@ function SingleWorld() {
 
   const {recipeid} = useParams();
   useEffect(()=> {
-    const fetchRecipes = async() => {
-      const response = await fetch (`https://mythicalmunchies.onrender.com/mythicalMunchies/worlds/${worldid}/${recipeid}`);
+    console.log("hello")
+    const fetchWorldRecipes = async() => {
+      const response = await fetch (`https://mythicalmunchies.onrender.com/mythicalMunchies/recipes/${worldid}`);
       const json = await response.json();
-      console.log(json)
-      setRecipe(json);
+      console.log("recipes", json)
+      console.log(worldid)
+      setRecipes(json);
     };
-    fetchRecipes
-  })
+    fetchWorldRecipes();
+  }, [])
   
   return (
     <>
@@ -40,29 +42,28 @@ function SingleWorld() {
 
           {/* TO MAP OVER - WILL IT NEED TO BE AN IF STATEMENT? */}
 
-          {/* if ${world.id} === {recipe.id}
+          {/* if ${world.id} === {recipe.id} */}
 
-          return (
-            {recipes.map((world) => {
+                <div  className="title">{world.name}</div>
+
+                  <div className="banner-image-container">
+                    <img src={world.img_url} className="banner-image" alt="world-banner"/>
+                  </div>
+
+            {recipes.map((recipe) => {
               return (
-                <div key={world.id} className="title">{world.name}</div>
-
-              <div className="banner-image-container">
-                <img src={world.img_url} className="banner-image" alt="world-banner"/>
-              </div>
-
-                            // how to change to recipe array?
-
-              <div className="recipe-tile">
-                <img className="recipe-image" src={recipe.img_url} alt="some yummy food!"/>
-                  <Link target="blank" to="{`/single-recipe/$recipe.id}`}">Recipe.name</Link>
-              </div>
+                <>
+                  <div key={recipe.id} className="recipe-tile">
+                      <img className="recipe-image" src={recipe.img_url} alt="some yummy food!"/>
+                      <Link target="blank" to={`/single-recipe/${recipe.id}`}>{recipe.name}</Link>
+                  </div>
+              </>
               )
             })}
-          )
-           */}
+          
+          
 
-            <div className="title"> World.name </div>
+            {/* <div className="title"> World.name </div>
 
               <div className="banner-image-container">
                 <img className="banner-image" src={ghibliBanner} alt="world-banner"/>
@@ -72,7 +73,7 @@ function SingleWorld() {
               <div className="recipe-tile">
                 <img className="recipe-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNUF7YgIkI8JGC9DDY3yRqYe5zFrNWuFpw5I_mV1PvpA&s" alt="Ham Ramen"/>
                   <Link target="blank" to="/single-recipe">Recipe.name</Link>
-              </div>
+              </div> */}
         </div>
       </div>
     </>
