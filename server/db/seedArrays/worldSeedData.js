@@ -71,7 +71,8 @@ const worlds = [
     name: "Studio Ghibli",
     img_url:
       "https://cdn.vox-cdn.com/uploads/chorus_asset/file/19998455/jbareham_200520_1021_ghibli_week_0001b.jpg",
-    banner_url: "https://i.imgur.com/N4DpAvp.jpeg",
+    banner_url:
+      "https://ghiblicollection.com/cdn/shop/products/totoro_hires_1_7dc984c6-a680-4b5e-ac19-642c5e7617ce.jpg?v=1675792119",
   },
   {
     name: "Wizarding World",
@@ -87,7 +88,7 @@ const worlds = [
     banner_url:
       "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/387c5339-3062-4edf-85f7-2fa38627441a/d60q25j-14205a71-1898-42e9-acfc-83ea4dff438c.jpg/v1/fill/w_1600,h_900,q_75,strp/zelda_collage_wallpaper__widescreen__by_lockstin_d60q25j-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTAwIiwicGF0aCI6IlwvZlwvMzg3YzUzMzktMzA2Mi00ZWRmLTg1ZjctMmZhMzg2Mjc0NDFhXC9kNjBxMjVqLTE0MjA1YTcxLTE4OTgtNDJlOS1hY2ZjLTgzZWE0ZGZmNDM4Yy5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.FZBAvYcbnHJZqqOig5-sdV0U0DVs5_e7zpowm6cxPGQ",
   },
-  
+
   // {
   //   "name":"",
   //   "img_url":"",
