@@ -67,7 +67,7 @@ function App() {
           element={<SingleWorld worldsArray={worlds} />}
         />
         <Route path="/account" element={<AccountTab />} />
-        <Route path="/single-recipe/:recipeid" element={<SingleRecipe />} />
+        <Route path="/single-recipe/:recipeid" element={<SingleRecipe worldsArray={worlds} />} />
         <Route path="/dogwarts" element={<DogWarts />} />
         <Route path="/bottoms-up" element={<BottomsUp />} />
         <Route path="/desserts" element={<Dessert />} />
