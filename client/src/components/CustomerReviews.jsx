@@ -6,28 +6,45 @@ import "../styles/CustomerReview.css";
 // Url is BaseUrl https://mythicalmunchies.onrender.com/mythicalMunchies
 //    /reviews/recipe/:recipe_id
 // look at how Sam did this for the endpoint for getting all recipes from a single world.
+
+// Define the CustomerReviews functional component
 function CustomerReviews() {
+  // Initialize state variables to hold reviews and use useParams to get the dynamic parts of the URL
   const [reviews, setReviews] = useState([]);
+  const [error, setError] = useState(null); // State to handle error messages cuz apparently I need all the testing I can get.
   const { recipeid } = useParams();
 
+  // useEffect hook to perform side effects (data fetching here)
   useEffect(() => {
-    console.log("hello");
+    // Define an asynchronous function to fetch recipe reviews
     const fetchRecipeReviews = async () => {
       try {
+        // Construct URL using the recipeid obtained from useParams
         const url = `https://mythicalmunchies.onrender.com/mythicalMunchies/reviews/recipe/${recipeid}`;
+        // Await the fetch call to the constructed URL and store the response
         const response = await fetch(url);
+        // If the response is not OK, throw an error
         if (!response.ok)
-          throw new Error("This is failing to fetch the recipes");
+          throw new Error("Failed to fetch reviews from the API");
+
+        // Convert the response to JSON
         const data = await response.json();
+        console.log("Fetched reviews:", data);
+        // Set the fetched data to the reviews state using setReviews
         setReviews(data);
       } catch (error) {
+        // Log any errors to the console
         console.error("Error:", error);
+        setError("Failed to load reviews.");
       }
     };
 
+    // Call the fetch function defined above
     fetchRecipeReviews();
-  }, [recipeid]);
-
+  }, [recipeid]); // The dependency array includes recipeid to re-run the effect when it changes
+  if (error) {
+    return <p>Error: {error}</p>; // Render an error message if there is an error
+  }
   return (
     <>
       {/* Map through the reviews state to display each review */}
@@ -42,10 +59,10 @@ function CustomerReviews() {
                 src={Profile}
                 alt="Profile"
               />
-              {/* Display the user name and join date */}
+              {/* We may need to hard code the date and the reviews.  */}
               <div className="font-medium dark:text-white">
                 <p className="this-test-name">
-                  {review.user.name}
+                  {review.user}
                   <time
                     dateTime={review.joinedDate}
                     className="block text-sm text-gray-500 dark:text-gray-400"
@@ -73,7 +90,7 @@ function CustomerReviews() {
               ))}
             </div>
             {/* Display review text */}
-            <p className="this-test">{review.reviewText}</p>
+            <p className="this-test">{review.review}</p>
           </article>
         </div>
       ))}
