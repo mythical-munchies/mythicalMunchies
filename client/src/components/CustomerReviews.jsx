@@ -9,70 +9,80 @@ import "../styles/CustomerReview.css";
 
 // Define the CustomerReviews functional component
 function CustomerReviews() {
-  // Initialize state variables to hold reviews and use useParams to get the dynamic parts of the URL
   const [reviews, setReviews] = useState([]);
-  const [error, setError] = useState(null); // State to handle error messages cuz apparently I need all the testing I can get.
+  const [users, setUsers] = useState({});
+  const [error, setError] = useState(null);
   const { recipeid } = useParams();
 
-  // useEffect hook to perform side effects (data fetching here)
   useEffect(() => {
-    // Define an asynchronous function to fetch recipe reviews
-    const fetchRecipeReviews = async () => {
+    async function fetchUserDetails(userIds) {
+      const uniqueUserIds = [...new Set(userIds)]; // Remove duplicates to avoid redundant API calls
       try {
-        // Construct URL using the recipeid obtained from useParams
+        const userDetails = await Promise.all(
+          uniqueUserIds.map((userId) =>
+            fetch(
+              `https://mythicalmunchies.onrender.com/mythicalMunchies/users/${userId}`
+            ).then((response) => {
+              if (!response.ok) {
+                throw new Error(
+                  `Failed to fetch user details for ID: ${userId}`
+                );
+              }
+              return response.json();
+            })
+          )
+        );
+        const userMap = userDetails.reduce((acc, user) => {
+          acc[user.id] = user; // Store user details with user_id as the key
+          return acc;
+        }, {});
+        setUsers(userMap);
+      } catch (error) {
+        console.error("Error fetching user details:", error);
+        setError("Failed to load user details.");
+      }
+    }
+
+    async function fetchRecipeReviews() {
+      try {
         const url = `https://mythicalmunchies.onrender.com/mythicalMunchies/reviews/recipe/${recipeid}`;
-        // Await the fetch call to the constructed URL and store the response
         const response = await fetch(url);
-        // If the response is not OK, throw an error
         if (!response.ok)
           throw new Error("Failed to fetch reviews from the API");
-
-        // Convert the response to JSON
-        const data = await response.json();
-        console.log("Fetched reviews:", data);
-        // Set the fetched data to the reviews state using setReviews
-        setReviews(data);
+        const reviewData = await response.json();
+        setReviews(reviewData);
+        fetchUserDetails(reviewData.map((review) => review.user_id)); // Trigger fetching user details
       } catch (error) {
-        // Log any errors to the console
         console.error("Error:", error);
         setError("Failed to load reviews.");
       }
-    };
+    }
 
-    // Call the fetch function defined above
     fetchRecipeReviews();
-  }, [recipeid]); // The dependency array includes recipeid to re-run the effect when it changes
+  }, [recipeid]); // Dependency array includes recipeid to re-run the effect when it changes
+
   if (error) {
-    return <p>Error: {error}</p>; // Render an error message if there is an error
+    return <p>Error: {error}</p>;
   }
+
   return (
     <>
-      {/* Map through the reviews state to display each review */}
       {reviews.map((review, index) => (
         <div key={index} className="review-box">
           <article>
             <div className="flex items-center mb-4">
-              {/* Display profile image */}
               <img
                 id="profile-logo"
                 className="w-15 h-12 me-4 rounded-full"
                 src={Profile}
                 alt="Profile"
               />
-              {/* We may need to hard code the date and the reviews.  */}
               <div className="font-medium dark:text-white">
                 <p className="this-test-name">
-                  {review.user}
-                  <time
-                    dateTime={review.joinedDate}
-                    className="block text-sm text-gray-500 dark:text-gray-400"
-                  >
-                    Joined on {new Date(review.joinedDate).toLocaleDateString()}
-                  </time>
+                  {users[review.user_id]?.username || "Loading..."}{" "}
                 </p>
               </div>
             </div>
-            {/* Display ratings as stars. Finally got the stars to work! */}
             <div
               id="ratingz"
               className="flex items-center mb-1 space-x-1 rtl:space-x-reverse"
@@ -89,24 +99,83 @@ function CustomerReviews() {
                 </svg>
               ))}
             </div>
-            {/* This is gonna show the review for the recipe!*/}
-            <p className="this-test">{review.review}</p>
+            <p className="this-test">{review.review}</p>{" "}
+            {/* Display the review text */}
           </article>
         </div>
       ))}
-      {/* Show a message if there are no reviews */}
-      {reviews.length === 0 && (
-        <p>
-          Alas! 🌟 This culinary creation has yet to be chronicled in the
-          scrolls of epicurean adventurers. Be the first brave soul to inscribe
-          your thoughts and tales of tasting this mystical recipe! 📜✨
-        </p>
-      )}
+      {reviews.length === 0 && <p>No reviews available for this recipe.</p>}
     </>
   );
 }
 
 export default CustomerReviews;
+
+//   return (
+//     <>
+//       {/* Map through the reviews state to display each review */}
+//       {reviews.map((review, index) => (
+//         <div key={index} className="review-box">
+//           <article>
+//             <div className="flex items-center mb-4">
+//               {/* Display profile image */}
+//               <img
+//                 id="profile-logo"
+//                 className="w-15 h-12 me-4 rounded-full"
+//                 src={Profile}
+//                 alt="Profile"
+//               />
+//               {/* We may need to hard code the date and the reviews.  */}
+//               <div className="font-medium dark:text-white">
+//                 <p className="this-test-name">
+//                   {users[review.user_id]?.username || "Loading..."}{" "}
+//                   {/* Check if user data is loaded */}
+//                   {/* Commenting this out since we don't have "join dates" in our array currently */}
+//                   {/* <time
+//                     dateTime={review.joinedDate}
+//                     className="block text-sm text-gray-500 dark:text-gray-400"
+//                   >
+//                     Joined on {new Date(review.joinedDate).toLocaleDateString()}
+//                   </time> */}
+//                 </p>
+//               </div>
+//             </div>
+//             {/* Display ratings as stars. Finally got the stars to work! */}
+//             <div
+//               id="ratingz"
+//               className="flex items-center mb-1 space-x-1 rtl:space-x-reverse"
+//             >
+//               {Array.from({ length: review.rating }, (_, i) => (
+//                 <svg
+//                   key={i}
+//                   className="w-5 h-5 text-yellow-300"
+//                   fill="currentColor"
+//                   xmlns="http://www.w3.org/2000/svg"
+//                   viewBox="0 0 22 20"
+//                 >
+//                   {/* Can you believe that the below path is how to 'draw' a star in here? */}
+//                   <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+//                 </svg>
+//               ))}
+//             </div>
+//             {/* This is gonna show the review for the recipe!*/}
+//             <p className="this-test">{review.review}</p>
+//           </article>
+//         </div>
+//       ))}
+//       {/* Show a message if there are no reviews */}
+//       {reviews.length === 0 && (
+//         <p>
+//           Alas! 🌟 This culinary creation has yet to be chronicled in the
+//           scrolls of epicurean adventurers. Be the first brave soul to inscribe
+//           your thoughts and tales of tasting this mystical recipe! 📜✨
+//         </p>
+//       )}
+//     </>
+//   );
+// }
+
+// export default CustomerReviews;
 
 // Sam's code below for reference
 //       const response = await fetch(
