@@ -117,11 +117,24 @@ const fetchRecipe = async (id) => {
   return response.rows;
 };
 
+// Fetch a recipe review and connect it to the username
+const fetchRecipeReviews = async (recipe_id) => {
+  const SQL = `
+    SELECT ur.*, u.username
+    FROM user_recipes ur
+    JOIN users u ON ur.user_id = u.id
+    WHERE ur.recipe_id = $1;
+    `;
+  const response = await client.query(SQL, [recipe_id]);
+  return response.rows;
+};
+
 module.exports = {
   createRecipe,
   createRecipeIngredient,
   fetchAllRecipes,
   fetchWorldRecipes,
   fetchRecipe,
-  getRecipeId
+  fetchRecipeReviews,
+  getRecipeId,
 };
