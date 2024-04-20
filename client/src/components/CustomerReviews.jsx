@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Profile from "../icons/profile.png";
 import "../styles/CustomerReview.css";
-
 // Url is BaseUrl https://mythicalmunchies.onrender.com/mythicalMunchies
 //    /reviews/recipe/:recipe_id
 // look at how Sam did this for the endpoint for getting all recipes from a single world.
@@ -16,26 +15,24 @@ function CustomerReviews() {
 
   useEffect(() => {
     async function fetchUserDetails(userIds) {
-      const uniqueUserIds = [...new Set(userIds)]; // Remove duplicates to avoid redundant API calls
+      const uniqueUserIds = [...new Set(userIds)];
       try {
         const userDetails = await Promise.all(
-          uniqueUserIds.map((userId) =>
-            fetch(
+          uniqueUserIds.map(async (userId) => {
+            const response = await fetch(
               `https://mythicalmunchies.onrender.com/mythicalMunchies/users/${userId}`
-            ).then((response) => {
-              if (!response.ok) {
-                throw new Error(
-                  `Failed to fetch user details for ID: ${userId}`
-                );
-              }
-              return response.json();
-            })
-          )
+            );
+            if (!response.ok) {
+              throw new Error(`Failed to fetch user details for ID: ${userId}`);
+            }
+            return response.json();
+          })
         );
         const userMap = userDetails.reduce((acc, user) => {
-          acc[user.id] = user; // Store user details with user_id as the key
+          acc[user.id] = user;
           return acc;
         }, {});
+        console.log("User details fetched and mapped:", userMap); // Debugging log
         setUsers(userMap);
       } catch (error) {
         console.error("Error fetching user details:", error);
@@ -47,19 +44,21 @@ function CustomerReviews() {
       try {
         const url = `https://mythicalmunchies.onrender.com/mythicalMunchies/reviews/recipe/${recipeid}`;
         const response = await fetch(url);
-        if (!response.ok)
+        if (!response.ok) {
           throw new Error("Failed to fetch reviews from the API");
-        const reviewData = await response.json();
-        setReviews(reviewData);
-        fetchUserDetails(reviewData.map((review) => review.user_id)); // Trigger fetching user details
+        }
+        const data = await response.json();
+        setReviews(data);
+        console.log("Reviews data fetched:", data); // Debugging log
+        fetchUserDetails(data.map((review) => review.user_id));
       } catch (error) {
-        console.error("Error:", error);
+        console.error("Error fetching reviews:", error);
         setError("Failed to load reviews.");
       }
     }
 
     fetchRecipeReviews();
-  }, [recipeid]); // Dependency array includes recipeid to re-run the effect when it changes
+  }, [recipeid]);
 
   if (error) {
     return <p>Error: {error}</p>;
@@ -79,7 +78,7 @@ function CustomerReviews() {
               />
               <div className="font-medium dark:text-white">
                 <p className="this-test-name">
-                  {users[review.user_id]?.username || "Loading..."}{" "}
+                  {users[review.user_id]?.username || "Loading..."}
                 </p>
               </div>
             </div>
@@ -99,12 +98,17 @@ function CustomerReviews() {
                 </svg>
               ))}
             </div>
-            <p className="this-test">{review.review}</p>{" "}
-            {/* Display the review text */}
+            <p className="this-test">{review.review}</p>
           </article>
         </div>
       ))}
-      {reviews.length === 0 && <p>No reviews available for this recipe.</p>}
+      {reviews.length === 0 && (
+        <p>
+          // Alas! 🌟 This culinary creation has yet to be chronicled in the //
+          scrolls of epicurean adventurers. Be the first brave soul to inscribe
+          // your thoughts and tales of tasting this mystical recipe! 📜✨ //{" "}
+        </p>
+      )}
     </>
   );
 }
