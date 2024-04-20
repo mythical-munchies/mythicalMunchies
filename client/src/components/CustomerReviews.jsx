@@ -1,7 +1,9 @@
+import React, { useState, useEffect } from "react";
 import Profile from "../icons/profile.png";
 import "../styles/CustomerReview.css";
 
 function CustomerReviews() {
+  const [reviews, setReviews] = useState([]);
   return (
     <>
       <div className="review-box">
