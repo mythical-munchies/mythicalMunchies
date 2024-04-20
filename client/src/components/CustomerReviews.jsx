@@ -72,7 +72,7 @@ function CustomerReviews() {
                 </p>
               </div>
             </div>
-            {/* Display ratings as stars */}
+            {/* Display ratings as stars. Finally got the stars to work! */}
             <div
               id="ratingz"
               className="flex items-center mb-1 space-x-1 rtl:space-x-reverse"
@@ -89,7 +89,7 @@ function CustomerReviews() {
                 </svg>
               ))}
             </div>
-            {/* Display review text */}
+            {/* This is gonna show the review for the recipe!*/}
             <p className="this-test">{review.review}</p>
           </article>
         </div>
