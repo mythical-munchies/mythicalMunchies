@@ -6,7 +6,7 @@ import "../styles/CustomerReview.css";
 //    /reviews/recipe/:recipe_id
 // look at how Sam did this for the endpoint for getting all recipes from a single world.
 
-// Define the CustomerReviews functional component
+// Define the CustomerReviews functional components
 function CustomerReviews() {
   const [reviews, setReviews] = useState([]);
   const [users, setUsers] = useState({});
@@ -16,7 +16,8 @@ function CustomerReviews() {
   useEffect(() => {
     async function fetchUserDetails(userIds) {
       const uniqueUserIds = [...new Set(userIds)];
-      console.log("unique user IDs to fetch:", uniqueUserIds);
+
+      // console.log("unique user IDs to fetch:", uniqueUserIds);
       try {
         const userDetails = await Promise.all(
           uniqueUserIds.map(async (userId) => {
@@ -24,19 +25,20 @@ function CustomerReviews() {
               `https://mythicalmunchies.onrender.com/mythicalMunchies/users/${userId}`
             );
             if (!response.ok) {
-              throw new Error(`Failed to fetch user details for ID: ${userId}`);
+              throw new Error(`Failed to fetch: ${userId}`);
             }
             return response.json();
+
           })
         );
 
-        console.log("Fetched user details:", userDetails); // Check what is actually being fetched
+        console.log("Fetched user details:", userDetails);
 
         const userMap = userDetails.reduce((acc, user) => {
           acc[user.id] = user;
           return acc;
         }, {});
-        console.log("User details fetched and mapped:", userMap); // Debugging log
+        console.log("User details fetched and mapped:", userMap); // Testing
         setUsers(userMap);
       } catch (error) {
         console.error("Error fetching user details:", error);
@@ -63,7 +65,6 @@ function CustomerReviews() {
 
     fetchRecipeReviews();
   }, [recipeid]);
-
   if (error) {
     return <p>Error: {error}</p>;
   }
