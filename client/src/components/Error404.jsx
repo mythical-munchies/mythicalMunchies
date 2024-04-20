@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./styles/Error404.css";
+import "../styles/Error404.css";
 
 function Error404() {
   return (
