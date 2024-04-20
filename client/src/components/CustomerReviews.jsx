@@ -29,6 +29,10 @@ function CustomerReviews() {
             }
             return response.json();
 
+            const userData = await response.json();
+            console.log("Unique User IDs:", uniqueUserIds);
+
+            return userData;
           })
         );
 
@@ -38,6 +42,10 @@ function CustomerReviews() {
           acc[user.id] = user;
           return acc;
         }, {});
+        console.log("User details fetched and mapped:", userMap); // After mapping
+        setUsers(userMap);
+        console.log("Current user state after setting:", users);
+
         console.log("User details fetched and mapped:", userMap); // Testing
         setUsers(userMap);
       } catch (error) {
@@ -62,7 +70,6 @@ function CustomerReviews() {
         setError("Failed to load reviews.");
       }
     }
-
     fetchRecipeReviews();
   }, [recipeid]);
   if (error) {
@@ -84,7 +91,15 @@ function CustomerReviews() {
               <div className="font-medium dark:text-white">
                 {/* I was adding console.logs and tests in here and I put "Loading.. to check usernames but I could never get it to pull. Put Anonymous here as a placeholder so I wouldn't have to stare at Loading... all the time.  */}
                 <p className="this-test-name">
-                  {users[review.user_id]?.username || "Anonymous"}
+                  {users[review.user_id]
+                    ? users[review.user_id].username
+                    : "Anonymous"}
+                  {console.log(
+                    "Rendering user for ID:",
+                    review.user_id,
+                    "as",
+                    users[review.user_id]?.username
+                  )}
                 </p>
               </div>
             </div>
