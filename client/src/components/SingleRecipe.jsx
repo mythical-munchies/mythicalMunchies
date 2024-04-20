@@ -20,7 +20,8 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 function SingleRecipe() {
-  const [favorites, setFavorites] = useState([])
+  const [world, setWorld] = useState({});
+  const [favorites, setFavorites] = useState([]);
   const [recipes, setRecipes] = useState([]);
   const [recipe, setRecipe] = useState([]);
 
@@ -90,7 +91,7 @@ function SingleRecipe() {
               </Grid>
         })} */}
 
-          <h2 className="title"> World.name</h2>
+          <h2 className="title">Test</h2>
           <Box className="boxes" sx={{ flexGrow: 1 }}>
             <Grid container spacing={2}>
               <Grid className='box-1'item xs={6} >
