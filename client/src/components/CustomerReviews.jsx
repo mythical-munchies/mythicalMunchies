@@ -2,8 +2,45 @@ import React, { useState, useEffect } from "react";
 import Profile from "../icons/profile.png";
 import "../styles/CustomerReview.css";
 
+
+
+// Url is BaseUrl https://mythicalmunchies.onrender.com/mythicalMunchies  
+//    /reviews/recipe/:recipe_id
+// look at how Sam did this for the endpoint for getting all recipes from a single world. 
 function CustomerReviews() {
   const [reviews, setReviews] = useState([]);
+con
+
+useEffect (()) => {
+  fetch ("https://mythicalmunchies.onrender.com/)
+}
+
+const {recipeid} = useParams ();
+useEffect (() => {
+  console.log("hi! This is to test recipes!");
+  const fetchRecipeReviews = async () => {
+  const response = await fetch (
+    `https://mythicalmunchies.onrender.com/mythicalMunchies/reviews/recipe/${recipeid}`
+  );
+  const json = await response.json();
+  console.log("recipes", json);
+  console.log(recipeid);
+  setRecipes(json);
+};
+fetchRecipeReviews ();
+
+}, []);
+
+
+
+
+
+
+
+
+
+
+
   return (
     <>
       <div className="review-box">
