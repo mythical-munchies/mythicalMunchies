@@ -16,6 +16,7 @@ function CustomerReviews() {
   useEffect(() => {
     async function fetchUserDetails(userIds) {
       const uniqueUserIds = [...new Set(userIds)];
+      console.log("unique user IDs to fetch:", uniqueUserIds);
       try {
         const userDetails = await Promise.all(
           uniqueUserIds.map(async (userId) => {
@@ -28,6 +29,9 @@ function CustomerReviews() {
             return response.json();
           })
         );
+
+        console.log("Fetched user details:", userDetails); // Check what is actually being fetched
+
         const userMap = userDetails.reduce((acc, user) => {
           acc[user.id] = user;
           return acc;
@@ -77,8 +81,9 @@ function CustomerReviews() {
                 alt="Profile"
               />
               <div className="font-medium dark:text-white">
+                {/* I was adding console.logs and tests in here and I put "Loading.. to check usernames but I could never get it to pull. Put Anonymous here as a placeholder so I wouldn't have to stare at Loading... all the time.  */}
                 <p className="this-test-name">
-                  {users[review.user_id]?.username || "Loading..."}
+                  {users[review.user_id]?.username || "Anonymous"}
                 </p>
               </div>
             </div>
@@ -86,6 +91,7 @@ function CustomerReviews() {
               id="ratingz"
               className="flex items-center mb-1 space-x-1 rtl:space-x-reverse"
             >
+              {/* I found this on Stack Overflow on how we could use an array to connect the number of stars with the the rating number. */}
               {Array.from({ length: review.rating }, (_, i) => (
                 <svg
                   key={i}
@@ -94,6 +100,7 @@ function CustomerReviews() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 22 20"
                 >
+                  {/* This is the bonkers way to draw a star in here. Copy/pasted from the interwebs. */}
                   <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                 </svg>
               ))}
@@ -102,12 +109,17 @@ function CustomerReviews() {
           </article>
         </div>
       ))}
+
       {reviews.length === 0 && (
-        <p>
-          // Alas! 🌟 This culinary creation has yet to be chronicled in the //
-          scrolls of epicurean adventurers. Be the first brave soul to inscribe
-          // your thoughts and tales of tasting this mystical recipe! 📜✨ //{" "}
-        </p>
+        <div className="yellow-box">
+          {" "}
+          <h5>
+            Alas! 🌟 This culinary creation has yet to be chronicled in the
+            scrolls of epicurean adventurers. Be the first brave soul to
+            inscribe your thoughts and tales of tasting this mystical recipe!
+            📜✨
+          </h5>
+        </div>
       )}
     </>
   );
