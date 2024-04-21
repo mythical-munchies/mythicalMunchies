@@ -4,14 +4,12 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import "../styles/SingleRecipe.css"
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import Ramen from '../images/ponyo-ramen.jpg'
 import CustomerReviews from './CustomerReviews';
 import LeaveReview from './LeaveReview';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Modal from 'react-bootstrap/Modal';
-// import { Button } from "flowbite-react"
-
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -22,14 +20,34 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 function SingleRecipe() {
-  const [favorites, setFavorites] = useState([])
-  const [recipe, setRecipe] = useState([])
-  // const addToFavorites = () => {
-  //   const newArray = [...favorites, somethinghere ]
-  //   setFavorites(newArray)
-  // }
-  // console.log(favorites)
+  const [world, setWorld] = useState({});
+  const [favorites, setFavorites] = useState([]);
+  const [recipes, setRecipes] = useState([]);
+  const [recipe, setRecipe] = useState([]);
 
+  const {worldid} = useParams();
+  useEffect(()=> {
+    const fetchSingleWorld = async() => {
+      const response = await fetch (`https://mythicalmunchies.onrender.com/mythicalMunchies/worlds/${worldid}`);
+      const json = await response.json();
+      console.log(json)
+      setWorld(json);
+    };
+    fetchSingleWorld();
+  }, []);
+
+  const {recipeid} = useParams();
+  useEffect(()=> {
+    console.log("hello")
+    const fetchRecipe = async() => {
+      const response = await fetch (`https://mythicalmunchies.onrender.com/mythicalMunchies/recipes/single/${recipeid}`);
+      const json = await response.json();
+      console.log("recipe", json)
+      console.log(recipe)
+      setRecipe(json);
+    };
+    fetchRecipe();
+  }, [])
 
   return (
   <>
@@ -37,10 +55,43 @@ function SingleRecipe() {
       <div className="goldy-background">
         <Link to="/single-world" className="back-button-recipe">Back</Link>
 
+        {/* <h2 className="title">{world.name}</h2> */}
         {/* this is where the return should start */}
-    
+        {/* {recipe.map((recipe) => {
+          return (
+            
+            <Box className="boxes" sx={{ flexGrow: 1 }}>
+          )   <Grid container spacing={2}>
+                <Grid className='box-1'item xs={6} >
+                  <div className='intro'>
+                  <button className="bookmarky">Add to Bookmarks 📕</button>
+                    <h4 className='recipe-name'>{recipe.name}</h4>
+                      <img  className='pic' src={recipe.img_url} alt="pic" />
+                        <LeaveReview />
+                  </div>
+                </Grid>
 
-          <h2 className="title"> World.name</h2>
+                <Grid id="ingredients-list" item xs={6} >
+                  <div className="ingredients-post">
+                    <h4 className="ingredients-title">Ingredients:</h4>
+                      <ul className="ingredient-list">
+                        <li className='ingredient-item'>{recipe.ingredients}</li>
+                      </ul>
+                  </div>
+                </Grid>
+
+                 <Grid id="intstructions" item xs={12} >
+                <div className="instructions">
+                  <h2 className='cooking-title'>Cooking Instructions:</h2>
+                    <ol>
+                      <li>{recipe.instructions}</li>
+                      <br />
+                    </ol>
+                </div>  
+              </Grid>
+        })} */}
+
+          <h2 className="title">Test</h2>
           <Box className="boxes" sx={{ flexGrow: 1 }}>
             <Grid container spacing={2}>
               <Grid className='box-1'item xs={6} >
