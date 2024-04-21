@@ -33,6 +33,7 @@
 /* SLIDE CSS */
 /* HOW TO: LOWERE BACKGROUND OPACITY -- KEEP CONTENT OPAQUE */
 .favorite-slide {
+  background-image: url("../recipe images/pinkCake.jpg") ;
   background-color: #85A499;
   border-radius: 10px;
   width: 1000px;
@@ -42,6 +43,7 @@
 }
 
 .dessert-spotlight {
+  /* background-image: url("../recipe images/pinkCake.jpg") ; */
   background-color: #04976C;
   border-radius: 10px;
   width: 375px;
@@ -58,7 +60,7 @@
 }
 
 .doggy-spotlight {
-  background-color: #004C78;
+  background-color: brown;
   border-radius: 10px;
   width: 375px;
   height: 450px;
@@ -74,7 +76,7 @@
 }
 
 .brews-spotlight {
-  background-color: brown;
+  background-color: #004C78;
   border-radius: 10px;
   width: 400px;
   height: 450px;
@@ -88,7 +90,7 @@
   font-size: 32px;
   font-family: "Almendra", sans-serif;
   font-weight: 100;
-  font-style: oblique;
+  /* font-style: oblique; */
   color: white;
   letter-spacing: 1px;
   padding-top: 15px;
@@ -104,17 +106,24 @@
   font-weight: normal;
   opacity: 100%;
 }
+.details-text-span {
+  color: darkred;
+  padding-bottom: 15px;
+  font-size: 22px;
+  font-family: "Almendra", sans-serif;
+  font-weight: normal;
+  opacity: 100%;
+}
 
 
 .image-test {
-  width: 300px;
-  border-radius: 20px;
-  height: 300px;
+  width: 320px;
+  border-radius: 10px;
+  height: 320px;
   margin-bottom: 10px;
   display: inline;
   opacity: 100%;
-
-
+  object-fit: cover;
 }
 
 
@@ -139,11 +148,12 @@
 
 
 .bottom-container {
-  background-color: #9B2C3C;
+  background-color: darkslategray;
   border-radius: 10px;
-  width: 900px;
-  height: 420px;
+  width: 1500px;
+  height: auto;
   opacity: 90%;
+  padding: 50px;
 }
 
 .our-story {

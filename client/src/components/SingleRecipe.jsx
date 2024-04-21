@@ -22,9 +22,8 @@ const Item = styled(Paper)(({ theme }) => ({
 function SingleRecipe({ worldsArray }) {
   const [world, setWorld] = useState({});
   const [favorites, setFavorites] = useState([]);
-  const [recipes, setRecipes] = useState([]);
-  const [recipe, setRecipe] = useState({});
-  const [ingredient, setIngredient] = useState([]);
+  const [recipe, setRecipe] = useState([]);
+  const [ingredients, setIngredients] = useState([]);
   const [instructions, setInstructions] = useState([]);
 
 
@@ -36,12 +35,11 @@ function SingleRecipe({ worldsArray }) {
         `https://mythicalmunchies.onrender.com/mythicalMunchies/worlds/${worldid}`
       );
       const json = await response.json();
-      console.log("THIS IS A SINGLE WORLD", json);
       setWorld(json);
     };
+
     fetchSingleWorld();
   }, []);
-
 
   // FETCH SINGLE RECIPE
   const {recipeid} = useParams();
@@ -49,7 +47,6 @@ function SingleRecipe({ worldsArray }) {
     const fetchRecipe = async() => {
       const response = await fetch (`https://mythicalmunchies.onrender.com/mythicalMunchies/recipes/single/${recipeid}`);
       const json = await response.json();
-      console.log("THIS IS A SINGLE RECIPE", json)
       setRecipe(json);
     };
     fetchRecipe();
@@ -61,10 +58,10 @@ function SingleRecipe({ worldsArray }) {
     const fetchIngredients = async() => {
       const response = await fetch (`https://mythicalmunchies.onrender.com/mythicalMunchies/ingredients/${recipeid}`);
       const json = await response.json();
-      console.log("THESE ARE THE INGREDIENTS", json)
-      setRecipe(json);
+      console.log("THESE ARE THE INGREDIENTS", json.ingredients, json.recipeIngredient);
+      setIngredients(json.ingredients);
     };
-    fetchIngredients();
+   fetchIngredients();
   }, [])
 
 
@@ -88,36 +85,43 @@ function SingleRecipe({ worldsArray }) {
         {/* <Link to={`/single-world/${world.id}`} className="back-button-recipe">Back</Link> */}
         <Link to="/worlds" className="back-button-recipe">Back</Link>
         
-          <h2 className="title">{world.name}</h2>
+        <h2 className="title">{ world.name } </h2>
           <Box className="boxes" sx={{ flexGrow: 1 }}>
             <Grid container spacing={2}>
             
               <Grid className='box-1'item xs={6} >
                 <div className='intro'>
                   <button className="bookmarky">Add to Bookmarks 📕</button>
-
-                    {/* MAP OVER SINGLE RECIPE ARRAY HERE  */}
-                    {/* fetch single object in the array */}
-                    {/* check what is being passed in on line 26 */}
-                    {/* tried different call methods i searched (.keys, ..getOwnPropertyNames but not sure if im supposed to pass in object or array ) */}
-                    <h4 className='recipe-name'>Recipe.name </h4>
-                      <img  className='pic' src={Ramen} alt="pic" />
+                    {recipe.map((r)=> {
+                      return(
+                        <>
+                        <h4 className='recipe-name'>{r.name}</h4>
+                      <img  className='pic' src={r.img_url} alt="pic" />
+                      <h4 className="cooktime">Cook Time: {r.cook_time}</h4>
+                      </>
+                      )
+                    })}
+                   
 
                       {/* IS USER LOGGED IN? IF NOT THEN SHOW LEAVEREVIEW MODAL */}
                       <LeaveReview />
-                    {/* MAP ENDS HERE  */}
                 </div>
               </Grid>
 
               <Grid id="ingredients-list" item xs={6} >
                 <div className="ingredients-post">
                   <h4 className="ingredients-title">Ingredients:</h4>
-                  <h4 className="cooktime">Cook Time: 1 million years</h4>
+                  
 
                   {/* MAP OVER RECIPE INGREDIENTS HERE */}
+                  {ingredients.map((ingredient) => {
+                    return(
                     <ul className="ingredient-list">
-                      <li className='ingredient-item'>map over ingredients array</li>
+                      <li className='ingredient-item'>{ingredient.name}</li>
                     </ul>
+                    )
+                  })}
+                    
                     {/* MAP ENDS HERE  */}
                 </div>
               </Grid>
@@ -126,10 +130,15 @@ function SingleRecipe({ worldsArray }) {
                 <div className="instructions">
                   <h2 className='cooking-title'>Cooking Instructions:</h2>
                   {/* MAP OVER INSTRUCTIONS ARRAY HERE  */}
-                    <ol>
-                      <li>recipe.instructions</li>
+                  {instructions.map((instruction) => {
+                    return(
+                      <ol className='listy'>
+                        <li className='eachin'>{instruction.description}</li>
                       <br />
+                     
                     </ol>
+                    )
+                  })}
                   {/* MAP ENDS HERE  */}
                 </div>
               </Grid>
@@ -151,74 +160,4 @@ function SingleRecipe({ worldsArray }) {
 
 export default SingleRecipe
 
- {/* <h2 className="title">{world.name}</h2> */}
-        {/* this is where the return should start */}
-        {/* {recipe.map((recipe) => {
-          return (
-            
-            <Box className="boxes" sx={{ flexGrow: 1 }}>
-          )   <Grid container spacing={2}>
-                <Grid className='box-1'item xs={6} >
-                  <div className='intro'>
-                  <button className="bookmarky">Add to Bookmarks 📕</button>
-                    <h4 className='recipe-name'>{recipe.name}</h4>
-                      <img  className='pic' src={recipe.img_url} alt="pic" />
-                        <LeaveReview />
-                  </div>
-                </Grid>
-
-                <Grid id="ingredients-list" item xs={6} >
-                  <div className="ingredients-post">
-                    <h4 className="ingredients-title">Ingredients:</h4>
-                      <ul className="ingredient-list">
-                        <li className='ingredient-item'>{recipe.ingredients}</li>
-                      </ul>
-                  </div>
-                </Grid>
-
-                 <Grid id="intstructions" item xs={12} >
-                <div className="instructions">
-                  <h2 className='cooking-title'>Cooking Instructions:</h2>
-                    <ol>
-                      <li>{recipe.instructions}</li>
-                      <br />
-                    </ol>
-                </div>  
-              </Grid>
-        })} */}
-
-       {/* <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum explicabo aliquid similique. Rem dolorum autem nesciunt eum facilis eveniet quia nostrum tenetur, ducimus sunt delectus accusantium a nobis iste impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur eaque autem dignissimos iusto. Veniam magni, optio officiis, hic possimus soluta, eius dolores rerum quam repudiandae odit. Consequatur, quasi accusamus!Lorem</li>
-                      <br /> */}
-                      {/* <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum hic id veniam neque ea voluptatem ullam reprehenderit quibusdam eveniet dicta asperiores, quasi optio odio repudiandae porro necessitatibus soluta vitae.</li>
-                      <br />
-                      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum hic id veniam neque ea voluptatem ullam reprehenderit quibusdam eveniet dicta asperiores, quasi optio odio repudiandae porro necessitatibus soluta vitae.</li>
-                      <br />
-                      <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum explicabo aliquid similique. Rem dolorum autem nesciunt eum facilis eveniet quia nostrum tenetur, ducimus sunt delectus accusantium a nobis iste impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur eaque autem dignissimos iusto. Veniam magni, optio officiis, hic possimus soluta, eius dolores rerum quam repudiandae odit. Consequatur, quasi accusamus!Lorem</li>
-                      <br />
-                      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum hic id veniam neque ea voluptatem ullam reprehenderit quibusdam eveniet dicta asperiores, quasi optio odio repudiandae porro necessitatibus soluta vitae.</li>
-                      <br />
-                      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum hic id veniam neque ea voluptatem ullam reprehenderit quibusdam eveniet dicta asperiores, quasi optio odio repudiandae porro necessitatibus soluta vitae.</li>
-                      <br />
-                      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum hic id veniam neque ea voluptatem ullam reprehenderit quibusdam eveniet dicta asperiores, quasi optio odio repudiandae porro necessitatibus soluta vitae.</li>
-                      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum hic id veniam neque ea voluptatem ullam reprehenderit quibusdam eveniet dicta asperiores, quasi optio odio repudiandae porro necessitatibus soluta vitae.</li>
-                      <br />
-                      <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum explicabo aliquid similique. Rem dolorum autem nesciunt eum facilis eveniet quia nostrum tenetur, ducimus sunt delectus accusantium a nobis iste impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur eaque autem dignissimos iusto. Veniam magni, optio officiis, hic possimus soluta, eius dolores rerum quam repudiandae odit. Consequatur, quasi accusamus!Lorem</li>
-                      <br />
-                      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum hic id veniam neque ea voluptatem ullam reprehenderit quibusdam eveniet dicta asperiores, quasi optio odio repudiandae porro necessitatibus soluta vitae.</li>
-                      <br />
-                      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum hic id veniam neque ea voluptatem ullam reprehenderit quibusdam eveniet dicta asperiores, quasi optio odio repudiandae porro necessitatibus soluta vitae.</li>
-                      <br />
-                      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum hic id veniam neque ea voluptatem ullam reprehenderit quibusdam eveniet dicta asperiores, quasi optio odio repudiandae porro necessitatibus soluta vitae.</li> */}
-
-
-  {/* MAP OVER SINGLERECIPE ARRAY HERE  */}
-  //  {recipe.map((recipe) => {
-  //   return(
-  //     <>
-  //      <h4 className='recipe-name'>{recipe.name}</h4>
-  //     <img  className='pic' src={recipe.img_url} alt="pic" />
-  //     {/* IS USER LOGGED IN? IF NOT THEN SHOW LEAVEREVIEW MODAL */}
-  //     <LeaveReview />
-  //     </>
-  //   )
-  // })}
+ 

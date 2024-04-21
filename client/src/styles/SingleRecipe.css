@@ -9,6 +9,7 @@
   background-color: #e2d5b0;
   border-radius: 20px;
   margin-top: 20px;
+  padding-bottom: 50px;
 }
 
 .this-test {
@@ -131,7 +132,8 @@ border: 2px darkred;
   image-resolution: from-image 300dpi;
   justify-content: left;
   box-shadow: 1px 1px 2px gray;
-  object-fit: fill;
+  /* object-fit: fill; */
+  object-fit: cover;
 }
 
 .recipe-link {
@@ -143,7 +145,7 @@ height: 20px;
 .cooking-time {
   margin-top: 8px;
   text-align: left;
-  padding: 10px;
+  /* padding: 10px; */
   font-family: "Almendra", sans-serif;
 }
 
@@ -153,8 +155,8 @@ height: 20px;
   text-decoration: none;
   word-spacing: 5px;
   font-size: 20px;
-  margin-left: 5px;
-  margin-top: 20px;
+  /* margin-left: 5px; */
+  /* margin-top: 20px; */
   display: flex;
   justify-content: left;
   letter-spacing: 1px;
@@ -185,9 +187,20 @@ height: 20px;
   margin-left: 200px;
   margin-top: 50px;
   font-family: "Almendra", sans-serif;
-  font-size: 22px;
+  font-size: 30px;
   width: 1200px;
   text-align: left;
+  letter-spacing: 1px;
+}
+
+.listy {
+  list-style: square;
+  margin-left: 10px;
+}
+
+.eachin {
+  font-size: 20px;
+  
 }
 
 .ingredients-title {
@@ -198,12 +211,12 @@ height: 20px;
 }
 
 .cooktime {
-  text-align: center;
+  text-align: left;
   letter-spacing: 2px;
-  font-size: 15px;
-  margin-bottom: 30px;
-  color: orange;
-  margin-top: 5px;
+  font-size: 18px;
+  /* margin-bottom: 30px; */
+  color: black;
+  margin-top: 20px;
 }
 
 .recipe-hr {
@@ -212,6 +225,7 @@ height: 20px;
   margin-top: 50px;
   border: 1px solid black;
   opacity: 100%;
+  display: block;
   
 }
 
@@ -228,17 +242,19 @@ height: 20px;
   font-size: 20px;
   letter-spacing: 1px;
   height: 500px;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .ingredients-title {
   font-weight: 100;
   font-size: 25px;
+  padding-bottom: 10px;
 }
 
 .ingredient-list {
   list-style-type: circle;
   margin-left: 20px;
+
 }
 
 .ingredient-item {

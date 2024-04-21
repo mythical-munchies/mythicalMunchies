@@ -61,7 +61,7 @@ function Nav() {
                             <label id="login-check" htmlFor="remember" className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember me</label>
                         </div>
                     </div>
-                    <button id="login-check" type="submit" className="w-full text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-yellow-400 dark:hover:bg-yellow-500 dark:focus:ring-blue-800">Login</button>
+                    <button id="submissions" type="submit" className="w-full text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-yellow-400 dark:hover:bg-yellow-500 dark:focus:ring-blue-800">Login</button>
                     <div className="text-sm font-medium text-gray-500 dark:text-gray-300">
                         <a id="login-check" onClick={handleShow} href="/signup" className="text-blue-700 hover:underline dark:text-blue-500">Dont have an account? Sign up!</a>
                         {/* <button onClick={handleShow} className="text-blue-700 hover:underline dark:text-blue-500">Dont have an account? Sign up!</button> */}
