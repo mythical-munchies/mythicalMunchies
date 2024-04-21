@@ -70,22 +70,23 @@ function SingleRecipe({ worldsArray }) {
 
 
   // FETCH INSTRUCTIONS 
-  // const {instructionsid} = useParams();
-  // useEffect(()=> {
-  //   const fetchInstructions = async() => {
-  //     const response = await fetch (`https://mythicalmunchies.onrender.com/mythicalMunchies/instructions/${recipeid}`);
-  //     const json = await response.json();
-  //     console.log("THESE ARE THE INSTRUCTIONS", json)
-  //     setRecipe(json);
-  //   };
-  //   fetchInstructions();
-  // }, [])
+  const {instructionsid} = useParams();
+  useEffect(()=> {
+    const fetchInstructions = async() => {
+      const response = await fetch (`https://mythicalmunchies.onrender.com/mythicalMunchies/recipes/instructions/${recipeid}`);
+      const json = await response.json();
+      console.log("THESE ARE THE INSTRUCTIONS", json)
+      setInstructions(json);
+    };
+    fetchInstructions();
+  }, [])
 
   return (
   <>
     <div className="single-container">
       <div className="goldy-background">
-        <Link to="/single-world" className="back-button-recipe">Back</Link>
+        {/* <Link to={`/single-world/${world.id}`} className="back-button-recipe">Back</Link> */}
+        <Link to="/worlds" className="back-button-recipe">Back</Link>
         
           <h2 className="title">{world.name}</h2>
           <Box className="boxes" sx={{ flexGrow: 1 }}>
@@ -111,6 +112,8 @@ function SingleRecipe({ worldsArray }) {
               <Grid id="ingredients-list" item xs={6} >
                 <div className="ingredients-post">
                   <h4 className="ingredients-title">Ingredients:</h4>
+                  <h4 className="cooktime">Cook Time: 1 million years</h4>
+
                   {/* MAP OVER RECIPE INGREDIENTS HERE */}
                     <ul className="ingredient-list">
                       <li className='ingredient-item'>map over ingredients array</li>
@@ -131,6 +134,7 @@ function SingleRecipe({ worldsArray }) {
                 </div>
               </Grid>
         
+
               <Grid id="reviewz"item xs={12} >
                 <hr className='recipe-hr'/>
                   <h2 className='review-title'>Reviews </h2>

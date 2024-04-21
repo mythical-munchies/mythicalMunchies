@@ -43,7 +43,7 @@ function SingleWorld() {
           </Link>
                 <div  className="title">{world.name}</div>
                   <div className="banner-image-container">
-                    <img src={world.img_url} className="banner-image" alt="world-banner"/>
+                    <img src={world.banner_url} className="banner-image" alt="world-banner"/>
                   </div>
                     {recipes.map((recipe) => {
                       return (
