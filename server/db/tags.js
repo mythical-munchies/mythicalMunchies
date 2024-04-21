@@ -52,6 +52,7 @@ const fetchRecipeTags = async (recipe_id) => {
   return response.rows;
 };
 
+//Fetch all tags
 const fetchTags = async () => {
   const SQL = `
   SELECT *
@@ -61,6 +62,7 @@ const fetchTags = async () => {
   return response.rows;
 };
 
+//Fetch all recipes with one tag
 const fetchTaggedRecipes = async (tag_id) => {
   const SQL = `
   SELECT *

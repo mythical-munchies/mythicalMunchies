@@ -14,6 +14,7 @@ const {
 const { token } = require("morgan");
 
 // Fetch All Users Route
+//http://localhost:8080/mythicalmunchies/users/
 router.get("/", async (req, res, next) => {
   try {
     const users = await fetchUsers();

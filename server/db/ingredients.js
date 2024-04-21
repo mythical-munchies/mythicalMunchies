@@ -34,7 +34,6 @@ const fetchIngredient = async (ingredient_id) => {
 
 //Get all the ingredients for a recipe
 const fetchRecipeIngredients = async (recipe_id) => {
-  // const recipe_id = getRecipeId(recipe_name)
   console.log(recipe_id)
   const SQL = `
   SELECT *
@@ -42,10 +41,7 @@ const fetchRecipeIngredients = async (recipe_id) => {
   WHERE recipe_id = $1
   `;
   const response = await client.query(SQL, [recipe_id]);
-  // console.log(response.rows)
   const ingrResponse = await Promise.all(response.rows.map(row => fetchIngredient(row.ingredient_id)))
-  // console.log(ingrResponse)
-
   return {recipeIngredient:response.rows, ingredients: ingrResponse};
 };
 

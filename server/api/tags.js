@@ -14,8 +14,8 @@ router.get("/", async(req, res, next) => {
   }
 });
 
-//Fetch recipe's tags
-//http://localhost:8080/mythicalmunchies/tags/:recipe_id
+//Fetch a recipe's tags
+//http://localhost:8080/mythicalmunchies/tags/recipe/:recipe_id
 router.get("/recipe/:recipe_id", async(req, res, next) => {
   try {
     console.log()
