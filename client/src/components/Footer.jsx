@@ -27,7 +27,7 @@ const Footer = () => {
       <AppBar position="static" className="footer">
         <Container>
           <Toolbar className="footer-content">
-{/* COLUMN 1 */}
+            {/* COLUMN 1 */}
             <div className="column">
               <h1>Customer Care</h1>
               <Typography className="link">
@@ -40,7 +40,7 @@ const Footer = () => {
                 <Link to="/privacy">Privacy Policy</Link>
               </Typography>
             </div>
-{/* COLUMN 2 */}
+            {/* COLUMN 2 */}
             <div className="column">
               <h1>My Account</h1>
               <Typography className="link">
@@ -53,14 +53,14 @@ const Footer = () => {
                 <Link to="#">Add a Recipe</Link>
               </Typography>
             </div>
-{/* COLUMN 3 */}
+            {/* COLUMN 3 */}
             <div className="column">
               <h1>Top Searches</h1>
               <Typography className="link">
-                <Link to="#">Potter World</Link>
+                <Link to="#">Game of Thrones</Link>
               </Typography>
               <Typography className="link">
-                <Link to="#">Stardew</Link>
+                <Link to="#">Potter World</Link>
               </Typography>
               <Typography className="link">
                 <Link to="#">Zelda </Link>
@@ -75,7 +75,7 @@ const Footer = () => {
           <Typography align="center" className="footer-copyright">
             &#169; 2024 Mythical Munchies. All rights reserved.
           </Typography>
-         <div className="social">
+          <div className="social">
             <a
               href="https://www.youtube.com/watch?v=xvFZjo5PgG0&t=3s"
               target="_blank"
