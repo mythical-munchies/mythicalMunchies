@@ -2,7 +2,6 @@ import React, { useRef } from "react";
 import "../styles/ContactTab.css";
 import emailjs from "emailjs-com";
 
-
 function ContactTab() {
   const form = useRef();
 
@@ -19,6 +18,7 @@ function ContactTab() {
       .then(
         (result) => {
           console.log(result.text);
+          form.current.reset();
         },
         (error) => {
           console.log(error.text);
@@ -59,13 +59,20 @@ function ContactTab() {
 
             {/* Div is for everything related to the form */}
             <form id="formy" ref={form} onSubmit={sendEmail}>
-              <label id="contact-form-labels" className="name"> Name:</label>
+              <label id="contact-form-labels" className="name">
+                {" "}
+                Name:
+              </label>
               <input type="text" name="name" placeholder="Name" />
 
-              <label id="contact-form-labels" className="email">Email:</label>
+              <label id="contact-form-labels" className="email">
+                Email:
+              </label>
               <input type="email" name="email" placeholder="Email" />
 
-              <label id="contact-form-labels" className="message">Message:</label>
+              <label id="contact-form-labels" className="message">
+                Message:
+              </label>
               <textarea
                 id="contact-text-box"
                 name="message"
