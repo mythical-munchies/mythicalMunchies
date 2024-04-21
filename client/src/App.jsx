@@ -40,7 +40,7 @@ function App() {
         "https://mythicalmunchies.onrender.com/mythicalMunchies/worlds/"
       );
       const json = await response.json();
-      console.log(json);
+      console.log("THESE ARE THE WORLDS", json);
       setWorlds(json);
     };
     fetchWorlds();
@@ -62,10 +62,7 @@ function App() {
         <Route path="/worlds" element={<Worlds worldsArray={worlds} />} />
         <Route path="/contact" element={<ContactTab />} />
         {/* ONLY SHOW THE ACCOUNT TAB IF A USER IS LOGGED IN - fix later once modules are coded in */}
-        <Route
-          path={`single-world/:worldid`}
-          element={<SingleWorld worldsArray={worlds} />}
-        />
+        <Route path={`single-world/:worldid`} element={<SingleWorld worldsArray={worlds} />} />
         <Route path="/account" element={<AccountTab />} />
         <Route path="/single-recipe/:recipeid" element={<SingleRecipe worldsArray={worlds} />} />
         <Route path="/dogwarts" element={<DogWarts />} />
@@ -90,3 +87,6 @@ function App() {
 }
 
 export default App;
+
+
+  

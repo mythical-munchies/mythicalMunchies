@@ -80,8 +80,9 @@ const Footer = () => {
               href="https://www.youtube.com/watch?v=xvFZjo5PgG0&t=3s"
               target="_blank"
               rel="noopener noreferrer"
+              className="social-link"
             >
-              <IconButton color="inherit">
+              <IconButton className="social-link" color="inherit">
                 <FacebookIcon />
               </IconButton>
             </a>
@@ -89,8 +90,9 @@ const Footer = () => {
               href="https://www.youtube.com/watch?v=xvFZjo5PgG0&t=3s"
               target="_blank"
               rel="noopener noreferrer"
+              className="social-link"
             >
-              <IconButton color="inherit">
+              <IconButton className="social-link" color="inherit">
                 <TwitterIcon />
               </IconButton>
             </a>
@@ -98,6 +100,7 @@ const Footer = () => {
               href="https://www.youtube.com/watch?v=xvFZjo5PgG0&t=3s"
               target="_blank"
               rel="noopener noreferrer"
+              className="social-link"
             >
               <IconButton color="inherit">
                 <InstagramIcon />
