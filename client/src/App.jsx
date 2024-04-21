@@ -64,7 +64,8 @@ function App() {
         {/* ONLY SHOW THE ACCOUNT TAB IF A USER IS LOGGED IN - fix later once modules are coded in */}
         <Route path={`single-world/:worldid`} element={<SingleWorld worldsArray={worlds} />} />
         <Route path="/account" element={<AccountTab />} />
-        <Route path="/single-recipe/:recipeid" element={<SingleRecipe worldsArray={worlds} />} />
+        <Route path="/single-world/:worldid/single-recipe/:recipeid" element={<SingleRecipe 
+        />} />
         <Route path="/dogwarts" element={<DogWarts />} />
         <Route path="/bottoms-up" element={<BottomsUp />} />
         <Route path="/desserts" element={<Dessert />} />

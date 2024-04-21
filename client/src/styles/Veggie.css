@@ -57,8 +57,9 @@
 .dessert-hr {
   width: 1400px;
   margin: auto;
-  border: 2px solid darkred;
+  border: 1px solid darkred;
   margin-top: 50px;
+  display: block;
 }
 
 .recipe {
@@ -144,6 +145,7 @@
   margin: auto;
   margin-top: 60px;
   border: 1px solid antiquewhite;
+  display: block;
 }
 
 .drank-disclaimer {

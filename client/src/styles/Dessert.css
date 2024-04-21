@@ -20,9 +20,10 @@
 .dessert-hr {
   width: 1400px;
   margin: auto;
-  border: 2px solid darkred;
+  border: 1px solid darkred;
   margin-top: 50px;
   opacity: 100%;
+  display: block;
 }
 
 .recipe {
@@ -89,4 +90,5 @@
   margin-top: 60px;
   border: 1px solid antiquewhite;
   opacity: 100%;
+  display: block;
 }

@@ -126,7 +126,7 @@ function CustomerReviews() {
         </div>
       ))}
 
-      {reviews.length === 0 && (
+      {/* {reviews.length === 0 && (
         <div className="yellow-box">
           {" "}
           <h5>
@@ -136,7 +136,7 @@ function CustomerReviews() {
             📜✨
           </h5>
         </div>
-      )}
+      )} */}
     </>
   );
 }

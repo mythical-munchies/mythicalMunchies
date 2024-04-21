@@ -50,7 +50,7 @@ function SingleWorld() {
                     <>
                        <div key={recipe.id} className="recipe-tile">
                          <img className="recipe-image" src={recipe.img_url} alt="some yummy food!"/>
-                          <Link className="recipe-title" target="blank" to={`/single-recipe/${recipe.id}`}>{recipe.name}</Link>
+                          <Link className="recipe-title" target="blank" to={`/single-world/${world.id}/single-recipe/${recipe.id}`}>{recipe.name}</Link>
                        </div>
                     </>
                   )

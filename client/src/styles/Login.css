@@ -33,6 +33,12 @@
   font-size: 16px;
 }
 
+#submissions {
+  font-family: "Almendra", serif;
+  font-size: 16px;
+  margin-top: 40px;
+}
+
 .top {
   flex-wrap: wrap;
   display: flex;
@@ -42,6 +48,7 @@
 }
 
 #email,
+#username,
 #password,
 #username,
 #firstName,
@@ -51,6 +58,7 @@
   height: 45px;
   font-size: 18px;
   color: black;
+  font-family: "Almendra", serif;
 }
 
 #message {

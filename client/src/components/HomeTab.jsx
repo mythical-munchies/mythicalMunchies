@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 import "../styles/HomeTab.css";
 import Fav from "../images/butterbeer.jpg";
 import PeachBun from "../images/peachBuns.png";
-import BFG from "../images/bfg.png";
+import BFG from "../images/bfgg.jpg";
 import HarryDog from "../images/harryDog.png";
 import Veggies from "../images/veggies.jpg";
-import Drinks from "../images/drinks.jpg";
+import Drinks from "../images/download-1.jpg";
 
 function HomeTab() {
   return (
@@ -21,7 +21,7 @@ function HomeTab() {
         <div className="dessert-spotlight">
           <div>
             <h4 className="main-texts">Dessert Spotlight 🍰 </h4>
-            <h5 className="details-text">link to recipe.name here</h5>
+            <h5 className="details-text">Post Meal Affair</h5>
             <Link to="/desserts">
               <img
                 className="image-test"
@@ -36,7 +36,7 @@ function HomeTab() {
         <div className="book-spotlight">
           <div>
             <h4 className="main-texts"> The Bookshelf 📚 </h4>
-            <h5 className="details-text">link to book.name here</h5>
+            <h5 className="details-text"><span className="details-text-span">Words and Stuff</span></h5>
             <Link to="/literature">
               <img className="image-test" src={BFG} alt="literature" />
             </Link>
@@ -46,7 +46,7 @@ function HomeTab() {
         <div className="doggy-spotlight">
           <div>
             <h4 className="main-texts">Dogwarts 🐾 </h4>
-            <h5 className="details-text">DIY treats for your pup!</h5>
+            <h5 className="details-text">Hogwarts Birthday Pawty</h5>
             <Link to="/dogwarts">
               <img className="image-test" src={HarryDog} alt="literature" />
             </Link>
@@ -65,7 +65,7 @@ function HomeTab() {
         <div className="veggie-spotlight">
           <div className="home-tabs-content">
             <h4 className="main-texts">Veggie Gardens 🥬🥔 </h4>
-            <h5 className="details-text">Vegetarian and Vegan friendly!</h5>
+            <h5 className="details-text">Vegetarian and Vegan friendly</h5>
             <Link to="/veggie-gardens">
               <img
                 className="image-test"
@@ -82,7 +82,7 @@ function HomeTab() {
           <div>
             <h4 className="main-texts">Bottoms Up 🍻 </h4>
             <h5 className="details-text">
-              Try these tasty potions at your next party
+              Its 5 o'clock Somewhere
             </h5>
             <Link to="/bottoms-up">
               <img className="image-test" src={Drinks} alt="literature" />
@@ -94,7 +94,7 @@ function HomeTab() {
       <div className="bottom-slide">
         <div className="bottom-container">
           <div>
-            <h5 className="our-story">Our Story</h5>
+            {/* <h5 className="our-story">Our Story</h5> */}
             <h6 className="special-bottom-text">Once Upon A Time...</h6>
             <h5 className="bottom-text">
               Once upon a time, where marshmallow clouds floated amidst rivers
