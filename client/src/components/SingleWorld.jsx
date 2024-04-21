@@ -14,7 +14,7 @@ function SingleWorld() {
         `https://mythicalmunchies.onrender.com/mythicalMunchies/worlds/${worldid}`
       );
       const json = await response.json();
-      console.log(json);
+      console.log("THIS IS A SINGLE WORLD", json);
       setWorld(json);
     };
     fetchSingleWorld();
@@ -22,13 +22,12 @@ function SingleWorld() {
 
   const { recipeid } = useParams();
   useEffect(() => {
-    console.log("hello");
     const fetchWorldRecipes = async () => {
       const response = await fetch(
         `https://mythicalmunchies.onrender.com/mythicalMunchies/recipes/${worldid}`
       );
       const json = await response.json();
-      console.log("recipes", json);
+      console.log("THESE ARE WORLD RECIPES", json);
       console.log(worldid);
       setRecipes(json);
     };

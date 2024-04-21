@@ -13,7 +13,7 @@ const Worlds = ({ worldsArray }) => {
     const fetchWorlds = async() => {
       const response = await fetch ('https://mythicalmunchies.onrender.com/mythicalMunchies/worlds/');
       const json = await response.json();
-      console.log(json)
+      console.log("THESE ARE THE WORLDS", json)
       setWorlds(json);
     };
     fetchWorlds();
