@@ -26,6 +26,10 @@ margin: auto;
   margin-top: 10px;
 }
 
+#recipe {
+  font-family: "Almendra", sans-serif;
+}
+
 #review-modal-text {
   font-family: "Almendra", sans-serif;
   font-size: 18px;
