@@ -26,10 +26,7 @@ const ingredients = [
   { name: "Buttermilk", description: "" },
   { name: "Cabbage", description: "Shredded" },
   { name: "Cardamom", description: "" },
-  {
-    name: "Cake Flour",
-    description: "Not to be confused with self-rising or bread flour",
-  },
+  { name: "Cake Flour", description: "Not to be confused with self-rising or bread flour"},
   { name: "Canola Oil", description: "" },
   { name: "Caramel sauce", description: "" },
   { name: "Carrots", description: "" },
@@ -92,21 +89,14 @@ const ingredients = [
   { name: "Japanese Whiskey", description: "" },
   { name: "Jellyfish jelly", description: "Or your preferred jam or jelly!" },
   { name: "Hamburger buns", description: "" },
-  {
-    name: "Kosher Salt",
-    description:
-      "If subbing for table salt, check salt conversion measurements",
-  },
+  { name: "Kosher Salt", description: "If subbing for table salt, check salt conversion measurements"},
   { name: "Large Shrimp", description: "" },
   { name: "Lettuce", description: "Shredded" },
   { name: "Light Corn Syrup", description: "" },
   { name: "Lime", description: "" },
   { name: "Lime Juice", description: "" },
   { name: "Basmati rice", description: "" },
-  {
-    name: "Loose Leaf Hibiscus Tea",
-    description: "Can be subbed for 1 tea bag",
-  },
+  { name: "Loose Leaf Hibiscus Tea", description: "Can be subbed for 1 tea bag" },
   { name: "Maraschino cherry", description: "" },
   { name: "Green food coloring", description: "" },
   { name: "Matcha", description: "Green tea powder" },
@@ -122,10 +112,7 @@ const ingredients = [
   { name: "Orange Juice", description: "" },
   { name: "Oyster Sauce", description: "" },
   { name: "Peanuts", description: "Chopped" },
-  {
-    name: "Peanut Butter",
-    description: "Can also be subbed out for your favorite nut or seed butter",
-  },
+  { name: "Peanut Butter", description: "Can also be subbed out for your favorite nut or seed butter"},
   { name: "Pepper", description: "To taste" },
   { name: "Pickles", description: "Sliced" },
   { name: "Pork Belly", description: "" },
@@ -149,11 +136,7 @@ const ingredients = [
   { name: "Tomato", description: "Sliced" },
   { name: "Tomatoes", description: "Sliced" },
   { name: "Thyme", description: "Fresh" },
-  {
-    name: "Table Salt",
-    description:
-      "If subbing for kosher salt, check salt conversion measurements",
-  },
+  { name: "Table Salt", description: "If subbing for kosher salt, check salt conversion measurements"},
   { name: "Triple Sec", description: "Alcohol" },
   { name: "Turmeric", description: "Ground" },
   { name: "Vanilla extract", description: "" },
@@ -164,7 +147,6 @@ const ingredients = [
   { name: "Warm water", description: "" },
   { name: "Water", description: "" },
   { name: "Whipped cream", description: "" },
-
   { name: "Unsalted butter", description: "" },
   { name: "Pink food coloring", description: "" },
   { name: "Melon puree", description: "From fresh melon, strained" },
@@ -184,8 +166,6 @@ const ingredients = [
   { name: "Pumpkin puree", description: "Canned or homemade" },
   { name: "Brown sugar", description: "" },
 
-  // {"name":"",
-  // "description":""
-  // },
+  // {"name":"", "description":""},
 ];
 module.exports = { ingredients };

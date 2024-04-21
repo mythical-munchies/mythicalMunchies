@@ -148,8 +148,6 @@ module.exports = {
   fetchUserById,
   fetchUserReviews,
   deleteReview,
-  // fetchUserByEmailOrUsername,
-  // loginUser,
   fetchRecipeReviews,
   fetchReview
 };
