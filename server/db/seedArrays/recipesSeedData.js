@@ -4,7 +4,7 @@ const recipes = [
     description: "Pink Cake may sound basic, but this dainty dessert hides a secret ingredient: melon! In STARDEW VALLEY, Pink Cake is a favorite of several villagers. The in-game thumbnail shows a cute pink tube cake topped with red heart sprinkles. The ingredients are listed as flour, sugar, egg, and pink melon (a fruit unique to the game, which looks like a pink cantaloupe).",
     cook_time: "1 Hour",
     world_name: "Stardew Valley",
-    img_url: "https://images.app.goo.gl/VL92W4BGeApxVZZ39",
+    img_url: "https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fx96w46is1ll41.png%3Fwidth%3D1080%26crop%3Dsmart%26auto%3Dwebp%26s%3Dd75cbc363409d106b125792c591913b9787ec4e5",
   },
   {
     name: "Ham Ramen",
@@ -154,13 +154,7 @@ const recipes = [
     world_name: "Roald Dahl",
     img_url: "https://upload.wikimedia.org/wikipedia/commons/0/04/Jawbreaker_plate.jpg",
   },
-  {
-    name: "Krabby Patty",
-    description: "The iconic burger from the Krusty Krab, as featured in SpongeBob SquarePants.",
-    cook_time: "20 minutes",
-    world_name: "Bikini Bottom",
-    img_url: "https://static.wikia.nocookie.net/garpedia/images/f/fa/Krabby_Patty.jpg/revision/latest?cb=20190219175518",
-  },
+ 
   {
     name: "Sandy's Texas Corn Ribs",
     description: "A spicy and flavorful dish inspired by Sandy Cheeks in SpongeBob SquarePants.",
@@ -174,6 +168,13 @@ const recipes = [
     cook_time: "10 minutes",
     world_name: "Bikini Bottom",
     img_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0laIOxEnSpNyrO5zffPeY30me3w6751T2dzcKuSVJYw&s",
+  },
+  {
+    name: "Krabby Patty",
+    description: "The iconic burger from the Krusty Krab, as featured in SpongeBob SquarePants.",
+    cook_time: "20 minutes",
+    world_name: "Bikini Bottom",
+    img_url: "https://i.ytimg.com/vi/Tt7_Qao0TCw/hqdefault.jpg",
   },
   {
     name: "Spice Melange",

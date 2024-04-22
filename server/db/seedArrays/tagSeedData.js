@@ -29,8 +29,11 @@ const tags = [
   {
     description: "Soup",
   },
+  { 
+    description:"Alcoholic",
+  },
   // {
-  //   "description":""
+  //   description:""
   // },
 ];
 

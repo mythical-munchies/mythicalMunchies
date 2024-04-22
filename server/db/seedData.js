@@ -59,7 +59,7 @@ const createTables = async () => {
       description TEXT,
       cook_time VARCHAR(255),
       world_id VARCHAR(500),
-      img_url VARCHAR(500)
+      img_url VARCHAR(900)
     );
     CREATE TABLE recipe_ingredients(
       id UUID PRIMARY KEY,
