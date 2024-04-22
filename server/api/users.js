@@ -5,7 +5,6 @@ const JWT = require("jsonwebtoken");
 const secret = "ravioliRavioliGiveMeTheFormuioli";
 
 const {
-  // loginUser,
   createUser,
   fetchUserById,
   fetchUser,

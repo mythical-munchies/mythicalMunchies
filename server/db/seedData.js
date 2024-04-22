@@ -100,7 +100,6 @@ async function seedWorlds(client) {
   try {
     for (const world of worlds) {
       const createdWorld = await createWorld(world);
-      // console.log(`Created world: ${createdWorld.name}`);
     }
   } catch (error) {
     console.error("Error seeding worlds:", error);
@@ -113,7 +112,6 @@ async function seedUsers(client) {
   try {
     for (const user of users) {
       const createdUser = await createUser(user);
-      // console.log(`Created user: ${JSON.stringify(createdUser)}`); 
     }
   } catch (error) {
     console.error("Error seeding users:", error);
@@ -126,7 +124,6 @@ async function seedIngr(client) {
   try {
     for (const ingredient of ingredients) {
       const createdIngr = await createIngredient(ingredient);
-      // console.log(`Created ingr: ${createdIngr.name}`); //
     }
   } catch (error) {
     console.error("Error seeding ingredients:", error);
@@ -140,7 +137,6 @@ async function seedRecipes(client) {
     for (const recipe of recipes) {
       console.log(recipe);
       const createdRecipe = await createRecipe(recipe);
-      // console.log(`Created recipe: ${createdRecipe.id}`); //
     }
   } catch (error) {
     console.error("Error seeding recipes:", error);
@@ -153,7 +149,6 @@ async function seedInst(client) {
   try {
     for (const instruction of instructions) {
       const createdInst = await createInstruction(instruction);
-      // console.log(`Created step ${createdInst.index} for ${JSON.stringify(createdInst)}`);
     }
   } catch (error) {
     console.error("Error seeding instructions:", error);
@@ -166,7 +161,6 @@ async function seedRecipeIngr(client) {
   try {
     for (const recipe_ingredient of recipe_ingredients) {
       const createdRecipeIngr = await createRecipeIngredient(recipe_ingredient);
-      // console.log(`Created ingredients for: ${JSON.stringify(createdRecipeIngr)}`);
     }
   } catch (error) {
     console.error("Error seeding recipe ingredients:", error);
@@ -179,7 +173,6 @@ async function seedTags(client) {
   try {
     for (const tag of tags) {
       const createdTag = await createTag(tag);
-      // console.log(`Creates ${JSON.stringify(createdTag)}`)
     }
   } catch (error) {
     console.error("Error seeding tags:", error);
@@ -194,7 +187,6 @@ async function seedRecipeTags(client) {
     for (const recipe_tag of recipe_tags) {
       const createdRecipeTag = await createRecipeTag(recipe_tag);
       tagsArr.push(createdRecipeTag);
-      // console.log(`Tagged ${JSON.stringify(createdRecipeTag)}`)
     }
     return tagsArr;
   } catch (error) {
@@ -210,7 +202,6 @@ async function seedUserRecipes(client) {
     for (const user_recipe of user_recipes) {
       const createdReview = await createUserRecipe(user_recipe);
       userRecipesArr.push(createdReview)
-      // console.log(userRecipesArr)
     }
     return userRecipesArr;
   } catch (error) {
@@ -224,32 +215,20 @@ async function rebuild() {
   try {
     await client.connect();
     await dropTables();
-    console.log("tables yeeted");
     await createTables();
-    console.log("tables built");
     await seedWorlds();
-    console.log("seeded worlds");
     await seedUsers();
-    console.log("seeded users");
     await seedIngr();
-    console.log("ingredients seeded");
     await seedRecipes();
-    console.log("seeded recipes");
     await seedInst();
-    console.log("seeded instructions");
     await seedRecipeIngr();
-    console.log("gathered ingredients for recipes");
     await seedTags();
-    console.log("tags seeded");
     await seedRecipeTags();
-    console.log("tagged recipes");
     await seedUserRecipes();
-    console.log("added reviews");
+    console.log("rebuild complete");
   } catch (error) {
     console.log(error.message);
   }
 }
 
-module.exports = {
-  rebuild,
-};
+module.exports = { rebuild };
