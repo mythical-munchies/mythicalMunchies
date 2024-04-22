@@ -108,6 +108,10 @@
   margin-top: 0px;
 }
 
+#message {
+  line-height: 22px;
+}
+
 .testytesty {
   text-align: center;
   color: orange;

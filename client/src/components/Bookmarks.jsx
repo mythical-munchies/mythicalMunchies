@@ -2,6 +2,9 @@ import "../styles/Bookmarks.css"
 import { mockBooks } from "../BookData";
 import Login from "./Login"
 import SignUp from "./SignUp";
+import Drank from "../recipe images/beetlejuiceMarg.jpg"
+import Stew from "../images/stew.jpg"
+import Pumpkin from "../images/pumpkin.jpg"
 
 function Bookmarks() {
 
@@ -32,18 +35,23 @@ function Bookmarks() {
           <div className="testin">
             <h2 className="bookmark-title">✨Came back for more? Here are your favorites all in one place!✨</h2>
               <div className="bookmarked">
-                {mockBooks.map((book) => {
-                  return (
-                    <div>
                       {/* just using mock data but will map over favorites */}
-                      <div key={book.id} className="book-card-bookmark">
-                        <img  className="book-img-bookmarked" src={book.img_url} alt={`${book.img_url}'s image`} />
-                          <a href="somesite.com" className="bookmarked-title-books">{book.title}</a>
+                      <div className="book-card-bookmark">
+                        <img  className="book-img-bookmarked" src={Drank} alt="" />
+                          <a href="somesite.com" className="bookmarked-title-books">Beetlejuice Moradita</a>
                           {/* <h3 className="book-author">By: {book.author}</h3> */}
                       </div>
-                    </div>
-                  );
-                })}
+                      <div className="book-card-bookmark">
+                        <img  className="book-img-bookmarked" src={Stew} alt="" />
+                          <a href="somesite.com" className="bookmarked-title-books">Jon Snow's Wildling Stew</a>
+                          {/* <h3 className="book-author">By: {book.author}</h3> */}
+                      </div>
+                      <div className="book-card-bookmark">
+                        <img  className="book-img-bookmarked" src={Pumpkin} alt="" />
+                          <a href="somesite.com" className="bookmarked-title-books">Pumpkin Pastries</a>
+                          {/* <h3 className="book-author">By: {book.author}</h3> */}
+                      </div>
+                   
               </div>
             </div>
           </div>

@@ -12,6 +12,7 @@
   color: darkblue;
 }
 
+
 .login-modal-header {
   margin-left: 30px;
 }
@@ -77,5 +78,9 @@
 #close {
   margin-left: 370px;
   margin-top: 15px;
+}
+
+.modal-footer {
+  border-top: none;
 }
 

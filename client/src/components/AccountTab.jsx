@@ -73,7 +73,8 @@ const AccountTab = ({ authenticate }) => {
 
 	const logout = () => {
 		window.localStorage.removeItem('token');
-		setAuth({});
+		setAuth({})
+		console.log("you are logged out");
 	};
 
 	const handleUpdate = (e) => {
@@ -209,7 +210,7 @@ const AccountTab = ({ authenticate }) => {
 										id='message'
 										rows='4'
 										className='block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
-										placeholder='Got any powers? Tell us about it!'></textarea>
+										placeholder='I am John Snow, King of the North. Since I killed my only love, I now spend my time as a food critic. Maybe one day I will start sharing my own recipe ideas.'></textarea>
 								</div>
 								<button
 									onClick={handleSubmit}
@@ -234,7 +235,7 @@ const AccountTab = ({ authenticate }) => {
 								<h1 className='welcome-user'>Welcome Back!</h1>
 							</div>
 							<span className='logout-container'>
-								<button className='logout-button' onClick={logout}>
+								<button className='logout-button' onClick={ logout }>
 									Logout
 								</button>
 							</span>
@@ -245,7 +246,7 @@ const AccountTab = ({ authenticate }) => {
 										href='/account'
 										className='flex items-center p-2 text-blue-900 rounded-lg dark:text-white hover:bg-yellow-400 dark:hover:bg-yellow-800 group'>
 										<svg
-											class='w-6 h-6 text-gray-800 dark:text-white'
+											className='w-6 h-6 text-gray-800 dark:text-white'
 											aria-hidden='true'
 											xmlns='http://www.w3.org/2000/svg'
 											width='24'
@@ -253,9 +254,9 @@ const AccountTab = ({ authenticate }) => {
 											fill='currentColor'
 											viewBox='0 0 24 24'>
 											<path
-												fill-rule='evenodd'
+												fillRule='evenodd'
 												d='M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-2 9a4 4 0 0 0-4 4v1a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-1a4 4 0 0 0-4-4h-4Z'
-												clip-rule='evenodd'
+												clipRule='evenodd'
 											/>
 										</svg>
 
