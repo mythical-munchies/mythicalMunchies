@@ -91,7 +91,7 @@ Get ready to sprinkle some magic into your kitchen and unleash the culinary wiza
 - React - Bootstrap
 - Tailwind CSS
 - Flowbite React 
-Font: Almendra
+- Font: Almendra
 
 ## Install Instructions 
 If you wish to run this application locally, here are the install notes.
