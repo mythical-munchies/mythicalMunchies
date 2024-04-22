@@ -174,7 +174,7 @@ const recipes = [
     description: "The iconic burger from the Krusty Krab, as featured in SpongeBob SquarePants.",
     cook_time: "20 minutes",
     world_name: "Bikini Bottom",
-    img_url: "https://i.ytimg.com/vi/Tt7_Qao0TCw/hqdefault.jpg",
+    img_url: "https://thenaughtyfork.com/wp-content/uploads/2020/05/Screen-Shot-2020-05-11-at-1.43.41-PM.png",
   },
   {
     name: "Spice Melange",
