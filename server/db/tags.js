@@ -1,6 +1,6 @@
 const client = require("./client");
 const uuid = require("uuid");
-const {getRecipeId} = require('./recipes');
+const { getRecipeId } = require('./recipes');
 
 //Create a tag
 const createTag = async ({description}) => {
