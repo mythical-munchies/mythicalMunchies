@@ -121,10 +121,17 @@ const recipe_tags = [
     recipe_name: "Pumpkin Pasties",
     description: "Snack",
   },
-
+  {
+    recipe_name: "Tyrion's Mulled Wine",
+    description:"Alcoholic",
+  },
+  {
+    recipe_name: "Sophie's Tea",
+    description:"Alcoholic",
+  },
   // {
-  //   "recipe_name":"",
-  //   "description":""
+  //   recipe_name:"",
+  //   description:""
   // },
 ];
 
