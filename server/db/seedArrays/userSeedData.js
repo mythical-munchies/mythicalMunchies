@@ -59,6 +59,8 @@ const users = [
     email: "barnyardbard@stardewfarm.com",
     password: "chickencrooners",
   },
+
+  
 ];
 
 module.exports = { users };
