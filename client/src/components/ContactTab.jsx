@@ -41,7 +41,7 @@ function ContactTab() {
     <>
       <div className="main-container">
         <div id="container">
-          <h1 style={styles.h1}>Contact Us</h1>
+          <h1 className="contactUs-title">Contact Us</h1>
           {/* <hr className="contact-hr"></hr> */}
           <div className="content">
             {/* Text to the left of the form. Final language TBD */}

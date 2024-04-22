@@ -5,7 +5,7 @@
 }
 
 #container {
-  background-image: url(https://img.freepik.com/premium-photo/feather-pen-into-inkwell-isolated-white-background_488220-33938.jpg);
+  background-image: url(https://t3.ftcdn.net/jpg/02/27/99/64/360_F_227996402_RBucSTIW5GYwNrMMJu5OTnM3km7Xjta0.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -25,9 +25,15 @@
   padding-bottom: 100px;
 }
 
+.contactUs-title {
+  text-shadow: 2px 2px 4px black;
+  color: white;
+}
+
 .contact-hr {
   border: 1px solid white;
   opacity: 100%;
+  display: block;
 }
 
 .content {
@@ -55,6 +61,7 @@
   font-family: "Almendra", serif;
   margin-right: 50px;
   padding-left: 50px;
+  text-shadow: 2px 2px 4px black;
   /* border-radius: 20px; */
 }
 
