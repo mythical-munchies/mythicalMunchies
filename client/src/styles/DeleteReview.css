@@ -1,0 +1,18 @@
+.review-date {
+  color: black;
+}
+
+#review-info {
+  margin-left: 5px;
+}
+
+.review-modal-title {
+  color: darkred;
+}
+
+.warning {
+  color: purple;
+  text-align: center;
+  margin-right: 15px;
+  font-size: 18px;
+}

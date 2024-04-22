@@ -6,6 +6,8 @@ import { useState } from "react";
 import Modal from 'react-bootstrap/Modal';
 import { mockReviews } from "../ReviewData";
 import DogFrog from "../images/dog-frog.jpg";
+import Sandy from "../images/sandy.jpg"
+import "../styles/DeleteReview.css"
 
 function DeleteReview(){
   const [show, setShow] = useState(false);
@@ -32,9 +34,11 @@ return(
         <Modal.Body>
           <div id="review-info">
             <div id="review-info">
-              <a href="somesite.com" className="review-recipe-title">review.title</a>
-              <p className="review-date">review.day</p>
-              <img className="delete-img" src={DogFrog} alt="dog-frog" />
+              <a href="somesite.com" className="review-recipe-title">Sandy's Texas Corn Ribs</a>
+              <p className="review-date">April 14, 2024</p>
+              <img className="delete-img" src={Sandy} alt="dog-frog" />
+
+              <p className="warning">*This action cant be undone*</p>
             </div>
           </div>
         </Modal.Body>

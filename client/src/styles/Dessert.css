@@ -34,9 +34,10 @@
 }
 
 .dessert-img {
-  height: 500px;
-  width: 500px;
+  height: 450px;
+  width: 450px;
   border-radius: 20px;
+  object-fit: cover;
 }
 
 
@@ -49,7 +50,7 @@
 .dessert-title {
   text-align: left;
   margin-left: 0px;
-  font-size: 50px;
+  font-size: 45px;
   font-family: "Almendra", sans-serif;
 }
 
@@ -60,26 +61,31 @@
   text-decoration-thickness:1px;
   margin-left: 5px;
   font-family: "Almendra", sans-serif;
+  font-size: 25px;
 }
 
 .dessert-text {
   font-size: 25px;
   margin-left: 20px;
-  line-height: 25px;
-  margin-top: 100px;
+  line-height: 30px;
+  margin-top: 80px;
   font-family: "Almendra", sans-serif;
+  letter-spacing: 1px;
 }
 
 .dessert-button {
   display: flex;
   font-family: "Almendra", sans-serif;
-  background-color: antiquewhite;
+  background-color: #e2d5b0;
   border-radius: 5px;
   margin-top: 50px;
   margin-left: 25px;
   width: 220px;
   font-size: 18px;
   padding: 5px;
+  border: 2px solid darkred;
+  letter-spacing: 2px;
+  padding-left: 10px;
   
 }
 

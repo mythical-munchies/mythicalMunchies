@@ -33,10 +33,12 @@
   
 }
 
-
 .book-img-bookmarked {
-  width: 100px;
+  width: 150px;
   height: 150px;
+  border-radius: 10px;
+  margin-top: 10px;
+  object-fit: cover;
 }
 
 .bookmarked {
@@ -44,10 +46,10 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   width: 800px;
-  margin-left: 80px;
+  /* margin-left: 80px;  */
   overflow: scroll;
   height: 900px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .bookmark-title {
@@ -59,11 +61,13 @@ color: yellow;
 text-shadow: 1px 1px 0px red;
 text-align: center;
 letter-spacing: 1.5px;
+
 }
 
 .book-card-bookmark {
-  max-width: 300px;
-  margin: 50px;
+  
+  /* max-width: 300px; */
+  margin-left: 10px;
   text-align: left;
   font-size: 20px;
   font-family: "Almendra", sans-serif;
@@ -73,7 +77,7 @@ letter-spacing: 1.5px;
 .bookmarked-title-books {
   font-weight: 100;
   letter-spacing: 1px;
-  color: darkred;
+  color: white;
   margin-top: 5px;
   text-align: left;
   margin-bottom: 0px;
