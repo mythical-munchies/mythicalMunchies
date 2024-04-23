@@ -40,15 +40,15 @@ function Bookmarks() {
                         <img  className="book-img-bookmarked" src={Drank} alt="" />
                           <a href="somesite.com" className="bookmarked-title-books">Beetlejuice Moradita</a>
                           {/* <h3 className="book-author">By: {book.author}</h3> */}
+                      </div>     
+                      <div className="book-card-bookmark">
+                        <img  className="book-img-bookmarked" src={Pumpkin} alt="" />
+                          <a href="somesite.com" className="bookmarked-title-books">Pumpkin Pastries</a>
+                          {/* <h3 className="book-author">By: {book.author}</h3> */}
                       </div>
                       <div className="book-card-bookmark">
                         <img  className="book-img-bookmarked" src={Stew} alt="" />
                           <a href="somesite.com" className="bookmarked-title-books">Jon Snow's Wildling Stew</a>
-                          {/* <h3 className="book-author">By: {book.author}</h3> */}
-                      </div>
-                      <div className="book-card-bookmark">
-                        <img  className="book-img-bookmarked" src={Pumpkin} alt="" />
-                          <a href="somesite.com" className="bookmarked-title-books">Pumpkin Pastries</a>
                           {/* <h3 className="book-author">By: {book.author}</h3> */}
                       </div>
                    
