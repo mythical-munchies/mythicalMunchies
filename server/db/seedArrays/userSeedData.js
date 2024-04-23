@@ -59,7 +59,11 @@ const users = [
     email: "barnyardbard@stardewfarm.com",
     password: "chickencrooners",
   },
-
+  {
+    username: "kingOFtheNorth",
+    email: "jonsnow@gmail.com",
+    password: "dragon",
+  },
   
 ];
 

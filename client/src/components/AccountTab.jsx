@@ -73,8 +73,8 @@ const AccountTab = ({ authenticate }) => {
 
 	const logout = () => {
 		window.localStorage.removeItem('token');
-		setAuth({})
-		console.log("you are logged out");
+		setAuth({});
+		console.log('you are logged out');
 	};
 
 	const handleUpdate = (e) => {
@@ -180,7 +180,7 @@ const AccountTab = ({ authenticate }) => {
 										type='email'
 										id='email'
 										className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
-										placeholder='johnsnow@gmail.com'
+										placeholder='jonsnow@gmail.com'
 										required
 									/>
 								</div>
@@ -235,7 +235,7 @@ const AccountTab = ({ authenticate }) => {
 								<h1 className='welcome-user'>Welcome Back!</h1>
 							</div>
 							<span className='logout-container'>
-								<button className='logout-button' onClick={ logout }>
+								<button className='logout-button' onClick={logout}>
 									Logout
 								</button>
 							</span>
