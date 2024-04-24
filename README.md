@@ -9,7 +9,7 @@ Check out our site on Render: (https://mythicalmunchies-55ge.onrender.com/)
 - Eleni Papadatos ([EleniP94](https://github.com/orgs/mythical-munchies/people/EleniP94))
 - Lucas Barrs ([Lucas-Barrs](https://github.com/Lucas-Barrs))
 - Samantha Lugtu ([SammyLug](https://github.com/SammyLug))
-- Simone LaPray ([Simkaleo](https://github.com/orgs/mythical-munchies/people/Simkaleo))
+- Simone LaPray ([viinn-viinn](https://github.com/orgs/mythical-munchies/people/viinn-viinn))
 
 ## Objective
 
