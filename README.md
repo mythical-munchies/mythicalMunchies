@@ -106,9 +106,9 @@ If you wish to run this application locally, here are the install notes.
 
 3. You will also want to copy .env.example as a .env file, but with your key values. cp .env.example .env
 
-4. Within this terminal and run either of these command groups: (TO REVIEW)
-  - Individual commands (must run in order):
-          ---TBD 
+4. Within this terminal and run either of these command groups: 
+  - Individual commands (must run in order) in package.json
+       
 You can also elect to run npm run rebuild as that is a custom script within package.json to run all of the above commands in order. This is found at line 14 in in backend/package.json.
  -- npm run rebuild
 
