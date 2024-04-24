@@ -2,6 +2,8 @@
 
 Prepare to embark on a fantastical culinary adventure through the realms of fiction and fantasy! With our enchanted app, you'll journey through a myriad of fictional worlds, indulging in delectable recipes straight from your favorite stories and film.
 
+Check out our site on Render: (https://mythicalmunchies-55ge.onrender.com/)
+
 ## Developed By
 
 - Eleni Papadatos ([EleniP94](https://github.com/orgs/mythical-munchies/people/EleniP94))
